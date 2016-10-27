@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FurnaceControl.Program">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.ThermalModelClass">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\ThermalModelClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.TrackingClass">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\TrackingClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.SQLClass">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAJAAgAEIgAAAEAACBEAISAEQAAAA=</HashCode>
+      <FileName>Class\Common\SQLClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.SysLogClass">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIEAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Class\Common\SysLogClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.UtilsClass">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAQAAgAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Class\Common\UtilsClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.DefineClass">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="FurnaceControl.DefineClass.RETURN_VALUE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Define\DefineClass.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="FurnaceControl.DefineClass.TIMER_INTERVAL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Define\DefineClass.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="FurnaceControl.DefineClass.ST_BILLET_INFOMATION" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Define\DefineClass.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIAAAAAAAAAAAAAQAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Define\DefineClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.TimerClass" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAIAAAAAAAAAAgAAAAAAAQAIEBABAAAAAI=</HashCode>
+      <FileName>Class\SuperClass\TimerClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.MainClass">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJIAAhAACAAAAAAAQAAAAAAAEAAQQAAAAACA=</HashCode>
+      <FileName>MainClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.MainForm" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xCTk8onLPykbwviVEwr4f0RyYTEJIAJkGAKIAGFGEJA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.L1LinkClass">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\L1LinkClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.L3LinkClass">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAIAAAAAAAAAACAAAIAAAAAEEAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\L3LinkClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

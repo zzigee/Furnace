@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<opc-profile>
+	<define-group>
+		<group name="ManualGroup" type="DATA" rate="500" active="1" readsource="2" operType="dynamic" description="OPC Group">
+			<tag name="nManual" type="DIGITAL" description="long type tag"/>
+			<tag name="dManual" type="ANALOG" description="read type tag"/>
+			<tag name="sManual" type="STRING" description="string type Tag"/>
+		</group>
+
+		<group name="IncrementGroup" type="DATA" rate="1000" active="1" readsource="2" operType="dynamic" description="OPC Group">
+			<tag name="nIncrement" type="DIGITAL" description="long type tag"/>
+			<tag name="dIncrement" type="ANALOG" description="read type tag"/>
+			<tag name="sIncrement" type="STRING" description="string type Tag"/>
+		</group>
+
+	</define-group>
+	<link-group>
+	</link-group>
+
+</opc-profile>

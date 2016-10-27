@@ -1,0 +1,1 @@
+﻿insert into bheader (Level2Id, Level1Id, HeatId, HeatIndex, OrderNum, Grade,ChargeTime,Weight,Length,ChargeTemp,AimTemp,DeltaT,MeasuredWeight,MeasuredLength)

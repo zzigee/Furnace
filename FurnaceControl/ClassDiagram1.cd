@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FurnaceControl.L1LinkClass" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAABBAAAAAAAAAAAAAQAAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\L1LinkClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.L3LinkClass" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAIAAAAAAAAAACAAAIAAAAAEEAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\L3LinkClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.ThermalModelClass" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\ThermalModelClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.TrackingClass" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Class\Algorithm\TrackingClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.SQLClass" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAIAAgAGIgAAAEAACFMAISAEQAAAA=</HashCode>
+      <FileName>Class\Common\SQLClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.SysLogClass" Collapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIEAAAAAAAAAAAAAAABAAAEAAAAAAAAAAAAg=</HashCode>
+      <FileName>Class\Common\SysLogClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.UtilsClass" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAQAAgAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Class\Common\UtilsClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.DefineClass" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="FurnaceControl.DefineClass.RETURN_VALUE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Define\DefineClass.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="FurnaceControl.DefineClass.TIMER_INTERVAL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Define\DefineClass.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="FurnaceControl.DefineClass.ST_BILLET_INFOMATION" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Define\DefineClass.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIAAAAAAAAAAAAAQAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Define\DefineClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.MainClass" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJIAAhAACAAAAAAAQAAAAAAAEAAQQAAAAACA=</HashCode>
+      <FileName>Class\MainClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.MainForm" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xECkcon/P/ifwLgTgwL4f0UzYDGLACrsrxr+gENHEJA=</HashCode>
+      <FileName>Class\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.Program" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Class\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.TimerClass" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAIAAAAAAAAAAgAAAAAAAQAIEBABAAAAAI=</HashCode>
+      <FileName>Class\SuperClass\TimerClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSet" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="2" />
+    <NestedTypes>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.SYSTEM_EVENT_JOINRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.BILLET_JOINRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.GRADEDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.GRADE_DETAILRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.BILLET_JOINRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.GRADERow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_ZONE_STATUSRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_BILLETDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.GRADERowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_BILLETRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.SYSTEM_EVENT_JOINRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.BILLET_JOINDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.GRADERowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.GRADE_DETAILRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.USERRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.SYSTEM_EVENT_JOINDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_BILLETRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_BILLETRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.GRADE_DETAILDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.DataTable1DataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.SYSTEM_EVENT_JOINRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.BILLET_JOINRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.USERDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.SYSTEM_EVENT_LOGDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.L2DataDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.DataTable1RowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.GRADE_DETAILRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_ZONE_STATUSRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.DataTable1Row" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_ZONE_STATUSDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="FurnaceControl.FurnaceControlDataSet.DataTable1RowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.SW_CHART_VIEWDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FurnaceControlDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.CHART_VIEW_ZONE_STATUSRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.USERRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FurnaceControl.FurnaceControlDataSet.USERRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ASgAAAAgQ0gAAILCBAAQQABBBAgaQBkAACAAAgECRFg=</HashCode>
+      <FileName>FurnaceControlDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.GRADETableAdapter" Collapsed="true">
+    <Position X="9.75" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIgAAAAAAACEICAAAAAAIAAAABBA=</HashCode>
+      <FileName>FurnaceControlDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.BILLET_JOINTableAdapter" Collapsed="true">
+    <Position X="13" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAAAAAAAcAIAAAAAAAACAICAAAAAAAgAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.CHART_VIEW_BILLETTableAdapter" Collapsed="true">
+    <Position X="13" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.USERTableAdapter" Collapsed="true">
+    <Position X="9.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.GRADE_DETAILTableAdapter" Collapsed="true">
+    <Position X="13" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIgAAAAAAACEICAgAAAAIAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.SYSTEM_EVENT_JOINTableAdapter" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.CHART_VIEW_ZONE_STATUSTableAdapter" Collapsed="true">
+    <Position X="13" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.FurnaceControlDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IQAAACAAAABCBAkBEAAQMAAgAAACgAAAAAQAAAAABgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.Properties.Resources" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnaceControl.Properties.Settings" Collapsed="true">
+    <Position X="12" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAKAAAQAABAAAAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
