@@ -24,7 +24,7 @@ namespace FurnaceControl
                 try 
                 { 
                     this.th = new Thread(new ThreadStart(this.ThreadProc));
-                    this.th.Start();
+                    this.th.Start();    
                 }
                 catch (Exception ex)
                 {
