@@ -169,6 +169,7 @@
     <Compile Include="Class\Common\SQLClass.cs" />
     <Compile Include="Class\Algorithm\ThermalModelClass.cs" />
     <Compile Include="Class\Algorithm\TrackingClass.cs" />
+    <Compile Include="Class\SuperClass\TimerClass.cs" />
     <Compile Include="FurnaceControlDataSet.cs">
       <DependentUpon>FurnaceControlDataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -259,7 +260,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\SuperClass\" />
     <Folder Include="Themes\" />
   </ItemGroup>
   <ItemGroup>
