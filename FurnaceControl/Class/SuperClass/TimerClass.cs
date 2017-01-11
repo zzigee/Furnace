@@ -8,7 +8,7 @@ namespace FurnaceControl
     {
         // for Log Time Stamp  
         public String strTimerName;
-        public long nPreMsec;
+        public long nPreMsec;  
 
         private Thread th;
         private int nDelayTime;
