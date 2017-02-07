@@ -38,8 +38,8 @@ namespace FurnaceControl.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.148,1433;Initial Catalog=FurnaceControl;User ID=sa;Password" +
-            "=1234;Integrated Security=false")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.148;Initial Catalog=FurnaceControl;User ID=sa;Password=1234" +
+            ";Integrated Security=false")]
         public string FurnaceControlConnectionString {
             get {
                 return ((string)(this["FurnaceControlConnectionString"]));
@@ -49,8 +49,8 @@ namespace FurnaceControl.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.148,1433;Initial Catalog=FurnaceControl;User ID=sa;Password" +
-            "=1234;Integrated Security=false")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.148;Initial Catalog=FurnaceControl;User ID=sa;Password=1234" +
+            ";Integrated Security=false")]
         public string FurnaceControlConnectionString1 {
             get {
                 return ((string)(this["FurnaceControlConnectionString1"]));
