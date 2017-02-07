@@ -20,6 +20,8 @@ namespace FurnaceControl
         {
 
             this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
+
+
         }
     }
 }
