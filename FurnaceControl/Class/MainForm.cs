@@ -16,14 +16,33 @@ namespace FurnaceControl
     {
 
         /************************************************************************
+         * Start Form Load  
+         ************************************************************************/
+        private void RadForm1_Load(object sender, EventArgs e)
+        {
+            this.nCurrentPage = (int)Page.Main;
+
+            this.Timer_GUI_Update.Start();
+            this.Timer_DB_Update.Start();
+
+            this.billeT_JOINTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
+
+
+            this.tbGrade.ReadOnly = true;
+            this.tbSetNo.ReadOnly = true;
+            this.tbDetatil.ReadOnly = true;
+
+        }
+
+        /************************************************************************
          * Define Variables 
          ************************************************************************/
         private MainClass m_MainClass;
         private int val;
         private String query;
-        
+
         // For Paing Check 
-        enum Page { Main, Schedule, Furnace, Grade_Set, L2_Data, Program_Log };     
+        enum Page { Main, Schedule, Furnace, Grade_Set, L2_Data, Program_Log };
         private int nCurrentPage;
 
 
@@ -44,24 +63,7 @@ namespace FurnaceControl
 
 
 
-        /************************************************************************
-         * Start Form Load  
-         ************************************************************************/
-        private void RadForm1_Load(object sender, EventArgs e)
-        {
-            this.nCurrentPage = (int)Page.Main;
 
-            this.Timer_GUI_Update.Start();
-            this.Timer_DB_Update.Start();
-
-            this.billeT_JOINTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
-
-
-            this.tbGrade.ReadOnly = true;
-            this.tbSetNo.ReadOnly = true;
-            this.tbDetatil.ReadOnly = true;
-            
-        }
 
 
 
@@ -170,7 +172,7 @@ namespace FurnaceControl
         }
 
 
-        
+
         private void btnGradeInsert_Click(object sender, EventArgs e)
         {
             try
@@ -208,8 +210,8 @@ namespace FurnaceControl
         private void btnGradeDelete_Click(object sender, EventArgs e)
         {
 
-            if(MessageBox.Show("해당 데이터를 삭제하시겠습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {                
+            if (MessageBox.Show("해당 데이터를 삭제하시겠습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
                 try
                 {
                     this.gradE_TableAdapter.DeleteQuery(this.tbGrade.Text);
@@ -221,7 +223,7 @@ namespace FurnaceControl
                 {
                     this.ShowMessageBox("오류가 발생하였습니다. Message {" + ex.ToString() + "}");
                     this.m_MainClass.m_SysLogClass.TryCatchLog(this, ex.ToString());
-                }   
+                }
             }
         }
 
@@ -240,7 +242,7 @@ namespace FurnaceControl
         {
             try
             {
-                this.gradE_DETAILTableAdapter.InsertQuery(int.Parse(this.tbSetNo_GradeDetail.Text), int.Parse(this.tbAimTemp.Text), int.Parse(this.tbTOPmax_1.Text),int.Parse(this.tbTOPmin_1.Text),int.Parse(this.tbBOTmax_1.Text),int.Parse(this.tbBOTmin_1.Text),int.Parse(this.tbTOPmax_2.Text),int.Parse(this.tbTOPmin_2.Text),int.Parse(this.tbBOTmax_2.Text),int.Parse(this.tbBOTmin_2.Text),int.Parse(this.tbTOPmax_3.Text),int.Parse(this.tbTOPmin_3.Text),int.Parse(this.tbBOTmax_3.Text),int.Parse(this.tbBOTmin_3.Text),int.Parse(this.tbTOPmax_4.Text),int.Parse(this.tbTOPmin_4.Text),int.Parse(this.tbBOTmax_4.Text),int.Parse(this.tbBOTmin_4.Text),int.Parse(this.tbTOPmax_5.Text),int.Parse(this.tbTOPmin_5.Text),int.Parse(this.tbBOTmax_5.Text),int.Parse(this.tbBOTmin_5.Text),int.Parse(this.tbTOPmax_6.Text),int.Parse(this.tbTOPmin_6.Text),int.Parse(this.tbBOTmax_6.Text),int.Parse(this.tbBOTmin_6.Text),int.Parse(this.tbTOPmax_7.Text),int.Parse(this.tbTOPmin_7.Text),int.Parse(this.tbBOTmax_7.Text),int.Parse(this.tbBOTmin_7.Text),int.Parse(this.tbTOPmax_8.Text),int.Parse(this.tbTOPmin_8.Text),int.Parse(this.tbBOTmax_8.Text),int.Parse(this.tbBOTmin_8.Text),int.Parse(this.tbTOPmax_9.Text),int.Parse(this.tbTOPmin_9.Text),int.Parse(this.tbBOTmax_9.Text),int.Parse(this.tbBOTmin_9.Text),int.Parse(this.tbTOPmax_10.Text),int.Parse(this.tbTOPmin_10.Text),int.Parse(this.tbBOTmax_10.Text),int.Parse(this.tbBOTmin_10.Text));
+                this.gradE_DETAILTableAdapter.InsertQuery(int.Parse(this.tbSetNo_GradeDetail.Text), int.Parse(this.tbAimTemp.Text), int.Parse(this.tbTOPmax_1.Text), int.Parse(this.tbTOPmin_1.Text), int.Parse(this.tbBOTmax_1.Text), int.Parse(this.tbBOTmin_1.Text), int.Parse(this.tbTOPmax_2.Text), int.Parse(this.tbTOPmin_2.Text), int.Parse(this.tbBOTmax_2.Text), int.Parse(this.tbBOTmin_2.Text), int.Parse(this.tbTOPmax_3.Text), int.Parse(this.tbTOPmin_3.Text), int.Parse(this.tbBOTmax_3.Text), int.Parse(this.tbBOTmin_3.Text), int.Parse(this.tbTOPmax_4.Text), int.Parse(this.tbTOPmin_4.Text), int.Parse(this.tbBOTmax_4.Text), int.Parse(this.tbBOTmin_4.Text), int.Parse(this.tbTOPmax_5.Text), int.Parse(this.tbTOPmin_5.Text), int.Parse(this.tbBOTmax_5.Text), int.Parse(this.tbBOTmin_5.Text), int.Parse(this.tbTOPmax_6.Text), int.Parse(this.tbTOPmin_6.Text), int.Parse(this.tbBOTmax_6.Text), int.Parse(this.tbBOTmin_6.Text), int.Parse(this.tbTOPmax_7.Text), int.Parse(this.tbTOPmin_7.Text), int.Parse(this.tbBOTmax_7.Text), int.Parse(this.tbBOTmin_7.Text), int.Parse(this.tbTOPmax_8.Text), int.Parse(this.tbTOPmin_8.Text), int.Parse(this.tbBOTmax_8.Text), int.Parse(this.tbBOTmin_8.Text), int.Parse(this.tbTOPmax_9.Text), int.Parse(this.tbTOPmin_9.Text), int.Parse(this.tbBOTmax_9.Text), int.Parse(this.tbBOTmin_9.Text), int.Parse(this.tbTOPmax_10.Text), int.Parse(this.tbTOPmin_10.Text), int.Parse(this.tbBOTmax_10.Text), int.Parse(this.tbBOTmin_10.Text));
 
                 this.ShowMessageBox("정상적으로 처리 되었습니다.");
                 this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
@@ -420,7 +422,7 @@ namespace FurnaceControl
             //MessageBox.Show(view.SelectedRows.ToString());
         }
 
-     
+
         /*
          * Chart Update 
          * public string nBillet_Order_Number;                       // 빌렛 주문번호
@@ -431,7 +433,7 @@ namespace FurnaceControl
          * public int nBillet_Predict_Current_Billet_Temperature;    // 현재 빌렛 예상 온도
          * public int nOrderOfBillet;                                // 가열로내 소재 순서 
          * public int nZone_Average_Temperature;                     // 존 평균 온도 
-         */     
+         */
         private void RefreshChartViewer()
         {
             //this.radChartView.Update();
@@ -445,18 +447,18 @@ namespace FurnaceControl
             this.m_MainClass.m_SysLogClass.DebugLog(this, "sYSTEMEVENTLOGBindingSource_CurrentChanged");
         }
 
-        
-        
+
+
         private void Timer_DB_Update_Tick(object sender, EventArgs e)
         {
             if (this.nCurrentPage == (int)Page.Main)
             {
                 //this.m_MainClass.m_SQLClass.updateBilletStruct();        // Update Data
 
-                
+
                 DataRow row;
                 Random rnd = new Random();
-               
+
                 this.furnaceControlDataSet.DataTable1.Clear();
                 for (int i = 0; i < 50; i++)
                 {
@@ -469,7 +471,7 @@ namespace FurnaceControl
 
                 this.charT_VIEW_BILLETTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_BILLET);
                 this.charT_VIEW_ZONE_STATUSTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_ZONE_STATUS);
-                
+
             }
             else if (this.nCurrentPage == (int)Page.Schedule)
             {
@@ -557,7 +559,7 @@ namespace FurnaceControl
 
             this.tbSetNo_GradeDetail.Text = view.Rows[idx].Cells[0].Value.ToString();
             this.tbAimTemp.Text = view.Rows[idx].Cells[1].Value.ToString();
-            
+
             this.tbTOPmax_1.Text = view.Rows[idx].Cells[2].Value.ToString();
             this.tbTOPmin_1.Text = view.Rows[idx].Cells[2].Value.ToString();
             this.tbBOTmax_1.Text = view.Rows[idx].Cells[3].Value.ToString();
@@ -617,7 +619,9 @@ namespace FurnaceControl
 
         private void radButton4_Click(object sender, EventArgs e)
         {
-            serialPort1.Open();
+            //serialPort1.Open();
+
+            m_MainClass.m_L1LinkClass.getReadGroupTags();
 
         }
     }

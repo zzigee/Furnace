@@ -20,8 +20,6 @@ namespace FurnaceControl
 
             InitializeOPC();
 
-
-
         }
 
         /******************************************************************************
@@ -33,6 +31,7 @@ namespace FurnaceControl
         {
             this.m_MainClass.m_SysLogClass.SystemLog(this, "L1LinkClassTimer");
         }
+
 
         private void InitializeOPC()
         {
@@ -48,7 +47,17 @@ namespace FurnaceControl
             else
             {
                 Console.WriteLine("OpcRegSvrEx() Failed! Error Code:" + iResFunc);
-            }      
+            }
+
+        }
+
+        public void getReadGroupTags()
+        {
+            int nTagCnt = 0;
+            object[] objReadVals = new object[10];
+            int[] nQualities = new int[10];
+
+            m_opcMgr.opcReadGroupTags("IncrementGroup", nTagCnt, objReadVals, nQualities);
         }
 
 

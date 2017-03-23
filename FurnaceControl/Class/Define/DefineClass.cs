@@ -9,8 +9,14 @@ namespace FurnaceControl
          * [Check - 2016.02.22] -> [Result - ] 
          * 차후 프로그램 배포시 자유롭게 수정이 가능하도록 공업로 최대 영역 수를 외부 파일 참조로 변경 필요  
          **/
-        public readonly int MAX_ZONE_IN_FURNACE = 10;// 가열 존의 갯수 
-        public readonly int MAX_BILLET_IN_FURNACE = 50;// 로내 최대 빌렛 갯수 
+        public readonly int MAX_ZONE_IN_FURNACE = 10;   // 가열 존의 갯수 
+        public readonly int MAX_BILLET_IN_FURNACE = 50; // 로내 최대 빌렛 갯수 
+
+        /* 
+         * 당진 테스트시 연속시 가열로를 모사하기 위해 시간을 소재의 위치로 치환하는데, 
+         * 총 시간 / 계산시간 의 수 이상의 배열을 확보 
+         */ 
+        public readonly int MAX_BILLET_IN_FURNACE_FOR_DANJIN = 10000; 
 
         // Parent Object Class 객체 생성 
         public MainClass m_MainClass;
@@ -55,6 +61,22 @@ namespace FurnaceControl
             public int nBillet_Predict_Current_Billet_Temperature;// 현재 빌렛 예상 온도
             public int nOrderOfBillet;// 가열로내 소재 순서 
             public int nZone_Average_Temperature;// 존 평균 온도 
+        }
+
+        /*
+         * 실시간으로 변화되는 공업로의 상태정보 
+         */
+        public struct ST_FURNACE_REALTIME_INFORMATION
+        {
+            public double dZone_Temp;   // 현 시점에서의 존 분위기 온도
+        }
+        /**
+         * 열모델에게 사용되는 소재정보 (배열로 저장됨)  
+         */
+        public struct ST_BILLET_INFORMATION_FOR_DANJIN
+        {
+            public double dZone_Temp;               // 계산 시점에서의 존 분위기 온도
+            public double dPredict_Billet_Temp;     // 계산 시점에서의 빌렛 예측 온도 
         }
     }
 }
