@@ -7,16 +7,7 @@ namespace FurnaceControl
     {
         private readonly MainClass m_MainClass;
 
-        int Nb = 48;
-        int Nfm = 8;
-        double con1 = 0.00000015;
-        double con2 = 100;
-        double con3 = 0.0001;
-        double Tb_init;
-        double[] Tb = new double[100];
-        double[] Tf = new double[100];
-        double[] Tfm = new double[100];
-
+        private double dTotalCalTime = 0.0;
         
         public ThermalModelClass(MainClass mc, int timer_interval)
         {
@@ -24,85 +15,52 @@ namespace FurnaceControl
             this.Start(timer_interval, "ThermalModelClassTimer");
         }
 
-        /**
-         * 주기적으로 실행하는 함수 
-         **/
-        public override void Run()
+        /*
+         * 열모델계산 함수 
+         */
+        public void calThermalModel(UInt64 idx)
         {
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
-            CalTemp();
+            // 현재 가열로의 분위기 온도 읽기 
+            double dCurrentZoneTemp = m_MainClass.stFURNACE_REALTIME_INFORMATION.dZone_Temp;
 
+
+
+
+
+            // 열모델을 통해 계산 및 저장되는 변수 
+            double dZone_Temp = 0.0, dPredict_Billet_Temp = 0.0;
+
+            /* 
+             * 
+             * 
+             * 열모델 계산 코드 
+             * 
+             * 
+             */
+
+            // 계산 시점의 가열로 분위기 온도 및 예측 빌렛온도 저장 
+            m_MainClass.stTHERAMLMODEL_FOR_DANJIN[idx].dZone_Temp = dZone_Temp;
+            m_MainClass.stTHERAMLMODEL_FOR_DANJIN[idx].dPredict_Billet_Temp = dPredict_Billet_Temp;
         }
 
-        public void CalTemp()
+
+        /**
+         * 주기적으로 실행하는 함수 (Period : 10 second)
+         **/
+        UInt64 idx = 0;
+
+        public override void Run()
         {
-            for (int k = 0; k < 100; k++)
-            {
-//                Tb[k] = Tf[k] = Tfm[k] = 0;
-                Tb[k] = Tf[k] = 0; //테스트용
-            }
-            Tfm[0] = 100;
-            Tfm[1] = 500;
-            Tfm[2] = 800;
-            Tfm[3] = 1200;
-            Tfm[4] = 1300;
-            Tfm[5] = 1350;
-            Tfm[6] = 1450;
-            Tfm[7] = 1400;
 
-            for (int k=0; k < Nfm; k++)
-            {
-//               Tfm[k] = ThemocoupleTemp[]; //level2로 부터 Tfm[]에 들어갈 배열 값을 전달 받아야함.
-            }
+            this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
+            
+            /*
+             * 10 초마다 한번씩 열모델 계산 수행 (수행 시간은 MainClass 에서 변경 가능)
+             */
+            calThermalModel(idx);
+            
+            idx++;
 
-            int q = 0;
-            for (int i = 0; i < Nfm; i++)
-            {
-                if (i < 3)
-                {
-                    if (i == 0)
-                    {
-                        for (int j = 0; j < 6; j++)
-                        {
-                            Tf[q] = j * (Tfm[1] - Tfm[0]) / 6 + Tfm[0];
-                            q += 1;
-                        }
-                    }
-                    if (i == 1)
-                    {
-                        for (int j = 0; j < 6; j++)
-                        {
-                            Tf[q] = j * (Tfm[2] - Tfm[1]) / 6 + Tfm[1];
-                            q += 1;
-                        }
-                    }
-                    if (i == 2)
-                    {
-                        for (int j = 0; j < 6; j++)
-                        {
-                            Tf[q] = j * (Tfm[3] - Tfm[2]) / 6 + Tfm[2];
-                            q += 1;
-                        }
-                    }
-                }
-                else
-                {
-                    for(int j=0; j<6; j++){
-                        Tf[q] = Tfm[i];
-                        q += 1;
-                    }
-                }
-            }
-            Tb_init = 0.5 * Tfm[0];
-            Tb[0] = Tb_init;
-
-            for (int k = 0; k < Nb; k++)
-            {
-                Tb[k + 1] = Tb[k] + con1 * (con2 * (Tf[k] - Tb[k]) + con3 * (Math.Pow(Tf[k], 4) - Math.Pow(Tb[k], 4)));
-            }
-            //Tb 배열의 값을 level2로 내보내야 함
-
-//                Console.WriteLine(">"+Tb[5]);
         }
     }
 }

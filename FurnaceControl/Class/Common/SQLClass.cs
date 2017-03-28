@@ -13,7 +13,8 @@ namespace FurnaceControl
          * [Check - 2016.02.22] -> [Result - ] 
          * 차후 연결 자유롭게 수정이 가능하도록 연결 문자열을 외부 파일 참조로 변경 
          **/
-        public readonly String sqlConnectionString = "Server=192.168.1.142;database=furnacecontrol;Integrated Security=false;User ID=sa;Password=1234";
+        //public readonly String sqlConnectionString = "Server=192.168.1.142;database=furnacecontrol;Integrated Security=false;User ID=sa;Password=1234";
+        public readonly String sqlConnectionString = "Server=165.133.82.254;database=furnacecontrol;Integrated Security=false;User ID=sa;Password=1234";
 
         public SqlConnection SqlCon;
         private SqlCommand sqlCommand;
