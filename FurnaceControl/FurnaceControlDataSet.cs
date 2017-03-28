@@ -2,6 +2,10 @@
 {
     public partial class FurnaceControlDataSet
     {
+        partial class DataTable2DataTable
+        {
+        }
+    
         partial class SYSTEM_EVENT_JOINDataTable
         {
         }
@@ -46,6 +50,9 @@
 
 
 namespace FurnaceControl.FurnaceControlDataSetTableAdapters {
+    partial class BILLET_JOINTableAdapter
+    {
+    }
     
     
     public partial class GRADETableAdapter {
