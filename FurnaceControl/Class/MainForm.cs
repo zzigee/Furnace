@@ -8,12 +8,69 @@ using Telerik.WinControls.UI;
 using Telerik.WinControls;
 using System.ComponentModel;
 
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Telerik.Charting;
+using Telerik.WinControls.UI;
+
+
 namespace FurnaceControl
 {
 
 
     public partial class MainForm : Telerik.WinControls.UI.RadForm
     {
+
+        delegate void SetTextCallback(string text);
+
+        public void Set_txtDanjin_Current_Date(string text)
+        {
+            if (this.txtDanjin_Current_Date.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(Set_txtDanjin_Current_Date);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txtDanjin_Current_Date.Text = text;
+            }
+        }
+
+        public void Set_txtDanjin_Delta_Time(string text)
+        {
+            if (this.txtDanjin_Delta_Time.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(Set_txtDanjin_Delta_Time);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txtDanjin_Delta_Time.Text = text;
+            }
+        }
+
+        public void Set_txtDanjin_Operation_Time(string text)
+        {
+            if (this.txtDanjin_Operation_Time.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(Set_txtDanjin_Operation_Time);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txtDanjin_Operation_Time.Text = text;
+            }
+        }
+
 
         /************************************************************************
          * Start Form Load  
@@ -25,7 +82,7 @@ namespace FurnaceControl
             this.Timer_GUI_Update.Start();
             this.Timer_DB_Update.Start();
 
-            this.billeT_JOINTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
+            //this.billeT_JOINTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
 
 
             this.tbGrade.ReadOnly = true;
@@ -101,8 +158,8 @@ namespace FurnaceControl
                 case "Grade Set":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Grade Set Tap Changed");
                     this.nCurrentPage = (int)Page.Grade_Set;
-                    this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
-                    this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
+                    //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                    //this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
                     break;
 
 
@@ -177,9 +234,9 @@ namespace FurnaceControl
         {
             try
             {
-                this.gradE_TableAdapter.Insert(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text);
-                this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                //this.gradE_TableAdapter.Insert(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text);
+                //this.ShowMessageBox("정상적으로 처리 되었습니다.");
+                //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
             }
             catch (Exception ex)
             {
@@ -194,9 +251,9 @@ namespace FurnaceControl
         {
             try
             {
-                this.gradE_TableAdapter.UpdateQuery(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text, this.tbGrade.Text);
-                this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                //this.gradE_TableAdapter.UpdateQuery(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text, this.tbGrade.Text);
+                //this.ShowMessageBox("정상적으로 처리 되었습니다.");
+                //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
             }
             catch (Exception ex)
             {
@@ -214,9 +271,9 @@ namespace FurnaceControl
             {
                 try
                 {
-                    this.gradE_TableAdapter.DeleteQuery(this.tbGrade.Text);
-                    this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                    this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                    //this.gradE_TableAdapter.DeleteQuery(this.tbGrade.Text);
+                    //this.ShowMessageBox("정상적으로 처리 되었습니다.");
+                    //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
 
                 }
                 catch (Exception ex)
@@ -437,7 +494,21 @@ namespace FurnaceControl
         private void RefreshChartViewer()
         {
             //this.radChartView.Update();
-            //this.radChartView1.Update();       
+            //this.radChartView1.Update();
+
+            SteplineSeries series_zone_temp = new SteplineSeries();
+            SteplineSeries series_billet_temp = new SteplineSeries();
+
+            if(radChartView1.Series != null)            radChartView1.Series.Clear();
+
+            for (int i = 0; i < this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN; i++)
+            {
+                series_zone_temp.DataPoints.Add(new CategoricalDataPoint(i, i.ToString()));
+                series_billet_temp.DataPoints.Add(new CategoricalDataPoint(100-i, i.ToString()));
+            }
+            radChartView1.Series.Add(series_zone_temp);
+            radChartView1.Series.Add(series_billet_temp);
+
         }
 
 
@@ -465,12 +536,16 @@ namespace FurnaceControl
                     row = this.furnaceControlDataSet.DataTable1.NewRow();
                     row["data"] = i;
                     row["value"] = rnd.Next(0, 1600);
-                    this.furnaceControlDataSet.DataTable1.Rows.Add(row);
-                    this.furnaceControlDataSet.DataTable1.AcceptChanges();
+                    //this.furnaceControlDataSet.DataTable1.Rows.Add(row);
+                    //this.furnaceControlDataSet.DataTable1.AcceptChanges();
                 }
 
-                this.charT_VIEW_BILLETTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_BILLET);
-                this.charT_VIEW_ZONE_STATUSTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_ZONE_STATUS);
+                //this.charT_VIEW_BILLETTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_BILLET);
+                //this.charT_VIEW_ZONE_STATUSTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_ZONE_STATUS);
+
+
+
+
 
             }
             else if (this.nCurrentPage == (int)Page.Schedule)
@@ -507,7 +582,7 @@ namespace FurnaceControl
                 //this.BilletJoinTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
                 //this.GradeDetailTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
 
-                RefreshChartViewer();
+                //RefreshChartViewer();
             }
             else if (this.nCurrentPage == (int)Page.Schedule)
             {
@@ -624,5 +699,43 @@ namespace FurnaceControl
             m_MainClass.m_L1LinkClass.getReadGroupTags();
 
         }
+
+
+        private void btnDataLogging_Click(object sender, EventArgs e)
+        {
+            if (this.m_MainClass.m_Define_Class.isDataLogging == false) 
+            {
+                this.m_MainClass.m_Define_Class.isDataLogging = true;
+                this.btnDataLogging.BackColor = Color.Lime;
+
+                this.txtDanjin_Delta_Time.Text = this.m_MainClass.m_Define_Class.nDangjinThermalCalPeriod.ToString();
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex = 0;    // 열모델 계산 결과 배열 인덱스 초기화 
+ 
+                this.m_MainClass.m_Define_Class.dateDataLoggingStartTime = DateTime.Now;
+                this.txtDanjin_Start_Date.Text = this.m_MainClass.m_Define_Class.dateDataLoggingStartTime.ToString();
+
+                // Initialize Struct for Dangjin 
+                this.m_MainClass.stDANJIN_STRUCT = new DefineClass.ST_DANJIN_STURCT();      // 당진 테스트 용 
+                this.m_MainClass.stDANJIN_STRUCT.strCreateTime = new string[this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
+                this.m_MainClass.stDANJIN_STRUCT.strZoneTemp = new string[this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
+                this.m_MainClass.stDANJIN_STRUCT.strBilletPredictTemp = new string[this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
+                this.m_MainClass.stDANJIN_STRUCT.strStartTime = DateTime.Now.ToString();
+
+
+            }
+            else
+            {
+                this.m_MainClass.m_Define_Class.isDataLogging = false; 
+                this.btnDataLogging.BackColor = Color.LightGray;
+
+                this.m_MainClass.stDANJIN_STRUCT.strStartTime = DateTime.Now.ToString();
+
+
+                
+ 
+            }
+        }
+
+
     }
 }

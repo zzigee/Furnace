@@ -2,11 +2,14 @@
 <xs:schema id="FurnaceControlDataSet" targetNamespace="http://tempuri.org/FurnaceControlDataSet.xsd" xmlns:mstns="http://tempuri.org/FurnaceControlDataSet.xsd" xmlns="http://tempuri.org/FurnaceControlDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="Schedule_TableAdapter" GeneratorFunctionsComponentClassName="Schedule_TableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="Schedule_TableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FurnaceControlConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FurnaceControlConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FurnaceControl.Properties.Settings.GlobalReference.Default.FurnaceControlConnectionString" Provider="System.Data.SqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FurnaceControlConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="FurnaceControlConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FurnaceControl.Properties.Settings.GlobalReference.Default.FurnaceControlConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
+        
+        
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GRADETableAdapter" GeneratorDataComponentClassName="GRADETableAdapter" Name="GRADE" UserDataComponentName="GRADETableAdapter">
             <MainSource>
@@ -136,7 +139,7 @@ WHERE BILLET_STATUS=2</CommandText>
                 </SelectCommand>
               </DbSource>
             </Sources>
-          </TableAdapter>
+          </TableAdapter>                    
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHART_VIEW_BILLETTableAdapter" GeneratorDataComponentClassName="CHART_VIEW_BILLETTableAdapter" Name="CHART_VIEW_BILLET" UserDataComponentName="CHART_VIEW_BILLETTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -169,27 +172,7 @@ WHERE A.BILLET_STATUS = 2 ORDER BY b.ORDER_OF_BILLET DESC</CommandText>
               <Mapping SourceColumn="ORDER_OF_BILLET" DataSetColumn="ORDER_OF_BILLET" />
             </Mappings>
             <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="USERTableAdapter" GeneratorDataComponentClassName="USERTableAdapter" Name="USER" UserDataComponentName="USERTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString1 (Settings)" DbObjectName="FurnaceControl.dbo.[USER]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  [USER].ID, [USER].PW, [USER].LEVEL
-FROM     [USER] CROSS JOIN
-               GRADE</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="ID" DataSetColumn="ID" />
-              <Mapping SourceColumn="PW" DataSetColumn="PW" />
-              <Mapping SourceColumn="LEVEL" DataSetColumn="LEVEL" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
+          </TableAdapter>                                                  
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GRADE_DETAILTableAdapter" GeneratorDataComponentClassName="GRADE_DETAILTableAdapter" Name="GRADE_DETAIL" UserDataComponentName="GRADE_DETAILTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="FurnaceControl.dbo.GRADE_DETAIL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -851,10 +834,15 @@ FROM     DANGJIN_DATA</CommandText>
             </Sources>
           </TableAdapter>
         </Tables>
+        
+        
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
+  
+  
+  
   <xs:element name="FurnaceControlDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FurnaceControlDataSet" msprop:Generator_UserDSName="FurnaceControlDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">

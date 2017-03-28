@@ -19,7 +19,6 @@ namespace FurnaceControl
             this.Start(timer_interval, "L1LinkClassTimer");
 
             InitializeOPC();
-
         }
 
         /******************************************************************************
@@ -33,6 +32,9 @@ namespace FurnaceControl
         }
 
 
+        /**
+         * Initialize OPC 
+         */
         private void InitializeOPC()
         {
             int iResFunc = 0;

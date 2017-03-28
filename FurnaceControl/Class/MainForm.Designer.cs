@@ -30,91 +30,43 @@
         {
             this.components = new System.ComponentModel.Container();
             Telerik.WinControls.UI.CartesianArea cartesianArea1 = new Telerik.WinControls.UI.CartesianArea();
+            Telerik.WinControls.UI.CategoricalAxis categoricalAxis1 = new Telerik.WinControls.UI.CategoricalAxis();
             Telerik.WinControls.UI.LinearAxis linearAxis1 = new Telerik.WinControls.UI.LinearAxis();
-            Telerik.WinControls.UI.LinearAxis linearAxis2 = new Telerik.WinControls.UI.LinearAxis();
-            Telerik.WinControls.UI.ScatterSeries scatterSeries1 = new Telerik.WinControls.UI.ScatterSeries();
-            Telerik.WinControls.UI.ScatterSeries scatterSeries2 = new Telerik.WinControls.UI.ScatterSeries();
-            Telerik.WinControls.UI.ScatterSeries scatterSeries3 = new Telerik.WinControls.UI.ScatterSeries();
-            Telerik.WinControls.UI.ScatterLineSeries scatterLineSeries1 = new Telerik.WinControls.UI.ScatterLineSeries();
-            Telerik.WinControls.UI.ScatterLineSeries scatterLineSeries2 = new Telerik.WinControls.UI.ScatterLineSeries();
+            Telerik.WinControls.UI.LineSeries lineSeries1 = new Telerik.WinControls.UI.LineSeries();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint1 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint2 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint3 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint4 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint5 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.WinControls.UI.SteplineSeries steplineSeries1 = new Telerik.WinControls.UI.SteplineSeries();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint6 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint7 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint8 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint9 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.Charting.CategoricalDataPoint categoricalDataPoint10 = new Telerik.Charting.CategoricalDataPoint();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn2 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn9 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn10 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn11 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn3 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn12 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn13 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn14 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn15 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn16 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn17 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn18 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn19 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn20 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn21 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn22 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn23 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn24 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn25 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn26 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn27 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn28 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn29 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn30 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn31 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn32 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn33 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn34 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn35 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn36 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn37 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn38 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn39 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn40 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn41 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn42 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn43 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn44 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn45 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn46 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn47 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn48 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn49 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn50 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn51 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn52 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn53 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn54 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition8 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
             this.furnaceControlDataSet = new FurnaceControl.FurnaceControlDataSet();
             this.MainTap = new Telerik.WinControls.UI.RadPageView();
             this.Page1 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radGroupBox25 = new Telerik.WinControls.UI.RadGroupBox();
+            this.txtDanjin_Current_Date = new Telerik.WinControls.UI.RadTextBox();
+            this.txtDanjin_Delta_Time = new Telerik.WinControls.UI.RadTextBox();
+            this.radLabel74 = new Telerik.WinControls.UI.RadLabel();
+            this.txtDanjin_Start_Date = new Telerik.WinControls.UI.RadTextBox();
+            this.txtDanjin_Operation_Time = new Telerik.WinControls.UI.RadTextBox();
+            this.radLabel73 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel72 = new Telerik.WinControls.UI.RadLabel();
+            this.btnDataLogging = new Telerik.WinControls.UI.RadButton();
+            this.radLabel39 = new Telerik.WinControls.UI.RadLabel();
             this.radChartView1 = new Telerik.WinControls.UI.RadChartView();
-            this.furnaceControlDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.radGroupBox17 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel68 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel64 = new Telerik.WinControls.UI.RadLabel();
@@ -307,27 +259,29 @@
             this.radGroupBox18 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView9 = new Telerik.WinControls.UI.RadGridView();
             this.Page5 = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radGridView6 = new Telerik.WinControls.UI.RadGridView();
             this.object_458707c0_898f_46e1_b2f7_54a65b456b02 = new Telerik.WinControls.RootRadElement();
             this.PanelContainer = new Telerik.WinControls.UI.RadScrollablePanelContainer();
             this.Timer_GUI_Update = new System.Windows.Forms.Timer(this.components);
             this.Timer_DB_Update = new System.Windows.Forms.Timer(this.components);
             this.windows7Theme = new Telerik.WinControls.Themes.Windows7Theme();
-            this.windows8Theme = new Telerik.WinControls.Themes.Windows8Theme();
-            this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
-            this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
-            this.billeT_JOINTableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.BILLET_JOINTableAdapter();
-            this.charT_VIEW_BILLETTableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.CHART_VIEW_BILLETTableAdapter();
-            this.gradE_TableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.GRADETableAdapter();
-            this.gradE_DETAILTableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.GRADE_DETAILTableAdapter();
-            this.charT_VIEW_ZONE_STATUSTableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.CHART_VIEW_ZONE_STATUSTableAdapter();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.dangjiN_DATATableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).BeginInit();
             this.MainTap.SuspendLayout();
             this.Page1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox25)).BeginInit();
+            this.radGroupBox25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Current_Date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Delta_Time)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Start_Date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Operation_Time)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDataLogging)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox17)).BeginInit();
             this.radGroupBox17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel68)).BeginInit();
@@ -545,9 +499,6 @@
             this.radGroupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).BeginInit();
-            this.Page5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -570,7 +521,7 @@
             this.MainTap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainTap.Location = new System.Drawing.Point(0, 0);
             this.MainTap.Name = "MainTap";
-            this.MainTap.SelectedPage = this.Page1;
+            this.MainTap.SelectedPage = this.Page5;
             this.MainTap.Size = new System.Drawing.Size(1016, 738);
             this.MainTap.TabIndex = 0;
             this.MainTap.Text = "radPageView1";
@@ -585,6 +536,7 @@
             // 
             // Page1
             // 
+            this.Page1.Controls.Add(this.radGroupBox25);
             this.Page1.Controls.Add(this.radChartView1);
             this.Page1.Controls.Add(this.radGroupBox17);
             this.Page1.Controls.Add(this.radGroupBox12);
@@ -600,85 +552,180 @@
             this.Page1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.Page1.Title = "Main";
             // 
+            // radGroupBox25
+            // 
+            this.radGroupBox25.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox25.Controls.Add(this.txtDanjin_Current_Date);
+            this.radGroupBox25.Controls.Add(this.txtDanjin_Delta_Time);
+            this.radGroupBox25.Controls.Add(this.radLabel74);
+            this.radGroupBox25.Controls.Add(this.txtDanjin_Start_Date);
+            this.radGroupBox25.Controls.Add(this.txtDanjin_Operation_Time);
+            this.radGroupBox25.Controls.Add(this.radLabel73);
+            this.radGroupBox25.Controls.Add(this.radLabel72);
+            this.radGroupBox25.Controls.Add(this.btnDataLogging);
+            this.radGroupBox25.Controls.Add(this.radLabel39);
+            this.radGroupBox25.HeaderText = "Danjin Test";
+            this.radGroupBox25.Location = new System.Drawing.Point(732, 483);
+            this.radGroupBox25.Name = "radGroupBox25";
+            this.radGroupBox25.Size = new System.Drawing.Size(263, 207);
+            this.radGroupBox25.TabIndex = 0;
+            this.radGroupBox25.Text = "Danjin Test";
+            // 
+            // txtDanjin_Current_Date
+            // 
+            this.txtDanjin_Current_Date.Location = new System.Drawing.Point(112, 67);
+            this.txtDanjin_Current_Date.Name = "txtDanjin_Current_Date";
+            this.txtDanjin_Current_Date.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Current_Date.TabIndex = 6;
+            // 
+            // txtDanjin_Delta_Time
+            // 
+            this.txtDanjin_Delta_Time.Location = new System.Drawing.Point(112, 20);
+            this.txtDanjin_Delta_Time.Name = "txtDanjin_Delta_Time";
+            this.txtDanjin_Delta_Time.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Delta_Time.TabIndex = 1;
+            this.txtDanjin_Delta_Time.Text = "1000";
+            // 
+            // radLabel74
+            // 
+            this.radLabel74.Location = new System.Drawing.Point(13, 68);
+            this.radLabel74.Name = "radLabel74";
+            this.radLabel74.Size = new System.Drawing.Size(70, 18);
+            this.radLabel74.TabIndex = 7;
+            this.radLabel74.Text = "Current Date";
+            // 
+            // txtDanjin_Start_Date
+            // 
+            this.txtDanjin_Start_Date.Location = new System.Drawing.Point(112, 44);
+            this.txtDanjin_Start_Date.Name = "txtDanjin_Start_Date";
+            this.txtDanjin_Start_Date.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Start_Date.TabIndex = 4;
+            // 
+            // txtDanjin_Operation_Time
+            // 
+            this.txtDanjin_Operation_Time.Location = new System.Drawing.Point(112, 91);
+            this.txtDanjin_Operation_Time.Name = "txtDanjin_Operation_Time";
+            this.txtDanjin_Operation_Time.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Operation_Time.TabIndex = 1;
+            // 
+            // radLabel73
+            // 
+            this.radLabel73.Location = new System.Drawing.Point(13, 45);
+            this.radLabel73.Name = "radLabel73";
+            this.radLabel73.Size = new System.Drawing.Size(56, 18);
+            this.radLabel73.TabIndex = 5;
+            this.radLabel73.Text = "Start Date";
+            // 
+            // radLabel72
+            // 
+            this.radLabel72.Location = new System.Drawing.Point(13, 92);
+            this.radLabel72.Name = "radLabel72";
+            this.radLabel72.Size = new System.Drawing.Size(84, 18);
+            this.radLabel72.TabIndex = 3;
+            this.radLabel72.Text = "Operation Time";
+            // 
+            // btnDataLogging
+            // 
+            this.btnDataLogging.Location = new System.Drawing.Point(5, 142);
+            this.btnDataLogging.Name = "btnDataLogging";
+            this.btnDataLogging.Size = new System.Drawing.Size(253, 60);
+            this.btnDataLogging.TabIndex = 3;
+            this.btnDataLogging.Text = "Start Data Logging";
+            this.btnDataLogging.Click += new System.EventHandler(this.btnDataLogging_Click);
+            // 
+            // radLabel39
+            // 
+            this.radLabel39.Location = new System.Drawing.Point(11, 21);
+            this.radLabel39.Name = "radLabel39";
+            this.radLabel39.Size = new System.Drawing.Size(85, 18);
+            this.radLabel39.TabIndex = 2;
+            this.radLabel39.Text = "Delta_Time(Sec)";
+            // 
             // radChartView1
             // 
+            cartesianArea1.GridDesign.AlternatingVerticalColor = false;
+            cartesianArea1.GridDesign.DrawVerticalFills = false;
+            cartesianArea1.GridDesign.DrawVerticalStripes = false;
             this.radChartView1.AreaDesign = cartesianArea1;
+            categoricalAxis1.IsPrimary = true;
+            categoricalAxis1.LabelFitMode = Telerik.Charting.AxisLabelFitMode.MultiLine;
+            categoricalAxis1.LabelRotationAngle = 300D;
+            categoricalAxis1.ShowLabels = false;
+            categoricalAxis1.Title = "Time";
             linearAxis1.AxisType = Telerik.Charting.AxisType.Second;
             linearAxis1.IsPrimary = true;
             linearAxis1.LabelRotationAngle = 300D;
+            linearAxis1.MajorStep = 20D;
             linearAxis1.TickOrigin = null;
-            linearAxis1.Title = "";
-            linearAxis2.IsPrimary = true;
-            linearAxis2.LabelRotationAngle = 300D;
-            linearAxis2.TickOrigin = null;
-            linearAxis2.Title = "";
+            linearAxis1.Title = "Temp";
             this.radChartView1.Axes.AddRange(new Telerik.WinControls.UI.Axis[] {
-            linearAxis1,
-            linearAxis2});
-            this.radChartView1.DataSource = this.furnaceControlDataSetBindingSource;
+            categoricalAxis1,
+            linearAxis1});
             this.radChartView1.Location = new System.Drawing.Point(0, 0);
             this.radChartView1.Name = "radChartView1";
-            scatterSeries1.DataMember = "DataTable1";
-            scatterSeries1.DataSource = this.furnaceControlDataSet;
-            scatterSeries1.HorizontalAxis = linearAxis1;
-            scatterSeries1.LabelAngle = 90D;
-            scatterSeries1.LabelDistanceToPoint = 15D;
-            scatterSeries1.LegendTitle = "장입온도";
-            scatterSeries1.VerticalAxis = linearAxis2;
-            scatterSeries1.XValueMember = "data";
-            scatterSeries1.YValueMember = "value";
-            scatterSeries2.DataMember = "CHART_VIEW_BILLET";
-            scatterSeries2.DataSource = this.furnaceControlDataSet;
-            scatterSeries2.HorizontalAxis = linearAxis1;
-            scatterSeries2.LabelAngle = 90D;
-            scatterSeries2.LabelDistanceToPoint = 15D;
-            scatterSeries2.LegendTitle = "예상추출온도";
-            scatterSeries2.VerticalAxis = linearAxis2;
-            scatterSeries2.XValueMember = "ORDER_OF_BILLET";
-            scatterSeries2.YValueMember = "CHARGE_TEMPERATURE";
-            scatterSeries3.DataMember = "CHART_VIEW_BILLET";
-            scatterSeries3.DataSource = this.furnaceControlDataSet;
-            scatterSeries3.HorizontalAxis = linearAxis1;
-            scatterSeries3.LabelAngle = 90D;
-            scatterSeries3.LabelDistanceToPoint = 15D;
-            scatterSeries3.LegendTitle = "목표온도";
-            scatterSeries3.VerticalAxis = linearAxis2;
-            scatterSeries3.XValueMember = "ORDER_OF_BILLET";
-            scatterSeries3.YValueMember = "PREDICT_CURRENT_BILLET_TEMPERATURE";
-            scatterLineSeries1.DataMember = "CHART_VIEW_ZONE_STATUS";
-            scatterLineSeries1.DataSource = this.furnaceControlDataSet;
-            scatterLineSeries1.HorizontalAxis = linearAxis1;
-            scatterLineSeries1.LabelAngle = 90D;
-            scatterLineSeries1.LabelDistanceToPoint = 15D;
-            scatterLineSeries1.LegendTitle = "존온도_상";
-            scatterLineSeries1.VerticalAxis = linearAxis2;
-            scatterLineSeries1.XValueMember = "ZONE_NUMBER";
-            scatterLineSeries1.YValueMember = "UP_TEMP";
-            scatterLineSeries2.DataMember = "CHART_VIEW_ZONE_STATUS";
-            scatterLineSeries2.DataSource = this.furnaceControlDataSet;
-            scatterLineSeries2.HorizontalAxis = linearAxis1;
-            scatterLineSeries2.LabelAngle = 90D;
-            scatterLineSeries2.LabelDistanceToPoint = 15D;
-            scatterLineSeries2.LegendTitle = "존온도_하";
-            scatterLineSeries2.VerticalAxis = linearAxis2;
-            scatterLineSeries2.XValueMember = "ZONE_NUMBER";
-            scatterLineSeries2.YValueMember = "DOWN_TEMP";
+            categoricalDataPoint1.Category = "1";
+            categoricalDataPoint1.Label = 45D;
+            categoricalDataPoint1.Value = 45D;
+            categoricalDataPoint2.Category = "2";
+            categoricalDataPoint2.Label = 88D;
+            categoricalDataPoint2.Value = 88D;
+            categoricalDataPoint3.Category = "3";
+            categoricalDataPoint3.Label = 43D;
+            categoricalDataPoint3.Value = 43D;
+            categoricalDataPoint4.Category = "4";
+            categoricalDataPoint4.Label = 40D;
+            categoricalDataPoint4.Value = 40D;
+            categoricalDataPoint5.Category = "5";
+            categoricalDataPoint5.Label = 95D;
+            categoricalDataPoint5.Value = 95D;
+            lineSeries1.DataPoints.AddRange(new Telerik.Charting.DataPoint[] {
+            categoricalDataPoint1,
+            categoricalDataPoint2,
+            categoricalDataPoint3,
+            categoricalDataPoint4,
+            categoricalDataPoint5});
+            lineSeries1.HorizontalAxis = categoricalAxis1;
+            lineSeries1.LabelAngle = 90D;
+            lineSeries1.LabelDistanceToPoint = 15D;
+            lineSeries1.Spline = true;
+            lineSeries1.VerticalAxis = linearAxis1;
+            categoricalDataPoint6.Category = "1";
+            categoricalDataPoint6.Label = 12D;
+            categoricalDataPoint6.Value = 12D;
+            categoricalDataPoint7.Category = "2";
+            categoricalDataPoint7.Label = 80D;
+            categoricalDataPoint7.Value = 80D;
+            categoricalDataPoint8.Category = "3";
+            categoricalDataPoint8.Label = 120D;
+            categoricalDataPoint8.Value = 120D;
+            categoricalDataPoint9.Category = "4";
+            categoricalDataPoint9.Label = 150D;
+            categoricalDataPoint9.Value = 150D;
+            categoricalDataPoint10.Category = "5";
+            categoricalDataPoint10.Label = 140D;
+            categoricalDataPoint10.Value = 140D;
+            steplineSeries1.DataPoints.AddRange(new Telerik.Charting.DataPoint[] {
+            categoricalDataPoint6,
+            categoricalDataPoint7,
+            categoricalDataPoint8,
+            categoricalDataPoint9,
+            categoricalDataPoint10});
+            steplineSeries1.HorizontalAxis = categoricalAxis1;
+            steplineSeries1.LabelAngle = 90D;
+            steplineSeries1.LabelDistanceToPoint = 15D;
+            steplineSeries1.VerticalAxis = linearAxis1;
             this.radChartView1.Series.AddRange(new Telerik.WinControls.UI.ChartSeries[] {
-            scatterSeries1,
-            scatterSeries2,
-            scatterSeries3,
-            scatterLineSeries1,
-            scatterLineSeries2});
+            lineSeries1,
+            steplineSeries1});
             this.radChartView1.ShowGrid = false;
+            this.radChartView1.ShowLegend = true;
+            this.radChartView1.ShowPanZoom = true;
+            this.radChartView1.ShowTitle = true;
+            this.radChartView1.ShowToolTip = true;
             this.radChartView1.Size = new System.Drawing.Size(992, 361);
             this.radChartView1.TabIndex = 7;
             this.radChartView1.Text = "radChartView1";
-            this.radChartView1.ThemeName = "ControlDefault";
-            // 
-            // furnaceControlDataSetBindingSource
-            // 
-            this.furnaceControlDataSetBindingSource.DataSource = this.furnaceControlDataSet;
-            this.furnaceControlDataSetBindingSource.Position = 0;
+            this.radChartView1.ThemeName = "Windows7";
             // 
             // radGroupBox17
             // 
@@ -705,7 +752,7 @@
             // 
             // radLabel68
             // 
-            this.radLabel68.Location = new System.Drawing.Point(146, 169);
+            this.radLabel68.Location = new System.Drawing.Point(169, 170);
             this.radLabel68.Name = "radLabel68";
             this.radLabel68.Size = new System.Drawing.Size(31, 18);
             this.radLabel68.TabIndex = 19;
@@ -714,7 +761,7 @@
             // 
             // radLabel64
             // 
-            this.radLabel64.Location = new System.Drawing.Point(146, 117);
+            this.radLabel64.Location = new System.Drawing.Point(169, 118);
             this.radLabel64.Name = "radLabel64";
             this.radLabel64.Size = new System.Drawing.Size(29, 18);
             this.radLabel64.TabIndex = 15;
@@ -723,7 +770,7 @@
             // 
             // radLabel69
             // 
-            this.radLabel69.Location = new System.Drawing.Point(146, 143);
+            this.radLabel69.Location = new System.Drawing.Point(169, 144);
             this.radLabel69.Name = "radLabel69";
             this.radLabel69.Size = new System.Drawing.Size(31, 18);
             this.radLabel69.TabIndex = 20;
@@ -732,7 +779,7 @@
             // 
             // radLabel60
             // 
-            this.radLabel60.Location = new System.Drawing.Point(146, 65);
+            this.radLabel60.Location = new System.Drawing.Point(169, 66);
             this.radLabel60.Name = "radLabel60";
             this.radLabel60.Size = new System.Drawing.Size(68, 18);
             this.radLabel60.TabIndex = 11;
@@ -741,7 +788,7 @@
             // 
             // radLabel70
             // 
-            this.radLabel70.Location = new System.Drawing.Point(23, 169);
+            this.radLabel70.Location = new System.Drawing.Point(46, 170);
             this.radLabel70.Name = "radLabel70";
             this.radLabel70.Size = new System.Drawing.Size(51, 18);
             this.radLabel70.TabIndex = 17;
@@ -750,7 +797,7 @@
             // 
             // radLabel65
             // 
-            this.radLabel65.Location = new System.Drawing.Point(146, 91);
+            this.radLabel65.Location = new System.Drawing.Point(169, 92);
             this.radLabel65.Name = "radLabel65";
             this.radLabel65.Size = new System.Drawing.Size(44, 18);
             this.radLabel65.TabIndex = 16;
@@ -759,7 +806,7 @@
             // 
             // radLabel71
             // 
-            this.radLabel71.Location = new System.Drawing.Point(23, 143);
+            this.radLabel71.Location = new System.Drawing.Point(46, 144);
             this.radLabel71.Name = "radLabel71";
             this.radLabel71.Size = new System.Drawing.Size(41, 18);
             this.radLabel71.TabIndex = 18;
@@ -768,7 +815,7 @@
             // 
             // radLabel62
             // 
-            this.radLabel62.Location = new System.Drawing.Point(146, 39);
+            this.radLabel62.Location = new System.Drawing.Point(169, 40);
             this.radLabel62.Name = "radLabel62";
             this.radLabel62.Size = new System.Drawing.Size(60, 18);
             this.radLabel62.TabIndex = 12;
@@ -777,7 +824,7 @@
             // 
             // radLabel66
             // 
-            this.radLabel66.Location = new System.Drawing.Point(23, 117);
+            this.radLabel66.Location = new System.Drawing.Point(46, 118);
             this.radLabel66.Name = "radLabel66";
             this.radLabel66.Size = new System.Drawing.Size(45, 18);
             this.radLabel66.TabIndex = 13;
@@ -786,7 +833,7 @@
             // 
             // radLabel61
             // 
-            this.radLabel61.Location = new System.Drawing.Point(23, 65);
+            this.radLabel61.Location = new System.Drawing.Point(46, 66);
             this.radLabel61.Name = "radLabel61";
             this.radLabel61.Size = new System.Drawing.Size(79, 18);
             this.radLabel61.TabIndex = 9;
@@ -795,7 +842,7 @@
             // 
             // radLabel67
             // 
-            this.radLabel67.Location = new System.Drawing.Point(23, 91);
+            this.radLabel67.Location = new System.Drawing.Point(46, 92);
             this.radLabel67.Name = "radLabel67";
             this.radLabel67.Size = new System.Drawing.Size(36, 18);
             this.radLabel67.TabIndex = 14;
@@ -804,7 +851,7 @@
             // 
             // radLabel63
             // 
-            this.radLabel63.Location = new System.Drawing.Point(23, 39);
+            this.radLabel63.Location = new System.Drawing.Point(46, 40);
             this.radLabel63.Name = "radLabel63";
             this.radLabel63.Size = new System.Drawing.Size(44, 18);
             this.radLabel63.TabIndex = 10;
@@ -851,149 +898,6 @@
             this.radGridView7.MasterTemplate.AllowAddNewRow = false;
             this.radGridView7.MasterTemplate.AllowColumnReorder = false;
             this.radGridView7.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "HEAT_ID";
-            gridViewTextBoxColumn1.HeaderText = "HEAT_ID";
-            gridViewTextBoxColumn1.IsAutoGenerated = true;
-            gridViewTextBoxColumn1.Name = "HEAT_ID";
-            gridViewTextBoxColumn1.Width = 55;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "HEAT_INDEX";
-            gridViewTextBoxColumn2.HeaderText = "HEAT_INDEX";
-            gridViewTextBoxColumn2.IsAutoGenerated = true;
-            gridViewTextBoxColumn2.Name = "HEAT_INDEX";
-            gridViewTextBoxColumn2.Width = 55;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "GRADE";
-            gridViewTextBoxColumn3.HeaderText = "GRADE";
-            gridViewTextBoxColumn3.IsAutoGenerated = true;
-            gridViewTextBoxColumn3.Name = "GRADE";
-            gridViewTextBoxColumn3.Width = 55;
-            gridViewDateTimeColumn1.EnableExpressionEditor = false;
-            gridViewDateTimeColumn1.FieldName = "DISCHARGE_TIME";
-            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            gridViewDateTimeColumn1.HeaderText = "DISCHARGE_TIME";
-            gridViewDateTimeColumn1.IsAutoGenerated = true;
-            gridViewDateTimeColumn1.Name = "DISCHARGE_TIME";
-            gridViewDateTimeColumn1.Width = 55;
-            gridViewDecimalColumn1.DataType = typeof(int);
-            gridViewDecimalColumn1.EnableExpressionEditor = false;
-            gridViewDecimalColumn1.FieldName = "LEVEL2ID";
-            gridViewDecimalColumn1.HeaderText = "LEVEL2ID";
-            gridViewDecimalColumn1.IsAutoGenerated = true;
-            gridViewDecimalColumn1.Name = "LEVEL2ID";
-            gridViewDecimalColumn1.Width = 55;
-            gridViewDecimalColumn2.DataType = typeof(int);
-            gridViewDecimalColumn2.EnableExpressionEditor = false;
-            gridViewDecimalColumn2.FieldName = "LEVEL1ID";
-            gridViewDecimalColumn2.HeaderText = "LEVEL1ID";
-            gridViewDecimalColumn2.IsAutoGenerated = true;
-            gridViewDecimalColumn2.Name = "LEVEL1ID";
-            gridViewDecimalColumn2.Width = 55;
-            gridViewDecimalColumn3.DataType = typeof(int);
-            gridViewDecimalColumn3.EnableExpressionEditor = false;
-            gridViewDecimalColumn3.FieldName = "LEVEL3ID";
-            gridViewDecimalColumn3.HeaderText = "LEVEL3ID";
-            gridViewDecimalColumn3.IsAutoGenerated = true;
-            gridViewDecimalColumn3.Name = "LEVEL3ID";
-            gridViewDecimalColumn3.Width = 55;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "ORDER_NUMBER";
-            gridViewTextBoxColumn4.HeaderText = "ORDER_NUMBER";
-            gridViewTextBoxColumn4.IsAutoGenerated = true;
-            gridViewTextBoxColumn4.Name = "ORDER_NUMBER";
-            gridViewTextBoxColumn4.Width = 55;
-            gridViewDecimalColumn4.DataType = typeof(short);
-            gridViewDecimalColumn4.EnableExpressionEditor = false;
-            gridViewDecimalColumn4.FieldName = "LENGTH";
-            gridViewDecimalColumn4.HeaderText = "LENGTH";
-            gridViewDecimalColumn4.IsAutoGenerated = true;
-            gridViewDecimalColumn4.Name = "LENGTH";
-            gridViewDecimalColumn4.Width = 55;
-            gridViewDecimalColumn5.DataType = typeof(short);
-            gridViewDecimalColumn5.EnableExpressionEditor = false;
-            gridViewDecimalColumn5.FieldName = "WIDTH";
-            gridViewDecimalColumn5.HeaderText = "WIDTH";
-            gridViewDecimalColumn5.IsAutoGenerated = true;
-            gridViewDecimalColumn5.Name = "WIDTH";
-            gridViewDecimalColumn5.Width = 55;
-            gridViewDecimalColumn6.DataType = typeof(short);
-            gridViewDecimalColumn6.EnableExpressionEditor = false;
-            gridViewDecimalColumn6.FieldName = "THICKNESS";
-            gridViewDecimalColumn6.HeaderText = "THICKNESS";
-            gridViewDecimalColumn6.IsAutoGenerated = true;
-            gridViewDecimalColumn6.Name = "THICKNESS";
-            gridViewDecimalColumn6.Width = 55;
-            gridViewDecimalColumn7.DataType = typeof(short);
-            gridViewDecimalColumn7.EnableExpressionEditor = false;
-            gridViewDecimalColumn7.FieldName = "WEIGHT";
-            gridViewDecimalColumn7.HeaderText = "WEIGHT";
-            gridViewDecimalColumn7.IsAutoGenerated = true;
-            gridViewDecimalColumn7.Name = "WEIGHT";
-            gridViewDecimalColumn7.Width = 55;
-            gridViewDateTimeColumn2.EnableExpressionEditor = false;
-            gridViewDateTimeColumn2.FieldName = "CHARGE_TIME";
-            gridViewDateTimeColumn2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            gridViewDateTimeColumn2.HeaderText = "CHARGE_TIME";
-            gridViewDateTimeColumn2.IsAutoGenerated = true;
-            gridViewDateTimeColumn2.Name = "CHARGE_TIME";
-            gridViewDateTimeColumn2.Width = 55;
-            gridViewDecimalColumn8.DataType = typeof(short);
-            gridViewDecimalColumn8.EnableExpressionEditor = false;
-            gridViewDecimalColumn8.FieldName = "CHARGE_TEMPERATURE";
-            gridViewDecimalColumn8.HeaderText = "CHARGE_TEMPERATURE";
-            gridViewDecimalColumn8.IsAutoGenerated = true;
-            gridViewDecimalColumn8.Name = "CHARGE_TEMPERATURE";
-            gridViewDecimalColumn8.Width = 55;
-            gridViewDecimalColumn9.DataType = typeof(short);
-            gridViewDecimalColumn9.EnableExpressionEditor = false;
-            gridViewDecimalColumn9.FieldName = "DISCHARGE_TEMPERATURE";
-            gridViewDecimalColumn9.HeaderText = "DISCHARGE_TEMPERATURE";
-            gridViewDecimalColumn9.IsAutoGenerated = true;
-            gridViewDecimalColumn9.Name = "DISCHARGE_TEMPERATURE";
-            gridViewDecimalColumn9.Width = 55;
-            gridViewDecimalColumn10.DataType = typeof(short);
-            gridViewDecimalColumn10.EnableExpressionEditor = false;
-            gridViewDecimalColumn10.FieldName = "DISCHARGE_TARGET_TEMPERATURE";
-            gridViewDecimalColumn10.HeaderText = "DISCHARGE_TARGET_TEMPERATURE";
-            gridViewDecimalColumn10.IsAutoGenerated = true;
-            gridViewDecimalColumn10.Name = "DISCHARGE_TARGET_TEMPERATURE";
-            gridViewDecimalColumn10.Width = 55;
-            gridViewDecimalColumn11.DataType = typeof(short);
-            gridViewDecimalColumn11.EnableExpressionEditor = false;
-            gridViewDecimalColumn11.FieldName = "BILLET_STATUS";
-            gridViewDecimalColumn11.HeaderText = "BILLET_STATUS";
-            gridViewDecimalColumn11.IsAutoGenerated = true;
-            gridViewDecimalColumn11.Name = "BILLET_STATUS";
-            gridViewDecimalColumn11.Width = 55;
-            gridViewDateTimeColumn3.EnableExpressionEditor = false;
-            gridViewDateTimeColumn3.FieldName = "CREATE_TIME";
-            gridViewDateTimeColumn3.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            gridViewDateTimeColumn3.HeaderText = "CREATE_TIME";
-            gridViewDateTimeColumn3.IsAutoGenerated = true;
-            gridViewDateTimeColumn3.Name = "CREATE_TIME";
-            gridViewDateTimeColumn3.Width = 56;
-            this.radGridView7.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewDateTimeColumn1,
-            gridViewDecimalColumn1,
-            gridViewDecimalColumn2,
-            gridViewDecimalColumn3,
-            gridViewTextBoxColumn4,
-            gridViewDecimalColumn4,
-            gridViewDecimalColumn5,
-            gridViewDecimalColumn6,
-            gridViewDecimalColumn7,
-            gridViewDateTimeColumn2,
-            gridViewDecimalColumn8,
-            gridViewDecimalColumn9,
-            gridViewDecimalColumn10,
-            gridViewDecimalColumn11,
-            gridViewDateTimeColumn3});
-            this.radGridView7.MasterTemplate.DataMember = "BILLET_JOIN";
-            this.radGridView7.MasterTemplate.DataSource = this.furnaceControlDataSetBindingSource;
             this.radGridView7.MasterTemplate.EnableGrouping = false;
             this.radGridView7.MasterTemplate.EnableSorting = false;
             this.radGridView7.MasterTemplate.ViewDefinition = tableViewDefinition2;
@@ -2771,263 +2675,6 @@
             this.gridView_GradeDetail.MasterTemplate.AllowColumnResize = false;
             this.gridView_GradeDetail.MasterTemplate.AllowRowResize = false;
             this.gridView_GradeDetail.MasterTemplate.AllowSearchRow = true;
-            gridViewDecimalColumn12.DataType = typeof(int);
-            gridViewDecimalColumn12.EnableExpressionEditor = false;
-            gridViewDecimalColumn12.FieldName = "SETNO";
-            gridViewDecimalColumn12.HeaderText = "SETNO";
-            gridViewDecimalColumn12.IsAutoGenerated = true;
-            gridViewDecimalColumn12.Name = "SETNO";
-            gridViewDecimalColumn13.DataType = typeof(int);
-            gridViewDecimalColumn13.EnableExpressionEditor = false;
-            gridViewDecimalColumn13.FieldName = "AIM_TEMP";
-            gridViewDecimalColumn13.HeaderText = "AIM_TEMP";
-            gridViewDecimalColumn13.IsAutoGenerated = true;
-            gridViewDecimalColumn13.Name = "AIM_TEMP";
-            gridViewDecimalColumn14.EnableExpressionEditor = false;
-            gridViewDecimalColumn14.FieldName = "Z1_TOPMAX";
-            gridViewDecimalColumn14.HeaderText = "Z1_TOPMAX";
-            gridViewDecimalColumn14.IsAutoGenerated = true;
-            gridViewDecimalColumn14.Name = "Z1_TOPMAX";
-            gridViewDecimalColumn15.EnableExpressionEditor = false;
-            gridViewDecimalColumn15.FieldName = "Z1_TOPMIN";
-            gridViewDecimalColumn15.HeaderText = "Z1_TOPMIN";
-            gridViewDecimalColumn15.IsAutoGenerated = true;
-            gridViewDecimalColumn15.Name = "Z1_TOPMIN";
-            gridViewDecimalColumn16.EnableExpressionEditor = false;
-            gridViewDecimalColumn16.FieldName = "Z1_BOTMAX";
-            gridViewDecimalColumn16.HeaderText = "Z1_BOTMAX";
-            gridViewDecimalColumn16.IsAutoGenerated = true;
-            gridViewDecimalColumn16.Name = "Z1_BOTMAX";
-            gridViewDecimalColumn17.EnableExpressionEditor = false;
-            gridViewDecimalColumn17.FieldName = "Z1_BOTMIN";
-            gridViewDecimalColumn17.HeaderText = "Z1_BOTMIN";
-            gridViewDecimalColumn17.IsAutoGenerated = true;
-            gridViewDecimalColumn17.Name = "Z1_BOTMIN";
-            gridViewDecimalColumn18.EnableExpressionEditor = false;
-            gridViewDecimalColumn18.FieldName = "Z2_TOPMAX";
-            gridViewDecimalColumn18.HeaderText = "Z2_TOPMAX";
-            gridViewDecimalColumn18.IsAutoGenerated = true;
-            gridViewDecimalColumn18.Name = "Z2_TOPMAX";
-            gridViewDecimalColumn19.EnableExpressionEditor = false;
-            gridViewDecimalColumn19.FieldName = "Z2_TOPMIN";
-            gridViewDecimalColumn19.HeaderText = "Z2_TOPMIN";
-            gridViewDecimalColumn19.IsAutoGenerated = true;
-            gridViewDecimalColumn19.Name = "Z2_TOPMIN";
-            gridViewDecimalColumn20.EnableExpressionEditor = false;
-            gridViewDecimalColumn20.FieldName = "Z2_BOTMAX";
-            gridViewDecimalColumn20.HeaderText = "Z2_BOTMAX";
-            gridViewDecimalColumn20.IsAutoGenerated = true;
-            gridViewDecimalColumn20.Name = "Z2_BOTMAX";
-            gridViewDecimalColumn21.EnableExpressionEditor = false;
-            gridViewDecimalColumn21.FieldName = "Z2_BOTMIN";
-            gridViewDecimalColumn21.HeaderText = "Z2_BOTMIN";
-            gridViewDecimalColumn21.IsAutoGenerated = true;
-            gridViewDecimalColumn21.Name = "Z2_BOTMIN";
-            gridViewDecimalColumn22.EnableExpressionEditor = false;
-            gridViewDecimalColumn22.FieldName = "Z3_TOPMAX";
-            gridViewDecimalColumn22.HeaderText = "Z3_TOPMAX";
-            gridViewDecimalColumn22.IsAutoGenerated = true;
-            gridViewDecimalColumn22.Name = "Z3_TOPMAX";
-            gridViewDecimalColumn23.EnableExpressionEditor = false;
-            gridViewDecimalColumn23.FieldName = "Z3_TOPMIN";
-            gridViewDecimalColumn23.HeaderText = "Z3_TOPMIN";
-            gridViewDecimalColumn23.IsAutoGenerated = true;
-            gridViewDecimalColumn23.Name = "Z3_TOPMIN";
-            gridViewDecimalColumn24.EnableExpressionEditor = false;
-            gridViewDecimalColumn24.FieldName = "Z3_BOTMAX";
-            gridViewDecimalColumn24.HeaderText = "Z3_BOTMAX";
-            gridViewDecimalColumn24.IsAutoGenerated = true;
-            gridViewDecimalColumn24.Name = "Z3_BOTMAX";
-            gridViewDecimalColumn25.EnableExpressionEditor = false;
-            gridViewDecimalColumn25.FieldName = "Z3_BOTMIN";
-            gridViewDecimalColumn25.HeaderText = "Z3_BOTMIN";
-            gridViewDecimalColumn25.IsAutoGenerated = true;
-            gridViewDecimalColumn25.Name = "Z3_BOTMIN";
-            gridViewDecimalColumn26.EnableExpressionEditor = false;
-            gridViewDecimalColumn26.FieldName = "Z4_TOPMAX";
-            gridViewDecimalColumn26.HeaderText = "Z4_TOPMAX";
-            gridViewDecimalColumn26.IsAutoGenerated = true;
-            gridViewDecimalColumn26.Name = "Z4_TOPMAX";
-            gridViewDecimalColumn27.EnableExpressionEditor = false;
-            gridViewDecimalColumn27.FieldName = "Z4_TOPMIN";
-            gridViewDecimalColumn27.HeaderText = "Z4_TOPMIN";
-            gridViewDecimalColumn27.IsAutoGenerated = true;
-            gridViewDecimalColumn27.Name = "Z4_TOPMIN";
-            gridViewDecimalColumn28.EnableExpressionEditor = false;
-            gridViewDecimalColumn28.FieldName = "Z4_BOTMAX";
-            gridViewDecimalColumn28.HeaderText = "Z4_BOTMAX";
-            gridViewDecimalColumn28.IsAutoGenerated = true;
-            gridViewDecimalColumn28.Name = "Z4_BOTMAX";
-            gridViewDecimalColumn29.EnableExpressionEditor = false;
-            gridViewDecimalColumn29.FieldName = "Z4_BOTMIN";
-            gridViewDecimalColumn29.HeaderText = "Z4_BOTMIN";
-            gridViewDecimalColumn29.IsAutoGenerated = true;
-            gridViewDecimalColumn29.Name = "Z4_BOTMIN";
-            gridViewDecimalColumn30.EnableExpressionEditor = false;
-            gridViewDecimalColumn30.FieldName = "Z5_TOPMAX";
-            gridViewDecimalColumn30.HeaderText = "Z5_TOPMAX";
-            gridViewDecimalColumn30.IsAutoGenerated = true;
-            gridViewDecimalColumn30.Name = "Z5_TOPMAX";
-            gridViewDecimalColumn31.EnableExpressionEditor = false;
-            gridViewDecimalColumn31.FieldName = "Z5_TOPMIN";
-            gridViewDecimalColumn31.HeaderText = "Z5_TOPMIN";
-            gridViewDecimalColumn31.IsAutoGenerated = true;
-            gridViewDecimalColumn31.Name = "Z5_TOPMIN";
-            gridViewDecimalColumn32.EnableExpressionEditor = false;
-            gridViewDecimalColumn32.FieldName = "Z5_BOTMAX";
-            gridViewDecimalColumn32.HeaderText = "Z5_BOTMAX";
-            gridViewDecimalColumn32.IsAutoGenerated = true;
-            gridViewDecimalColumn32.Name = "Z5_BOTMAX";
-            gridViewDecimalColumn33.EnableExpressionEditor = false;
-            gridViewDecimalColumn33.FieldName = "Z5_BOTMIN";
-            gridViewDecimalColumn33.HeaderText = "Z5_BOTMIN";
-            gridViewDecimalColumn33.IsAutoGenerated = true;
-            gridViewDecimalColumn33.Name = "Z5_BOTMIN";
-            gridViewDecimalColumn34.EnableExpressionEditor = false;
-            gridViewDecimalColumn34.FieldName = "Z6_TOPMAX";
-            gridViewDecimalColumn34.HeaderText = "Z6_TOPMAX";
-            gridViewDecimalColumn34.IsAutoGenerated = true;
-            gridViewDecimalColumn34.Name = "Z6_TOPMAX";
-            gridViewDecimalColumn35.EnableExpressionEditor = false;
-            gridViewDecimalColumn35.FieldName = "Z6_TOPMIN";
-            gridViewDecimalColumn35.HeaderText = "Z6_TOPMIN";
-            gridViewDecimalColumn35.IsAutoGenerated = true;
-            gridViewDecimalColumn35.Name = "Z6_TOPMIN";
-            gridViewDecimalColumn36.EnableExpressionEditor = false;
-            gridViewDecimalColumn36.FieldName = "Z6_BOTMAX";
-            gridViewDecimalColumn36.HeaderText = "Z6_BOTMAX";
-            gridViewDecimalColumn36.IsAutoGenerated = true;
-            gridViewDecimalColumn36.Name = "Z6_BOTMAX";
-            gridViewDecimalColumn37.EnableExpressionEditor = false;
-            gridViewDecimalColumn37.FieldName = "Z6_BOTMIN";
-            gridViewDecimalColumn37.HeaderText = "Z6_BOTMIN";
-            gridViewDecimalColumn37.IsAutoGenerated = true;
-            gridViewDecimalColumn37.Name = "Z6_BOTMIN";
-            gridViewDecimalColumn38.EnableExpressionEditor = false;
-            gridViewDecimalColumn38.FieldName = "Z7_TOPMAX";
-            gridViewDecimalColumn38.HeaderText = "Z7_TOPMAX";
-            gridViewDecimalColumn38.IsAutoGenerated = true;
-            gridViewDecimalColumn38.Name = "Z7_TOPMAX";
-            gridViewDecimalColumn39.EnableExpressionEditor = false;
-            gridViewDecimalColumn39.FieldName = "Z7_TOPMIN";
-            gridViewDecimalColumn39.HeaderText = "Z7_TOPMIN";
-            gridViewDecimalColumn39.IsAutoGenerated = true;
-            gridViewDecimalColumn39.Name = "Z7_TOPMIN";
-            gridViewDecimalColumn40.EnableExpressionEditor = false;
-            gridViewDecimalColumn40.FieldName = "Z7_BOTMAX";
-            gridViewDecimalColumn40.HeaderText = "Z7_BOTMAX";
-            gridViewDecimalColumn40.IsAutoGenerated = true;
-            gridViewDecimalColumn40.Name = "Z7_BOTMAX";
-            gridViewDecimalColumn41.EnableExpressionEditor = false;
-            gridViewDecimalColumn41.FieldName = "Z7_BOTMIN";
-            gridViewDecimalColumn41.HeaderText = "Z7_BOTMIN";
-            gridViewDecimalColumn41.IsAutoGenerated = true;
-            gridViewDecimalColumn41.Name = "Z7_BOTMIN";
-            gridViewDecimalColumn42.EnableExpressionEditor = false;
-            gridViewDecimalColumn42.FieldName = "Z8_TOPMAX";
-            gridViewDecimalColumn42.HeaderText = "Z8_TOPMAX";
-            gridViewDecimalColumn42.IsAutoGenerated = true;
-            gridViewDecimalColumn42.Name = "Z8_TOPMAX";
-            gridViewDecimalColumn43.EnableExpressionEditor = false;
-            gridViewDecimalColumn43.FieldName = "Z8_TOPMIN";
-            gridViewDecimalColumn43.HeaderText = "Z8_TOPMIN";
-            gridViewDecimalColumn43.IsAutoGenerated = true;
-            gridViewDecimalColumn43.Name = "Z8_TOPMIN";
-            gridViewDecimalColumn44.EnableExpressionEditor = false;
-            gridViewDecimalColumn44.FieldName = "Z8_BOTMAX";
-            gridViewDecimalColumn44.HeaderText = "Z8_BOTMAX";
-            gridViewDecimalColumn44.IsAutoGenerated = true;
-            gridViewDecimalColumn44.Name = "Z8_BOTMAX";
-            gridViewDecimalColumn45.EnableExpressionEditor = false;
-            gridViewDecimalColumn45.FieldName = "Z8_BOTMIN";
-            gridViewDecimalColumn45.HeaderText = "Z8_BOTMIN";
-            gridViewDecimalColumn45.IsAutoGenerated = true;
-            gridViewDecimalColumn45.Name = "Z8_BOTMIN";
-            gridViewDecimalColumn46.EnableExpressionEditor = false;
-            gridViewDecimalColumn46.FieldName = "Z9_TOPMAX";
-            gridViewDecimalColumn46.HeaderText = "Z9_TOPMAX";
-            gridViewDecimalColumn46.IsAutoGenerated = true;
-            gridViewDecimalColumn46.Name = "Z9_TOPMAX";
-            gridViewDecimalColumn47.EnableExpressionEditor = false;
-            gridViewDecimalColumn47.FieldName = "Z9_TOPMIN";
-            gridViewDecimalColumn47.HeaderText = "Z9_TOPMIN";
-            gridViewDecimalColumn47.IsAutoGenerated = true;
-            gridViewDecimalColumn47.Name = "Z9_TOPMIN";
-            gridViewDecimalColumn48.EnableExpressionEditor = false;
-            gridViewDecimalColumn48.FieldName = "Z9_BOTMAX";
-            gridViewDecimalColumn48.HeaderText = "Z9_BOTMAX";
-            gridViewDecimalColumn48.IsAutoGenerated = true;
-            gridViewDecimalColumn48.Name = "Z9_BOTMAX";
-            gridViewDecimalColumn49.EnableExpressionEditor = false;
-            gridViewDecimalColumn49.FieldName = "Z9_BOTMIN";
-            gridViewDecimalColumn49.HeaderText = "Z9_BOTMIN";
-            gridViewDecimalColumn49.IsAutoGenerated = true;
-            gridViewDecimalColumn49.Name = "Z9_BOTMIN";
-            gridViewDecimalColumn50.EnableExpressionEditor = false;
-            gridViewDecimalColumn50.FieldName = "Z10_TOPMAX";
-            gridViewDecimalColumn50.HeaderText = "Z10_TOPMAX";
-            gridViewDecimalColumn50.IsAutoGenerated = true;
-            gridViewDecimalColumn50.Name = "Z10_TOPMAX";
-            gridViewDecimalColumn51.EnableExpressionEditor = false;
-            gridViewDecimalColumn51.FieldName = "Z10_TOPMIN";
-            gridViewDecimalColumn51.HeaderText = "Z10_TOPMIN";
-            gridViewDecimalColumn51.IsAutoGenerated = true;
-            gridViewDecimalColumn51.Name = "Z10_TOPMIN";
-            gridViewDecimalColumn52.EnableExpressionEditor = false;
-            gridViewDecimalColumn52.FieldName = "Z10_BOTMAX";
-            gridViewDecimalColumn52.HeaderText = "Z10_BOTMAX";
-            gridViewDecimalColumn52.IsAutoGenerated = true;
-            gridViewDecimalColumn52.Name = "Z10_BOTMAX";
-            gridViewDecimalColumn53.EnableExpressionEditor = false;
-            gridViewDecimalColumn53.FieldName = "Z10_BOTMIN";
-            gridViewDecimalColumn53.HeaderText = "Z10_BOTMIN";
-            gridViewDecimalColumn53.IsAutoGenerated = true;
-            gridViewDecimalColumn53.Name = "Z10_BOTMIN";
-            this.gridView_GradeDetail.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn12,
-            gridViewDecimalColumn13,
-            gridViewDecimalColumn14,
-            gridViewDecimalColumn15,
-            gridViewDecimalColumn16,
-            gridViewDecimalColumn17,
-            gridViewDecimalColumn18,
-            gridViewDecimalColumn19,
-            gridViewDecimalColumn20,
-            gridViewDecimalColumn21,
-            gridViewDecimalColumn22,
-            gridViewDecimalColumn23,
-            gridViewDecimalColumn24,
-            gridViewDecimalColumn25,
-            gridViewDecimalColumn26,
-            gridViewDecimalColumn27,
-            gridViewDecimalColumn28,
-            gridViewDecimalColumn29,
-            gridViewDecimalColumn30,
-            gridViewDecimalColumn31,
-            gridViewDecimalColumn32,
-            gridViewDecimalColumn33,
-            gridViewDecimalColumn34,
-            gridViewDecimalColumn35,
-            gridViewDecimalColumn36,
-            gridViewDecimalColumn37,
-            gridViewDecimalColumn38,
-            gridViewDecimalColumn39,
-            gridViewDecimalColumn40,
-            gridViewDecimalColumn41,
-            gridViewDecimalColumn42,
-            gridViewDecimalColumn43,
-            gridViewDecimalColumn44,
-            gridViewDecimalColumn45,
-            gridViewDecimalColumn46,
-            gridViewDecimalColumn47,
-            gridViewDecimalColumn48,
-            gridViewDecimalColumn49,
-            gridViewDecimalColumn50,
-            gridViewDecimalColumn51,
-            gridViewDecimalColumn52,
-            gridViewDecimalColumn53});
-            this.gridView_GradeDetail.MasterTemplate.DataMember = "GRADE_DETAIL";
-            this.gridView_GradeDetail.MasterTemplate.DataSource = this.furnaceControlDataSetBindingSource;
             this.gridView_GradeDetail.MasterTemplate.EnableGrouping = false;
             this.gridView_GradeDetail.MasterTemplate.ViewDefinition = tableViewDefinition5;
             this.gridView_GradeDetail.Name = "gridView_GradeDetail";
@@ -3073,30 +2720,6 @@
             this.gridView_Grade.MasterTemplate.AllowRowResize = false;
             this.gridView_Grade.MasterTemplate.AllowSearchRow = true;
             this.gridView_Grade.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.FieldName = "GRADE";
-            gridViewTextBoxColumn5.HeaderText = "GRADE";
-            gridViewTextBoxColumn5.IsAutoGenerated = true;
-            gridViewTextBoxColumn5.Name = "GRADE";
-            gridViewTextBoxColumn5.Width = 228;
-            gridViewDecimalColumn54.EnableExpressionEditor = false;
-            gridViewDecimalColumn54.FieldName = "SETNO";
-            gridViewDecimalColumn54.HeaderText = "SETNO";
-            gridViewDecimalColumn54.IsAutoGenerated = true;
-            gridViewDecimalColumn54.Name = "SETNO";
-            gridViewDecimalColumn54.Width = 228;
-            gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.FieldName = "DESCRIPTION";
-            gridViewTextBoxColumn6.HeaderText = "DESCRIPTION";
-            gridViewTextBoxColumn6.IsAutoGenerated = true;
-            gridViewTextBoxColumn6.Name = "DESCRIPTION";
-            gridViewTextBoxColumn6.Width = 227;
-            this.gridView_Grade.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn5,
-            gridViewDecimalColumn54,
-            gridViewTextBoxColumn6});
-            this.gridView_Grade.MasterTemplate.DataMember = "GRADE";
-            this.gridView_Grade.MasterTemplate.DataSource = this.furnaceControlDataSetBindingSource;
             this.gridView_Grade.MasterTemplate.EnableGrouping = false;
             this.gridView_Grade.MasterTemplate.EnableSorting = false;
             this.gridView_Grade.MasterTemplate.PageSize = 10;
@@ -3415,40 +3038,12 @@
             // Page5
             // 
             this.Page5.AutoScroll = true;
-            this.Page5.Controls.Add(this.radGridView6);
             this.Page5.ItemSize = new System.Drawing.SizeF(182F, 28F);
             this.Page5.Location = new System.Drawing.Point(10, 37);
             this.Page5.Name = "Page5";
             this.Page5.Size = new System.Drawing.Size(995, 690);
             this.Page5.Text = "Program Log";
             this.Page5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // radGridView6
-            // 
-            this.radGridView6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
-            this.radGridView6.BeginEditMode = Telerik.WinControls.RadGridViewBeginEditMode.BeginEditOnEnter;
-            this.radGridView6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radGridView6.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.radGridView6.ForeColor = System.Drawing.Color.Black;
-            this.radGridView6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radGridView6.Location = new System.Drawing.Point(0, 0);
-            // 
-            // 
-            // 
-            this.radGridView6.MasterTemplate.AllowAddNewRow = false;
-            this.radGridView6.MasterTemplate.AllowColumnReorder = false;
-            this.radGridView6.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            this.radGridView6.MasterTemplate.DataSource = this.furnaceControlDataSetBindingSource;
-            this.radGridView6.MasterTemplate.EnableAlternatingRowColor = true;
-            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition10;
-            this.radGridView6.Name = "radGridView6";
-            this.radGridView6.ReadOnly = true;
-            this.radGridView6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radGridView6.Size = new System.Drawing.Size(995, 690);
-            this.radGridView6.TabIndex = 0;
-            this.radGridView6.Text = "radGridView6";
-            this.radGridView6.ThemeName = "Office2007Black";
             // 
             // object_458707c0_898f_46e1_b2f7_54a65b456b02
             // 
@@ -3465,7 +3060,7 @@
             // 
             // Timer_GUI_Update
             // 
-            this.Timer_GUI_Update.Interval = 1000;
+            this.Timer_GUI_Update.Interval = 5000;
             this.Timer_GUI_Update.Tick += new System.EventHandler(this.Timer_Update_GUI);
             // 
             // Timer_DB_Update
@@ -3473,25 +3068,9 @@
             this.Timer_DB_Update.Interval = 1000;
             this.Timer_DB_Update.Tick += new System.EventHandler(this.Timer_DB_Update_Tick);
             // 
-            // billeT_JOINTableAdapter
+            // dangjiN_DATATableAdapter
             // 
-            this.billeT_JOINTableAdapter.ClearBeforeFill = true;
-            // 
-            // charT_VIEW_BILLETTableAdapter
-            // 
-            this.charT_VIEW_BILLETTableAdapter.ClearBeforeFill = true;
-            // 
-            // gradE_TableAdapter
-            // 
-            this.gradE_TableAdapter.ClearBeforeFill = true;
-            // 
-            // gradE_DETAILTableAdapter
-            // 
-            this.gradE_DETAILTableAdapter.ClearBeforeFill = true;
-            // 
-            // charT_VIEW_ZONE_STATUSTableAdapter
-            // 
-            this.charT_VIEW_ZONE_STATUSTableAdapter.ClearBeforeFill = true;
+            this.dangjiN_DATATableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
@@ -3508,15 +3087,26 @@
             this.RootElement.ApplyShapeToControl = true;
             this.ShowItemToolTips = false;
             this.Text = "RadForm1";
-            this.ThemeName = "ControlDefault";
+            this.ThemeName = "Windows7";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.RadForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).EndInit();
             this.MainTap.ResumeLayout(false);
             this.Page1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox25)).EndInit();
+            this.radGroupBox25.ResumeLayout(false);
+            this.radGroupBox25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Current_Date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Delta_Time)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Start_Date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Operation_Time)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDataLogging)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox17)).EndInit();
             this.radGroupBox17.ResumeLayout(false);
             this.radGroupBox17.PerformLayout();
@@ -3752,9 +3342,6 @@
             this.radGroupBox18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).EndInit();
-            this.Page5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -3850,7 +3437,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel45;
         private Telerik.WinControls.UI.RadGridView radGridView2;
         private Telerik.WinControls.UI.RadGridView radGridView3;
-        private Telerik.WinControls.UI.RadGridView radGridView6;
         private Telerik.WinControls.UI.RadGridView radGridView7;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox12;
         private Telerik.WinControls.UI.RadGridView radGridView5;
@@ -3921,12 +3507,9 @@
         private Telerik.WinControls.UI.RadGridView radGridView10;
         private Telerik.WinControls.UI.RadGridView radGridView9;
         private System.Windows.Forms.Timer Timer_DB_Update;
-        private System.Windows.Forms.BindingSource furnaceControlDataSetBindingSource;
-        private FurnaceControlDataSet furnaceControlDataSet;
-        private FurnaceControlDataSetTableAdapters.BILLET_JOINTableAdapter billeT_JOINTableAdapter;
+        public FurnaceControlDataSet furnaceControlDataSet;
         private Telerik.WinControls.UI.RadChartView radChartView1;
         private FurnaceControlDataSetTableAdapters.CHART_VIEW_BILLETTableAdapter charT_VIEW_BILLETTableAdapter;
-        private FurnaceControlDataSetTableAdapters.GRADETableAdapter gradE_TableAdapter;
         private FurnaceControlDataSetTableAdapters.GRADE_DETAILTableAdapter gradE_DETAILTableAdapter;
         private Telerik.WinControls.UI.RadMaskedEditBox tbSetNo_GradeDetail;
         private Telerik.WinControls.UI.RadMaskedEditBox tbAimTemp;
@@ -3971,10 +3554,18 @@
         private Telerik.WinControls.UI.RadMaskedEditBox tbTOPmin_2;
         private Telerik.WinControls.UI.RadMaskedEditBox tbTOPmax_2;
         private Telerik.WinControls.Themes.Windows7Theme windows7Theme;
-        private Telerik.WinControls.Themes.Windows8Theme windows8Theme;
-        private Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme1;
-        private Telerik.WinControls.Themes.VisualStudio2012LightTheme visualStudio2012LightTheme1;
         private FurnaceControlDataSetTableAdapters.CHART_VIEW_ZONE_STATUSTableAdapter charT_VIEW_ZONE_STATUSTableAdapter;
         private System.IO.Ports.SerialPort serialPort1;
+        private Telerik.WinControls.UI.RadGroupBox radGroupBox25;
+        private Telerik.WinControls.UI.RadTextBox txtDanjin_Operation_Time;
+        private Telerik.WinControls.UI.RadLabel radLabel72;
+        private Telerik.WinControls.UI.RadButton btnDataLogging;
+        private Telerik.WinControls.UI.RadLabel radLabel39;
+        public Telerik.WinControls.UI.RadTextBox txtDanjin_Start_Date;
+        private Telerik.WinControls.UI.RadLabel radLabel73;
+        public  Telerik.WinControls.UI.RadTextBox txtDanjin_Delta_Time;
+        public Telerik.WinControls.UI.RadTextBox txtDanjin_Current_Date;
+        private Telerik.WinControls.UI.RadLabel radLabel74;
+        public FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter dangjiN_DATATableAdapter;
     }
 }

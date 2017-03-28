@@ -2,6 +2,10 @@
 {
     public partial class FurnaceControlDataSet
     {
+        partial class GRADEDataTable
+        {
+        }
+    
         partial class DataTable2DataTable
         {
         }
