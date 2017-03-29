@@ -54,9 +54,9 @@ namespace FurnaceControl
             iResFunc = m_opcMgr.opcReadGroupTags("IncrementGroup", nTagCnt, ref objReadVals, ref nQualities);
 
             this.m_MainClass.stFURNACE_REALTIME_INFORMATION.strCurrentDate = DateTime.Now.ToString();
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temp[0] = int.Parse(objReadVals[0].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temp[1] = int.Parse(objReadVals[0].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temp[2] = int.Parse(objReadVals[0].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0] = int.Parse(objReadVals[0].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[1] = int.Parse(objReadVals[0].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[2] = int.Parse(objReadVals[0].ToString());
 
 
             ///////////////////////////////////////////////////////////////////////

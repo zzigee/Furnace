@@ -21,7 +21,7 @@ namespace FurnaceControl
         public bool isDataLogging = false;                  // 실시간 데이터 DB 저장 여부 
         public int nDataLoggingIndex;                       // 실시간 데이터 배열 인덱스 
         public DateTime dateDataLoggingStartTime;           // 실시간 데이터 저장 시작 시간  
-        public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.TWO_SEC;
+        public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.ONE_SEC;
 
 
         /*
@@ -32,19 +32,6 @@ namespace FurnaceControl
         public readonly int MAX_BILLET_IN_FURNACE = 1000;   // 로내 최대 빌렛 갯수 
 
         public int nBillet_Count_On_FUrnace;
-        
-        /*
-         * 당진 테스트용 구조체 
-         */
-        public struct ST_DANJIN_STURCT
-        {
-            public int nDataCount;                  // 총 수집 데이터 갯수 
-            public string strStartTime;             // 데이터 로깅 시작시간
-            public string strEndTime;               // 데이터 로깅 종료시간
-            public string[] strCreateTime;          // 측정 데이터 생성 시간 
-            public int[] strZoneTemp;            // 존 온도
-            public int[] strBilletPredictTemp;   // 빌렛 예측온도 
-        }
 
         /**
          * 공업로 안에서 실시간 소재 정보 (공업로 내의 최대 소재 갯수 만큼 배열생성)
@@ -68,18 +55,17 @@ namespace FurnaceControl
          */
         public struct ST_FURNACE_REALTIME_INFORMATION
         {
-            public string strCurrentDate;       // 작성시간
-            public int[] nZone_Temp;            // 존의 갯수만큼 배열생성
+            public string strCurrentDate;           // 작성시간
+            public int[] nZone_Temperature;         // 존의 온도
+            public int[] nZone_Start_Position;      // 존의 위치(시작)
+            public int[] nZone_End_Position;        // 존의 위치(종료)
         }
-
-
 
         public enum LOG_CODE
         {
             LOG,
             ERROR
         }
-
 
         public enum RETURN_VALUE
         {
@@ -100,7 +86,5 @@ namespace FurnaceControl
             FORTY_SEC = TEN_SEC * 4,
             FIFTY_SEC = TEN_SEC * 5
         }
-
-
     }
 }

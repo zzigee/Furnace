@@ -273,6 +273,7 @@
             this.furnaceControlDataSet1 = new FurnaceControl.FurnaceControlDataSet();
             this.sYSTEMEVENTJOINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sYSTEM_EVENT_JOINTableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.SYSTEM_EVENT_JOINTableAdapter();
+            this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).BeginInit();
             this.MainTap.SuspendLayout();
             this.Page1.SuspendLayout();
@@ -536,7 +537,7 @@
             this.MainTap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainTap.Location = new System.Drawing.Point(0, 0);
             this.MainTap.Name = "MainTap";
-            this.MainTap.SelectedPage = this.Page5;
+            this.MainTap.SelectedPage = this.Page1;
             this.MainTap.Size = new System.Drawing.Size(1016, 738);
             this.MainTap.TabIndex = 0;
             this.MainTap.Text = "radPageView1";
@@ -659,7 +660,6 @@
             // radChartView1
             // 
             cartesianArea1.GridDesign.AlternatingVerticalColor = false;
-            cartesianArea1.GridDesign.DrawHorizontalFills = false;
             cartesianArea1.GridDesign.DrawVerticalFills = false;
             cartesianArea1.GridDesign.DrawVerticalStripes = false;
             cartesianArea1.ShowGrid = true;
@@ -677,21 +677,17 @@
             linearAxis1});
             this.radChartView1.Location = new System.Drawing.Point(0, 0);
             this.radChartView1.Name = "radChartView1";
-            lineSeries1.CategoryMember = "";
             lineSeries1.HorizontalAxis = categoricalAxis1;
             lineSeries1.LabelAngle = 90D;
             lineSeries1.LabelDistanceToPoint = 15D;
-            lineSeries1.Spline = true;
             lineSeries1.VerticalAxis = linearAxis1;
             steplineSeries1.HorizontalAxis = categoricalAxis1;
             steplineSeries1.LabelAngle = 90D;
             steplineSeries1.LabelDistanceToPoint = 15D;
-            steplineSeries1.NumberOfColors = 0;
             steplineSeries1.VerticalAxis = linearAxis1;
             this.radChartView1.Series.AddRange(new Telerik.WinControls.UI.ChartSeries[] {
             lineSeries1,
             steplineSeries1});
-            this.radChartView1.ShowTrackBall = true;
             this.radChartView1.Size = new System.Drawing.Size(992, 361);
             this.radChartView1.TabIndex = 7;
             this.radChartView1.Text = "radChartView1";
@@ -3712,5 +3708,6 @@
         private FurnaceControlDataSet furnaceControlDataSet1;
         private System.Windows.Forms.BindingSource sYSTEMEVENTJOINBindingSource;
         private FurnaceControlDataSetTableAdapters.SYSTEM_EVENT_JOINTableAdapter sYSTEM_EVENT_JOINTableAdapter;
+        private Telerik.WinControls.RadThemeManager radThemeManager1;
     }
 }

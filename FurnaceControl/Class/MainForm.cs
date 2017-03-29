@@ -568,6 +568,9 @@ namespace FurnaceControl
             SteplineSeries series_zone_temp = new SteplineSeries();
             LineSeries series_billet_temp = new LineSeries();
 
+
+            radChartView1.Series.Clear();
+
             for (int i = 0; i < this.m_MainClass.m_Define_Class.nDataLoggingIndex; i++)
             {
                 series_zone_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nZone_Average_Temperature, i));
@@ -580,6 +583,7 @@ namespace FurnaceControl
 
         private void Timer_Update_GUI(object sender, EventArgs e)
         {
+
 
             if (this.nCurrentPage == (int)Page.Main)
             {

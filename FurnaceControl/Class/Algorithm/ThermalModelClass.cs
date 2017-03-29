@@ -36,7 +36,7 @@ namespace FurnaceControl
             Random rnd = new Random();
 
             int nPreditBilletTemp = rnd.Next(1600);
-            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temp[0];
+            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];
 
 
             this.m_MainClass.m_MainForm.dangjiN_DATATableAdapter.InsertQuery(    
