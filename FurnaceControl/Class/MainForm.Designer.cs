@@ -253,6 +253,9 @@
             this.radGroupBox18 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView9 = new Telerik.WinControls.UI.RadGridView();
             this.Page5 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radGridView6 = new Telerik.WinControls.UI.RadGridView();
+            this.sYSTEMEVENTJOINBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.furnaceControlDataSet1 = new FurnaceControl.FurnaceControlDataSet();
             this.txtOPCReadData_2 = new Telerik.WinControls.UI.RadTextBox();
             this.txtOPCReadData_1 = new Telerik.WinControls.UI.RadTextBox();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
@@ -267,11 +270,8 @@
             this.Timer_DB_Update = new System.Windows.Forms.Timer(this.components);
             this.windows7Theme = new Telerik.WinControls.Themes.Windows7Theme();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.radGridView6 = new Telerik.WinControls.UI.RadGridView();
             this.furnaceControlDataSet = new FurnaceControl.FurnaceControlDataSet();
             this.dangjiN_DATATableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter();
-            this.furnaceControlDataSet1 = new FurnaceControl.FurnaceControlDataSet();
-            this.sYSTEMEVENTJOINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sYSTEM_EVENT_JOINTableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.SYSTEM_EVENT_JOINTableAdapter();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).BeginInit();
@@ -507,6 +507,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).BeginInit();
             this.Page5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sYSTEMEVENTJOINBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
@@ -515,11 +519,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCProgID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCServerAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOPC_Connect)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sYSTEMEVENTJOINBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -559,10 +559,10 @@
             this.Page1.Controls.Add(this.radGridView7);
             this.Page1.Controls.Add(this.radPanel1);
             this.Page1.Description = null;
-            this.Page1.ItemSize = new System.Drawing.SizeF(142F, 24F);
-            this.Page1.Location = new System.Drawing.Point(10, 33);
+            this.Page1.ItemSize = new System.Drawing.SizeF(142F, 28F);
+            this.Page1.Location = new System.Drawing.Point(10, 37);
             this.Page1.Name = "Page1";
-            this.Page1.Size = new System.Drawing.Size(995, 694);
+            this.Page1.Size = new System.Drawing.Size(995, 690);
             this.Page1.TabStop = true;
             this.Page1.Text = "Main";
             this.Page1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -666,6 +666,7 @@
             this.radChartView1.AreaDesign = cartesianArea1;
             categoricalAxis1.IsPrimary = true;
             categoricalAxis1.LabelRotationAngle = 300D;
+            categoricalAxis1.ShowLabels = false;
             categoricalAxis1.Title = "Time (Min)";
             linearAxis1.AxisType = Telerik.Charting.AxisType.Second;
             linearAxis1.IsPrimary = true;
@@ -1137,7 +1138,7 @@
             this.Page2.Controls.Add(this.radMaskedEditBox1);
             this.Page2.Controls.Add(this.radGridView3);
             this.Page2.Controls.Add(this.radGroupBox21);
-            this.Page2.ItemSize = new System.Drawing.SizeF(163F, 24F);
+            this.Page2.ItemSize = new System.Drawing.SizeF(163F, 28F);
             this.Page2.Location = new System.Drawing.Point(10, 33);
             this.Page2.Name = "Page2";
             this.Page2.Size = new System.Drawing.Size(995, 694);
@@ -1376,7 +1377,7 @@
             // Page6
             // 
             this.Page6.Controls.Add(this.radGridView2);
-            this.Page6.ItemSize = new System.Drawing.SizeF(156F, 24F);
+            this.Page6.ItemSize = new System.Drawing.SizeF(156F, 28F);
             this.Page6.Location = new System.Drawing.Point(10, 33);
             this.Page6.Name = "Page6";
             this.Page6.Size = new System.Drawing.Size(995, 694);
@@ -1414,7 +1415,7 @@
             this.Page4.Controls.Add(this.radGroupBox4);
             this.Page4.Controls.Add(this.radGroupBox1);
             this.Page4.Controls.Add(this.radGroupBox2);
-            this.Page4.ItemSize = new System.Drawing.SizeF(166F, 24F);
+            this.Page4.ItemSize = new System.Drawing.SizeF(166F, 28F);
             this.Page4.Location = new System.Drawing.Point(10, 33);
             this.Page4.Name = "Page4";
             this.Page4.Size = new System.Drawing.Size(995, 694);
@@ -2915,7 +2916,7 @@
             this.Page3.Controls.Add(this.radGroupBox20);
             this.Page3.Controls.Add(this.radGroupBox19);
             this.Page3.Controls.Add(this.radGroupBox18);
-            this.Page3.ItemSize = new System.Drawing.SizeF(155F, 24F);
+            this.Page3.ItemSize = new System.Drawing.SizeF(155F, 28F);
             this.Page3.Location = new System.Drawing.Point(10, 33);
             this.Page3.Name = "Page3";
             this.Page3.Size = new System.Drawing.Size(995, 694);
@@ -3012,12 +3013,78 @@
             this.Page5.Controls.Add(this.txtOPCProgID);
             this.Page5.Controls.Add(this.txtOPCServerAddress);
             this.Page5.Controls.Add(this.btnOPC_Connect);
-            this.Page5.ItemSize = new System.Drawing.SizeF(182F, 24F);
+            this.Page5.ItemSize = new System.Drawing.SizeF(182F, 28F);
             this.Page5.Location = new System.Drawing.Point(10, 33);
             this.Page5.Name = "Page5";
             this.Page5.Size = new System.Drawing.Size(995, 694);
             this.Page5.Text = "Program Log";
             this.Page5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // radGridView6
+            // 
+            this.radGridView6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
+            this.radGridView6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.radGridView6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.radGridView6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radGridView6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radGridView6.Location = new System.Drawing.Point(300, 5);
+            // 
+            // 
+            // 
+            this.radGridView6.MasterTemplate.AllowAddNewRow = false;
+            this.radGridView6.MasterTemplate.AllowColumnReorder = false;
+            gridViewDateTimeColumn1.EnableExpressionEditor = false;
+            gridViewDateTimeColumn1.FieldName = "TIMESTAMP";
+            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            gridViewDateTimeColumn1.HeaderText = "TIMESTAMP";
+            gridViewDateTimeColumn1.IsAutoGenerated = true;
+            gridViewDateTimeColumn1.Name = "TIMESTAMP";
+            gridViewDateTimeColumn1.Width = 114;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "CODE_INFO";
+            gridViewTextBoxColumn1.HeaderText = "CODE_INFO";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "CODE_INFO";
+            gridViewTextBoxColumn1.Width = 109;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "LOCATION";
+            gridViewTextBoxColumn2.HeaderText = "LOCATION";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "LOCATION";
+            gridViewTextBoxColumn2.Width = 180;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.FieldName = "MESSAGE";
+            gridViewTextBoxColumn3.HeaderText = "MESSAGE";
+            gridViewTextBoxColumn3.IsAutoGenerated = true;
+            gridViewTextBoxColumn3.Name = "MESSAGE";
+            gridViewTextBoxColumn3.Width = 308;
+            this.radGridView6.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDateTimeColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3});
+            this.radGridView6.MasterTemplate.DataSource = this.sYSTEMEVENTJOINBindingSource;
+            this.radGridView6.MasterTemplate.EnableAlternatingRowColor = true;
+            this.radGridView6.MasterTemplate.EnablePaging = true;
+            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.radGridView6.Name = "radGridView6";
+            this.radGridView6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.radGridView6.ReadOnly = true;
+            this.radGridView6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.radGridView6.Size = new System.Drawing.Size(692, 685);
+            this.radGridView6.TabIndex = 3;
+            this.radGridView6.Text = "radGridView6";
+            this.radGridView6.ThemeName = "Windows7";
+            // 
+            // sYSTEMEVENTJOINBindingSource
+            // 
+            this.sYSTEMEVENTJOINBindingSource.DataMember = "SYSTEM_EVENT_JOIN";
+            this.sYSTEMEVENTJOINBindingSource.DataSource = this.furnaceControlDataSet1;
+            // 
+            // furnaceControlDataSet1
+            // 
+            this.furnaceControlDataSet1.DataSetName = "FurnaceControlDataSet";
+            this.furnaceControlDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtOPCReadData_2
             // 
@@ -3108,62 +3175,6 @@
             this.Timer_DB_Update.Interval = 1000;
             this.Timer_DB_Update.Tick += new System.EventHandler(this.Timer_DB_Update_Tick);
             // 
-            // radGridView6
-            // 
-            this.radGridView6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
-            this.radGridView6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radGridView6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.radGridView6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radGridView6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radGridView6.Location = new System.Drawing.Point(300, 5);
-            // 
-            // 
-            // 
-            this.radGridView6.MasterTemplate.AllowAddNewRow = false;
-            this.radGridView6.MasterTemplate.AllowColumnReorder = false;
-            gridViewDateTimeColumn1.EnableExpressionEditor = false;
-            gridViewDateTimeColumn1.FieldName = "TIMESTAMP";
-            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            gridViewDateTimeColumn1.HeaderText = "TIMESTAMP";
-            gridViewDateTimeColumn1.IsAutoGenerated = true;
-            gridViewDateTimeColumn1.Name = "TIMESTAMP";
-            gridViewDateTimeColumn1.Width = 114;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "CODE_INFO";
-            gridViewTextBoxColumn1.HeaderText = "CODE_INFO";
-            gridViewTextBoxColumn1.IsAutoGenerated = true;
-            gridViewTextBoxColumn1.Name = "CODE_INFO";
-            gridViewTextBoxColumn1.Width = 109;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "LOCATION";
-            gridViewTextBoxColumn2.HeaderText = "LOCATION";
-            gridViewTextBoxColumn2.IsAutoGenerated = true;
-            gridViewTextBoxColumn2.Name = "LOCATION";
-            gridViewTextBoxColumn2.Width = 180;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "MESSAGE";
-            gridViewTextBoxColumn3.HeaderText = "MESSAGE";
-            gridViewTextBoxColumn3.IsAutoGenerated = true;
-            gridViewTextBoxColumn3.Name = "MESSAGE";
-            gridViewTextBoxColumn3.Width = 308;
-            this.radGridView6.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDateTimeColumn1,
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3});
-            this.radGridView6.MasterTemplate.DataSource = this.sYSTEMEVENTJOINBindingSource;
-            this.radGridView6.MasterTemplate.EnableAlternatingRowColor = true;
-            this.radGridView6.MasterTemplate.EnablePaging = true;
-            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition10;
-            this.radGridView6.Name = "radGridView6";
-            this.radGridView6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.radGridView6.ReadOnly = true;
-            this.radGridView6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radGridView6.Size = new System.Drawing.Size(692, 685);
-            this.radGridView6.TabIndex = 3;
-            this.radGridView6.Text = "radGridView6";
-            this.radGridView6.ThemeName = "Windows7";
-            // 
             // furnaceControlDataSet
             // 
             this.furnaceControlDataSet.DataSetName = "FurnaceControlDataSet";
@@ -3172,16 +3183,6 @@
             // dangjiN_DATATableAdapter
             // 
             this.dangjiN_DATATableAdapter.ClearBeforeFill = true;
-            // 
-            // furnaceControlDataSet1
-            // 
-            this.furnaceControlDataSet1.DataSetName = "FurnaceControlDataSet";
-            this.furnaceControlDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sYSTEMEVENTJOINBindingSource
-            // 
-            this.sYSTEMEVENTJOINBindingSource.DataMember = "SYSTEM_EVENT_JOIN";
-            this.sYSTEMEVENTJOINBindingSource.DataSource = this.furnaceControlDataSet1;
             // 
             // sYSTEM_EVENT_JOINTableAdapter
             // 
@@ -3458,6 +3459,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).EndInit();
             this.Page5.ResumeLayout(false);
             this.Page5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sYSTEMEVENTJOINBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
@@ -3466,11 +3471,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCProgID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOPCServerAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOPC_Connect)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sYSTEMEVENTJOINBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
