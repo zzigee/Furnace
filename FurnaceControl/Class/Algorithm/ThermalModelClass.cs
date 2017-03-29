@@ -8,59 +8,63 @@ namespace FurnaceControl
         private readonly MainClass m_MainClass;
 
         private double dTotalCalTime = 0.0;
-        
+
         public ThermalModelClass(MainClass mc, int timer_interval)
         {
             this.m_MainClass = mc;
             this.Start(timer_interval, "ThermalModelClassTimer");
         }
-
-        /*
-         * 열모델계산 함수 
-         */
-        public void calThermalModel(UInt64 idx)
+        
+        /*********************************************************************************************
+         *********************************************************************************************
+         * 열모델 계산 코드 
+         *********************************************************************************************
+         *********************************************************************************************/
+        public void calThermalModel()
         {
-            // 현재 가열로의 분위기 온도 읽기 
-            double dCurrentZoneTemp = m_MainClass.stFURNACE_REALTIME_INFORMATION.dZone_Temp;
+            this.m_MainClass.m_MainForm.Set_txtDanjin_Current_Date(DateTime.Now.ToString());
+            TimeSpan result = DateTime.Now - this.m_MainClass.m_Define_Class.dateDataLoggingStartTime;
+            this.m_MainClass.m_MainForm.Set_txtDanjin_Operation_Time("[" + this.m_MainClass.m_Define_Class.nDataLoggingIndex + "]" + result.ToString(@"h\:mm\:ss"));
+
+            if (this.m_MainClass.m_Define_Class.nDataLoggingIndex > this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE)
+            {
+                this.m_MainClass.m_MainForm.ShowMessageBox("당진 테스트베드 측정 데이터 갯수가 최대 갯수를 초과하였습니다. \n\r측정을 중지합니다.");
+                this.m_MainClass.m_MainForm.btnDataLogging.BackColor = System.Drawing.Color.LightGray;
+                this.m_MainClass.m_Define_Class.isDataLogging = false;
+            }
+
+            Random rnd = new Random();
+
+            int nPreditBilletTemp = rnd.Next(1600);
+            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temp[0];
 
 
+            this.m_MainClass.m_MainForm.dangjiN_DATATableAdapter.InsertQuery(    
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex,
+                DateTime.Now.ToString(),
+                nZoneTemprature.ToString(),
+                nPreditBilletTemp.ToString());
 
-
-
-            // 열모델을 통해 계산 및 저장되는 변수 
-            double dZone_Temp = 0.0, dPredict_Billet_Temp = 0.0;
-
-            /* 
-             * 
-             * 
-             * 열모델 계산 코드 
-             * 
-             * 
-             */
-
-            // 계산 시점의 가열로 분위기 온도 및 예측 빌렛온도 저장 
-            m_MainClass.stTHERAMLMODEL_FOR_DANJIN[idx].dZone_Temp = dZone_Temp;
-            m_MainClass.stTHERAMLMODEL_FOR_DANJIN[idx].dPredict_Billet_Temp = dPredict_Billet_Temp;
+            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature = nPreditBilletTemp;
+            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nZone_Average_Temperature = nZoneTemprature;
         }
 
 
-        /**
-         * 주기적으로 실행하는 함수 (Period : 10 second)
-         **/
-        UInt64 idx = 0;
 
         public override void Run()
         {
 
             //this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
-            
-            /*
-             * 10 초마다 한번씩 열모델 계산 수행 (수행 시간은 MainClass 에서 변경 가능)
-             */
-            calThermalModel(idx);
-            
-            idx++;
 
+            /*
+            Start Data Logging 이 활성화 된 경우 실행 
+            실행 주기는 열모델 연산 Delta 시간과 동일하게 DB_Timer 에 설정하면 됨. 
+            */
+            if (this.m_MainClass.m_Define_Class.isDataLogging)
+            {
+                calThermalModel();
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex++;    // 
+            }
         }
     }
 }
