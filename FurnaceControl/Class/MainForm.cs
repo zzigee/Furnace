@@ -570,12 +570,12 @@ namespace FurnaceControl
 
             for (int i = 0; i < this.m_MainClass.m_Define_Class.nDataLoggingIndex; i++)
             {
-                series_billet_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nZone_Average_Temperature, i));
+                series_zone_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nZone_Average_Temperature, i));
                 series_billet_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nBillet_Predict_Current_Billet_Temperature, i));
             }
 
-            radChartView1.Series.Add(series_billet_temp);
             radChartView1.Series.Add(series_zone_temp);
+            radChartView1.Series.Add(series_billet_temp);
         }
 
         private void Timer_Update_GUI(object sender, EventArgs e)

@@ -33,14 +33,7 @@
             Telerik.WinControls.UI.CategoricalAxis categoricalAxis1 = new Telerik.WinControls.UI.CategoricalAxis();
             Telerik.WinControls.UI.LinearAxis linearAxis1 = new Telerik.WinControls.UI.LinearAxis();
             Telerik.WinControls.UI.LineSeries lineSeries1 = new Telerik.WinControls.UI.LineSeries();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint1 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint2 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint3 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint4 = new Telerik.Charting.CategoricalDataPoint();
             Telerik.WinControls.UI.SteplineSeries steplineSeries1 = new Telerik.WinControls.UI.SteplineSeries();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint5 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint6 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint7 = new Telerik.Charting.CategoricalDataPoint();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
@@ -666,69 +659,39 @@
             // radChartView1
             // 
             cartesianArea1.GridDesign.AlternatingVerticalColor = false;
+            cartesianArea1.GridDesign.DrawHorizontalFills = false;
             cartesianArea1.GridDesign.DrawVerticalFills = false;
             cartesianArea1.GridDesign.DrawVerticalStripes = false;
             cartesianArea1.ShowGrid = true;
             this.radChartView1.AreaDesign = cartesianArea1;
             categoricalAxis1.IsPrimary = true;
             categoricalAxis1.LabelRotationAngle = 300D;
-            categoricalAxis1.ShowLabels = false;
-            categoricalAxis1.Title = "";
+            categoricalAxis1.Title = "Time (Min)";
             linearAxis1.AxisType = Telerik.Charting.AxisType.Second;
             linearAxis1.IsPrimary = true;
             linearAxis1.LabelRotationAngle = 300D;
-            linearAxis1.MajorStep = 20D;
             linearAxis1.TickOrigin = null;
-            linearAxis1.Title = "Time(min)";
+            linearAxis1.Title = "Temperature (C)";
             this.radChartView1.Axes.AddRange(new Telerik.WinControls.UI.Axis[] {
             categoricalAxis1,
             linearAxis1});
             this.radChartView1.Location = new System.Drawing.Point(0, 0);
             this.radChartView1.Name = "radChartView1";
             lineSeries1.CategoryMember = "";
-            categoricalDataPoint1.Category = "1";
-            categoricalDataPoint1.Label = 1D;
-            categoricalDataPoint1.Value = 1D;
-            categoricalDataPoint2.Category = "2";
-            categoricalDataPoint2.Label = 2D;
-            categoricalDataPoint2.Value = 2D;
-            categoricalDataPoint3.Category = "3";
-            categoricalDataPoint3.Label = 3D;
-            categoricalDataPoint3.Value = 3D;
-            categoricalDataPoint4.Category = "120";
-            categoricalDataPoint4.Label = 12D;
-            categoricalDataPoint4.Value = 12D;
-            lineSeries1.DataPoints.AddRange(new Telerik.Charting.DataPoint[] {
-            categoricalDataPoint1,
-            categoricalDataPoint2,
-            categoricalDataPoint3,
-            categoricalDataPoint4});
             lineSeries1.HorizontalAxis = categoricalAxis1;
             lineSeries1.LabelAngle = 90D;
             lineSeries1.LabelDistanceToPoint = 15D;
             lineSeries1.Spline = true;
             lineSeries1.VerticalAxis = linearAxis1;
-            categoricalDataPoint5.Category = "1";
-            categoricalDataPoint5.Label = 123D;
-            categoricalDataPoint5.Value = 123D;
-            categoricalDataPoint6.Category = "2";
-            categoricalDataPoint6.Label = 2D;
-            categoricalDataPoint6.Value = 2D;
-            categoricalDataPoint7.Category = "3";
-            categoricalDataPoint7.Label = 3D;
-            categoricalDataPoint7.Value = 3D;
-            steplineSeries1.DataPoints.AddRange(new Telerik.Charting.DataPoint[] {
-            categoricalDataPoint5,
-            categoricalDataPoint6,
-            categoricalDataPoint7});
             steplineSeries1.HorizontalAxis = categoricalAxis1;
             steplineSeries1.LabelAngle = 90D;
             steplineSeries1.LabelDistanceToPoint = 15D;
+            steplineSeries1.NumberOfColors = 0;
             steplineSeries1.VerticalAxis = linearAxis1;
             this.radChartView1.Series.AddRange(new Telerik.WinControls.UI.ChartSeries[] {
             lineSeries1,
             steplineSeries1});
-            this.radChartView1.ShowPanZoom = true;
+            this.radChartView1.ShowTrackBall = true;
             this.radChartView1.Size = new System.Drawing.Size(992, 361);
             this.radChartView1.TabIndex = 7;
             this.radChartView1.Text = "radChartView1";
@@ -1179,9 +1142,9 @@
             this.Page2.Controls.Add(this.radGridView3);
             this.Page2.Controls.Add(this.radGroupBox21);
             this.Page2.ItemSize = new System.Drawing.SizeF(163F, 24F);
-            this.Page2.Location = new System.Drawing.Point(10, 37);
+            this.Page2.Location = new System.Drawing.Point(10, 33);
             this.Page2.Name = "Page2";
-            this.Page2.Size = new System.Drawing.Size(995, 690);
+            this.Page2.Size = new System.Drawing.Size(995, 694);
             this.Page2.Text = "Schedule";
             this.Page2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1418,9 +1381,9 @@
             // 
             this.Page6.Controls.Add(this.radGridView2);
             this.Page6.ItemSize = new System.Drawing.SizeF(156F, 24F);
-            this.Page6.Location = new System.Drawing.Point(10, 37);
+            this.Page6.Location = new System.Drawing.Point(10, 33);
             this.Page6.Name = "Page6";
-            this.Page6.Size = new System.Drawing.Size(995, 690);
+            this.Page6.Size = new System.Drawing.Size(995, 694);
             this.Page6.Text = "Furnace";
             this.Page6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1445,7 +1408,7 @@
             this.radGridView2.ReadOnly = true;
             this.radGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radGridView2.ShowGroupPanel = false;
-            this.radGridView2.Size = new System.Drawing.Size(995, 690);
+            this.radGridView2.Size = new System.Drawing.Size(995, 694);
             this.radGridView2.TabIndex = 0;
             this.radGridView2.Text = "radGridView2";
             this.radGridView2.ThemeName = "Office2007Black";
@@ -1456,9 +1419,9 @@
             this.Page4.Controls.Add(this.radGroupBox1);
             this.Page4.Controls.Add(this.radGroupBox2);
             this.Page4.ItemSize = new System.Drawing.SizeF(166F, 24F);
-            this.Page4.Location = new System.Drawing.Point(10, 37);
+            this.Page4.Location = new System.Drawing.Point(10, 33);
             this.Page4.Name = "Page4";
-            this.Page4.Size = new System.Drawing.Size(995, 690);
+            this.Page4.Size = new System.Drawing.Size(995, 694);
             this.Page4.Text = "Grade Set";
             this.Page4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2957,9 +2920,9 @@
             this.Page3.Controls.Add(this.radGroupBox19);
             this.Page3.Controls.Add(this.radGroupBox18);
             this.Page3.ItemSize = new System.Drawing.SizeF(155F, 24F);
-            this.Page3.Location = new System.Drawing.Point(10, 37);
+            this.Page3.Location = new System.Drawing.Point(10, 33);
             this.Page3.Name = "Page3";
-            this.Page3.Size = new System.Drawing.Size(995, 690);
+            this.Page3.Size = new System.Drawing.Size(995, 694);
             this.Page3.Text = "L2 Data";
             this.Page3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
