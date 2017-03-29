@@ -35,8 +35,25 @@ namespace FurnaceControl
 
             Random rnd = new Random();
 
-            int nPreditBilletTemp = rnd.Next(1600);
-            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];
+            int nPreditBilletTemp;
+            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];     // 현재 TC 온도 
+
+
+
+            /** 
+             * 이 값 구해주세요. 
+             */
+
+            nPreditBilletTemp = rnd.Next(1600);     
+
+
+
+            /**
+             */
+
+
+
+
 
 
             this.m_MainClass.m_MainForm.dangjiN_DATATableAdapter.InsertQuery(    
