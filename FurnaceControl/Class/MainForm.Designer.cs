@@ -259,6 +259,14 @@
             this.radGroupBox18 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView9 = new Telerik.WinControls.UI.RadGridView();
             this.Page5 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.txtOPCReadData_2 = new Telerik.WinControls.UI.RadTextBox();
+            this.txtOPCReadData_1 = new Telerik.WinControls.UI.RadTextBox();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel75 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel76 = new Telerik.WinControls.UI.RadLabel();
+            this.txtOPCProgID = new Telerik.WinControls.UI.RadTextBox();
+            this.txtOPCServerAddress = new Telerik.WinControls.UI.RadTextBox();
+            this.btnOPC_Connect = new Telerik.WinControls.UI.RadButton();
             this.object_458707c0_898f_46e1_b2f7_54a65b456b02 = new Telerik.WinControls.RootRadElement();
             this.PanelContainer = new Telerik.WinControls.UI.RadScrollablePanelContainer();
             this.Timer_GUI_Update = new System.Windows.Forms.Timer(this.components);
@@ -499,6 +507,15 @@
             this.radGroupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).BeginInit();
+            this.Page5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCProgID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCServerAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOPC_Connect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -521,7 +538,7 @@
             this.MainTap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainTap.Location = new System.Drawing.Point(0, 0);
             this.MainTap.Name = "MainTap";
-            this.MainTap.SelectedPage = this.Page5;
+            this.MainTap.SelectedPage = this.Page1;
             this.MainTap.Size = new System.Drawing.Size(1016, 738);
             this.MainTap.TabIndex = 0;
             this.MainTap.Text = "radPageView1";
@@ -648,7 +665,6 @@
             cartesianArea1.GridDesign.DrawVerticalStripes = false;
             this.radChartView1.AreaDesign = cartesianArea1;
             categoricalAxis1.IsPrimary = true;
-            categoricalAxis1.LabelFitMode = Telerik.Charting.AxisLabelFitMode.MultiLine;
             categoricalAxis1.LabelRotationAngle = 300D;
             categoricalAxis1.ShowLabels = false;
             categoricalAxis1.Title = "Time";
@@ -663,6 +679,7 @@
             linearAxis1});
             this.radChartView1.Location = new System.Drawing.Point(0, 0);
             this.radChartView1.Name = "radChartView1";
+            this.radChartView1.SelectionMode = Telerik.WinControls.UI.ChartSelectionMode.MultipleDataPoints;
             categoricalDataPoint1.Category = "1";
             categoricalDataPoint1.Label = 45D;
             categoricalDataPoint1.Value = 45D;
@@ -718,10 +735,7 @@
             lineSeries1,
             steplineSeries1});
             this.radChartView1.ShowGrid = false;
-            this.radChartView1.ShowLegend = true;
             this.radChartView1.ShowPanZoom = true;
-            this.radChartView1.ShowTitle = true;
-            this.radChartView1.ShowToolTip = true;
             this.radChartView1.Size = new System.Drawing.Size(992, 361);
             this.radChartView1.TabIndex = 7;
             this.radChartView1.Text = "radChartView1";
@@ -944,7 +958,6 @@
             this.btnStart_L2_Mode.TabIndex = 5;
             this.btnStart_L2_Mode.Text = "Request Level 2 Mode";
             this.btnStart_L2_Mode.ThemeName = "Office2007Black";
-            this.btnStart_L2_Mode.Click += new System.EventHandler(this.btnStart_L2_Mode_Click);
             // 
             // radButton3
             // 
@@ -1085,7 +1098,6 @@
             this.radButton4.TabIndex = 6;
             this.radButton4.Text = "Start Schedule Delay";
             this.radButton4.ThemeName = "Office2007Black";
-            this.radButton4.Click += new System.EventHandler(this.radButton4_Click);
             // 
             // radGroupBox10
             // 
@@ -3038,12 +3050,86 @@
             // Page5
             // 
             this.Page5.AutoScroll = true;
+            this.Page5.Controls.Add(this.txtOPCReadData_2);
+            this.Page5.Controls.Add(this.txtOPCReadData_1);
+            this.Page5.Controls.Add(this.radButton1);
+            this.Page5.Controls.Add(this.radLabel75);
+            this.Page5.Controls.Add(this.radLabel76);
+            this.Page5.Controls.Add(this.txtOPCProgID);
+            this.Page5.Controls.Add(this.txtOPCServerAddress);
+            this.Page5.Controls.Add(this.btnOPC_Connect);
             this.Page5.ItemSize = new System.Drawing.SizeF(182F, 28F);
             this.Page5.Location = new System.Drawing.Point(10, 37);
             this.Page5.Name = "Page5";
             this.Page5.Size = new System.Drawing.Size(995, 690);
             this.Page5.Text = "Program Log";
             this.Page5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtOPCReadData_2
+            // 
+            this.txtOPCReadData_2.Location = new System.Drawing.Point(5, 107);
+            this.txtOPCReadData_2.Name = "txtOPCReadData_2";
+            this.txtOPCReadData_2.Size = new System.Drawing.Size(187, 20);
+            this.txtOPCReadData_2.TabIndex = 2;
+            this.txtOPCReadData_2.Text = "OPCsoft.opcSvrTS.1";
+            // 
+            // txtOPCReadData_1
+            // 
+            this.txtOPCReadData_1.Location = new System.Drawing.Point(5, 81);
+            this.txtOPCReadData_1.Name = "txtOPCReadData_1";
+            this.txtOPCReadData_1.Size = new System.Drawing.Size(187, 20);
+            this.txtOPCReadData_1.TabIndex = 1;
+            this.txtOPCReadData_1.Text = "OPCsoft.opcSvrTS.1";
+            // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(198, 81);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(96, 46);
+            this.radButton1.TabIndex = 1;
+            this.radButton1.Text = "Read Group";
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
+            // 
+            // radLabel75
+            // 
+            this.radLabel75.Location = new System.Drawing.Point(5, 5);
+            this.radLabel75.Name = "radLabel75";
+            this.radLabel75.Size = new System.Drawing.Size(44, 18);
+            this.radLabel75.TabIndex = 1;
+            this.radLabel75.Text = "Prog ID";
+            // 
+            // radLabel76
+            // 
+            this.radLabel76.Location = new System.Drawing.Point(5, 31);
+            this.radLabel76.Name = "radLabel76";
+            this.radLabel76.Size = new System.Drawing.Size(81, 18);
+            this.radLabel76.TabIndex = 1;
+            this.radLabel76.Text = "Server Address";
+            // 
+            // txtOPCProgID
+            // 
+            this.txtOPCProgID.Location = new System.Drawing.Point(92, 5);
+            this.txtOPCProgID.Name = "txtOPCProgID";
+            this.txtOPCProgID.Size = new System.Drawing.Size(100, 20);
+            this.txtOPCProgID.TabIndex = 0;
+            this.txtOPCProgID.Text = "OPCsoft.opcSvrTS.1";
+            // 
+            // txtOPCServerAddress
+            // 
+            this.txtOPCServerAddress.Location = new System.Drawing.Point(92, 31);
+            this.txtOPCServerAddress.Name = "txtOPCServerAddress";
+            this.txtOPCServerAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtOPCServerAddress.TabIndex = 1;
+            this.txtOPCServerAddress.Text = "127.0.0.1";
+            // 
+            // btnOPC_Connect
+            // 
+            this.btnOPC_Connect.Location = new System.Drawing.Point(198, 5);
+            this.btnOPC_Connect.Name = "btnOPC_Connect";
+            this.btnOPC_Connect.Size = new System.Drawing.Size(96, 46);
+            this.btnOPC_Connect.TabIndex = 0;
+            this.btnOPC_Connect.Text = "OPC Connect";
+            this.btnOPC_Connect.Click += new System.EventHandler(this.btnOPC_Connect_Click);
             // 
             // object_458707c0_898f_46e1_b2f7_54a65b456b02
             // 
@@ -3342,6 +3428,16 @@
             this.radGroupBox18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).EndInit();
+            this.Page5.ResumeLayout(false);
+            this.Page5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCProgID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCServerAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOPC_Connect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -3567,5 +3663,13 @@
         public Telerik.WinControls.UI.RadTextBox txtDanjin_Current_Date;
         private Telerik.WinControls.UI.RadLabel radLabel74;
         public FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter dangjiN_DATATableAdapter;
+        private Telerik.WinControls.UI.RadButton btnOPC_Connect;
+        private Telerik.WinControls.UI.RadLabel radLabel76;
+        private Telerik.WinControls.UI.RadTextBox txtOPCProgID;
+        private Telerik.WinControls.UI.RadTextBox txtOPCServerAddress;
+        public Telerik.WinControls.UI.RadTextBox txtOPCReadData_2;
+        public Telerik.WinControls.UI.RadTextBox txtOPCReadData_1;
+        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadLabel radLabel75;
     }
 }

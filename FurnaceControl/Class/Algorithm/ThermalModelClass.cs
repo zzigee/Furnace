@@ -52,7 +52,7 @@ namespace FurnaceControl
         public override void Run()
         {
 
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
+            //this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
             
             /*
              * 10 초마다 한번씩 열모델 계산 수행 (수행 시간은 MainClass 에서 변경 가능)

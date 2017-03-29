@@ -86,9 +86,10 @@ namespace FurnaceControl
             this.stTHERAMLMODEL_FOR_DANJIN = new DefineClass.ST_BILLET_INFORMATION_FOR_DANJIN[this.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
 
             this.stDANJIN_STRUCT = new DefineClass.ST_DANJIN_STURCT();      // 당진 테스트 용 
+            this.stDANJIN_STRUCT.nDataCount = 0;
             this.stDANJIN_STRUCT.strCreateTime = new string[this.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
-            this.stDANJIN_STRUCT.strZoneTemp = new string[this.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
-            this.stDANJIN_STRUCT.strBilletPredictTemp = new string[this.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
+            this.stDANJIN_STRUCT.strZoneTemp = new int[this.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
+            this.stDANJIN_STRUCT.strBilletPredictTemp = new int[this.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
 
 
             this.m_TrackingClass = new TrackingClass(this, (int)DefineClass.TIMER_INTERVAL.ONE_SEC);

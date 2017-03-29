@@ -24,11 +24,6 @@ namespace FurnaceControl
         
         public int nBillet_Count_On_FUrnace;
 
-
-
-
-
-
         /* 
          * 당진 테스트시 연속시 가열로를 모사하기 위해 시간을 소재의 위치로 치환하는데, 
          * 총 시간 / 계산시간 의 수 이상의 배열을 확보 
@@ -45,18 +40,23 @@ namespace FurnaceControl
          */
         public struct ST_DANJIN_STURCT
         {
-            public string strStartTime;    // 데이터 로깅 시작시간
-            public string strEndTime;      // 데이터 로깅 종료시간
-            public string[] strCreateTime;// 측정 데이터 생성 시간 
-            public string[] strZoneTemp;   // 존 온도
-            public string[] strBilletPredictTemp;  // 빌렛 예측온도 
+            public int nDataCount;                  // 총 수집 데이터 갯수 
+            public string strStartTime;             // 데이터 로깅 시작시간
+            public string strEndTime;               // 데이터 로깅 종료시간
+            public string[] strCreateTime;          // 측정 데이터 생성 시간 
+            public int[] strZoneTemp;            // 존 온도
+            public int[] strBilletPredictTemp;   // 빌렛 예측온도 
         }
         
 
 
 
 
-
+        public enum LOG_CODE
+        {
+            LOG,
+            ERROR
+        }
 
 
         public enum RETURN_VALUE
