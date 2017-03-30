@@ -44,6 +44,8 @@ namespace FurnaceControl
              * 이 값 구해주세요. 
              */
 
+
+
             nPreditBilletTemp = rnd.Next(1600);     
 
 
@@ -54,9 +56,7 @@ namespace FurnaceControl
 
 
 
-
-
-            this.m_MainClass.m_MainForm.dangjiN_DATATableAdapter.InsertQuery(    
+            this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
                 this.m_MainClass.m_Define_Class.nDataLoggingIndex,
                 DateTime.Now.ToString(),
                 nZoneTemprature.ToString(),
@@ -70,7 +70,6 @@ namespace FurnaceControl
 
         public override void Run()
         {
-
             //this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
 
             /*

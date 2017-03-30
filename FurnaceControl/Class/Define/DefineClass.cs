@@ -33,6 +33,8 @@ namespace FurnaceControl
 
         public int nBillet_Count_On_FUrnace;
 
+
+
         /**
          * 공업로 안에서 실시간 소재 정보 (공업로 내의 최대 소재 갯수 만큼 배열생성)
          */

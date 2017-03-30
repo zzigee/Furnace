@@ -138,7 +138,7 @@ WHERE BILLET_STATUS=2</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHART_VIEW_BILLETTableAdapter" GeneratorDataComponentClassName="CHART_VIEW_BILLETTableAdapter" Name="CHART_VIEW_BILLET" UserDataComponentName="CHART_VIEW_BILLETTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="FurnaceControl.dbo.BILLET" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT 
@@ -795,8 +795,9 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  DANGJIN_DATA.*
-FROM     DANGJIN_DATA</CommandText>
+                    <CommandText>SELECT  EXP_ORDER, CREATE_DATE, ZONE_TEMP, BILLET_TEMP
+FROM     DANGJIN_DATA
+ORDER BY CREATE_DATE DESC, EXP_ORDER</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>

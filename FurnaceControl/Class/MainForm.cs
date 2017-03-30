@@ -89,8 +89,8 @@ namespace FurnaceControl
          ************************************************************************/
         private void RadForm1_Load(object sender, EventArgs e)
         {
-            // TODO: 이 코드는 데이터를 'furnaceControlDataSet1.SYSTEM_EVENT_JOIN' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
-            this.sYSTEM_EVENT_JOINTableAdapter.Fill(this.furnaceControlDataSet1.SYSTEM_EVENT_JOIN);
+            // TODO: 이 코드는 데이터를 'furnaceControlDataSet.DANGJIN_DATA' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
+            this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
             this.nCurrentPage = (int)Page.Main;
 
             this.Timer_GUI_Update.Start();
@@ -583,12 +583,12 @@ namespace FurnaceControl
 
         private void Timer_Update_GUI(object sender, EventArgs e)
         {
-
-
             if (this.nCurrentPage == (int)Page.Main)
             {
                 //this.BilletJoinTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
                 //this.GradeDetailTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
+
+                this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
 
                 RefreshChartViewer();
             }

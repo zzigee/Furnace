@@ -11969,7 +11969,8 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT  DANGJIN_DATA.*\r\nFROM     DANGJIN_DATA";
+            this._commandCollection[0].CommandText = "SELECT  EXP_ORDER, CREATE_DATE, ZONE_TEMP, BILLET_TEMP\r\nFROM     DANGJIN_DATA\r\nOR" +
+                "DER BY CREATE_DATE DESC, EXP_ORDER";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
