@@ -2,14 +2,10 @@
 <xs:schema id="FurnaceControlDataSet" targetNamespace="http://tempuri.org/FurnaceControlDataSet.xsd" xmlns:mstns="http://tempuri.org/FurnaceControlDataSet.xsd" xmlns="http://tempuri.org/FurnaceControlDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="Schedule_TableAdapter" GeneratorFunctionsComponentClassName="Schedule_TableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="Schedule_TableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-        
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FurnaceControlConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FurnaceControlConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FurnaceControl.Properties.Settings.GlobalReference.Default.FurnaceControlConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
-        
-        
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GRADETableAdapter" GeneratorDataComponentClassName="GRADETableAdapter" Name="GRADE" UserDataComponentName="GRADETableAdapter">
             <MainSource>
@@ -139,10 +135,10 @@ WHERE BILLET_STATUS=2</CommandText>
                 </SelectCommand>
               </DbSource>
             </Sources>
-          </TableAdapter>                    
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHART_VIEW_BILLETTableAdapter" GeneratorDataComponentClassName="CHART_VIEW_BILLETTableAdapter" Name="CHART_VIEW_BILLET" UserDataComponentName="CHART_VIEW_BILLETTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="FurnaceControl.dbo.BILLET" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT 
@@ -172,7 +168,7 @@ WHERE A.BILLET_STATUS = 2 ORDER BY b.ORDER_OF_BILLET DESC</CommandText>
               <Mapping SourceColumn="ORDER_OF_BILLET" DataSetColumn="ORDER_OF_BILLET" />
             </Mappings>
             <Sources />
-          </TableAdapter>                                                  
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GRADE_DETAILTableAdapter" GeneratorDataComponentClassName="GRADE_DETAILTableAdapter" Name="GRADE_DETAIL" UserDataComponentName="GRADE_DETAILTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="FurnaceControl.dbo.GRADE_DETAIL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -637,14 +633,12 @@ SELECT SETNO, AIM_TEMP, Z1_TOPMAX, Z1_TOPMIN, Z1_BOTMAX, Z1_BOTMIN, Z2_TOPMAX, Z
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SYSTEM_EVENT_JOINTableAdapter" GeneratorDataComponentClassName="SYSTEM_EVENT_JOINTableAdapter" Name="SYSTEM_EVENT_JOIN" UserDataComponentName="SYSTEM_EVENT_JOINTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  SYSTEM_EVENT_LOG.TIMESTAMP, SYSTEM_EVENT_LOG.CODENO, SYSTEM_EVENT_LOG.LOCATION, SYSTEM_EVENT_LOG.MESSAGE, SYSTEM_EVENT_LOG.VALUE_1, 
-               SYSTEM_EVENT_LOG.VALUE_2, SYSTEM_EVENT_CODE.EVENT AS CODE_INFO
-FROM     SYSTEM_EVENT_LOG 
-INNER JOIN SYSTEM_EVENT_CODE 
-ON SYSTEM_EVENT_CODE.CODENO = SYSTEM_EVENT_LOG.CODENO
+                    <CommandText>SELECT  SYSTEM_EVENT_LOG.TIMESTAMP, SYSTEM_EVENT_CODE.EVENT AS CODE_INFO, SYSTEM_EVENT_LOG.LOCATION, SYSTEM_EVENT_LOG.MESSAGE
+FROM     SYSTEM_EVENT_LOG INNER JOIN
+               SYSTEM_EVENT_CODE ON SYSTEM_EVENT_CODE.CODENO = SYSTEM_EVENT_LOG.CODENO
 ORDER BY SYSTEM_EVENT_LOG.TIMESTAMP DESC</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -653,11 +647,8 @@ ORDER BY SYSTEM_EVENT_LOG.TIMESTAMP DESC</CommandText>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="TIMESTAMP" DataSetColumn="TIMESTAMP" />
-              <Mapping SourceColumn="CODENO" DataSetColumn="CODENO" />
               <Mapping SourceColumn="LOCATION" DataSetColumn="LOCATION" />
               <Mapping SourceColumn="MESSAGE" DataSetColumn="MESSAGE" />
-              <Mapping SourceColumn="VALUE_1" DataSetColumn="VALUE_1" />
-              <Mapping SourceColumn="VALUE_2" DataSetColumn="VALUE_2" />
               <Mapping SourceColumn="CODE_INFO" DataSetColumn="CODE_INFO" />
             </Mappings>
             <Sources />
@@ -804,8 +795,9 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  DANGJIN_DATA.*
-FROM     DANGJIN_DATA</CommandText>
+                    <CommandText>SELECT  EXP_ORDER, CREATE_DATE, ZONE_TEMP, BILLET_TEMP
+FROM     DANGJIN_DATA
+ORDER BY CREATE_DATE DESC, EXP_ORDER</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -834,15 +826,10 @@ FROM     DANGJIN_DATA</CommandText>
             </Sources>
           </TableAdapter>
         </Tables>
-        
-        
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  
-  
-  
   <xs:element name="FurnaceControlDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FurnaceControlDataSet" msprop:Generator_UserDSName="FurnaceControlDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -1022,7 +1009,6 @@ FROM     DANGJIN_DATA</CommandText>
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnTIMESTAMP" msprop:Generator_ColumnPropNameInRow="TIMESTAMP" msprop:Generator_ColumnPropNameInTable="TIMESTAMPColumn" msprop:Generator_UserColumnName="TIMESTAMP" type="xs:dateTime" />
-              <xs:element name="CODENO" msprop:Generator_ColumnVarNameInTable="columnCODENO" msprop:Generator_ColumnPropNameInRow="CODENO" msprop:Generator_ColumnPropNameInTable="CODENOColumn" msprop:Generator_UserColumnName="CODENO" type="xs:decimal" />
               <xs:element name="LOCATION" msprop:Generator_ColumnVarNameInTable="columnLOCATION" msprop:Generator_ColumnPropNameInRow="LOCATION" msprop:Generator_ColumnPropNameInTable="LOCATIONColumn" msprop:Generator_UserColumnName="LOCATION" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -1031,20 +1017,6 @@ FROM     DANGJIN_DATA</CommandText>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="MESSAGE" msprop:Generator_ColumnVarNameInTable="columnMESSAGE" msprop:Generator_ColumnPropNameInRow="MESSAGE" msprop:Generator_ColumnPropNameInTable="MESSAGEColumn" msprop:Generator_UserColumnName="MESSAGE" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="40" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="VALUE_1" msprop:Generator_ColumnVarNameInTable="columnVALUE_1" msprop:Generator_ColumnPropNameInRow="VALUE_1" msprop:Generator_ColumnPropNameInTable="VALUE_1Column" msprop:Generator_UserColumnName="VALUE_1" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="40" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="VALUE_2" msprop:Generator_ColumnVarNameInTable="columnVALUE_2" msprop:Generator_ColumnPropNameInRow="VALUE_2" msprop:Generator_ColumnPropNameInTable="VALUE_2Column" msprop:Generator_UserColumnName="VALUE_2" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />

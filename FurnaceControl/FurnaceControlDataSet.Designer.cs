@@ -2590,15 +2590,9 @@ namespace FurnaceControl {
             
             private global::System.Data.DataColumn columnTIMESTAMP;
             
-            private global::System.Data.DataColumn columnCODENO;
-            
             private global::System.Data.DataColumn columnLOCATION;
             
             private global::System.Data.DataColumn columnMESSAGE;
-            
-            private global::System.Data.DataColumn columnVALUE_1;
-            
-            private global::System.Data.DataColumn columnVALUE_2;
             
             private global::System.Data.DataColumn columnCODE_INFO;
             
@@ -2645,14 +2639,6 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CODENOColumn {
-                get {
-                    return this.columnCODENO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LOCATIONColumn {
                 get {
                     return this.columnLOCATION;
@@ -2664,22 +2650,6 @@ namespace FurnaceControl {
             public global::System.Data.DataColumn MESSAGEColumn {
                 get {
                     return this.columnMESSAGE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn VALUE_1Column {
-                get {
-                    return this.columnVALUE_1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn VALUE_2Column {
-                get {
-                    return this.columnVALUE_2;
                 }
             }
             
@@ -2728,15 +2698,12 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SYSTEM_EVENT_JOINRow AddSYSTEM_EVENT_JOINRow(System.DateTime TIMESTAMP, decimal CODENO, string LOCATION, string MESSAGE, string VALUE_1, string VALUE_2, string CODE_INFO) {
+            public SYSTEM_EVENT_JOINRow AddSYSTEM_EVENT_JOINRow(System.DateTime TIMESTAMP, string LOCATION, string MESSAGE, string CODE_INFO) {
                 SYSTEM_EVENT_JOINRow rowSYSTEM_EVENT_JOINRow = ((SYSTEM_EVENT_JOINRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TIMESTAMP,
-                        CODENO,
                         LOCATION,
                         MESSAGE,
-                        VALUE_1,
-                        VALUE_2,
                         CODE_INFO};
                 rowSYSTEM_EVENT_JOINRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSYSTEM_EVENT_JOINRow);
@@ -2761,11 +2728,8 @@ namespace FurnaceControl {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnTIMESTAMP = base.Columns["TIMESTAMP"];
-                this.columnCODENO = base.Columns["CODENO"];
                 this.columnLOCATION = base.Columns["LOCATION"];
                 this.columnMESSAGE = base.Columns["MESSAGE"];
-                this.columnVALUE_1 = base.Columns["VALUE_1"];
-                this.columnVALUE_2 = base.Columns["VALUE_2"];
                 this.columnCODE_INFO = base.Columns["CODE_INFO"];
             }
             
@@ -2774,24 +2738,15 @@ namespace FurnaceControl {
             private void InitClass() {
                 this.columnTIMESTAMP = new global::System.Data.DataColumn("TIMESTAMP", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTIMESTAMP);
-                this.columnCODENO = new global::System.Data.DataColumn("CODENO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCODENO);
                 this.columnLOCATION = new global::System.Data.DataColumn("LOCATION", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLOCATION);
                 this.columnMESSAGE = new global::System.Data.DataColumn("MESSAGE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMESSAGE);
-                this.columnVALUE_1 = new global::System.Data.DataColumn("VALUE_1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVALUE_1);
-                this.columnVALUE_2 = new global::System.Data.DataColumn("VALUE_2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVALUE_2);
                 this.columnCODE_INFO = new global::System.Data.DataColumn("CODE_INFO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCODE_INFO);
                 this.columnTIMESTAMP.AllowDBNull = false;
-                this.columnCODENO.AllowDBNull = false;
                 this.columnLOCATION.MaxLength = 40;
                 this.columnMESSAGE.MaxLength = 40;
-                this.columnVALUE_1.MaxLength = 40;
-                this.columnVALUE_2.MaxLength = 40;
                 this.columnCODE_INFO.MaxLength = 100;
             }
             
@@ -6177,17 +6132,6 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CODENO {
-                get {
-                    return ((decimal)(this[this.tableSYSTEM_EVENT_JOIN.CODENOColumn]));
-                }
-                set {
-                    this[this.tableSYSTEM_EVENT_JOIN.CODENOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LOCATION {
                 get {
                     try {
@@ -6215,38 +6159,6 @@ namespace FurnaceControl {
                 }
                 set {
                     this[this.tableSYSTEM_EVENT_JOIN.MESSAGEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string VALUE_1 {
-                get {
-                    try {
-                        return ((string)(this[this.tableSYSTEM_EVENT_JOIN.VALUE_1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'SYSTEM_EVENT_JOIN\' 테이블의 \'VALUE_1\' 열의 값이 DBNull입니다.", e);
-                    }
-                }
-                set {
-                    this[this.tableSYSTEM_EVENT_JOIN.VALUE_1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string VALUE_2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableSYSTEM_EVENT_JOIN.VALUE_2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'SYSTEM_EVENT_JOIN\' 테이블의 \'VALUE_2\' 열의 값이 DBNull입니다.", e);
-                    }
-                }
-                set {
-                    this[this.tableSYSTEM_EVENT_JOIN.VALUE_2Column] = value;
                 }
             }
             
@@ -6288,30 +6200,6 @@ namespace FurnaceControl {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetMESSAGENull() {
                 this[this.tableSYSTEM_EVENT_JOIN.MESSAGEColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsVALUE_1Null() {
-                return this.IsNull(this.tableSYSTEM_EVENT_JOIN.VALUE_1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetVALUE_1Null() {
-                this[this.tableSYSTEM_EVENT_JOIN.VALUE_1Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsVALUE_2Null() {
-                return this.IsNull(this.tableSYSTEM_EVENT_JOIN.VALUE_2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetVALUE_2Null() {
-                this[this.tableSYSTEM_EVENT_JOIN.VALUE_2Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11127,11 +11015,8 @@ WHERE A.BILLET_STATUS = 2 ORDER BY b.ORDER_OF_BILLET DESC";
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "SYSTEM_EVENT_JOIN";
             tableMapping.ColumnMappings.Add("TIMESTAMP", "TIMESTAMP");
-            tableMapping.ColumnMappings.Add("CODENO", "CODENO");
             tableMapping.ColumnMappings.Add("LOCATION", "LOCATION");
             tableMapping.ColumnMappings.Add("MESSAGE", "MESSAGE");
-            tableMapping.ColumnMappings.Add("VALUE_1", "VALUE_1");
-            tableMapping.ColumnMappings.Add("VALUE_2", "VALUE_2");
             tableMapping.ColumnMappings.Add("CODE_INFO", "CODE_INFO");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -11149,11 +11034,9 @@ WHERE A.BILLET_STATUS = 2 ORDER BY b.ORDER_OF_BILLET DESC";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT  SYSTEM_EVENT_LOG.TIMESTAMP, SYSTEM_EVENT_LOG.CODENO, SYSTEM_EVENT_LOG.LOCATION, SYSTEM_EVENT_LOG.MESSAGE, SYSTEM_EVENT_LOG.VALUE_1, 
-               SYSTEM_EVENT_LOG.VALUE_2, SYSTEM_EVENT_CODE.EVENT AS CODE_INFO
-FROM     SYSTEM_EVENT_LOG 
-INNER JOIN SYSTEM_EVENT_CODE 
-ON SYSTEM_EVENT_CODE.CODENO = SYSTEM_EVENT_LOG.CODENO
+            this._commandCollection[0].CommandText = @"SELECT  SYSTEM_EVENT_LOG.TIMESTAMP, SYSTEM_EVENT_CODE.EVENT AS CODE_INFO, SYSTEM_EVENT_LOG.LOCATION, SYSTEM_EVENT_LOG.MESSAGE
+FROM     SYSTEM_EVENT_LOG INNER JOIN
+               SYSTEM_EVENT_CODE ON SYSTEM_EVENT_CODE.CODENO = SYSTEM_EVENT_LOG.CODENO
 ORDER BY SYSTEM_EVENT_LOG.TIMESTAMP DESC";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
@@ -12086,7 +11969,8 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT  DANGJIN_DATA.*\r\nFROM     DANGJIN_DATA";
+            this._commandCollection[0].CommandText = "SELECT  EXP_ORDER, CREATE_DATE, ZONE_TEMP, BILLET_TEMP\r\nFROM     DANGJIN_DATA\r\nOR" +
+                "DER BY CREATE_DATE DESC, EXP_ORDER";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;

@@ -54,6 +54,10 @@
 
 
 namespace FurnaceControl.FurnaceControlDataSetTableAdapters {
+    partial class CHART_VIEW_BILLETTableAdapter
+    {
+    }
+
     partial class BILLET_JOINTableAdapter
     {
     }

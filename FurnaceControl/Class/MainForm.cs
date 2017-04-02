@@ -29,6 +29,18 @@ namespace FurnaceControl
 
     public partial class MainForm : Telerik.WinControls.UI.RadForm
     {
+        /************************************************************************
+         * Define Variables 
+         ************************************************************************/
+        private MainClass m_MainClass;
+        private int val;
+        private String query;
+
+        // For Paing Check 
+        enum Page { Main, Schedule, Furnace, Grade_Set, L2_Data, Program_Log };
+        private int nCurrentPage;
+
+
 
         delegate void SetTextCallback(string text);
 
@@ -77,30 +89,22 @@ namespace FurnaceControl
          ************************************************************************/
         private void RadForm1_Load(object sender, EventArgs e)
         {
+            // TODO: 이 코드는 데이터를 'furnaceControlDataSet.DANGJIN_DATA' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
+            this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
             this.nCurrentPage = (int)Page.Main;
 
             this.Timer_GUI_Update.Start();
             this.Timer_DB_Update.Start();
 
             //this.billeT_JOINTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
-
-
+            
             this.tbGrade.ReadOnly = true;
             this.tbSetNo.ReadOnly = true;
             this.tbDetatil.ReadOnly = true;
 
+            InitializeChart();
         }
 
-        /************************************************************************
-         * Define Variables 
-         ************************************************************************/
-        private MainClass m_MainClass;
-        private int val;
-        private String query;
-
-        // For Paing Check 
-        enum Page { Main, Schedule, Furnace, Grade_Set, L2_Data, Program_Log };
-        private int nCurrentPage;
 
 
 
@@ -188,36 +192,35 @@ namespace FurnaceControl
 
         private void InitializeChart()
         {
-            /*
-            LinearAxis verticalAxis = radChartView.Axes.Get<LinearAxis>(0);
-            // or verticalAxis = series.VerticalAxis as LinearAxis;
-            verticalAxis.Minimum = -10;
-            verticalAxis.Maximum = 1000; //this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE;
-            verticalAxis.MajorStep = 20;
-            verticalAxis.HorizontalLocation = AxisHorizontalLocation.Left;
 
-            LinearAxis horizontalAxis = radChartView.Axes.Get<LinearAxis>(1);
-            // or horizontalAxis = series.HorizontalAxis as LinearAxis;
-            horizontalAxis.Minimum = -10;
-            horizontalAxis.Maximum = 1000;
-            horizontalAxis.MajorStep = 20;
+            //CategoricalAxis horizontalAxis = radChartView1.Axes.Get<CategoricalAxis>(0);
+            //// or verticalAxis = series.VerticalAxis as LinearAxis;
+            ////verticalAxis.Minimum = -10;
+            ////verticalAxis.Maximum = 1000; //this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE;
+            ////verticalAxis.MajorStep = 20;
+            ////verticalAxis.HorizontalLocation = AxisHorizontalLocation.Left;
+
+            //LinearAxis verticalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+            //// or horizontalAxis = series.HorizontalAxis as LinearAxis;
+            //verticalAxis.Minimum = 0;
+            //verticalAxis.Maximum = 2000;
+            //verticalAxis.MajorStep = 200;
 
 
-            verticalAxis = radChartView1.Axes.Get<LinearAxis>(0);
-            // or verticalAxis = series.VerticalAxis as LinearAxis;
-            verticalAxis.Minimum = 0;
-            verticalAxis.Maximum = this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE;
-            verticalAxis.MajorStep = 10;
-            verticalAxis.HorizontalLocation = AxisHorizontalLocation.Left;
 
-            horizontalAxis = radChartView1.Axes.Get<LinearAxis>(1);
-            // or horizontalAxis = series.HorizontalAxis as LinearAxis;
-            horizontalAxis.Minimum = 0;
-            horizontalAxis.Maximum = 1800;
-            horizontalAxis.MajorStep = 300;
-             * */
+            //verticalAxis = radChartView1.Axes.Get<LinearAxis>(0);
+            //// or verticalAxis = series.VerticalAxis as LinearAxis;
+            //verticalAxis.Minimum = 0;
+            //verticalAxis.Maximum = this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE;
+            //verticalAxis.MajorStep = 10;
+            //verticalAxis.HorizontalLocation = AxisHorizontalLocation.Left;
+
+            //horizontalAxis = radChartView1.Axes.Get<LinearAxis>(1);
+            //// or horizontalAxis = series.HorizontalAxis as LinearAxis;
+            //horizontalAxis.Minimum = 0;
+            //horizontalAxis.Maximum = 1800;
+            //horizontalAxis.MajorStep = 300;
         }
-
 
 
         /**
@@ -480,36 +483,6 @@ namespace FurnaceControl
         }
 
 
-        /*
-         * Chart Update 
-         * public string nBillet_Order_Number;                       // 빌렛 주문번호
-         * public string nBillet_Heat_Id;                            // 빌렛 히트번호
-         * public int nBillet_Charge_Temperature;                    // 빌렛 장입온도
-         * public int nBillet_Discharge_Target_Temperature;          // 빌렛 목표 배출 온도    
-         * public int nBillet_Predict_Discharge_Billet_Temperature;  // 빌렛 예상 배출 온도
-         * public int nBillet_Predict_Current_Billet_Temperature;    // 현재 빌렛 예상 온도
-         * public int nOrderOfBillet;                                // 가열로내 소재 순서 
-         * public int nZone_Average_Temperature;                     // 존 평균 온도 
-         */
-        private void RefreshChartViewer()
-        {
-            //this.radChartView.Update();
-            //this.radChartView1.Update();
-
-            SteplineSeries series_zone_temp = new SteplineSeries();
-            SteplineSeries series_billet_temp = new SteplineSeries();
-
-            if(radChartView1.Series != null)            radChartView1.Series.Clear();
-
-            for (int i = 0; i < this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN; i++)
-            {
-                series_zone_temp.DataPoints.Add(new CategoricalDataPoint(i, i.ToString()));
-                series_billet_temp.DataPoints.Add(new CategoricalDataPoint(100-i, i.ToString()));
-            }
-            radChartView1.Series.Add(series_zone_temp);
-            radChartView1.Series.Add(series_billet_temp);
-
-        }
 
 
 
@@ -527,18 +500,18 @@ namespace FurnaceControl
                 //this.m_MainClass.m_SQLClass.updateBilletStruct();        // Update Data
 
 
-                DataRow row;
-                Random rnd = new Random();
+                //DataRow row;
+                //Random rnd = new Random();
 
-                this.furnaceControlDataSet.DataTable1.Clear();
-                for (int i = 0; i < 50; i++)
-                {
-                    row = this.furnaceControlDataSet.DataTable1.NewRow();
-                    row["data"] = i;
-                    row["value"] = rnd.Next(0, 1600);
-                    //this.furnaceControlDataSet.DataTable1.Rows.Add(row);
-                    //this.furnaceControlDataSet.DataTable1.AcceptChanges();
-                }
+                //this.furnaceControlDataSet.DataTable1.Clear();
+                //for (int i = 0; i < 50; i++)
+                //{
+                //    row = this.furnaceControlDataSet.DataTable1.NewRow();
+                //    row["data"] = i;
+                //    row["value"] = rnd.Next(0, 1600);
+                //    //this.furnaceControlDataSet.DataTable1.Rows.Add(row);
+                //    //this.furnaceControlDataSet.DataTable1.AcceptChanges();
+                //}
 
                 //this.charT_VIEW_BILLETTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_BILLET);
                 //this.charT_VIEW_ZONE_STATUSTableAdapter.Fill(this.furnaceControlDataSet.CHART_VIEW_ZONE_STATUS);
@@ -568,21 +541,56 @@ namespace FurnaceControl
 
             }
 
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "Call Timer DB Update Timer");
+            //this.m_MainClass.m_SysLogClass.SystemLog(this, "Call Timer DB Update Timer");
 
         }
 
 
+        /*
+ * Chart Update 
+ * public string nBillet_Order_Number;                       // 빌렛 주문번호
+ * public string nBillet_Heat_Id;                            // 빌렛 히트번호
+ * public int nBillet_Charge_Temperature;                    // 빌렛 장입온도
+ * public int nBillet_Discharge_Target_Temperature;          // 빌렛 목표 배출 온도    
+ * public int nBillet_Predict_Discharge_Billet_Temperature;  // 빌렛 예상 배출 온도
+ * public int nBillet_Predict_Current_Billet_Temperature;    // 현재 빌렛 예상 온도
+ * public int nOrderOfBillet;                                // 가열로내 소재 순서 
+ * public int nZone_Average_Temperature;                     // 존 평균 온도 
+ */
+
+        CategoricalDataPoint dd;
+
+        private void RefreshChartViewer()
+        {
+            //this.radChartView.Update();
+            //this.radChartView1.Update();
+
+            SteplineSeries series_zone_temp = new SteplineSeries();
+            LineSeries series_billet_temp = new LineSeries();
+
+
+            radChartView1.Series.Clear();
+
+            for (int i = 0; i < this.m_MainClass.m_Define_Class.nDataLoggingIndex; i++)
+            {
+                series_zone_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nZone_Average_Temperature, i));
+                series_billet_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nBillet_Predict_Current_Billet_Temperature, i));
+            }
+
+            radChartView1.Series.Add(series_zone_temp);
+            radChartView1.Series.Add(series_billet_temp);
+        }
 
         private void Timer_Update_GUI(object sender, EventArgs e)
         {
-
             if (this.nCurrentPage == (int)Page.Main)
             {
                 //this.BilletJoinTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
                 //this.GradeDetailTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
 
-                //RefreshChartViewer();
+                this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
+
+                RefreshChartViewer();
             }
             else if (this.nCurrentPage == (int)Page.Schedule)
             {
@@ -614,7 +622,7 @@ namespace FurnaceControl
             // TODO: 이 코드는 데이터를 'furnaceControlDataSet.GRADE' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
             //this.GradeTableAdapter.Fill(this.furnaceControlDataSet.GRADE);
 
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "Call Timer Update GUI Timer");
+            //this.m_MainClass.m_SysLogClass.SystemLog(this, "Call Timer Update GUI Timer");
         }
 
         private void gridView_Grade_CurrentRowChanged(object sender, CurrentRowChangedEventArgs e)
@@ -687,20 +695,6 @@ namespace FurnaceControl
 
         }
 
-        private void btnStart_L2_Mode_Click(object sender, EventArgs e)
-        {
-            this.m_MainClass.m_L1LinkClass.asdf();
-        }
-
-        private void radButton4_Click(object sender, EventArgs e)
-        {
-            //serialPort1.Open();
-
-            m_MainClass.m_L1LinkClass.getReadGroupTags();
-
-        }
-
-
         private void btnDataLogging_Click(object sender, EventArgs e)
         {
             if (this.m_MainClass.m_Define_Class.isDataLogging == false) 
@@ -712,30 +706,28 @@ namespace FurnaceControl
                 this.m_MainClass.m_Define_Class.nDataLoggingIndex = 0;    // 열모델 계산 결과 배열 인덱스 초기화 
  
                 this.m_MainClass.m_Define_Class.dateDataLoggingStartTime = DateTime.Now;
-                this.txtDanjin_Start_Date.Text = this.m_MainClass.m_Define_Class.dateDataLoggingStartTime.ToString();
-
-                // Initialize Struct for Dangjin 
-                this.m_MainClass.stDANJIN_STRUCT = new DefineClass.ST_DANJIN_STURCT();      // 당진 테스트 용 
-                this.m_MainClass.stDANJIN_STRUCT.strCreateTime = new string[this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
-                this.m_MainClass.stDANJIN_STRUCT.strZoneTemp = new string[this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
-                this.m_MainClass.stDANJIN_STRUCT.strBilletPredictTemp = new string[this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE_FOR_DANJIN];
-                this.m_MainClass.stDANJIN_STRUCT.strStartTime = DateTime.Now.ToString();
-
-
+                this.txtDanjin_Start_Date.Text = this.m_MainClass.m_Define_Class.dateDataLoggingStartTime.ToString();            
             }
             else
             {
                 this.m_MainClass.m_Define_Class.isDataLogging = false; 
                 this.btnDataLogging.BackColor = Color.LightGray;
-
-                this.m_MainClass.stDANJIN_STRUCT.strStartTime = DateTime.Now.ToString();
-
-
-                
- 
             }
         }
 
+        private void btnOPC_Connect_Click(object sender, System.EventArgs e)
+        {
+            this.m_MainClass.m_L1LinkClass.InitializeOPC(txtOPCProgID.Text, txtOPCServerAddress.Text);
+        }
 
+        private void radButton1_Click(object sender, System.EventArgs e)
+        {
+            m_MainClass.m_L1LinkClass.getReadGroupTags("IncrementGroup");
+        }
+
+        private void radChartView1_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

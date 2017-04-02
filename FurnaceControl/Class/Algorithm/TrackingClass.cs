@@ -21,45 +21,7 @@ namespace FurnaceControl
          **/
         public override void Run()
         {
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "TrackingClassTimer");
-
-            /*
-            * Start Data Logging 이 활성화 된 경우 실행 
-            * 실행 주기는 열모델 연산 Delta 시간과 동일하게 DB_Timer 에 설정하면 됨. 
-            */
-            if (this.m_MainClass.m_Define_Class.isDataLogging)
-                {
-                // 당진테스트용 
-                Danjin_Timer_Call_Method();
-            }
-
-        }
-
-
-        /*
-         * Start Data Logging 이 활성화 된 경우 실행 
-         * 실행 주기는 열모델 연산 Delta 시간과 동일하게 DB_Timer 에 설정하면 됨. 
-         */
-
-        private void Danjin_Timer_Call_Method()
-        {
-           
-            dynamic obj = new {Name = "asdf"};
-            this.m_MainClass.m_Define_Class.nDataLoggingIndex++;
-            this.m_MainClass.m_MainForm.Set_txtDanjin_Current_Date(DateTime.Now.ToString());
-            TimeSpan result = DateTime.Now - this.m_MainClass.m_Define_Class.dateDataLoggingStartTime;
-            this.m_MainClass.m_MainForm.Set_txtDanjin_Operation_Time("[" + this.m_MainClass.m_Define_Class.nDataLoggingIndex + "]" + result.ToString(@"h\:mm\:ss"));
-
-
-            Random rnd = new Random();
-
-            this.m_MainClass.m_MainForm.dangjiN_DATATableAdapter.InsertQuery(
-                this.m_MainClass.m_Define_Class.nDataLoggingIndex, 
-                DateTime.Now.ToString(), 
-                rnd.Next().ToString(),
-                rnd.Next().ToString());        
-
-   
+            //this.m_MainClass.m_SysLogClass.SystemLog(this, "TrackingClassTimer");
         }
     }
 }

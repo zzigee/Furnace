@@ -35,7 +35,7 @@ namespace FurnaceControl
             try
             {
 
-                this.m_MainClass.m_SysLogClass.SystemLog(this, "L3LinkClassTimer");
+                //this.m_MainClass.m_SysLogClass.SystemLog(this, "L3LinkClassTimer");
 
                 //L3Socket.Send(data);
             }

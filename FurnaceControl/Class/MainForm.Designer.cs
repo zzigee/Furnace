@@ -33,27 +33,23 @@
             Telerik.WinControls.UI.CategoricalAxis categoricalAxis1 = new Telerik.WinControls.UI.CategoricalAxis();
             Telerik.WinControls.UI.LinearAxis linearAxis1 = new Telerik.WinControls.UI.LinearAxis();
             Telerik.WinControls.UI.LineSeries lineSeries1 = new Telerik.WinControls.UI.LineSeries();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint1 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint2 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint3 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint4 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint5 = new Telerik.Charting.CategoricalDataPoint();
             Telerik.WinControls.UI.SteplineSeries steplineSeries1 = new Telerik.WinControls.UI.SteplineSeries();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint6 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint7 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint8 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint9 = new Telerik.Charting.CategoricalDataPoint();
-            Telerik.Charting.CategoricalDataPoint categoricalDataPoint10 = new Telerik.Charting.CategoricalDataPoint();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition8 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
-            this.furnaceControlDataSet = new FurnaceControl.FurnaceControlDataSet();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition11 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition12 = new Telerik.WinControls.UI.TableViewDefinition();
             this.MainTap = new Telerik.WinControls.UI.RadPageView();
             this.Page1 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGroupBox25 = new Telerik.WinControls.UI.RadGroupBox();
@@ -82,6 +78,8 @@
             this.radLabel63 = new Telerik.WinControls.UI.RadLabel();
             this.radGroupBox12 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView5 = new Telerik.WinControls.UI.RadGridView();
+            this.dANGJINDATABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.furnaceControlDataSet = new FurnaceControl.FurnaceControlDataSet();
             this.radGridView7 = new Telerik.WinControls.UI.RadGridView();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radGroupBox24 = new Telerik.WinControls.UI.RadGroupBox();
@@ -254,19 +252,29 @@
             this.Page3 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGroupBox20 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView10 = new Telerik.WinControls.UI.RadGridView();
+            this.radGridView12 = new Telerik.WinControls.UI.RadGridView();
             this.radGroupBox19 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView8 = new Telerik.WinControls.UI.RadGridView();
             this.radGroupBox18 = new Telerik.WinControls.UI.RadGroupBox();
             this.radGridView9 = new Telerik.WinControls.UI.RadGridView();
+            this.radGridView11 = new Telerik.WinControls.UI.RadGridView();
             this.Page5 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radGridView6 = new Telerik.WinControls.UI.RadGridView();
+            this.txtOPCReadData_2 = new Telerik.WinControls.UI.RadTextBox();
+            this.txtOPCReadData_1 = new Telerik.WinControls.UI.RadTextBox();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel75 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel76 = new Telerik.WinControls.UI.RadLabel();
+            this.txtOPCProgID = new Telerik.WinControls.UI.RadTextBox();
+            this.txtOPCServerAddress = new Telerik.WinControls.UI.RadTextBox();
+            this.btnOPC_Connect = new Telerik.WinControls.UI.RadButton();
             this.object_458707c0_898f_46e1_b2f7_54a65b456b02 = new Telerik.WinControls.RootRadElement();
             this.PanelContainer = new Telerik.WinControls.UI.RadScrollablePanelContainer();
             this.Timer_GUI_Update = new System.Windows.Forms.Timer(this.components);
             this.Timer_DB_Update = new System.Windows.Forms.Timer(this.components);
             this.windows7Theme = new Telerik.WinControls.Themes.Windows7Theme();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.dangjiN_DATATableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).BeginInit();
+            this.dANGJIN_DATATableAdapter = new FurnaceControl.FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).BeginInit();
             this.MainTap.SuspendLayout();
             this.Page1.SuspendLayout();
@@ -300,6 +308,8 @@
             this.radGroupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView5.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANGJINDATABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView7.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
@@ -491,6 +501,9 @@
             this.radGroupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView10.MasterTemplate)).BeginInit();
+            this.radGridView10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView12.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox19)).BeginInit();
             this.radGroupBox19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView8)).BeginInit();
@@ -499,13 +512,22 @@
             this.radGroupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).BeginInit();
+            this.radGridView9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView11.MasterTemplate)).BeginInit();
+            this.Page5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCProgID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCServerAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOPC_Connect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
-            // 
-            // furnaceControlDataSet
-            // 
-            this.furnaceControlDataSet.DataSetName = "FurnaceControlDataSet";
-            this.furnaceControlDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // MainTap
             // 
@@ -565,30 +587,30 @@
             this.radGroupBox25.Controls.Add(this.btnDataLogging);
             this.radGroupBox25.Controls.Add(this.radLabel39);
             this.radGroupBox25.HeaderText = "Danjin Test";
-            this.radGroupBox25.Location = new System.Drawing.Point(732, 483);
+            this.radGroupBox25.Location = new System.Drawing.Point(769, 483);
             this.radGroupBox25.Name = "radGroupBox25";
-            this.radGroupBox25.Size = new System.Drawing.Size(263, 207);
+            this.radGroupBox25.Size = new System.Drawing.Size(226, 207);
             this.radGroupBox25.TabIndex = 0;
             this.radGroupBox25.Text = "Danjin Test";
             // 
             // txtDanjin_Current_Date
             // 
-            this.txtDanjin_Current_Date.Location = new System.Drawing.Point(112, 67);
+            this.txtDanjin_Current_Date.Location = new System.Drawing.Point(95, 67);
             this.txtDanjin_Current_Date.Name = "txtDanjin_Current_Date";
-            this.txtDanjin_Current_Date.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Current_Date.Size = new System.Drawing.Size(121, 20);
             this.txtDanjin_Current_Date.TabIndex = 6;
             // 
             // txtDanjin_Delta_Time
             // 
-            this.txtDanjin_Delta_Time.Location = new System.Drawing.Point(112, 20);
+            this.txtDanjin_Delta_Time.Location = new System.Drawing.Point(95, 20);
             this.txtDanjin_Delta_Time.Name = "txtDanjin_Delta_Time";
-            this.txtDanjin_Delta_Time.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Delta_Time.Size = new System.Drawing.Size(121, 20);
             this.txtDanjin_Delta_Time.TabIndex = 1;
             this.txtDanjin_Delta_Time.Text = "1000";
             // 
             // radLabel74
             // 
-            this.radLabel74.Location = new System.Drawing.Point(13, 68);
+            this.radLabel74.Location = new System.Drawing.Point(21, 68);
             this.radLabel74.Name = "radLabel74";
             this.radLabel74.Size = new System.Drawing.Size(70, 18);
             this.radLabel74.TabIndex = 7;
@@ -596,21 +618,21 @@
             // 
             // txtDanjin_Start_Date
             // 
-            this.txtDanjin_Start_Date.Location = new System.Drawing.Point(112, 44);
+            this.txtDanjin_Start_Date.Location = new System.Drawing.Point(95, 44);
             this.txtDanjin_Start_Date.Name = "txtDanjin_Start_Date";
-            this.txtDanjin_Start_Date.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Start_Date.Size = new System.Drawing.Size(121, 20);
             this.txtDanjin_Start_Date.TabIndex = 4;
             // 
             // txtDanjin_Operation_Time
             // 
-            this.txtDanjin_Operation_Time.Location = new System.Drawing.Point(112, 91);
+            this.txtDanjin_Operation_Time.Location = new System.Drawing.Point(95, 91);
             this.txtDanjin_Operation_Time.Name = "txtDanjin_Operation_Time";
-            this.txtDanjin_Operation_Time.Size = new System.Drawing.Size(142, 20);
+            this.txtDanjin_Operation_Time.Size = new System.Drawing.Size(121, 20);
             this.txtDanjin_Operation_Time.TabIndex = 1;
             // 
             // radLabel73
             // 
-            this.radLabel73.Location = new System.Drawing.Point(13, 45);
+            this.radLabel73.Location = new System.Drawing.Point(35, 45);
             this.radLabel73.Name = "radLabel73";
             this.radLabel73.Size = new System.Drawing.Size(56, 18);
             this.radLabel73.TabIndex = 5;
@@ -618,7 +640,7 @@
             // 
             // radLabel72
             // 
-            this.radLabel72.Location = new System.Drawing.Point(13, 92);
+            this.radLabel72.Location = new System.Drawing.Point(7, 92);
             this.radLabel72.Name = "radLabel72";
             this.radLabel72.Size = new System.Drawing.Size(84, 18);
             this.radLabel72.TabIndex = 3;
@@ -626,16 +648,16 @@
             // 
             // btnDataLogging
             // 
-            this.btnDataLogging.Location = new System.Drawing.Point(5, 142);
+            this.btnDataLogging.Location = new System.Drawing.Point(6, 142);
             this.btnDataLogging.Name = "btnDataLogging";
-            this.btnDataLogging.Size = new System.Drawing.Size(253, 60);
+            this.btnDataLogging.Size = new System.Drawing.Size(214, 60);
             this.btnDataLogging.TabIndex = 3;
             this.btnDataLogging.Text = "Start Data Logging";
             this.btnDataLogging.Click += new System.EventHandler(this.btnDataLogging_Click);
             // 
             // radLabel39
             // 
-            this.radLabel39.Location = new System.Drawing.Point(11, 21);
+            this.radLabel39.Location = new System.Drawing.Point(6, 21);
             this.radLabel39.Name = "radLabel39";
             this.radLabel39.Size = new System.Drawing.Size(85, 18);
             this.radLabel39.TabIndex = 2;
@@ -646,70 +668,26 @@
             cartesianArea1.GridDesign.AlternatingVerticalColor = false;
             cartesianArea1.GridDesign.DrawVerticalFills = false;
             cartesianArea1.GridDesign.DrawVerticalStripes = false;
+            cartesianArea1.ShowGrid = true;
             this.radChartView1.AreaDesign = cartesianArea1;
             categoricalAxis1.IsPrimary = true;
-            categoricalAxis1.LabelFitMode = Telerik.Charting.AxisLabelFitMode.MultiLine;
             categoricalAxis1.LabelRotationAngle = 300D;
             categoricalAxis1.ShowLabels = false;
-            categoricalAxis1.Title = "Time";
+            categoricalAxis1.Title = "Time (Min)";
             linearAxis1.AxisType = Telerik.Charting.AxisType.Second;
             linearAxis1.IsPrimary = true;
             linearAxis1.LabelRotationAngle = 300D;
-            linearAxis1.MajorStep = 20D;
             linearAxis1.TickOrigin = null;
-            linearAxis1.Title = "Temp";
+            linearAxis1.Title = "Temperature (C)";
             this.radChartView1.Axes.AddRange(new Telerik.WinControls.UI.Axis[] {
             categoricalAxis1,
             linearAxis1});
             this.radChartView1.Location = new System.Drawing.Point(0, 0);
             this.radChartView1.Name = "radChartView1";
-            categoricalDataPoint1.Category = "1";
-            categoricalDataPoint1.Label = 45D;
-            categoricalDataPoint1.Value = 45D;
-            categoricalDataPoint2.Category = "2";
-            categoricalDataPoint2.Label = 88D;
-            categoricalDataPoint2.Value = 88D;
-            categoricalDataPoint3.Category = "3";
-            categoricalDataPoint3.Label = 43D;
-            categoricalDataPoint3.Value = 43D;
-            categoricalDataPoint4.Category = "4";
-            categoricalDataPoint4.Label = 40D;
-            categoricalDataPoint4.Value = 40D;
-            categoricalDataPoint5.Category = "5";
-            categoricalDataPoint5.Label = 95D;
-            categoricalDataPoint5.Value = 95D;
-            lineSeries1.DataPoints.AddRange(new Telerik.Charting.DataPoint[] {
-            categoricalDataPoint1,
-            categoricalDataPoint2,
-            categoricalDataPoint3,
-            categoricalDataPoint4,
-            categoricalDataPoint5});
             lineSeries1.HorizontalAxis = categoricalAxis1;
             lineSeries1.LabelAngle = 90D;
             lineSeries1.LabelDistanceToPoint = 15D;
-            lineSeries1.Spline = true;
             lineSeries1.VerticalAxis = linearAxis1;
-            categoricalDataPoint6.Category = "1";
-            categoricalDataPoint6.Label = 12D;
-            categoricalDataPoint6.Value = 12D;
-            categoricalDataPoint7.Category = "2";
-            categoricalDataPoint7.Label = 80D;
-            categoricalDataPoint7.Value = 80D;
-            categoricalDataPoint8.Category = "3";
-            categoricalDataPoint8.Label = 120D;
-            categoricalDataPoint8.Value = 120D;
-            categoricalDataPoint9.Category = "4";
-            categoricalDataPoint9.Label = 150D;
-            categoricalDataPoint9.Value = 150D;
-            categoricalDataPoint10.Category = "5";
-            categoricalDataPoint10.Label = 140D;
-            categoricalDataPoint10.Value = 140D;
-            steplineSeries1.DataPoints.AddRange(new Telerik.Charting.DataPoint[] {
-            categoricalDataPoint6,
-            categoricalDataPoint7,
-            categoricalDataPoint8,
-            categoricalDataPoint9,
-            categoricalDataPoint10});
             steplineSeries1.HorizontalAxis = categoricalAxis1;
             steplineSeries1.LabelAngle = 90D;
             steplineSeries1.LabelDistanceToPoint = 15D;
@@ -717,15 +695,11 @@
             this.radChartView1.Series.AddRange(new Telerik.WinControls.UI.ChartSeries[] {
             lineSeries1,
             steplineSeries1});
-            this.radChartView1.ShowGrid = false;
-            this.radChartView1.ShowLegend = true;
-            this.radChartView1.ShowPanZoom = true;
-            this.radChartView1.ShowTitle = true;
-            this.radChartView1.ShowToolTip = true;
             this.radChartView1.Size = new System.Drawing.Size(992, 361);
             this.radChartView1.TabIndex = 7;
             this.radChartView1.Text = "radChartView1";
             this.radChartView1.ThemeName = "Windows7";
+            this.radChartView1.Click += new System.EventHandler(this.radChartView1_Click);
             // 
             // radGroupBox17
             // 
@@ -743,9 +717,9 @@
             this.radGroupBox17.Controls.Add(this.radLabel67);
             this.radGroupBox17.Controls.Add(this.radLabel63);
             this.radGroupBox17.HeaderText = "Next In Schedule";
-            this.radGroupBox17.Location = new System.Drawing.Point(732, 483);
+            this.radGroupBox17.Location = new System.Drawing.Point(767, 483);
             this.radGroupBox17.Name = "radGroupBox17";
-            this.radGroupBox17.Size = new System.Drawing.Size(263, 207);
+            this.radGroupBox17.Size = new System.Drawing.Size(228, 207);
             this.radGroupBox17.TabIndex = 4;
             this.radGroupBox17.Text = "Next In Schedule";
             this.radGroupBox17.ThemeName = "Office2007Black";
@@ -863,26 +837,85 @@
             this.radGroupBox12.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox12.Controls.Add(this.radGridView5);
             this.radGroupBox12.HeaderText = "Zone";
-            this.radGroupBox12.Location = new System.Drawing.Point(490, 483);
+            this.radGroupBox12.Location = new System.Drawing.Point(484, 483);
             this.radGroupBox12.Name = "radGroupBox12";
-            this.radGroupBox12.Size = new System.Drawing.Size(236, 207);
+            this.radGroupBox12.Size = new System.Drawing.Size(279, 207);
             this.radGroupBox12.TabIndex = 3;
             this.radGroupBox12.Text = "Zone";
             this.radGroupBox12.ThemeName = "Office2007Black";
             // 
             // radGridView5
             // 
+            this.radGridView5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
+            this.radGridView5.Cursor = System.Windows.Forms.Cursors.Default;
             this.radGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radGridView5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.radGridView5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radGridView5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView5.Location = new System.Drawing.Point(2, 18);
             // 
             // 
             // 
+            this.radGridView5.MasterTemplate.AllowAddNewRow = false;
+            this.radGridView5.MasterTemplate.AllowColumnChooser = false;
+            this.radGridView5.MasterTemplate.AllowColumnReorder = false;
+            this.radGridView5.MasterTemplate.AllowDragToGroup = false;
+            this.radGridView5.MasterTemplate.AllowRowResize = false;
+            gridViewDecimalColumn1.DataType = typeof(int);
+            gridViewDecimalColumn1.EnableExpressionEditor = false;
+            gridViewDecimalColumn1.FieldName = "EXP_ORDER";
+            gridViewDecimalColumn1.HeaderText = "EXP_ORDER";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.Name = "EXP_ORDER";
+            gridViewDecimalColumn1.Width = 34;
+            gridViewDateTimeColumn1.EnableExpressionEditor = false;
+            gridViewDateTimeColumn1.FieldName = "CREATE_DATE";
+            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            gridViewDateTimeColumn1.HeaderText = "CREATE_DATE";
+            gridViewDateTimeColumn1.IsAutoGenerated = true;
+            gridViewDateTimeColumn1.Name = "CREATE_DATE";
+            gridViewDateTimeColumn1.Width = 141;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "ZONE_TEMP";
+            gridViewTextBoxColumn1.HeaderText = "ZONE_TEMP";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "ZONE_TEMP";
+            gridViewTextBoxColumn1.Width = 44;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "BILLET_TEMP";
+            gridViewTextBoxColumn2.HeaderText = "BILLET_TEMP";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "BILLET_TEMP";
+            gridViewTextBoxColumn2.Width = 41;
+            this.radGridView5.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn1,
+            gridViewDateTimeColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2});
+            this.radGridView5.MasterTemplate.DataSource = this.dANGJINDATABindingSource;
+            this.radGridView5.MasterTemplate.EnableGrouping = false;
+            this.radGridView5.MasterTemplate.EnableSorting = false;
+            this.radGridView5.MasterTemplate.ShowRowHeaderColumn = false;
             this.radGridView5.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.radGridView5.Name = "radGridView5";
-            this.radGridView5.Size = new System.Drawing.Size(232, 187);
+            this.radGridView5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.radGridView5.ReadOnly = true;
+            this.radGridView5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.radGridView5.ShowGroupPanel = false;
+            this.radGridView5.Size = new System.Drawing.Size(275, 187);
             this.radGridView5.TabIndex = 4;
             this.radGridView5.Text = "radGridView5";
-            this.radGridView5.ThemeName = "Office2007Black";
+            this.radGridView5.ThemeName = "Windows7";
+            // 
+            // dANGJINDATABindingSource
+            // 
+            this.dANGJINDATABindingSource.DataMember = "DANGJIN_DATA";
+            this.dANGJINDATABindingSource.DataSource = this.furnaceControlDataSet;
+            // 
+            // furnaceControlDataSet
+            // 
+            this.furnaceControlDataSet.DataSetName = "FurnaceControlDataSet";
+            this.furnaceControlDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // radGridView7
             // 
@@ -918,7 +951,7 @@
             this.radPanel1.Controls.Add(this.radGroupBox10);
             this.radPanel1.Location = new System.Drawing.Point(4, 490);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(480, 200);
+            this.radPanel1.Size = new System.Drawing.Size(474, 200);
             this.radPanel1.TabIndex = 6;
             this.radPanel1.ThemeName = "Office2007Black";
             // 
@@ -944,7 +977,6 @@
             this.btnStart_L2_Mode.TabIndex = 5;
             this.btnStart_L2_Mode.Text = "Request Level 2 Mode";
             this.btnStart_L2_Mode.ThemeName = "Office2007Black";
-            this.btnStart_L2_Mode.Click += new System.EventHandler(this.btnStart_L2_Mode_Click);
             // 
             // radButton3
             // 
@@ -984,14 +1016,14 @@
             this.radGroupBox22.HeaderText = "Delays";
             this.radGroupBox22.Location = new System.Drawing.Point(242, 6);
             this.radGroupBox22.Name = "radGroupBox22";
-            this.radGroupBox22.Size = new System.Drawing.Size(230, 191);
+            this.radGroupBox22.Size = new System.Drawing.Size(226, 191);
             this.radGroupBox22.TabIndex = 5;
             this.radGroupBox22.Text = "Delays";
             this.radGroupBox22.ThemeName = "Office2007Black";
             // 
             // radLabel59
             // 
-            this.radLabel59.Location = new System.Drawing.Point(205, 102);
+            this.radLabel59.Location = new System.Drawing.Point(202, 102);
             this.radLabel59.Name = "radLabel59";
             this.radLabel59.Size = new System.Drawing.Size(13, 18);
             this.radLabel59.TabIndex = 9;
@@ -1072,7 +1104,7 @@
             // 
             this.btnRollChangeDelay.Location = new System.Drawing.Point(8, 138);
             this.btnRollChangeDelay.Name = "btnRollChangeDelay";
-            this.btnRollChangeDelay.Size = new System.Drawing.Size(211, 47);
+            this.btnRollChangeDelay.Size = new System.Drawing.Size(210, 47);
             this.btnRollChangeDelay.TabIndex = 7;
             this.btnRollChangeDelay.Text = "Start Roll Change Dealy";
             this.btnRollChangeDelay.ThemeName = "Office2007Black";
@@ -1081,11 +1113,10 @@
             // 
             this.radButton4.Location = new System.Drawing.Point(9, 22);
             this.radButton4.Name = "radButton4";
-            this.radButton4.Size = new System.Drawing.Size(211, 46);
+            this.radButton4.Size = new System.Drawing.Size(209, 46);
             this.radButton4.TabIndex = 6;
             this.radButton4.Text = "Start Schedule Delay";
             this.radButton4.ThemeName = "Office2007Black";
-            this.radButton4.Click += new System.EventHandler(this.radButton4_Click);
             // 
             // radGroupBox10
             // 
@@ -2971,17 +3002,33 @@
             // 
             // radGridView10
             // 
+            this.radGridView10.Controls.Add(this.radGridView12);
             this.radGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radGridView10.Location = new System.Drawing.Point(2, 18);
             // 
             // 
             // 
-            this.radGridView10.MasterTemplate.ViewDefinition = tableViewDefinition7;
+            this.radGridView10.MasterTemplate.ViewDefinition = tableViewDefinition8;
             this.radGridView10.Name = "radGridView10";
             this.radGridView10.Size = new System.Drawing.Size(597, 324);
             this.radGridView10.TabIndex = 0;
             this.radGridView10.Text = "radGridView10";
             this.radGridView10.ThemeName = "Office2007Black";
+            // 
+            // radGridView12
+            // 
+            this.radGridView12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radGridView12.Location = new System.Drawing.Point(0, 0);
+            // 
+            // 
+            // 
+            this.radGridView12.MasterTemplate.ViewDefinition = tableViewDefinition7;
+            this.radGridView12.Name = "radGridView12";
+            this.radGridView12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.radGridView12.Size = new System.Drawing.Size(597, 324);
+            this.radGridView12.TabIndex = 1;
+            this.radGridView12.Text = "radGridView12";
+            this.radGridView12.ThemeName = "Windows7";
             // 
             // radGroupBox19
             // 
@@ -3002,7 +3049,7 @@
             // 
             // 
             // 
-            this.radGridView8.MasterTemplate.ViewDefinition = tableViewDefinition8;
+            this.radGridView8.MasterTemplate.ViewDefinition = tableViewDefinition9;
             this.radGridView8.Name = "radGridView8";
             this.radGridView8.Size = new System.Drawing.Size(378, 664);
             this.radGridView8.TabIndex = 2;
@@ -3023,27 +3070,143 @@
             // 
             // radGridView9
             // 
+            this.radGridView9.Controls.Add(this.radGridView11);
             this.radGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radGridView9.Location = new System.Drawing.Point(2, 18);
             // 
             // 
             // 
-            this.radGridView9.MasterTemplate.ViewDefinition = tableViewDefinition9;
+            this.radGridView9.MasterTemplate.ViewDefinition = tableViewDefinition11;
             this.radGridView9.Name = "radGridView9";
             this.radGridView9.Size = new System.Drawing.Size(597, 314);
             this.radGridView9.TabIndex = 1;
             this.radGridView9.Text = "radGridView9";
             this.radGridView9.ThemeName = "Office2007Black";
             // 
+            // radGridView11
+            // 
+            this.radGridView11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radGridView11.Location = new System.Drawing.Point(0, 0);
+            // 
+            // 
+            // 
+            this.radGridView11.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.radGridView11.Name = "radGridView11";
+            this.radGridView11.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.radGridView11.Size = new System.Drawing.Size(597, 314);
+            this.radGridView11.TabIndex = 1;
+            this.radGridView11.Text = "radGridView11";
+            this.radGridView11.ThemeName = "Windows7";
+            // 
             // Page5
             // 
             this.Page5.AutoScroll = true;
+            this.Page5.Controls.Add(this.radGridView6);
+            this.Page5.Controls.Add(this.txtOPCReadData_2);
+            this.Page5.Controls.Add(this.txtOPCReadData_1);
+            this.Page5.Controls.Add(this.radButton1);
+            this.Page5.Controls.Add(this.radLabel75);
+            this.Page5.Controls.Add(this.radLabel76);
+            this.Page5.Controls.Add(this.txtOPCProgID);
+            this.Page5.Controls.Add(this.txtOPCServerAddress);
+            this.Page5.Controls.Add(this.btnOPC_Connect);
             this.Page5.ItemSize = new System.Drawing.SizeF(182F, 28F);
             this.Page5.Location = new System.Drawing.Point(10, 37);
             this.Page5.Name = "Page5";
             this.Page5.Size = new System.Drawing.Size(995, 690);
             this.Page5.Text = "Program Log";
             this.Page5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // radGridView6
+            // 
+            this.radGridView6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
+            this.radGridView6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.radGridView6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.radGridView6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radGridView6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radGridView6.Location = new System.Drawing.Point(300, 5);
+            // 
+            // 
+            // 
+            this.radGridView6.MasterTemplate.AllowAddNewRow = false;
+            this.radGridView6.MasterTemplate.AllowColumnReorder = false;
+            this.radGridView6.MasterTemplate.EnableAlternatingRowColor = true;
+            this.radGridView6.MasterTemplate.EnablePaging = true;
+            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition12;
+            this.radGridView6.Name = "radGridView6";
+            this.radGridView6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.radGridView6.ReadOnly = true;
+            this.radGridView6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.radGridView6.Size = new System.Drawing.Size(692, 685);
+            this.radGridView6.TabIndex = 3;
+            this.radGridView6.Text = "radGridView6";
+            this.radGridView6.ThemeName = "Windows7";
+            // 
+            // txtOPCReadData_2
+            // 
+            this.txtOPCReadData_2.Location = new System.Drawing.Point(5, 107);
+            this.txtOPCReadData_2.Name = "txtOPCReadData_2";
+            this.txtOPCReadData_2.Size = new System.Drawing.Size(187, 20);
+            this.txtOPCReadData_2.TabIndex = 2;
+            this.txtOPCReadData_2.Text = "OPCsoft.opcSvrTS.1";
+            // 
+            // txtOPCReadData_1
+            // 
+            this.txtOPCReadData_1.Location = new System.Drawing.Point(5, 81);
+            this.txtOPCReadData_1.Name = "txtOPCReadData_1";
+            this.txtOPCReadData_1.Size = new System.Drawing.Size(187, 20);
+            this.txtOPCReadData_1.TabIndex = 1;
+            this.txtOPCReadData_1.Text = "OPCsoft.opcSvrTS.1";
+            // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(198, 81);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(96, 46);
+            this.radButton1.TabIndex = 1;
+            this.radButton1.Text = "Read Group";
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
+            // 
+            // radLabel75
+            // 
+            this.radLabel75.Location = new System.Drawing.Point(5, 5);
+            this.radLabel75.Name = "radLabel75";
+            this.radLabel75.Size = new System.Drawing.Size(44, 18);
+            this.radLabel75.TabIndex = 1;
+            this.radLabel75.Text = "Prog ID";
+            // 
+            // radLabel76
+            // 
+            this.radLabel76.Location = new System.Drawing.Point(5, 31);
+            this.radLabel76.Name = "radLabel76";
+            this.radLabel76.Size = new System.Drawing.Size(81, 18);
+            this.radLabel76.TabIndex = 1;
+            this.radLabel76.Text = "Server Address";
+            // 
+            // txtOPCProgID
+            // 
+            this.txtOPCProgID.Location = new System.Drawing.Point(92, 5);
+            this.txtOPCProgID.Name = "txtOPCProgID";
+            this.txtOPCProgID.Size = new System.Drawing.Size(100, 20);
+            this.txtOPCProgID.TabIndex = 0;
+            this.txtOPCProgID.Text = "OPCsoft.opcSvrTS.1";
+            // 
+            // txtOPCServerAddress
+            // 
+            this.txtOPCServerAddress.Location = new System.Drawing.Point(92, 31);
+            this.txtOPCServerAddress.Name = "txtOPCServerAddress";
+            this.txtOPCServerAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtOPCServerAddress.TabIndex = 1;
+            this.txtOPCServerAddress.Text = "127.0.0.1";
+            // 
+            // btnOPC_Connect
+            // 
+            this.btnOPC_Connect.Location = new System.Drawing.Point(198, 5);
+            this.btnOPC_Connect.Name = "btnOPC_Connect";
+            this.btnOPC_Connect.Size = new System.Drawing.Size(96, 46);
+            this.btnOPC_Connect.TabIndex = 0;
+            this.btnOPC_Connect.Text = "OPC Connect";
+            this.btnOPC_Connect.Click += new System.EventHandler(this.btnOPC_Connect_Click);
             // 
             // object_458707c0_898f_46e1_b2f7_54a65b456b02
             // 
@@ -3068,9 +3231,9 @@
             this.Timer_DB_Update.Interval = 1000;
             this.Timer_DB_Update.Tick += new System.EventHandler(this.Timer_DB_Update_Tick);
             // 
-            // dangjiN_DATATableAdapter
+            // dANGJIN_DATATableAdapter
             // 
-            this.dangjiN_DATATableAdapter.ClearBeforeFill = true;
+            this.dANGJIN_DATATableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
@@ -3090,7 +3253,6 @@
             this.ThemeName = "Windows7";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.RadForm1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).EndInit();
             this.MainTap.ResumeLayout(false);
             this.Page1.ResumeLayout(false);
@@ -3126,6 +3288,8 @@
             this.radGroupBox12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView5.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANGJINDATABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView7.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
@@ -3334,6 +3498,10 @@
             this.radGroupBox20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView10.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView10)).EndInit();
+            this.radGridView10.ResumeLayout(false);
+            this.radGridView10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView12.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox19)).EndInit();
             this.radGroupBox19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView8.MasterTemplate)).EndInit();
@@ -3342,6 +3510,22 @@
             this.radGroupBox18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView9)).EndInit();
+            this.radGridView9.ResumeLayout(false);
+            this.radGridView9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView11.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView11)).EndInit();
+            this.Page5.ResumeLayout(false);
+            this.Page5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCReadData_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCProgID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOPCServerAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOPC_Connect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -3559,13 +3743,25 @@
         private Telerik.WinControls.UI.RadGroupBox radGroupBox25;
         private Telerik.WinControls.UI.RadTextBox txtDanjin_Operation_Time;
         private Telerik.WinControls.UI.RadLabel radLabel72;
-        private Telerik.WinControls.UI.RadButton btnDataLogging;
+        public Telerik.WinControls.UI.RadButton btnDataLogging;
         private Telerik.WinControls.UI.RadLabel radLabel39;
         public Telerik.WinControls.UI.RadTextBox txtDanjin_Start_Date;
         private Telerik.WinControls.UI.RadLabel radLabel73;
         public  Telerik.WinControls.UI.RadTextBox txtDanjin_Delta_Time;
         public Telerik.WinControls.UI.RadTextBox txtDanjin_Current_Date;
         private Telerik.WinControls.UI.RadLabel radLabel74;
-        public FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter dangjiN_DATATableAdapter;
+        private Telerik.WinControls.UI.RadButton btnOPC_Connect;
+        private Telerik.WinControls.UI.RadLabel radLabel76;
+        private Telerik.WinControls.UI.RadTextBox txtOPCProgID;
+        private Telerik.WinControls.UI.RadTextBox txtOPCServerAddress;
+        public Telerik.WinControls.UI.RadTextBox txtOPCReadData_2;
+        public Telerik.WinControls.UI.RadTextBox txtOPCReadData_1;
+        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadLabel radLabel75;
+        private Telerik.WinControls.UI.RadGridView radGridView6;
+        private Telerik.WinControls.UI.RadGridView radGridView11;
+        private Telerik.WinControls.UI.RadGridView radGridView12;
+        private System.Windows.Forms.BindingSource dANGJINDATABindingSource;
+        public FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter dANGJIN_DATATableAdapter;
     }
 }
