@@ -1495,7 +1495,7 @@
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radGroupBox16);
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radLabel40);
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radLabel41);
-            this.radScrollablePanel3.PanelContainer.Size = new System.Drawing.Size(972, 94);
+            this.radScrollablePanel3.PanelContainer.Size = new System.Drawing.Size(972, 81);
             this.radScrollablePanel3.Size = new System.Drawing.Size(974, 100);
             this.radScrollablePanel3.TabIndex = 2;
             this.radScrollablePanel3.Text = "radScrollablePanel3";
