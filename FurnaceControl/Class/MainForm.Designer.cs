@@ -543,10 +543,10 @@
             this.Page1.Controls.Add(this.radGridView7);
             this.Page1.Controls.Add(this.radPanel1);
             this.Page1.Description = null;
-            this.Page1.ItemSize = new System.Drawing.SizeF(124F, 44F);
-            this.Page1.Location = new System.Drawing.Point(10, 53);
+            this.Page1.ItemSize = new System.Drawing.SizeF(142F, 28F);
+            this.Page1.Location = new System.Drawing.Point(10, 37);
             this.Page1.Name = "Page1";
-            this.Page1.Size = new System.Drawing.Size(995, 674);
+            this.Page1.Size = new System.Drawing.Size(995, 690);
             this.Page1.TabStop = true;
             this.Page1.Text = "Main";
             this.Page1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -575,14 +575,14 @@
             // 
             this.txtDanjin_Current_Date.Location = new System.Drawing.Point(112, 67);
             this.txtDanjin_Current_Date.Name = "txtDanjin_Current_Date";
-            this.txtDanjin_Current_Date.Size = new System.Drawing.Size(142, 35);
+            this.txtDanjin_Current_Date.Size = new System.Drawing.Size(142, 20);
             this.txtDanjin_Current_Date.TabIndex = 6;
             // 
             // txtDanjin_Delta_Time
             // 
             this.txtDanjin_Delta_Time.Location = new System.Drawing.Point(112, 20);
             this.txtDanjin_Delta_Time.Name = "txtDanjin_Delta_Time";
-            this.txtDanjin_Delta_Time.Size = new System.Drawing.Size(142, 35);
+            this.txtDanjin_Delta_Time.Size = new System.Drawing.Size(142, 20);
             this.txtDanjin_Delta_Time.TabIndex = 1;
             this.txtDanjin_Delta_Time.Text = "1000";
             // 
@@ -590,7 +590,7 @@
             // 
             this.radLabel74.Location = new System.Drawing.Point(13, 68);
             this.radLabel74.Name = "radLabel74";
-            this.radLabel74.Size = new System.Drawing.Size(138, 34);
+            this.radLabel74.Size = new System.Drawing.Size(70, 18);
             this.radLabel74.TabIndex = 7;
             this.radLabel74.Text = "Current Date";
             // 
@@ -598,21 +598,21 @@
             // 
             this.txtDanjin_Start_Date.Location = new System.Drawing.Point(112, 44);
             this.txtDanjin_Start_Date.Name = "txtDanjin_Start_Date";
-            this.txtDanjin_Start_Date.Size = new System.Drawing.Size(142, 35);
+            this.txtDanjin_Start_Date.Size = new System.Drawing.Size(142, 20);
             this.txtDanjin_Start_Date.TabIndex = 4;
             // 
             // txtDanjin_Operation_Time
             // 
             this.txtDanjin_Operation_Time.Location = new System.Drawing.Point(112, 91);
             this.txtDanjin_Operation_Time.Name = "txtDanjin_Operation_Time";
-            this.txtDanjin_Operation_Time.Size = new System.Drawing.Size(142, 35);
+            this.txtDanjin_Operation_Time.Size = new System.Drawing.Size(142, 20);
             this.txtDanjin_Operation_Time.TabIndex = 1;
             // 
             // radLabel73
             // 
             this.radLabel73.Location = new System.Drawing.Point(13, 45);
             this.radLabel73.Name = "radLabel73";
-            this.radLabel73.Size = new System.Drawing.Size(110, 34);
+            this.radLabel73.Size = new System.Drawing.Size(56, 18);
             this.radLabel73.TabIndex = 5;
             this.radLabel73.Text = "Start Date";
             // 
@@ -620,7 +620,7 @@
             // 
             this.radLabel72.Location = new System.Drawing.Point(13, 92);
             this.radLabel72.Name = "radLabel72";
-            this.radLabel72.Size = new System.Drawing.Size(166, 34);
+            this.radLabel72.Size = new System.Drawing.Size(84, 18);
             this.radLabel72.TabIndex = 3;
             this.radLabel72.Text = "Operation Time";
             // 
@@ -637,7 +637,7 @@
             // 
             this.radLabel39.Location = new System.Drawing.Point(11, 21);
             this.radLabel39.Name = "radLabel39";
-            this.radLabel39.Size = new System.Drawing.Size(168, 34);
+            this.radLabel39.Size = new System.Drawing.Size(85, 18);
             this.radLabel39.TabIndex = 2;
             this.radLabel39.Text = "Delta_Time(Sec)";
             // 
@@ -754,7 +754,7 @@
             // 
             this.radLabel68.Location = new System.Drawing.Point(169, 170);
             this.radLabel68.Name = "radLabel68";
-            this.radLabel68.Size = new System.Drawing.Size(59, 34);
+            this.radLabel68.Size = new System.Drawing.Size(31, 18);
             this.radLabel68.TabIndex = 19;
             this.radLabel68.Text = "1250";
             this.radLabel68.ThemeName = "Office2007Black";
@@ -763,7 +763,7 @@
             // 
             this.radLabel64.Location = new System.Drawing.Point(169, 118);
             this.radLabel64.Name = "radLabel64";
-            this.radLabel64.Size = new System.Drawing.Size(55, 34);
+            this.radLabel64.Size = new System.Drawing.Size(29, 18);
             this.radLabel64.TabIndex = 15;
             this.radLabel64.Text = "New";
             this.radLabel64.ThemeName = "Office2007Black";
@@ -772,7 +772,7 @@
             // 
             this.radLabel69.Location = new System.Drawing.Point(169, 144);
             this.radLabel69.Name = "radLabel69";
-            this.radLabel69.Size = new System.Drawing.Size(59, 34);
+            this.radLabel69.Size = new System.Drawing.Size(31, 18);
             this.radLabel69.TabIndex = 20;
             this.radLabel69.Text = "5300";
             this.radLabel69.ThemeName = "Office2007Black";
@@ -781,7 +781,7 @@
             // 
             this.radLabel60.Location = new System.Drawing.Point(169, 66);
             this.radLabel60.Name = "radLabel60";
-            this.radLabel60.Size = new System.Drawing.Size(134, 34);
+            this.radLabel60.Size = new System.Drawing.Size(68, 18);
             this.radLabel60.TabIndex = 11;
             this.radLabel60.Text = "E09A050069";
             this.radLabel60.ThemeName = "Office2007Black";
@@ -790,7 +790,7 @@
             // 
             this.radLabel70.Location = new System.Drawing.Point(46, 170);
             this.radLabel70.Name = "radLabel70";
-            this.radLabel70.Size = new System.Drawing.Size(100, 34);
+            this.radLabel70.Size = new System.Drawing.Size(51, 18);
             this.radLabel70.TabIndex = 17;
             this.radLabel70.Text = "Temp (C)";
             this.radLabel70.ThemeName = "Office2007Black";
@@ -799,7 +799,7 @@
             // 
             this.radLabel65.Location = new System.Drawing.Point(169, 92);
             this.radLabel65.Name = "radLabel65";
-            this.radLabel65.Size = new System.Drawing.Size(85, 34);
+            this.radLabel65.Size = new System.Drawing.Size(44, 18);
             this.radLabel65.TabIndex = 16;
             this.radLabel65.Text = "C42139";
             this.radLabel65.ThemeName = "Office2007Black";
@@ -808,7 +808,7 @@
             // 
             this.radLabel71.Location = new System.Drawing.Point(46, 144);
             this.radLabel71.Name = "radLabel71";
-            this.radLabel71.Size = new System.Drawing.Size(79, 34);
+            this.radLabel71.Size = new System.Drawing.Size(41, 18);
             this.radLabel71.TabIndex = 18;
             this.radLabel71.Text = "Length";
             this.radLabel71.ThemeName = "Office2007Black";
@@ -817,7 +817,7 @@
             // 
             this.radLabel62.Location = new System.Drawing.Point(169, 40);
             this.radLabel62.Name = "radLabel62";
-            this.radLabel62.Size = new System.Drawing.Size(117, 34);
+            this.radLabel62.Size = new System.Drawing.Size(60, 18);
             this.radLabel62.TabIndex = 12;
             this.radLabel62.Text = "25825-201";
             this.radLabel62.ThemeName = "Office2007Black";
@@ -826,7 +826,7 @@
             // 
             this.radLabel66.Location = new System.Drawing.Point(46, 118);
             this.radLabel66.Name = "radLabel66";
-            this.radLabel66.Size = new System.Drawing.Size(88, 34);
+            this.radLabel66.Size = new System.Drawing.Size(45, 18);
             this.radLabel66.TabIndex = 13;
             this.radLabel66.Text = "Furnace";
             this.radLabel66.ThemeName = "Office2007Black";
@@ -835,7 +835,7 @@
             // 
             this.radLabel61.Location = new System.Drawing.Point(46, 66);
             this.radLabel61.Name = "radLabel61";
-            this.radLabel61.Size = new System.Drawing.Size(156, 34);
+            this.radLabel61.Size = new System.Drawing.Size(79, 18);
             this.radLabel61.TabIndex = 9;
             this.radLabel61.Text = "Order Number";
             this.radLabel61.ThemeName = "Office2007Black";
@@ -844,7 +844,7 @@
             // 
             this.radLabel67.Location = new System.Drawing.Point(46, 92);
             this.radLabel67.Name = "radLabel67";
-            this.radLabel67.Size = new System.Drawing.Size(70, 34);
+            this.radLabel67.Size = new System.Drawing.Size(36, 18);
             this.radLabel67.TabIndex = 14;
             this.radLabel67.Text = "Grade";
             this.radLabel67.ThemeName = "Office2007Black";
@@ -853,7 +853,7 @@
             // 
             this.radLabel63.Location = new System.Drawing.Point(46, 40);
             this.radLabel63.Name = "radLabel63";
-            this.radLabel63.Size = new System.Drawing.Size(85, 34);
+            this.radLabel63.Size = new System.Drawing.Size(44, 18);
             this.radLabel63.TabIndex = 10;
             this.radLabel63.Text = "Heat ID";
             this.radLabel63.ThemeName = "Office2007Black";
@@ -993,7 +993,7 @@
             // 
             this.radLabel59.Location = new System.Drawing.Point(205, 102);
             this.radLabel59.Name = "radLabel59";
-            this.radLabel59.Size = new System.Drawing.Size(24, 34);
+            this.radLabel59.Size = new System.Drawing.Size(13, 18);
             this.radLabel59.TabIndex = 9;
             this.radLabel59.Text = "C";
             this.radLabel59.ThemeName = "Office2007Black";
@@ -1002,7 +1002,7 @@
             // 
             this.radLabel58.Location = new System.Drawing.Point(53, 102);
             this.radLabel58.Name = "radLabel58";
-            this.radLabel58.Size = new System.Drawing.Size(34, 34);
+            this.radLabel58.Size = new System.Drawing.Size(18, 18);
             this.radLabel58.TabIndex = 9;
             this.radLabel58.Text = "Hr";
             this.radLabel58.ThemeName = "Office2007Black";
@@ -1011,7 +1011,7 @@
             // 
             this.radLabel57.Location = new System.Drawing.Point(118, 102);
             this.radLabel57.Name = "radLabel57";
-            this.radLabel57.Size = new System.Drawing.Size(48, 34);
+            this.radLabel57.Size = new System.Drawing.Size(25, 18);
             this.radLabel57.TabIndex = 8;
             this.radLabel57.Text = "Min";
             this.radLabel57.ThemeName = "Office2007Black";
@@ -1020,7 +1020,7 @@
             // 
             this.radLabel55.Location = new System.Drawing.Point(149, 75);
             this.radLabel55.Name = "radLabel55";
-            this.radLabel55.Size = new System.Drawing.Size(111, 34);
+            this.radLabel55.Size = new System.Drawing.Size(57, 18);
             this.radLabel55.TabIndex = 8;
             this.radLabel55.Text = "Min Temp";
             this.radLabel55.ThemeName = "Office2007Black";
@@ -1029,7 +1029,7 @@
             // 
             this.radLabel54.Location = new System.Drawing.Point(13, 75);
             this.radLabel54.Name = "radLabel54";
-            this.radLabel54.Size = new System.Drawing.Size(159, 34);
+            this.radLabel54.Size = new System.Drawing.Size(81, 18);
             this.radLabel54.TabIndex = 7;
             this.radLabel54.Text = "Delay Duration";
             this.radLabel54.ThemeName = "Office2007Black";
@@ -1038,7 +1038,7 @@
             // 
             this.radTextBox3.Location = new System.Drawing.Point(149, 101);
             this.radTextBox3.Name = "radTextBox3";
-            this.radTextBox3.Size = new System.Drawing.Size(47, 35);
+            this.radTextBox3.Size = new System.Drawing.Size(47, 20);
             this.radTextBox3.TabIndex = 9;
             this.radTextBox3.ThemeName = "Office2007Black";
             // 
@@ -1046,7 +1046,7 @@
             // 
             this.radTextBox2.Location = new System.Drawing.Point(79, 101);
             this.radTextBox2.Name = "radTextBox2";
-            this.radTextBox2.Size = new System.Drawing.Size(35, 35);
+            this.radTextBox2.Size = new System.Drawing.Size(35, 20);
             this.radTextBox2.TabIndex = 9;
             this.radTextBox2.ThemeName = "Office2007Black";
             // 
@@ -1055,7 +1055,7 @@
             this.radTextBox1.Controls.Add(this.radLabel56);
             this.radTextBox1.Location = new System.Drawing.Point(15, 101);
             this.radTextBox1.Name = "radTextBox1";
-            this.radTextBox1.Size = new System.Drawing.Size(35, 35);
+            this.radTextBox1.Size = new System.Drawing.Size(35, 20);
             this.radTextBox1.TabIndex = 8;
             this.radTextBox1.ThemeName = "Office2007Black";
             // 
@@ -1063,7 +1063,7 @@
             // 
             this.radLabel56.Location = new System.Drawing.Point(41, 3);
             this.radLabel56.Name = "radLabel56";
-            this.radLabel56.Size = new System.Drawing.Size(34, 34);
+            this.radLabel56.Size = new System.Drawing.Size(18, 18);
             this.radLabel56.TabIndex = 8;
             this.radLabel56.Text = "Hr";
             this.radLabel56.ThemeName = "Office2007Black";
@@ -1107,7 +1107,7 @@
             // 
             this.radLabel52.Location = new System.Drawing.Point(104, 50);
             this.radLabel52.Name = "radLabel52";
-            this.radLabel52.Size = new System.Drawing.Size(134, 34);
+            this.radLabel52.Size = new System.Drawing.Size(68, 18);
             this.radLabel52.TabIndex = 7;
             this.radLabel52.Text = "E09A050069";
             this.radLabel52.ThemeName = "Office2007Black";
@@ -1116,7 +1116,7 @@
             // 
             this.radLabel51.Location = new System.Drawing.Point(13, 50);
             this.radLabel51.Name = "radLabel51";
-            this.radLabel51.Size = new System.Drawing.Size(156, 34);
+            this.radLabel51.Size = new System.Drawing.Size(79, 18);
             this.radLabel51.TabIndex = 6;
             this.radLabel51.Text = "Order Number";
             this.radLabel51.ThemeName = "Office2007Black";
@@ -1125,7 +1125,7 @@
             // 
             this.radLabel53.Location = new System.Drawing.Point(104, 26);
             this.radLabel53.Name = "radLabel53";
-            this.radLabel53.Size = new System.Drawing.Size(117, 34);
+            this.radLabel53.Size = new System.Drawing.Size(60, 18);
             this.radLabel53.TabIndex = 8;
             this.radLabel53.Text = "25825-201";
             this.radLabel53.ThemeName = "Office2007Black";
@@ -1134,7 +1134,7 @@
             // 
             this.radLabel46.Location = new System.Drawing.Point(13, 26);
             this.radLabel46.Name = "radLabel46";
-            this.radLabel46.Size = new System.Drawing.Size(85, 34);
+            this.radLabel46.Size = new System.Drawing.Size(44, 18);
             this.radLabel46.TabIndex = 6;
             this.radLabel46.Text = "Heat ID";
             this.radLabel46.ThemeName = "Office2007Black";
@@ -1172,7 +1172,7 @@
             this.Page2.Controls.Add(this.radMaskedEditBox1);
             this.Page2.Controls.Add(this.radGridView3);
             this.Page2.Controls.Add(this.radGroupBox21);
-            this.Page2.ItemSize = new System.Drawing.SizeF(165F, 44F);
+            this.Page2.ItemSize = new System.Drawing.SizeF(163F, 28F);
             this.Page2.Location = new System.Drawing.Point(10, 37);
             this.Page2.Name = "Page2";
             this.Page2.Size = new System.Drawing.Size(995, 690);
@@ -1184,7 +1184,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(825, 590);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 30);
+            this.label9.Size = new System.Drawing.Size(81, 13);
             this.label9.TabIndex = 2;
             this.label9.Text = "Caster Temp(C)";
             // 
@@ -1193,7 +1193,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(734, 590);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 30);
+            this.label8.Size = new System.Drawing.Size(64, 13);
             this.label8.TabIndex = 2;
             this.label8.Text = "Weight(kg)";
             // 
@@ -1202,7 +1202,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(639, 590);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 30);
+            this.label7.Size = new System.Drawing.Size(57, 13);
             this.label7.TabIndex = 2;
             this.label7.Text = "Thick(mm)";
             // 
@@ -1211,7 +1211,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(537, 590);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 30);
+            this.label6.Size = new System.Drawing.Size(63, 13);
             this.label6.TabIndex = 2;
             this.label6.Text = "Width(mm)";
             // 
@@ -1220,7 +1220,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(436, 590);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 30);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Length(mm)";
             // 
@@ -1229,7 +1229,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(351, 590);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 30);
+            this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Grade";
             // 
@@ -1238,7 +1238,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(248, 590);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 30);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Order #";
             // 
@@ -1247,7 +1247,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(171, 590);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 30);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Index";
             // 
@@ -1256,7 +1256,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(86, 590);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 30);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Heat #";
             // 
@@ -1411,7 +1411,7 @@
             // Page6
             // 
             this.Page6.Controls.Add(this.radGridView2);
-            this.Page6.ItemSize = new System.Drawing.SizeF(152F, 44F);
+            this.Page6.ItemSize = new System.Drawing.SizeF(156F, 28F);
             this.Page6.Location = new System.Drawing.Point(10, 37);
             this.Page6.Name = "Page6";
             this.Page6.Size = new System.Drawing.Size(995, 690);
@@ -1449,7 +1449,7 @@
             this.Page4.Controls.Add(this.radGroupBox4);
             this.Page4.Controls.Add(this.radGroupBox1);
             this.Page4.Controls.Add(this.radGroupBox2);
-            this.Page4.ItemSize = new System.Drawing.SizeF(172F, 44F);
+            this.Page4.ItemSize = new System.Drawing.SizeF(166F, 28F);
             this.Page4.Location = new System.Drawing.Point(10, 37);
             this.Page4.Name = "Page4";
             this.Page4.Size = new System.Drawing.Size(995, 690);
@@ -1495,8 +1495,7 @@
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radGroupBox16);
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radLabel40);
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radLabel41);
-            this.radScrollablePanel3.PanelContainer.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
-            this.radScrollablePanel3.PanelContainer.Size = new System.Drawing.Size(855, 0);
+            this.radScrollablePanel3.PanelContainer.Size = new System.Drawing.Size(972, 94);
             this.radScrollablePanel3.Size = new System.Drawing.Size(974, 100);
             this.radScrollablePanel3.TabIndex = 2;
             this.radScrollablePanel3.Text = "radScrollablePanel3";
@@ -1504,12 +1503,11 @@
             // 
             // tbAimTemp
             // 
-            this.tbAimTemp.Location = new System.Drawing.Point(254, 184);
-            this.tbAimTemp.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbAimTemp.Location = new System.Drawing.Point(74, 46);
             this.tbAimTemp.Mask = "D4";
             this.tbAimTemp.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbAimTemp.Name = "tbAimTemp";
-            this.tbAimTemp.Size = new System.Drawing.Size(221, 80);
+            this.tbAimTemp.Size = new System.Drawing.Size(64, 20);
             this.tbAimTemp.TabIndex = 42;
             this.tbAimTemp.TabStop = false;
             this.tbAimTemp.Text = "0000";
@@ -1518,12 +1516,11 @@
             // 
             // tbSetNo_GradeDetail
             // 
-            this.tbSetNo_GradeDetail.Location = new System.Drawing.Point(13, 184);
-            this.tbSetNo_GradeDetail.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbSetNo_GradeDetail.Location = new System.Drawing.Point(4, 46);
             this.tbSetNo_GradeDetail.Mask = "D4";
             this.tbSetNo_GradeDetail.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbSetNo_GradeDetail.Name = "tbSetNo_GradeDetail";
-            this.tbSetNo_GradeDetail.Size = new System.Drawing.Size(221, 80);
+            this.tbSetNo_GradeDetail.Size = new System.Drawing.Size(64, 20);
             this.tbSetNo_GradeDetail.TabIndex = 41;
             this.tbSetNo_GradeDetail.TabStop = false;
             this.tbSetNo_GradeDetail.Text = "0000";
@@ -1542,23 +1539,20 @@
             this.radGroupBox6.Controls.Add(this.radLabel9);
             this.radGroupBox6.Controls.Add(this.radLabel10);
             this.radGroupBox6.HeaderText = "Zone_10";
-            this.radGroupBox6.Location = new System.Drawing.Point(9991, 16);
-            this.radGroupBox6.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox6.Location = new System.Drawing.Point(2897, 4);
             this.radGroupBox6.Name = "radGroupBox6";
-            this.radGroupBox6.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox6.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox6.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox6.TabIndex = 35;
             this.radGroupBox6.Text = "Zone_10";
             this.radGroupBox6.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_10
             // 
-            this.tbBOTmin_10.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_10.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_10.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_10.Mask = "D4";
             this.tbBOTmin_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_10.Name = "tbBOTmin_10";
-            this.tbBOTmin_10.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_10.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_10.TabIndex = 50;
             this.tbBOTmin_10.TabStop = false;
             this.tbBOTmin_10.Text = "0000";
@@ -1567,12 +1561,11 @@
             // 
             // tbBOTmax_10
             // 
-            this.tbBOTmax_10.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_10.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_10.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_10.Mask = "D4";
             this.tbBOTmax_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_10.Name = "tbBOTmax_10";
-            this.tbBOTmax_10.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_10.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_10.TabIndex = 49;
             this.tbBOTmax_10.TabStop = false;
             this.tbBOTmax_10.Text = "0000";
@@ -1581,12 +1574,11 @@
             // 
             // tbTOPmin_10
             // 
-            this.tbTOPmin_10.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_10.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_10.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_10.Mask = "D4";
             this.tbTOPmin_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_10.Name = "tbTOPmin_10";
-            this.tbTOPmin_10.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_10.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_10.TabIndex = 48;
             this.tbTOPmin_10.TabStop = false;
             this.tbTOPmin_10.Text = "0000";
@@ -1595,12 +1587,11 @@
             // 
             // tbTOPmax_10
             // 
-            this.tbTOPmax_10.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_10.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_10.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_10.Mask = "D4";
             this.tbTOPmax_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_10.Name = "tbTOPmax_10";
-            this.tbTOPmax_10.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_10.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_10.TabIndex = 47;
             this.tbTOPmax_10.TabStop = false;
             this.tbTOPmax_10.Text = "0000";
@@ -1609,40 +1600,36 @@
             // 
             // radLabel7
             // 
-            this.radLabel7.Location = new System.Drawing.Point(813, 88);
-            this.radLabel7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel7.Location = new System.Drawing.Point(236, 22);
             this.radLabel7.Name = "radLabel7";
-            this.radLabel7.Size = new System.Drawing.Size(169, 72);
+            this.radLabel7.Size = new System.Drawing.Size(49, 18);
             this.radLabel7.TabIndex = 20;
             this.radLabel7.Text = "BOTMIN";
             this.radLabel7.ThemeName = "Office2007Black";
             // 
             // radLabel8
             // 
-            this.radLabel8.Location = new System.Drawing.Point(559, 88);
-            this.radLabel8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel8.Location = new System.Drawing.Point(162, 22);
             this.radLabel8.Name = "radLabel8";
-            this.radLabel8.Size = new System.Drawing.Size(176, 72);
+            this.radLabel8.Size = new System.Drawing.Size(51, 18);
             this.radLabel8.TabIndex = 21;
             this.radLabel8.Text = "BOTMAX";
             this.radLabel8.ThemeName = "Office2007Black";
             // 
             // radLabel9
             // 
-            this.radLabel9.Location = new System.Drawing.Point(310, 88);
-            this.radLabel9.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel9.Location = new System.Drawing.Point(90, 22);
             this.radLabel9.Name = "radLabel9";
-            this.radLabel9.Size = new System.Drawing.Size(169, 72);
+            this.radLabel9.Size = new System.Drawing.Size(49, 18);
             this.radLabel9.TabIndex = 22;
             this.radLabel9.Text = "TOPMIN";
             this.radLabel9.ThemeName = "Office2007Black";
             // 
             // radLabel10
             // 
-            this.radLabel10.Location = new System.Drawing.Point(56, 88);
-            this.radLabel10.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel10.Location = new System.Drawing.Point(16, 22);
             this.radLabel10.Name = "radLabel10";
-            this.radLabel10.Size = new System.Drawing.Size(176, 72);
+            this.radLabel10.Size = new System.Drawing.Size(51, 18);
             this.radLabel10.TabIndex = 19;
             this.radLabel10.Text = "TOPMAX";
             this.radLabel10.ThemeName = "Office2007Black";
@@ -1659,23 +1646,20 @@
             this.radGroupBox7.Controls.Add(this.radLabel13);
             this.radGroupBox7.Controls.Add(this.radLabel14);
             this.radGroupBox7.HeaderText = "Zone_9";
-            this.radGroupBox7.Location = new System.Drawing.Point(8937, 16);
-            this.radGroupBox7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox7.Location = new System.Drawing.Point(2591, 4);
             this.radGroupBox7.Name = "radGroupBox7";
-            this.radGroupBox7.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox7.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox7.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox7.TabIndex = 34;
             this.radGroupBox7.Text = "Zone_9";
             this.radGroupBox7.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_9
             // 
-            this.tbBOTmin_9.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_9.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_9.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_9.Mask = "D4";
             this.tbBOTmin_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_9.Name = "tbBOTmin_9";
-            this.tbBOTmin_9.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_9.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_9.TabIndex = 50;
             this.tbBOTmin_9.TabStop = false;
             this.tbBOTmin_9.Text = "0000";
@@ -1684,12 +1668,11 @@
             // 
             // tbBOTmax_9
             // 
-            this.tbBOTmax_9.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_9.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_9.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_9.Mask = "D4";
             this.tbBOTmax_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_9.Name = "tbBOTmax_9";
-            this.tbBOTmax_9.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_9.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_9.TabIndex = 49;
             this.tbBOTmax_9.TabStop = false;
             this.tbBOTmax_9.Text = "0000";
@@ -1698,12 +1681,11 @@
             // 
             // tbTOPmin_9
             // 
-            this.tbTOPmin_9.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_9.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_9.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_9.Mask = "D4";
             this.tbTOPmin_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_9.Name = "tbTOPmin_9";
-            this.tbTOPmin_9.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_9.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_9.TabIndex = 48;
             this.tbTOPmin_9.TabStop = false;
             this.tbTOPmin_9.Text = "0000";
@@ -1712,12 +1694,11 @@
             // 
             // tbTOPmax_9
             // 
-            this.tbTOPmax_9.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_9.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_9.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_9.Mask = "D4";
             this.tbTOPmax_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_9.Name = "tbTOPmax_9";
-            this.tbTOPmax_9.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_9.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_9.TabIndex = 47;
             this.tbTOPmax_9.TabStop = false;
             this.tbTOPmax_9.Text = "0000";
@@ -1726,40 +1707,36 @@
             // 
             // radLabel11
             // 
-            this.radLabel11.Location = new System.Drawing.Point(813, 88);
-            this.radLabel11.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel11.Location = new System.Drawing.Point(236, 22);
             this.radLabel11.Name = "radLabel11";
-            this.radLabel11.Size = new System.Drawing.Size(169, 72);
+            this.radLabel11.Size = new System.Drawing.Size(49, 18);
             this.radLabel11.TabIndex = 20;
             this.radLabel11.Text = "BOTMIN";
             this.radLabel11.ThemeName = "Office2007Black";
             // 
             // radLabel12
             // 
-            this.radLabel12.Location = new System.Drawing.Point(559, 88);
-            this.radLabel12.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel12.Location = new System.Drawing.Point(162, 22);
             this.radLabel12.Name = "radLabel12";
-            this.radLabel12.Size = new System.Drawing.Size(176, 72);
+            this.radLabel12.Size = new System.Drawing.Size(51, 18);
             this.radLabel12.TabIndex = 21;
             this.radLabel12.Text = "BOTMAX";
             this.radLabel12.ThemeName = "Office2007Black";
             // 
             // radLabel13
             // 
-            this.radLabel13.Location = new System.Drawing.Point(310, 88);
-            this.radLabel13.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel13.Location = new System.Drawing.Point(90, 22);
             this.radLabel13.Name = "radLabel13";
-            this.radLabel13.Size = new System.Drawing.Size(169, 72);
+            this.radLabel13.Size = new System.Drawing.Size(49, 18);
             this.radLabel13.TabIndex = 22;
             this.radLabel13.Text = "TOPMIN";
             this.radLabel13.ThemeName = "Office2007Black";
             // 
             // radLabel14
             // 
-            this.radLabel14.Location = new System.Drawing.Point(56, 88);
-            this.radLabel14.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel14.Location = new System.Drawing.Point(16, 22);
             this.radLabel14.Name = "radLabel14";
-            this.radLabel14.Size = new System.Drawing.Size(176, 72);
+            this.radLabel14.Size = new System.Drawing.Size(51, 18);
             this.radLabel14.TabIndex = 19;
             this.radLabel14.Text = "TOPMAX";
             this.radLabel14.ThemeName = "Office2007Black";
@@ -1776,23 +1753,20 @@
             this.radGroupBox11.Controls.Add(this.radLabel49);
             this.radGroupBox11.Controls.Add(this.radLabel50);
             this.radGroupBox11.HeaderText = "Zone_7";
-            this.radGroupBox11.Location = new System.Drawing.Point(6825, 16);
-            this.radGroupBox11.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox11.Location = new System.Drawing.Point(1979, 4);
             this.radGroupBox11.Name = "radGroupBox11";
-            this.radGroupBox11.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox11.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox11.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox11.TabIndex = 34;
             this.radGroupBox11.Text = "Zone_7";
             this.radGroupBox11.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_7
             // 
-            this.tbBOTmin_7.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_7.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_7.Mask = "D4";
             this.tbBOTmin_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_7.Name = "tbBOTmin_7";
-            this.tbBOTmin_7.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_7.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_7.TabIndex = 50;
             this.tbBOTmin_7.TabStop = false;
             this.tbBOTmin_7.Text = "0000";
@@ -1801,12 +1775,11 @@
             // 
             // tbBOTmax_7
             // 
-            this.tbBOTmax_7.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_7.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_7.Mask = "D4";
             this.tbBOTmax_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_7.Name = "tbBOTmax_7";
-            this.tbBOTmax_7.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_7.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_7.TabIndex = 49;
             this.tbBOTmax_7.TabStop = false;
             this.tbBOTmax_7.Text = "0000";
@@ -1815,12 +1788,11 @@
             // 
             // tbTOPmin_7
             // 
-            this.tbTOPmin_7.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_7.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_7.Mask = "D4";
             this.tbTOPmin_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_7.Name = "tbTOPmin_7";
-            this.tbTOPmin_7.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_7.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_7.TabIndex = 48;
             this.tbTOPmin_7.TabStop = false;
             this.tbTOPmin_7.Text = "0000";
@@ -1829,12 +1801,11 @@
             // 
             // tbTOPmax_7
             // 
-            this.tbTOPmax_7.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_7.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_7.Mask = "D4";
             this.tbTOPmax_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_7.Name = "tbTOPmax_7";
-            this.tbTOPmax_7.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_7.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_7.TabIndex = 47;
             this.tbTOPmax_7.TabStop = false;
             this.tbTOPmax_7.Text = "0000";
@@ -1843,40 +1814,36 @@
             // 
             // radLabel47
             // 
-            this.radLabel47.Location = new System.Drawing.Point(813, 88);
-            this.radLabel47.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel47.Location = new System.Drawing.Point(236, 22);
             this.radLabel47.Name = "radLabel47";
-            this.radLabel47.Size = new System.Drawing.Size(169, 72);
+            this.radLabel47.Size = new System.Drawing.Size(49, 18);
             this.radLabel47.TabIndex = 20;
             this.radLabel47.Text = "BOTMIN";
             this.radLabel47.ThemeName = "Office2007Black";
             // 
             // radLabel48
             // 
-            this.radLabel48.Location = new System.Drawing.Point(559, 88);
-            this.radLabel48.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel48.Location = new System.Drawing.Point(162, 22);
             this.radLabel48.Name = "radLabel48";
-            this.radLabel48.Size = new System.Drawing.Size(176, 72);
+            this.radLabel48.Size = new System.Drawing.Size(51, 18);
             this.radLabel48.TabIndex = 21;
             this.radLabel48.Text = "BOTMAX";
             this.radLabel48.ThemeName = "Office2007Black";
             // 
             // radLabel49
             // 
-            this.radLabel49.Location = new System.Drawing.Point(310, 88);
-            this.radLabel49.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel49.Location = new System.Drawing.Point(90, 22);
             this.radLabel49.Name = "radLabel49";
-            this.radLabel49.Size = new System.Drawing.Size(169, 72);
+            this.radLabel49.Size = new System.Drawing.Size(49, 18);
             this.radLabel49.TabIndex = 22;
             this.radLabel49.Text = "TOPMIN";
             this.radLabel49.ThemeName = "Office2007Black";
             // 
             // radLabel50
             // 
-            this.radLabel50.Location = new System.Drawing.Point(56, 88);
-            this.radLabel50.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel50.Location = new System.Drawing.Point(16, 22);
             this.radLabel50.Name = "radLabel50";
-            this.radLabel50.Size = new System.Drawing.Size(176, 72);
+            this.radLabel50.Size = new System.Drawing.Size(51, 18);
             this.radLabel50.TabIndex = 19;
             this.radLabel50.Text = "TOPMAX";
             this.radLabel50.ThemeName = "Office2007Black";
@@ -1893,23 +1860,20 @@
             this.radGroupBox8.Controls.Add(this.radLabel17);
             this.radGroupBox8.Controls.Add(this.radLabel19);
             this.radGroupBox8.HeaderText = "Zone_6";
-            this.radGroupBox8.Location = new System.Drawing.Point(5770, 16);
-            this.radGroupBox8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox8.Location = new System.Drawing.Point(1673, 4);
             this.radGroupBox8.Name = "radGroupBox8";
-            this.radGroupBox8.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox8.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox8.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox8.TabIndex = 34;
             this.radGroupBox8.Text = "Zone_6";
             this.radGroupBox8.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_6
             // 
-            this.tbBOTmin_6.Location = new System.Drawing.Point(786, 164);
-            this.tbBOTmin_6.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_6.Location = new System.Drawing.Point(228, 41);
             this.tbBOTmin_6.Mask = "D4";
             this.tbBOTmin_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_6.Name = "tbBOTmin_6";
-            this.tbBOTmin_6.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_6.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_6.TabIndex = 50;
             this.tbBOTmin_6.TabStop = false;
             this.tbBOTmin_6.Text = "0000";
@@ -1918,12 +1882,11 @@
             // 
             // tbBOTmax_6
             // 
-            this.tbBOTmax_6.Location = new System.Drawing.Point(535, 164);
-            this.tbBOTmax_6.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_6.Location = new System.Drawing.Point(155, 41);
             this.tbBOTmax_6.Mask = "D4";
             this.tbBOTmax_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_6.Name = "tbBOTmax_6";
-            this.tbBOTmax_6.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_6.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_6.TabIndex = 49;
             this.tbBOTmax_6.TabStop = false;
             this.tbBOTmax_6.Text = "0000";
@@ -1932,12 +1895,11 @@
             // 
             // tbTOPmin_6
             // 
-            this.tbTOPmin_6.Location = new System.Drawing.Point(282, 164);
-            this.tbTOPmin_6.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_6.Location = new System.Drawing.Point(82, 41);
             this.tbTOPmin_6.Mask = "D4";
             this.tbTOPmin_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_6.Name = "tbTOPmin_6";
-            this.tbTOPmin_6.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_6.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_6.TabIndex = 48;
             this.tbTOPmin_6.TabStop = false;
             this.tbTOPmin_6.Text = "0000";
@@ -1946,12 +1908,11 @@
             // 
             // tbTOPmax_6
             // 
-            this.tbTOPmax_6.Location = new System.Drawing.Point(32, 164);
-            this.tbTOPmax_6.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_6.Location = new System.Drawing.Point(9, 41);
             this.tbTOPmax_6.Mask = "D4";
             this.tbTOPmax_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_6.Name = "tbTOPmax_6";
-            this.tbTOPmax_6.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_6.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_6.TabIndex = 47;
             this.tbTOPmax_6.TabStop = false;
             this.tbTOPmax_6.Text = "0000";
@@ -1960,40 +1921,36 @@
             // 
             // radLabel15
             // 
-            this.radLabel15.Location = new System.Drawing.Point(813, 88);
-            this.radLabel15.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel15.Location = new System.Drawing.Point(236, 22);
             this.radLabel15.Name = "radLabel15";
-            this.radLabel15.Size = new System.Drawing.Size(169, 72);
+            this.radLabel15.Size = new System.Drawing.Size(49, 18);
             this.radLabel15.TabIndex = 20;
             this.radLabel15.Text = "BOTMIN";
             this.radLabel15.ThemeName = "Office2007Black";
             // 
             // radLabel16
             // 
-            this.radLabel16.Location = new System.Drawing.Point(559, 88);
-            this.radLabel16.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel16.Location = new System.Drawing.Point(162, 22);
             this.radLabel16.Name = "radLabel16";
-            this.radLabel16.Size = new System.Drawing.Size(176, 72);
+            this.radLabel16.Size = new System.Drawing.Size(51, 18);
             this.radLabel16.TabIndex = 21;
             this.radLabel16.Text = "BOTMAX";
             this.radLabel16.ThemeName = "Office2007Black";
             // 
             // radLabel17
             // 
-            this.radLabel17.Location = new System.Drawing.Point(310, 88);
-            this.radLabel17.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel17.Location = new System.Drawing.Point(90, 22);
             this.radLabel17.Name = "radLabel17";
-            this.radLabel17.Size = new System.Drawing.Size(169, 72);
+            this.radLabel17.Size = new System.Drawing.Size(49, 18);
             this.radLabel17.TabIndex = 22;
             this.radLabel17.Text = "TOPMIN";
             this.radLabel17.ThemeName = "Office2007Black";
             // 
             // radLabel19
             // 
-            this.radLabel19.Location = new System.Drawing.Point(56, 88);
-            this.radLabel19.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel19.Location = new System.Drawing.Point(16, 22);
             this.radLabel19.Name = "radLabel19";
-            this.radLabel19.Size = new System.Drawing.Size(176, 72);
+            this.radLabel19.Size = new System.Drawing.Size(51, 18);
             this.radLabel19.TabIndex = 19;
             this.radLabel19.Text = "TOPMAX";
             this.radLabel19.ThemeName = "Office2007Black";
@@ -2010,23 +1967,20 @@
             this.radGroupBox9.Controls.Add(this.radLabel22);
             this.radGroupBox9.Controls.Add(this.radLabel42);
             this.radGroupBox9.HeaderText = "Zone_8";
-            this.radGroupBox9.Location = new System.Drawing.Point(7882, 16);
-            this.radGroupBox9.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox9.Location = new System.Drawing.Point(2285, 4);
             this.radGroupBox9.Name = "radGroupBox9";
-            this.radGroupBox9.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox9.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox9.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox9.TabIndex = 34;
             this.radGroupBox9.Text = "Zone_8";
             this.radGroupBox9.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_8
             // 
-            this.tbBOTmin_8.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_8.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_8.Mask = "D4";
             this.tbBOTmin_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_8.Name = "tbBOTmin_8";
-            this.tbBOTmin_8.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_8.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_8.TabIndex = 50;
             this.tbBOTmin_8.TabStop = false;
             this.tbBOTmin_8.Text = "0000";
@@ -2035,12 +1989,11 @@
             // 
             // tbBOTmax_8
             // 
-            this.tbBOTmax_8.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_8.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_8.Mask = "D4";
             this.tbBOTmax_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_8.Name = "tbBOTmax_8";
-            this.tbBOTmax_8.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_8.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_8.TabIndex = 49;
             this.tbBOTmax_8.TabStop = false;
             this.tbBOTmax_8.Text = "0000";
@@ -2049,12 +2002,11 @@
             // 
             // tbTOPmin_8
             // 
-            this.tbTOPmin_8.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_8.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_8.Mask = "D4";
             this.tbTOPmin_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_8.Name = "tbTOPmin_8";
-            this.tbTOPmin_8.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_8.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_8.TabIndex = 48;
             this.tbTOPmin_8.TabStop = false;
             this.tbTOPmin_8.Text = "0000";
@@ -2063,12 +2015,11 @@
             // 
             // tbTOPmax_8
             // 
-            this.tbTOPmax_8.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_8.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_8.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_8.Mask = "D4";
             this.tbTOPmax_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_8.Name = "tbTOPmax_8";
-            this.tbTOPmax_8.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_8.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_8.TabIndex = 47;
             this.tbTOPmax_8.TabStop = false;
             this.tbTOPmax_8.Text = "0000";
@@ -2077,40 +2028,36 @@
             // 
             // radLabel20
             // 
-            this.radLabel20.Location = new System.Drawing.Point(813, 88);
-            this.radLabel20.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel20.Location = new System.Drawing.Point(236, 22);
             this.radLabel20.Name = "radLabel20";
-            this.radLabel20.Size = new System.Drawing.Size(169, 72);
+            this.radLabel20.Size = new System.Drawing.Size(49, 18);
             this.radLabel20.TabIndex = 20;
             this.radLabel20.Text = "BOTMIN";
             this.radLabel20.ThemeName = "Office2007Black";
             // 
             // radLabel21
             // 
-            this.radLabel21.Location = new System.Drawing.Point(559, 88);
-            this.radLabel21.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel21.Location = new System.Drawing.Point(162, 22);
             this.radLabel21.Name = "radLabel21";
-            this.radLabel21.Size = new System.Drawing.Size(176, 72);
+            this.radLabel21.Size = new System.Drawing.Size(51, 18);
             this.radLabel21.TabIndex = 21;
             this.radLabel21.Text = "BOTMAX";
             this.radLabel21.ThemeName = "Office2007Black";
             // 
             // radLabel22
             // 
-            this.radLabel22.Location = new System.Drawing.Point(310, 88);
-            this.radLabel22.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel22.Location = new System.Drawing.Point(90, 22);
             this.radLabel22.Name = "radLabel22";
-            this.radLabel22.Size = new System.Drawing.Size(169, 72);
+            this.radLabel22.Size = new System.Drawing.Size(49, 18);
             this.radLabel22.TabIndex = 22;
             this.radLabel22.Text = "TOPMIN";
             this.radLabel22.ThemeName = "Office2007Black";
             // 
             // radLabel42
             // 
-            this.radLabel42.Location = new System.Drawing.Point(56, 88);
-            this.radLabel42.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel42.Location = new System.Drawing.Point(16, 22);
             this.radLabel42.Name = "radLabel42";
-            this.radLabel42.Size = new System.Drawing.Size(176, 72);
+            this.radLabel42.Size = new System.Drawing.Size(51, 18);
             this.radLabel42.TabIndex = 19;
             this.radLabel42.Text = "TOPMAX";
             this.radLabel42.ThemeName = "Office2007Black";
@@ -2127,23 +2074,20 @@
             this.radGroupBox14.Controls.Add(this.radLabel25);
             this.radGroupBox14.Controls.Add(this.radLabel26);
             this.radGroupBox14.HeaderText = "Zone_5";
-            this.radGroupBox14.Location = new System.Drawing.Point(4715, 16);
-            this.radGroupBox14.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox14.Location = new System.Drawing.Point(1367, 4);
             this.radGroupBox14.Name = "radGroupBox14";
-            this.radGroupBox14.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox14.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox14.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox14.TabIndex = 38;
             this.radGroupBox14.Text = "Zone_5";
             this.radGroupBox14.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_5
             // 
-            this.tbBOTmin_5.Location = new System.Drawing.Point(786, 164);
-            this.tbBOTmin_5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_5.Location = new System.Drawing.Point(228, 41);
             this.tbBOTmin_5.Mask = "D4";
             this.tbBOTmin_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_5.Name = "tbBOTmin_5";
-            this.tbBOTmin_5.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_5.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_5.TabIndex = 50;
             this.tbBOTmin_5.TabStop = false;
             this.tbBOTmin_5.Text = "0000";
@@ -2152,12 +2096,11 @@
             // 
             // tbBOTmax_5
             // 
-            this.tbBOTmax_5.Location = new System.Drawing.Point(535, 164);
-            this.tbBOTmax_5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_5.Location = new System.Drawing.Point(155, 41);
             this.tbBOTmax_5.Mask = "D4";
             this.tbBOTmax_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_5.Name = "tbBOTmax_5";
-            this.tbBOTmax_5.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_5.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_5.TabIndex = 61;
             this.tbBOTmax_5.TabStop = false;
             this.tbBOTmax_5.Text = "0000";
@@ -2166,12 +2109,11 @@
             // 
             // tbTOPmin_5
             // 
-            this.tbTOPmin_5.Location = new System.Drawing.Point(282, 164);
-            this.tbTOPmin_5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_5.Location = new System.Drawing.Point(82, 41);
             this.tbTOPmin_5.Mask = "D4";
             this.tbTOPmin_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_5.Name = "tbTOPmin_5";
-            this.tbTOPmin_5.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_5.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_5.TabIndex = 60;
             this.tbTOPmin_5.TabStop = false;
             this.tbTOPmin_5.Text = "0000";
@@ -2180,12 +2122,11 @@
             // 
             // tbTOPmax_5
             // 
-            this.tbTOPmax_5.Location = new System.Drawing.Point(32, 164);
-            this.tbTOPmax_5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_5.Location = new System.Drawing.Point(9, 41);
             this.tbTOPmax_5.Mask = "D4";
             this.tbTOPmax_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_5.Name = "tbTOPmax_5";
-            this.tbTOPmax_5.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_5.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_5.TabIndex = 59;
             this.tbTOPmax_5.TabStop = false;
             this.tbTOPmax_5.Text = "0000";
@@ -2194,40 +2135,36 @@
             // 
             // radLabel23
             // 
-            this.radLabel23.Location = new System.Drawing.Point(813, 88);
-            this.radLabel23.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel23.Location = new System.Drawing.Point(236, 22);
             this.radLabel23.Name = "radLabel23";
-            this.radLabel23.Size = new System.Drawing.Size(169, 72);
+            this.radLabel23.Size = new System.Drawing.Size(49, 18);
             this.radLabel23.TabIndex = 20;
             this.radLabel23.Text = "BOTMIN";
             this.radLabel23.ThemeName = "Office2007Black";
             // 
             // radLabel24
             // 
-            this.radLabel24.Location = new System.Drawing.Point(559, 88);
-            this.radLabel24.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel24.Location = new System.Drawing.Point(162, 22);
             this.radLabel24.Name = "radLabel24";
-            this.radLabel24.Size = new System.Drawing.Size(176, 72);
+            this.radLabel24.Size = new System.Drawing.Size(51, 18);
             this.radLabel24.TabIndex = 21;
             this.radLabel24.Text = "BOTMAX";
             this.radLabel24.ThemeName = "Office2007Black";
             // 
             // radLabel25
             // 
-            this.radLabel25.Location = new System.Drawing.Point(310, 88);
-            this.radLabel25.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel25.Location = new System.Drawing.Point(90, 22);
             this.radLabel25.Name = "radLabel25";
-            this.radLabel25.Size = new System.Drawing.Size(169, 72);
+            this.radLabel25.Size = new System.Drawing.Size(49, 18);
             this.radLabel25.TabIndex = 22;
             this.radLabel25.Text = "TOPMIN";
             this.radLabel25.ThemeName = "Office2007Black";
             // 
             // radLabel26
             // 
-            this.radLabel26.Location = new System.Drawing.Point(56, 88);
-            this.radLabel26.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel26.Location = new System.Drawing.Point(16, 22);
             this.radLabel26.Name = "radLabel26";
-            this.radLabel26.Size = new System.Drawing.Size(176, 72);
+            this.radLabel26.Size = new System.Drawing.Size(51, 18);
             this.radLabel26.TabIndex = 19;
             this.radLabel26.Text = "TOPMAX";
             this.radLabel26.ThemeName = "Office2007Black";
@@ -2244,23 +2181,20 @@
             this.radGroupBox5.Controls.Add(this.radLabel5);
             this.radGroupBox5.Controls.Add(this.radLabel6);
             this.radGroupBox5.HeaderText = "Zone_4";
-            this.radGroupBox5.Location = new System.Drawing.Point(3659, 16);
-            this.radGroupBox5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox5.Location = new System.Drawing.Point(1061, 4);
             this.radGroupBox5.Name = "radGroupBox5";
-            this.radGroupBox5.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox5.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox5.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox5.TabIndex = 38;
             this.radGroupBox5.Text = "Zone_4";
             this.radGroupBox5.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_4
             // 
-            this.tbBOTmin_4.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_4.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_4.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_4.Mask = "D4";
             this.tbBOTmin_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_4.Name = "tbBOTmin_4";
-            this.tbBOTmin_4.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_4.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_4.TabIndex = 58;
             this.tbBOTmin_4.TabStop = false;
             this.tbBOTmin_4.Text = "0000";
@@ -2269,12 +2203,11 @@
             // 
             // tbBOTmax_4
             // 
-            this.tbBOTmax_4.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_4.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_4.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_4.Mask = "D4";
             this.tbBOTmax_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_4.Name = "tbBOTmax_4";
-            this.tbBOTmax_4.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_4.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_4.TabIndex = 57;
             this.tbBOTmax_4.TabStop = false;
             this.tbBOTmax_4.Text = "0000";
@@ -2283,12 +2216,11 @@
             // 
             // tbTOPmin_4
             // 
-            this.tbTOPmin_4.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_4.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_4.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_4.Mask = "D4";
             this.tbTOPmin_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_4.Name = "tbTOPmin_4";
-            this.tbTOPmin_4.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_4.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_4.TabIndex = 56;
             this.tbTOPmin_4.TabStop = false;
             this.tbTOPmin_4.Text = "0000";
@@ -2297,12 +2229,11 @@
             // 
             // tbTOPmax_4
             // 
-            this.tbTOPmax_4.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_4.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_4.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_4.Mask = "D4";
             this.tbTOPmax_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_4.Name = "tbTOPmax_4";
-            this.tbTOPmax_4.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_4.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_4.TabIndex = 55;
             this.tbTOPmax_4.TabStop = false;
             this.tbTOPmax_4.Text = "0000";
@@ -2311,40 +2242,36 @@
             // 
             // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(813, 88);
-            this.radLabel1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel1.Location = new System.Drawing.Point(236, 22);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(169, 72);
+            this.radLabel1.Size = new System.Drawing.Size(49, 18);
             this.radLabel1.TabIndex = 20;
             this.radLabel1.Text = "BOTMIN";
             this.radLabel1.ThemeName = "Office2007Black";
             // 
             // radLabel4
             // 
-            this.radLabel4.Location = new System.Drawing.Point(559, 88);
-            this.radLabel4.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel4.Location = new System.Drawing.Point(162, 22);
             this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(176, 72);
+            this.radLabel4.Size = new System.Drawing.Size(51, 18);
             this.radLabel4.TabIndex = 21;
             this.radLabel4.Text = "BOTMAX";
             this.radLabel4.ThemeName = "Office2007Black";
             // 
             // radLabel5
             // 
-            this.radLabel5.Location = new System.Drawing.Point(310, 88);
-            this.radLabel5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel5.Location = new System.Drawing.Point(90, 22);
             this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(169, 72);
+            this.radLabel5.Size = new System.Drawing.Size(49, 18);
             this.radLabel5.TabIndex = 22;
             this.radLabel5.Text = "TOPMIN";
             this.radLabel5.ThemeName = "Office2007Black";
             // 
             // radLabel6
             // 
-            this.radLabel6.Location = new System.Drawing.Point(56, 88);
-            this.radLabel6.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel6.Location = new System.Drawing.Point(16, 22);
             this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(176, 72);
+            this.radLabel6.Size = new System.Drawing.Size(51, 18);
             this.radLabel6.TabIndex = 19;
             this.radLabel6.Text = "TOPMAX";
             this.radLabel6.ThemeName = "Office2007Black";
@@ -2361,23 +2288,20 @@
             this.radGroupBox13.Controls.Add(this.radLabel29);
             this.radGroupBox13.Controls.Add(this.radLabel30);
             this.radGroupBox13.HeaderText = "Zone_3";
-            this.radGroupBox13.Location = new System.Drawing.Point(2604, 16);
-            this.radGroupBox13.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox13.Location = new System.Drawing.Point(755, 4);
             this.radGroupBox13.Name = "radGroupBox13";
-            this.radGroupBox13.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox13.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox13.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox13.TabIndex = 37;
             this.radGroupBox13.Text = "Zone_3";
             this.radGroupBox13.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_3
             // 
-            this.tbBOTmin_3.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_3.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_3.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_3.Mask = "D4";
             this.tbBOTmin_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_3.Name = "tbBOTmin_3";
-            this.tbBOTmin_3.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_3.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_3.TabIndex = 54;
             this.tbBOTmin_3.TabStop = false;
             this.tbBOTmin_3.Text = "0000";
@@ -2386,12 +2310,11 @@
             // 
             // tbBOTmax_3
             // 
-            this.tbBOTmax_3.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_3.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_3.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_3.Mask = "D4";
             this.tbBOTmax_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_3.Name = "tbBOTmax_3";
-            this.tbBOTmax_3.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_3.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_3.TabIndex = 53;
             this.tbBOTmax_3.TabStop = false;
             this.tbBOTmax_3.Text = "0000";
@@ -2400,12 +2323,11 @@
             // 
             // tbTOPmin_3
             // 
-            this.tbTOPmin_3.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_3.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_3.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_3.Mask = "D4";
             this.tbTOPmin_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_3.Name = "tbTOPmin_3";
-            this.tbTOPmin_3.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_3.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_3.TabIndex = 52;
             this.tbTOPmin_3.TabStop = false;
             this.tbTOPmin_3.Text = "0000";
@@ -2414,12 +2336,11 @@
             // 
             // tbTOPmax_3
             // 
-            this.tbTOPmax_3.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_3.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_3.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_3.Mask = "D4";
             this.tbTOPmax_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_3.Name = "tbTOPmax_3";
-            this.tbTOPmax_3.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_3.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_3.TabIndex = 51;
             this.tbTOPmax_3.TabStop = false;
             this.tbTOPmax_3.Text = "0000";
@@ -2428,40 +2349,36 @@
             // 
             // radLabel27
             // 
-            this.radLabel27.Location = new System.Drawing.Point(813, 88);
-            this.radLabel27.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel27.Location = new System.Drawing.Point(236, 22);
             this.radLabel27.Name = "radLabel27";
-            this.radLabel27.Size = new System.Drawing.Size(169, 72);
+            this.radLabel27.Size = new System.Drawing.Size(49, 18);
             this.radLabel27.TabIndex = 20;
             this.radLabel27.Text = "BOTMIN";
             this.radLabel27.ThemeName = "Office2007Black";
             // 
             // radLabel28
             // 
-            this.radLabel28.Location = new System.Drawing.Point(559, 88);
-            this.radLabel28.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel28.Location = new System.Drawing.Point(162, 22);
             this.radLabel28.Name = "radLabel28";
-            this.radLabel28.Size = new System.Drawing.Size(176, 72);
+            this.radLabel28.Size = new System.Drawing.Size(51, 18);
             this.radLabel28.TabIndex = 21;
             this.radLabel28.Text = "BOTMAX";
             this.radLabel28.ThemeName = "Office2007Black";
             // 
             // radLabel29
             // 
-            this.radLabel29.Location = new System.Drawing.Point(310, 88);
-            this.radLabel29.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel29.Location = new System.Drawing.Point(90, 22);
             this.radLabel29.Name = "radLabel29";
-            this.radLabel29.Size = new System.Drawing.Size(169, 72);
+            this.radLabel29.Size = new System.Drawing.Size(49, 18);
             this.radLabel29.TabIndex = 22;
             this.radLabel29.Text = "TOPMIN";
             this.radLabel29.ThemeName = "Office2007Black";
             // 
             // radLabel30
             // 
-            this.radLabel30.Location = new System.Drawing.Point(56, 88);
-            this.radLabel30.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel30.Location = new System.Drawing.Point(16, 22);
             this.radLabel30.Name = "radLabel30";
-            this.radLabel30.Size = new System.Drawing.Size(176, 72);
+            this.radLabel30.Size = new System.Drawing.Size(51, 18);
             this.radLabel30.TabIndex = 19;
             this.radLabel30.Text = "TOPMAX";
             this.radLabel30.ThemeName = "Office2007Black";
@@ -2478,23 +2395,20 @@
             this.radGroupBox15.Controls.Add(this.radLabel33);
             this.radGroupBox15.Controls.Add(this.radLabel34);
             this.radGroupBox15.HeaderText = "Zone_2";
-            this.radGroupBox15.Location = new System.Drawing.Point(1549, 16);
-            this.radGroupBox15.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox15.Location = new System.Drawing.Point(449, 4);
             this.radGroupBox15.Name = "radGroupBox15";
-            this.radGroupBox15.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox15.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox15.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox15.TabIndex = 36;
             this.radGroupBox15.Text = "Zone_2";
             this.radGroupBox15.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_2
             // 
-            this.tbBOTmin_2.Location = new System.Drawing.Point(786, 168);
-            this.tbBOTmin_2.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_2.Location = new System.Drawing.Point(228, 42);
             this.tbBOTmin_2.Mask = "D4";
             this.tbBOTmin_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_2.Name = "tbBOTmin_2";
-            this.tbBOTmin_2.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_2.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_2.TabIndex = 50;
             this.tbBOTmin_2.TabStop = false;
             this.tbBOTmin_2.Text = "0000";
@@ -2503,12 +2417,11 @@
             // 
             // tbBOTmax_2
             // 
-            this.tbBOTmax_2.Location = new System.Drawing.Point(535, 168);
-            this.tbBOTmax_2.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_2.Location = new System.Drawing.Point(155, 42);
             this.tbBOTmax_2.Mask = "D4";
             this.tbBOTmax_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_2.Name = "tbBOTmax_2";
-            this.tbBOTmax_2.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_2.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_2.TabIndex = 49;
             this.tbBOTmax_2.TabStop = false;
             this.tbBOTmax_2.Text = "0000";
@@ -2517,12 +2430,11 @@
             // 
             // tbTOPmin_2
             // 
-            this.tbTOPmin_2.Location = new System.Drawing.Point(282, 168);
-            this.tbTOPmin_2.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_2.Location = new System.Drawing.Point(82, 42);
             this.tbTOPmin_2.Mask = "D4";
             this.tbTOPmin_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_2.Name = "tbTOPmin_2";
-            this.tbTOPmin_2.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_2.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_2.TabIndex = 48;
             this.tbTOPmin_2.TabStop = false;
             this.tbTOPmin_2.Text = "0000";
@@ -2531,12 +2443,11 @@
             // 
             // tbTOPmax_2
             // 
-            this.tbTOPmax_2.Location = new System.Drawing.Point(32, 168);
-            this.tbTOPmax_2.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_2.Location = new System.Drawing.Point(9, 42);
             this.tbTOPmax_2.Mask = "D4";
             this.tbTOPmax_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_2.Name = "tbTOPmax_2";
-            this.tbTOPmax_2.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_2.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_2.TabIndex = 47;
             this.tbTOPmax_2.TabStop = false;
             this.tbTOPmax_2.Text = "0000";
@@ -2545,40 +2456,36 @@
             // 
             // radLabel31
             // 
-            this.radLabel31.Location = new System.Drawing.Point(813, 88);
-            this.radLabel31.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel31.Location = new System.Drawing.Point(236, 22);
             this.radLabel31.Name = "radLabel31";
-            this.radLabel31.Size = new System.Drawing.Size(169, 72);
+            this.radLabel31.Size = new System.Drawing.Size(49, 18);
             this.radLabel31.TabIndex = 20;
             this.radLabel31.Text = "BOTMIN";
             this.radLabel31.ThemeName = "Office2007Black";
             // 
             // radLabel32
             // 
-            this.radLabel32.Location = new System.Drawing.Point(559, 88);
-            this.radLabel32.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel32.Location = new System.Drawing.Point(162, 22);
             this.radLabel32.Name = "radLabel32";
-            this.radLabel32.Size = new System.Drawing.Size(176, 72);
+            this.radLabel32.Size = new System.Drawing.Size(51, 18);
             this.radLabel32.TabIndex = 21;
             this.radLabel32.Text = "BOTMAX";
             this.radLabel32.ThemeName = "Office2007Black";
             // 
             // radLabel33
             // 
-            this.radLabel33.Location = new System.Drawing.Point(310, 88);
-            this.radLabel33.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel33.Location = new System.Drawing.Point(90, 22);
             this.radLabel33.Name = "radLabel33";
-            this.radLabel33.Size = new System.Drawing.Size(169, 72);
+            this.radLabel33.Size = new System.Drawing.Size(49, 18);
             this.radLabel33.TabIndex = 22;
             this.radLabel33.Text = "TOPMIN";
             this.radLabel33.ThemeName = "Office2007Black";
             // 
             // radLabel34
             // 
-            this.radLabel34.Location = new System.Drawing.Point(56, 88);
-            this.radLabel34.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel34.Location = new System.Drawing.Point(16, 22);
             this.radLabel34.Name = "radLabel34";
-            this.radLabel34.Size = new System.Drawing.Size(176, 72);
+            this.radLabel34.Size = new System.Drawing.Size(51, 18);
             this.radLabel34.TabIndex = 19;
             this.radLabel34.Text = "TOPMAX";
             this.radLabel34.ThemeName = "Office2007Black";
@@ -2595,23 +2502,20 @@
             this.radGroupBox16.Controls.Add(this.radLabel37);
             this.radGroupBox16.Controls.Add(this.radLabel38);
             this.radGroupBox16.HeaderText = "Zone_1";
-            this.radGroupBox16.Location = new System.Drawing.Point(494, 16);
-            this.radGroupBox16.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radGroupBox16.Location = new System.Drawing.Point(143, 4);
             this.radGroupBox16.Name = "radGroupBox16";
-            this.radGroupBox16.Padding = new System.Windows.Forms.Padding(7, 72, 7, 8);
-            this.radGroupBox16.Size = new System.Drawing.Size(1034, 272);
+            this.radGroupBox16.Size = new System.Drawing.Size(300, 68);
             this.radGroupBox16.TabIndex = 33;
             this.radGroupBox16.Text = "Zone_1";
             this.radGroupBox16.ThemeName = "Office2007Black";
             // 
             // tbBOTmin_1
             // 
-            this.tbBOTmin_1.Location = new System.Drawing.Point(784, 168);
-            this.tbBOTmin_1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmin_1.Location = new System.Drawing.Point(227, 42);
             this.tbBOTmin_1.Mask = "D4";
             this.tbBOTmin_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_1.Name = "tbBOTmin_1";
-            this.tbBOTmin_1.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmin_1.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmin_1.TabIndex = 46;
             this.tbBOTmin_1.TabStop = false;
             this.tbBOTmin_1.Text = "0000";
@@ -2620,12 +2524,11 @@
             // 
             // tbBOTmax_1
             // 
-            this.tbBOTmax_1.Location = new System.Drawing.Point(531, 168);
-            this.tbBOTmax_1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbBOTmax_1.Location = new System.Drawing.Point(154, 42);
             this.tbBOTmax_1.Mask = "D4";
             this.tbBOTmax_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_1.Name = "tbBOTmax_1";
-            this.tbBOTmax_1.Size = new System.Drawing.Size(221, 80);
+            this.tbBOTmax_1.Size = new System.Drawing.Size(64, 20);
             this.tbBOTmax_1.TabIndex = 45;
             this.tbBOTmax_1.TabStop = false;
             this.tbBOTmax_1.Text = "0000";
@@ -2634,12 +2537,11 @@
             // 
             // tbTOPmin_1
             // 
-            this.tbTOPmin_1.Location = new System.Drawing.Point(279, 168);
-            this.tbTOPmin_1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmin_1.Location = new System.Drawing.Point(81, 42);
             this.tbTOPmin_1.Mask = "D4";
             this.tbTOPmin_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_1.Name = "tbTOPmin_1";
-            this.tbTOPmin_1.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmin_1.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmin_1.TabIndex = 44;
             this.tbTOPmin_1.TabStop = false;
             this.tbTOPmin_1.Text = "0000";
@@ -2648,12 +2550,11 @@
             // 
             // tbTOPmax_1
             // 
-            this.tbTOPmax_1.Location = new System.Drawing.Point(28, 168);
-            this.tbTOPmax_1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.tbTOPmax_1.Location = new System.Drawing.Point(8, 42);
             this.tbTOPmax_1.Mask = "D4";
             this.tbTOPmax_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_1.Name = "tbTOPmax_1";
-            this.tbTOPmax_1.Size = new System.Drawing.Size(221, 80);
+            this.tbTOPmax_1.Size = new System.Drawing.Size(64, 20);
             this.tbTOPmax_1.TabIndex = 43;
             this.tbTOPmax_1.TabStop = false;
             this.tbTOPmax_1.Text = "0000";
@@ -2662,60 +2563,54 @@
             // 
             // radLabel35
             // 
-            this.radLabel35.Location = new System.Drawing.Point(813, 88);
-            this.radLabel35.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel35.Location = new System.Drawing.Point(236, 22);
             this.radLabel35.Name = "radLabel35";
-            this.radLabel35.Size = new System.Drawing.Size(169, 72);
+            this.radLabel35.Size = new System.Drawing.Size(49, 18);
             this.radLabel35.TabIndex = 20;
             this.radLabel35.Text = "BOTMIN";
             this.radLabel35.ThemeName = "Office2007Black";
             // 
             // radLabel36
             // 
-            this.radLabel36.Location = new System.Drawing.Point(559, 88);
-            this.radLabel36.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel36.Location = new System.Drawing.Point(162, 22);
             this.radLabel36.Name = "radLabel36";
-            this.radLabel36.Size = new System.Drawing.Size(176, 72);
+            this.radLabel36.Size = new System.Drawing.Size(51, 18);
             this.radLabel36.TabIndex = 21;
             this.radLabel36.Text = "BOTMAX";
             this.radLabel36.ThemeName = "Office2007Black";
             // 
             // radLabel37
             // 
-            this.radLabel37.Location = new System.Drawing.Point(310, 88);
-            this.radLabel37.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel37.Location = new System.Drawing.Point(90, 22);
             this.radLabel37.Name = "radLabel37";
-            this.radLabel37.Size = new System.Drawing.Size(169, 72);
+            this.radLabel37.Size = new System.Drawing.Size(49, 18);
             this.radLabel37.TabIndex = 22;
             this.radLabel37.Text = "TOPMIN";
             this.radLabel37.ThemeName = "Office2007Black";
             // 
             // radLabel38
             // 
-            this.radLabel38.Location = new System.Drawing.Point(56, 88);
-            this.radLabel38.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel38.Location = new System.Drawing.Point(16, 22);
             this.radLabel38.Name = "radLabel38";
-            this.radLabel38.Size = new System.Drawing.Size(176, 72);
+            this.radLabel38.Size = new System.Drawing.Size(51, 18);
             this.radLabel38.TabIndex = 19;
             this.radLabel38.Text = "TOPMAX";
             this.radLabel38.ThemeName = "Office2007Black";
             // 
             // radLabel40
             // 
-            this.radLabel40.Location = new System.Drawing.Point(266, 104);
-            this.radLabel40.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel40.Location = new System.Drawing.Point(77, 26);
             this.radLabel40.Name = "radLabel40";
-            this.radLabel40.Size = new System.Drawing.Size(189, 72);
+            this.radLabel40.Size = new System.Drawing.Size(55, 18);
             this.radLabel40.TabIndex = 30;
             this.radLabel40.Text = "AIMTEMP";
             this.radLabel40.ThemeName = "Office2007Black";
             // 
             // radLabel41
             // 
-            this.radLabel41.Location = new System.Drawing.Point(56, 104);
-            this.radLabel41.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.radLabel41.Location = new System.Drawing.Point(16, 26);
             this.radLabel41.Name = "radLabel41";
-            this.radLabel41.Size = new System.Drawing.Size(141, 72);
+            this.radLabel41.Size = new System.Drawing.Size(41, 18);
             this.radLabel41.TabIndex = 29;
             this.radLabel41.Text = "SETNO";
             this.radLabel41.ThemeName = "Office2007Black";
@@ -3055,7 +2950,7 @@
             this.Page3.Controls.Add(this.radGroupBox20);
             this.Page3.Controls.Add(this.radGroupBox19);
             this.Page3.Controls.Add(this.radGroupBox18);
-            this.Page3.ItemSize = new System.Drawing.SizeF(150F, 44F);
+            this.Page3.ItemSize = new System.Drawing.SizeF(155F, 28F);
             this.Page3.Location = new System.Drawing.Point(10, 37);
             this.Page3.Name = "Page3";
             this.Page3.Size = new System.Drawing.Size(995, 690);
@@ -3143,7 +3038,7 @@
             // Page5
             // 
             this.Page5.AutoScroll = true;
-            this.Page5.ItemSize = new System.Drawing.SizeF(203F, 44F);
+            this.Page5.ItemSize = new System.Drawing.SizeF(182F, 28F);
             this.Page5.Location = new System.Drawing.Point(10, 37);
             this.Page5.Name = "Page5";
             this.Page5.Size = new System.Drawing.Size(995, 690);
@@ -3179,7 +3074,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 738);
             this.Controls.Add(this.MainTap);
