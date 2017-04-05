@@ -722,7 +722,7 @@ namespace FurnaceControl
 
         private void radButton1_Click(object sender, System.EventArgs e)
         {
-            m_MainClass.m_L1LinkClass.getReadGroupTags("IncrementGroup");
+            m_MainClass.m_L1LinkClass.getReadGroupTags("OPC");
         }
 
         private void radChartView1_Click(object sender, System.EventArgs e)

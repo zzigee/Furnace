@@ -18,7 +18,7 @@ namespace FurnaceControl
             this.m_MainClass = mc;
             this.Start(timer_interval, "L1LinkClassTimer");
 
-            InitializeOPC("OPCsoft.opcSvrTS.1", "");
+            //InitializeOPC("OPCsoft.opcSvrTS.1", "");
         }
 
         /******************************************************************************
@@ -31,7 +31,7 @@ namespace FurnaceControl
             //this.m_MainClass.m_SysLogClass.SystemLog(this, "L1LinkClassTimer");
 
             getOPCStatus();
-            getDataFromOPC();
+            //getDataFromOPC();
         }
         
 
@@ -132,7 +132,8 @@ namespace FurnaceControl
             int iResFunc = 0;
             m_opcMgr = new opcMgrClass();
             m_opcMgr.opcSetLogDirectory(Application.StartupPath + "\\NetIFLog");
-            iResFunc = m_opcMgr.opcRegSvrEx("C:\\UsrAppConf.xml", "OPCsoft.opcSvrTS.1", "", "", 5);
+            //iResFunc = m_opcMgr.opcRegSvrEx("C:\\UsrAppConf.xml", "OPCsoft.opcSvrTS.1", "", "", 5);
+            iResFunc = m_opcMgr.opcRegSvrEx("C:\\UsrAppConf.xml", strProdID, strServerAddress, "", 5);
 
             if (iResFunc == 1)
             {
@@ -148,14 +149,14 @@ namespace FurnaceControl
         public void getReadGroupTags(string strGroup)
         {
             int iResFunc = 0;
-            int nTagCnt = 3;
+            int nTagCnt = 1;
             object[] objReadVals = new object[nTagCnt];
             int[] nQualities = new int[nTagCnt];
 
             iResFunc= m_opcMgr.opcReadGroupTags(strGroup, nTagCnt, ref objReadVals, ref nQualities);
 
             this.m_MainClass.m_MainForm.txtOPCReadData_1.Text = objReadVals[0].ToString();
-            this.m_MainClass.m_MainForm.txtOPCReadData_2.Text = objReadVals[1].ToString();
+            //this.m_MainClass.m_MainForm.txtOPCReadData_2.Text = objReadVals[1].ToString();
         }
 
 
