@@ -45,7 +45,7 @@ namespace FurnaceControl
             public int nBillet_Charge_Temperature;                      // 빌렛 장입온도
             public int nBillet_Discharge_Target_Temperature;            // 빌렛 목표 배출 온도    
             public int nBillet_Predict_Discharge_Billet_Temperature;    // 빌렛 예상 배출 온도
-            public int nBillet_Predict_Current_Billet_Temperature;      // 현재 빌렛 예상 온도
+            public float nBillet_Predict_Current_Billet_Temperature;      // 현재 빌렛 예상 온도
             public int nOrderOfBillet;                                  // 가열로내 소재 순서 (소재갯수에 의존)
             public int nBilletPosition;                                 // 가여로내 소재 위치 (cm) (가열로내 소재 라인에 의존)
             public bool bIsSplitBillet;                                 // 한라인에 두 개의 소재 유무  
