@@ -92,32 +92,33 @@ namespace FurnaceControl
             h_s=h[0,0];
             f_s=f[0,0];
 
-            for(int k=0; k<num_cp-1; k++){
-                for(int j=0; j<num_cp-1; j++){
-                    if((nPreditBilletTemp[k]>=cp[j,0])&&(nPreditBilletTemp[k]<=cp[j+1, 0])){
-                        cp_s=cp[j,1]+(cp[j+1,1]-cp[j,1])/(cp[j+1, 0]-cp[j,0])*(nPreditBilletTemp[k]-cp[j,0]);
-                    }
-                }
-                for(int i=0; i<num_h-1; i++){
-                    if((nPreditBilletTemp[k]>=h[i,0])&&(nPreditBilletTemp[k]<=h[i+1,0])){
-                        h_s=h[i,1]+(h[i+1,1]-h[i,1])/(h[i+1,0]-h[i,0])*(nPreditBilletTemp[k]-h[i,0]);
-                    }
-                }
-                for(int j=0; j<num_f-1; j++){
-                    if((nPreditBilletTemp[k]>=f[j,0])&&(nPreditBilletTemp[k]<=f[j+1,0])){
-                        f_s=f[j,1]+(f[j+1,1]-f[j,1])/(f[j+1,0]-f[j,0])*(nPreditBilletTemp[k]-f[j,0]);
-                    }
-                }
+            //for(int k=0; k<num_cp-1; k++){
+                //for(int j=0; j<num_cp-1; j++){
+                //    if((nPreditBilletTemp[k]>=cp[j,0])&&(nPreditBilletTemp[k]<=cp[j+1, 0])){
+                //        cp_s=cp[j,1]+(cp[j+1,1]-cp[j,1])/(cp[j+1, 0]-cp[j,0])*(nPreditBilletTemp[k]-cp[j,0]);
+                //    }
+                //}
+                //for(int i=0; i<num_h-1; i++){
+                //    if((nPreditBilletTemp[k]>=h[i,0])&&(nPreditBilletTemp[k]<=h[i+1,0])){
+                //        h_s=h[i,1]+(h[i+1,1]-h[i,1])/(h[i+1,0]-h[i,0])*(nPreditBilletTemp[k]-h[i,0]);
+                //    }
+                //}
+                //for(int j=0; j<num_f-1; j++){
+                //    if((nPreditBilletTemp[k]>=f[j,0])&&(nPreditBilletTemp[k]<=f[j+1,0])){
+                //        f_s=f[j,1]+(f[j+1,1]-f[j,1])/(f[j+1,0]-f[j,0])*(nPreditBilletTemp[k]-f[j,0]);
+                //    }
+                //}
 
-                nPreditBilletTemp[k+1] = nPreditBilletTemp[k]+(h_s*dt)*(fn[k,1]-nPreditBilletTemp[k])/(dens*cp_s*thick)+(sigma*eps*f_s*dt)*(Math.Pow(fn[k,1],4)-Math.Pow(nPreditBilletTemp[k],4))/(dens*cp_s*thick);
+                //nPreditBilletTemp[k+1] = nPreditBilletTemp[k]+(h_s*dt)*(fn[k,1]-nPreditBilletTemp[k])/(dens*cp_s*thick)+(sigma*eps*f_s*dt)*(Math.Pow(fn[k,1],4)-Math.Pow(nPreditBilletTemp[k],4))/(dens*cp_s*thick);
 
-            }
+                this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex + 1].nBillet_Predict_Current_Billet_Temperature = 1;
+            //}
             /** 
              * 이 값 구해주세요. 
              */
 
 
-            nPreditBilletTemp = rnd.Next(1600);     
+            //nPreditBilletTemp = rnd.Next(1600);     
 
 
 
@@ -150,7 +151,7 @@ namespace FurnaceControl
             if (this.m_MainClass.m_Define_Class.isDataLogging)
             {
                 calThermalModel();
-                this.m_MainClass.m_Define_Class.nDataLoggingIndex++;    // 
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex++;    // 열모델 배열 증가
             }
         }
     }
