@@ -111,7 +111,7 @@ namespace FurnaceControl
 
                 //nPreditBilletTemp[k+1] = nPreditBilletTemp[k]+(h_s*dt)*(fn[k,1]-nPreditBilletTemp[k])/(dens*cp_s*thick)+(sigma*eps*f_s*dt)*(Math.Pow(fn[k,1],4)-Math.Pow(nPreditBilletTemp[k],4))/(dens*cp_s*thick);
 
-                this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex + 1].nBillet_Predict_Current_Billet_Temperature = 1;
+            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex + 1].nBillet_Predict_Current_Billet_Temperature = this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature + (h_s * dt) * (fn[this.m_MainClass.m_Define_Class.nDataLoggingIndex, 1] - this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (Math.Pow(fn[this.m_MainClass.m_Define_Class.nDataLoggingIndex, 1], 4) - Math.Pow(double.Parse(this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature).ToString()), 4)) / (dens * cp_s * thick);
             //}
             /** 
              * 이 값 구해주세요. 
