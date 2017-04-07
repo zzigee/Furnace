@@ -333,7 +333,7 @@ namespace FurnaceControl
             //상수 값 대입, 이후 DB에서 읽어올 내용
             dt = 60.0f;
             dens = 7851.354f;
-            thick = 0.5f;
+            thick = 0.5f;        
             sigma = 0.00000008f;
             eps = 0.2f;
             temp_wp_init = 50;
