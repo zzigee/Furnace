@@ -157,10 +157,8 @@ namespace FurnaceControl
 
 
             // 열모델 지배 방정식 
-            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature = ((fPreBilletTemp + 273) + (h_s * dt) * (fnfn - (fPreBilletTemp + 273)) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (ff - fff) / (dens * cp_s * thick)) - 273;
-
-            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature_304 = this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature + 100;
-
+            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature_304 = ((fPreBilletTemp + 273) + (h_s * dt) * (fnfn - (fPreBilletTemp + 273)) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (ff - fff) / (dens * cp_s * thick)) - 273;
+            
             //this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
             //    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
             //    DateTime.Now.ToString(),
@@ -279,9 +277,8 @@ namespace FurnaceControl
 
 
             // 열모델 지배 방정식 
-            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature = ((fPreBilletTemp + 273) + (h_s * dt) * (fnfn - (fPreBilletTemp + 273)) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (ff - fff) / (dens * cp_s * thick)) - 273;
+            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature_400 = ((fPreBilletTemp + 273) + (h_s * dt) * (fnfn - (fPreBilletTemp + 273)) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (ff - fff) / (dens * cp_s * thick)) - 273;
 
-            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature_304 = this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature + 100;
 
             //this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
             //    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
