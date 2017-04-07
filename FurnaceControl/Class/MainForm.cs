@@ -91,8 +91,6 @@ namespace FurnaceControl
         {
             // TODO: 이 코드는 데이터를 'furnaceControlDataSet.SYSTEM_EVENT_JOIN' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
             this.sYSTEM_EVENT_JOINTableAdapter.Fill(this.furnaceControlDataSet.SYSTEM_EVENT_JOIN);
-            // TODO: 이 코드는 데이터를 'furnaceControlDataSet.DANGJIN_DATA' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
-            this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
             this.nCurrentPage = (int)Page.Main;
 
             this.Timer_GUI_Update.Start();
@@ -568,7 +566,8 @@ namespace FurnaceControl
             //this.radChartView1.Update();
 
             SteplineSeries series_zone_temp = new SteplineSeries();
-            LineSeries series_billet_temp = new LineSeries();
+            LineSeries series_billet_temp_304 = new LineSeries();
+            LineSeries series_billet_temp_400 = new LineSeries();
 
 
             radChartView1.Series.Clear();
@@ -576,22 +575,19 @@ namespace FurnaceControl
             for (int i = 0; i < this.m_MainClass.m_Define_Class.nDataLoggingIndex; i++)
             {
                 series_zone_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nZone_Average_Temperature, i));
-                series_billet_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nBillet_Predict_Current_Billet_Temperature, i));
+                series_billet_temp_304.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nBillet_Predict_Current_Billet_Temperature_304, i));
+                series_billet_temp_400.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nBillet_Predict_Current_Billet_Temperature_400, i));
             }
 
             radChartView1.Series.Add(series_zone_temp);
-            radChartView1.Series.Add(series_billet_temp);
+            radChartView1.Series.Add(series_billet_temp_304);
+            radChartView1.Series.Add(series_billet_temp_400);
         }
 
         private void Timer_Update_GUI(object sender, EventArgs e)
         {
             if (this.nCurrentPage == (int)Page.Main)
             {
-                //this.BilletJoinTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
-                //this.GradeDetailTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
-
-                this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
-
                 RefreshChartViewer();
             }
             else if (this.nCurrentPage == (int)Page.Schedule)
