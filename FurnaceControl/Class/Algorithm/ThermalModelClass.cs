@@ -338,7 +338,7 @@ namespace FurnaceControl
             eps = 0.2f;
             temp_wp_init = 50;
 
-            cp_s = cp[0, 0];
+            cp_s = cp[0, 0];    
             h_s = h[0, 0];
             f_s = f[0, 0];
 
