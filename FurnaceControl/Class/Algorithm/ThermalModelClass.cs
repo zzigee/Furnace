@@ -60,7 +60,7 @@ namespace FurnaceControl
             Random rnd = new Random();
 
             int nPreditBilletTemp; //예측 소재 온도
-            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];     // 현재 TC 온도 
+            float nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];     // 현재 TC 온도 
 
             int num_cp = 26;
             int num_h = 26;
@@ -128,14 +128,14 @@ namespace FurnaceControl
 
 
 
-            this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
-                this.m_MainClass.m_Define_Class.nDataLoggingIndex,
-                DateTime.Now.ToString(),
-                nZoneTemprature.ToString(),
-                nPreditBilletTemp.ToString());
+            //this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
+            //    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
+            //    DateTime.Now.ToString(),
+            //    nZoneTemprature.ToString(),
+            //    nPreditBilletTemp.ToString());
 
-            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature = nPreditBilletTemp;
-            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nZone_Average_Temperature = nZoneTemprature;
+            //this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature = nPreditBilletTemp;
+            //this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nZone_Average_Temperature = nZoneTemprature;
         }
 
 
