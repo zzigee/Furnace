@@ -42,7 +42,7 @@ namespace FurnaceControl
          * 열모델 계산 코드 
          *********************************************************************************************
          *********************************************************************************************/
-        public void calThermalModel()
+        public void calThermalModel_sus304()
         {
             this.m_MainClass.m_MainForm.Set_txtDanjin_Current_Date(DateTime.Now.ToString());
             TimeSpan result = DateTime.Now - this.m_MainClass.m_Define_Class.dateDataLoggingStartTime;
@@ -67,21 +67,24 @@ namespace FurnaceControl
             int num_f = 26;
             int num_fn = 91;
             int num_wp = 91;
-            float dt;
+            float dt; // unit sec 
             float dens, thick;
             float sigma, eps;
             float temp_wp_init;
             float cp_s, h_s, f_s;
-
+            
             //비열 등 계수 상수 값 대입, 이후 DB에서 읽어올 내용 //테스트 용
-            float[,] cp = new float[,] { { 16, 0.4594f }, { 38, 0.46819f }, { 93, 0.48953f }, { 149, 0.51212f }, { 204, 0.53555f }, { 260, 0.55354f }, { 316, 0.56693f }, { 371, 0.59329f }, { 427, 0.6276f }, { 482, 0.66735f }, { 538, 0.71086f }, { 593, 0.75856f }, { 649, 0.81965f }, { 704, 0.97487f }, { 732, 1.17152f }, { 760, 0.99788f }, { 816, 0.88533f }, { 871, 0.79705f }, { 927, 0.76065f }, { 982, 0.705f }, { 1038, 0.66693f }, { 1093, 0.64894f }, { 1149, 0.6481f }, { 1204, 0.65061f}, { 1260, 0.66442f }, { 1316, 0.71295f} };
+            float[,] cp = new float[,] { { 16, 0.4594f }, { 38, 0.46819f }, { 93, 0.48953f }, { 149, 0.51212f }, { 204, 0.53555f }, { 260, 0.55354f }, { 316, 0.56693f }, { 371, 0.59329f }, { 427, 0.6276f }, { 482, 0.66735f }, { 538, 0.71086f }, { 593, 0.75856f }, { 649, 0.81965f }, { 704, 0.97487f }, { 732, 1.17152f }, { 760, 0.99788f }, { 816, 0.88533f }, { 871, 0.79705f }, { 927, 0.76065f }, { 982, 0.705f }, { 1038, 0.66693f }, { 1093, 0.64894f }, { 1149, 0.6481f }, { 1204, 0.65061f }, { 1260, 0.66442f }, { 1316, 0.71295f } };
+
+            float[,] cp_sus304 = new float[,] { { 16, 0.4594f }, { 38, 0.46819f }, { 93, 0.48953f }, { 149, 0.51212f }, { 204, 0.53555f }, { 260, 0.55354f }, { 316, 0.56693f }, { 371, 0.59329f }, { 427, 0.6276f }, { 482, 0.66735f }, { 538, 0.71086f }, { 593, 0.75856f }, { 649, 0.81965f }, { 704, 0.97487f }, { 732, 1.17152f }, { 760, 0.99788f }, { 816, 0.88533f }, { 871, 0.79705f }, { 927, 0.76065f }, { 982, 0.705f }, { 1038, 0.66693f }, { 1093, 0.64894f }, { 1149, 0.6481f }, { 1204, 0.65061f }, { 1260, 0.66442f }, { 1316, 0.71295f } };
+
             float[,] h = new float[,] { { 16, 0.04f }, { 38, 0.04f }, { 93, 0.04f }, { 149, 0.04f }, { 204, 0.04f }, { 260, 0.04f }, { 316, 0.04f }, { 371, 0.04f }, { 427, 0.04f }, { 482, 0.04f }, { 538, 0.04f }, { 593, 0.04f }, { 649, 0.04f }, { 704, 0.04f }, { 732, 0.04f }, { 760, 0.04f }, { 816, 0.04f }, { 871, 0.04f }, { 927, 0.04f }, { 982, 0.04f }, { 1038, 0.04f }, { 1093, 0.04f }, { 1149, 0.04f }, { 1204, 0.04f }, { 1260, 0.04f }, { 1316, 0.04f } };
             float[,] f = new float[,] { { 16, 0.5f }, { 38, 0.5f }, { 93, 0.5f }, { 149, 0.5f }, { 204, 0.5f }, { 260, 0.5f }, { 316, 0.5f }, { 371, 0.5f }, { 427, 0.5f }, { 482, 0.5f }, { 538, 0.5f }, { 593, 0.5f }, { 649, 0.5f }, { 704, 0.5f }, { 732, 0.5f }, { 760, 0.5f }, { 816, 0.5f }, { 871, 0.5f }, { 927, 0.5f }, { 982, 0.5f }, { 1038, 0.5f }, { 1093, 0.5f }, { 1149, 0.5f }, { 1204, 0.5f }, { 1260, 0.5f }, { 1316, 0.5f } };
             //TC input data
             float[,] fn = new float[,] {{0, 200},{10, 210},{20, 220},{30, 230},{40, 240},{50, 250},{60, 260},{70, 270},{80, 280},{90, 290},{100, 300},{110, 315},{120, 330},{130, 345},{140, 360},{150, 375},{160, 390},{170, 405},{180, 420},{190, 435},{200, 450},{210, 475},{220, 500},{230, 525},{240, 550},{250, 575},{260, 600},{270, 625},{280, 650},{290, 675},{300, 700},{310, 735},{320, 770},{330, 805},{340, 840},{350, 875},{360, 910},{370, 945},{380, 980},{390, 1015},{400, 1050},{410, 1050},{420, 1050},{430, 1050},{440, 1050},{450, 1050},{460, 1050},{470, 1050},{480, 1050},{490, 1050},{500, 1150},{510, 1150},{520, 1150},{530, 1150},{540, 1150},{550, 1150},{560, 1150},{570, 1150},{580, 1150},{590, 1150},{600, 1200},{610, 1200},{620, 1200},{630, 1200},{640, 1200},{650, 1200},{660, 1200},{670, 1200},{680, 1200},{690, 1200},{700, 1300},{710, 1300},{720, 1300},{730, 1300},{740, 1300},{750, 1300},{760, 1300},{770, 1300},{780, 1300},{790, 1300},{800, 1250},{810, 1250},{820, 1250},{830,	1250},{840,	1250},{850,	1250},{860,	1250},{870,	1250},{880,	1250},{890,	1250},{900,	1250}};
 
             //상수 값 대입, 이후 DB에서 읽어올 내용
-            dt = 1.0f;
+            dt = 60.0f;
             dens = 7851.354f;
             thick = 0.5f;
             sigma = 0.00000008f;
@@ -92,41 +95,57 @@ namespace FurnaceControl
             h_s=h[0,0];
             f_s=f[0,0];
 
-            //for(int k=0; k<num_cp-1; k++){
-                //for(int j=0; j<num_cp-1; j++){
-                //    if((nPreditBilletTemp[k]>=cp[j,0])&&(nPreditBilletTemp[k]<=cp[j+1, 0])){
-                //        cp_s=cp[j,1]+(cp[j+1,1]-cp[j,1])/(cp[j+1, 0]-cp[j,0])*(nPreditBilletTemp[k]-cp[j,0]);
-                //    }
-                //}
-                //for(int i=0; i<num_h-1; i++){
-                //    if((nPreditBilletTemp[k]>=h[i,0])&&(nPreditBilletTemp[k]<=h[i+1,0])){
-                //        h_s=h[i,1]+(h[i+1,1]-h[i,1])/(h[i+1,0]-h[i,0])*(nPreditBilletTemp[k]-h[i,0]);
-                //    }
-                //}
-                //for(int j=0; j<num_f-1; j++){
-                //    if((nPreditBilletTemp[k]>=f[j,0])&&(nPreditBilletTemp[k]<=f[j+1,0])){
-                //        f_s=f[j,1]+(f[j+1,1]-f[j,1])/(f[j+1,0]-f[j,0])*(nPreditBilletTemp[k]-f[j,0]);
-                //    }
-                //}
 
-                //nPreditBilletTemp[k+1] = nPreditBilletTemp[k]+(h_s*dt)*(fn[k,1]-nPreditBilletTemp[k])/(dens*cp_s*thick)+(sigma*eps*f_s*dt)*(Math.Pow(fn[k,1],4)-Math.Pow(nPreditBilletTemp[k],4))/(dens*cp_s*thick);
+            float fPreBilletTemp;                                               // 이전 빌렛 온도 
+            int idx = this.m_MainClass.m_Define_Class.nDataLoggingIndex;        // 현재 측정 인덱스 (최대치는 MAX_BILLET_IN_FURNACE  참조) 
 
-            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex + 1].nBillet_Predict_Current_Billet_Temperature = this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature + (h_s * dt) * (fn[this.m_MainClass.m_Define_Class.nDataLoggingIndex, 1] - this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (Math.Pow(fn[this.m_MainClass.m_Define_Class.nDataLoggingIndex, 1], 4) - Math.Pow(double.Parse(this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature).ToString()), 4)) / (dens * cp_s * thick);
-            //}
-            /** 
-             * 이 값 구해주세요. 
-             */
+            if (this.m_MainClass.m_Define_Class.nDataLoggingIndex == 0)
+            {
+                // 임의로 정의한 초기 빌렛 온도 
+                fPreBilletTemp = 50.0f;     
+            }
+            else
+            {
+                // 이전 계산된 빌렛 온도 
+                fPreBilletTemp = this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex - 1].nBillet_Predict_Current_Billet_Temperature;
+            }
+
+            // 파라메타 보간 
+            for (int k = 0; k < num_cp - 1; k++)
+            {
+                for (int j = 0; j < num_cp - 1; j++)
+                {
+                    if ((fPreBilletTemp >= cp[j, 0]) && (fPreBilletTemp <= cp[j + 1, 0]))
+                    {
+                        cp_s = cp[j, 1] + (cp[j + 1, 1] - cp[j, 1]) / (cp[j + 1, 0] - cp[j, 0]) * (fPreBilletTemp - cp[j, 0]);
+                    }
+                }
+                for (int i = 0; i < num_h - 1; i++)
+                {
+                    if ((fPreBilletTemp >= h[i, 0]) && (fPreBilletTemp <= h[i + 1, 0]))
+                    {
+                        h_s = h[i, 1] + (h[i + 1, 1] - h[i, 1]) / (h[i + 1, 0] - h[i, 0]) * (fPreBilletTemp - h[i, 0]);
+                    }
+                }
+                for (int j = 0; j < num_f - 1; j++)
+                {
+                    if ((fPreBilletTemp >= f[j, 0]) && (fPreBilletTemp <= f[j + 1, 0]))
+                    {
+                        f_s = f[j, 1] + (f[j + 1, 1] - f[j, 1]) / (f[j + 1, 0] - f[j, 0]) * (fPreBilletTemp - f[j, 0]);
+                    }
+                }
+            }
 
 
-            //nPreditBilletTemp = rnd.Next(1600);     
+           
+            float ff =  (float)(Math.Pow(fn[idx, 1], 4.0));     // 
+            float fff = (float)(Math.Pow((fPreBilletTemp+273), 4.0)); // 
+            float fnfn = fn[idx, 1]+273 ;
 
 
-
-            /**
-             */
-
-
-
+            // 열모델 지배 방정식 
+            this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature = ((fPreBilletTemp + 273) + (h_s * dt) * (fnfn - (fPreBilletTemp + 273)) / (dens * cp_s * thick) + (sigma * eps * f_s * dt) * (ff - fff) / (dens * cp_s * thick)) - 273;
+            
 
             //this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
             //    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
@@ -150,7 +169,8 @@ namespace FurnaceControl
             */
             if (this.m_MainClass.m_Define_Class.isDataLogging)
             {
-                calThermalModel();
+                calThermalModel_sus304();
+                //calThermalModel_ss400();
                 this.m_MainClass.m_Define_Class.nDataLoggingIndex++;    // 열모델 배열 증가
             }
         }
