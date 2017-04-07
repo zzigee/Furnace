@@ -31,7 +31,7 @@ namespace FurnaceControl
             //this.m_MainClass.m_SysLogClass.SystemLog(this, "L1LinkClassTimer");
 
             getOPCStatus();
-            //getDataFromOPC();
+            getDataFromOPC();
         }
         
 
@@ -45,18 +45,19 @@ namespace FurnaceControl
             if (this.m_opcMgr == null) return;
 
             int iResFunc = 0;
-            int nTagCnt = 3;
+            int nTagCnt = 4;
             object[] objReadVals = new object[nTagCnt];
             int[] nQualities = new int[nTagCnt];
 
             ///////////////////////////////////////////////////////////////////////
             // 공업로 정보 갱신 (stFURNACE_REALTIME_INFORMATION)
-            iResFunc = m_opcMgr.opcReadGroupTags("IncrementGroup", nTagCnt, ref objReadVals, ref nQualities);
+            iResFunc = m_opcMgr.opcReadGroupTags("OPC", nTagCnt, ref objReadVals, ref nQualities);
 
             this.m_MainClass.stFURNACE_REALTIME_INFORMATION.strCurrentDate = DateTime.Now.ToString();
             this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0] = int.Parse(objReadVals[0].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[1] = int.Parse(objReadVals[0].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[2] = int.Parse(objReadVals[0].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[1] = int.Parse(objReadVals[1].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[2] = int.Parse(objReadVals[2].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[3] = int.Parse(objReadVals[3].ToString());
 
 
             ///////////////////////////////////////////////////////////////////////
@@ -146,18 +147,79 @@ namespace FurnaceControl
         }
 
 
-        public void getReadGroupTags(string strGroup)
+        public void getReadGroupTags(string strGroup, int cnt)
         {
             int iResFunc = 0;
-            int nTagCnt = 1;
+            int nTagCnt = cnt;
             object[] objReadVals = new object[nTagCnt];
             int[] nQualities = new int[nTagCnt];
 
             iResFunc= m_opcMgr.opcReadGroupTags(strGroup, nTagCnt, ref objReadVals, ref nQualities);
 
-            this.m_MainClass.m_MainForm.txtOPCReadData_1.Text = objReadVals[0].ToString();
+            //this.m_MainClass.m_MainForm.tbOPC_Group.Text = objReadVals[0].ToString();
             //this.m_MainClass.m_MainForm.txtOPCReadData_2.Text = objReadVals[1].ToString();
+
+            if (iResFunc != 1) return;
+
+            this.m_MainClass.m_MainForm.radGridView13.TableElement.BeginUpdate();
+
+            this.m_MainClass.m_MainForm.radGridView13.Rows.Clear();
+
+            for(int i=0 ; i < cnt ; i++)
+            {
+                this.m_MainClass.m_MainForm.radGridView13.Rows.AddNew();
+                this.m_MainClass.m_MainForm.radGridView13.Rows[i].Cells["No"].Value = i + 1;
+                this.m_MainClass.m_MainForm.radGridView13.Rows[i].Cells["TagName"].Value = objReadVals[i].ToString();
+                this.m_MainClass.m_MainForm.radGridView13.Rows[i].Cells["Data"].Value = nQualities[i].ToString();
+            }
+
+            this.m_MainClass.m_MainForm.radGridView13.TableElement.EndUpdate();
+
         }
+
+
+
+        public void getOpcGetTagList(string strProdID, string strServerAddress)
+        {
+            int iResFunc = 0;
+            int iIdx = 0;
+            opcMgrClass opcMgr = new opcMgrClass();
+            object oTagName = new object[1];
+            object oTagDataType = new object[1];
+
+            //iResFunc = opcMgr.opcGetTagList(ref oTagName, ref oTagDataType, "OPCsoft.opcSvrTS.1", "", "1");
+            iResFunc = opcMgr.opcGetTagList(ref oTagName, ref oTagDataType, strProdID, strServerAddress, "1");
+
+            //this.m_MainClass.m_MainForm.tbOPC_Group.Text = objReadVals[0].ToString();
+            //this.m_MainClass.m_MainForm.txtOPCReadData_2.Text = objReadVals[1].ToString();
+
+            this.m_MainClass.m_MainForm.radGridView13.TableElement.BeginUpdate();
+
+            this.m_MainClass.m_MainForm.radGridView13.Rows.Clear();
+
+            Array o = (Array)oTagName;
+            Array oDT = (Array)oTagDataType;
+
+
+            for (int i = 0; i < oDT.Length; i++)
+            {
+                this.m_MainClass.m_MainForm.radGridView13.Rows.AddNew();
+                this.m_MainClass.m_MainForm.radGridView13.Rows[i].Cells["No"].Value = i + 1;
+                this.m_MainClass.m_MainForm.radGridView13.Rows[i].Cells["TagName"].Value = o.GetValue(i).ToString();
+                this.m_MainClass.m_MainForm.radGridView13.Rows[i].Cells["Data"].Value = oDT.GetValue(i).ToString();
+            }
+
+            this.m_MainClass.m_MainForm.radGridView13.TableElement.EndUpdate();
+
+        }
+
+
+
+
+
+
+
+
 
 
         public void asdf()

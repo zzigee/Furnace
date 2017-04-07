@@ -89,6 +89,8 @@ namespace FurnaceControl
          ************************************************************************/
         private void RadForm1_Load(object sender, EventArgs e)
         {
+            // TODO: 이 코드는 데이터를 'furnaceControlDataSet.SYSTEM_EVENT_JOIN' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
+            this.sYSTEM_EVENT_JOINTableAdapter.Fill(this.furnaceControlDataSet.SYSTEM_EVENT_JOIN);
             // TODO: 이 코드는 데이터를 'furnaceControlDataSet.DANGJIN_DATA' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
             this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
             this.nCurrentPage = (int)Page.Main;
@@ -722,12 +724,17 @@ namespace FurnaceControl
 
         private void radButton1_Click(object sender, System.EventArgs e)
         {
-            m_MainClass.m_L1LinkClass.getReadGroupTags("OPC");
+            m_MainClass.m_L1LinkClass.getReadGroupTags(tbOPC_Group.Text, int.Parse(tbOPC_Group_Cnt.Text));
         }
 
         private void radChartView1_Click(object sender, System.EventArgs e)
         {
 
+        }
+
+        private void btnReadAllTagList_Click(object sender, System.EventArgs e)
+        {
+            m_MainClass.m_L1LinkClass.getOpcGetTagList(txtOPCProgID.Text, txtOPCServerAddress.Text);
         }
     }
 }
