@@ -13,7 +13,8 @@ namespace FurnaceControl
          * [Check - 2016.02.22] -> [Result - ] 
          * 차후 연결 자유롭게 수정이 가능하도록 연결 문자열을 외부 파일 참조로 변경 
          **/
-        public readonly String sqlConnectionString = "Server=192.168.1.148;database=furnacecontrol;Integrated Security=false;User ID=sa;Password=1234";
+        //public readonly String sqlConnectionString = "Server=192.168.1.142;database=furnacecontrol;Integrated Security=false;User ID=sa;Password=1234";
+        public readonly String sqlConnectionString = "Server=127.0.0.1;database=furnacecontrol;Integrated Security=false;User ID=sa;Password=1234";
 
         public SqlConnection SqlCon;
         private SqlCommand sqlCommand;
@@ -45,7 +46,7 @@ namespace FurnaceControl
             catch (Exception ex)
             {
                 this.m_MainClass.m_MainForm.ShowMessageBox(string.Format("SQL 연결 에러 발생 관리자에게 문의 바랍니다.  \r\n\r\n에러코드('{0}')", ex.Message));
-                this.m_MainClass.m_SysLogClass.SystemLog(this, ex.Message);
+                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, ex.Message);
             }
         }
 

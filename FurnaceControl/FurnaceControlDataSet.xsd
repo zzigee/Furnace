@@ -5,7 +5,6 @@
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="Schedule_TableAdapter" GeneratorFunctionsComponentClassName="Schedule_TableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="Schedule_TableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FurnaceControlConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FurnaceControlConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FurnaceControl.Properties.Settings.GlobalReference.Default.FurnaceControlConnectionString" Provider="System.Data.SqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FurnaceControlConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="FurnaceControlConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FurnaceControl.Properties.Settings.GlobalReference.Default.FurnaceControlConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GRADETableAdapter" GeneratorDataComponentClassName="GRADETableAdapter" Name="GRADE" UserDataComponentName="GRADETableAdapter">
@@ -139,7 +138,7 @@ WHERE BILLET_STATUS=2</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHART_VIEW_BILLETTableAdapter" GeneratorDataComponentClassName="CHART_VIEW_BILLETTableAdapter" Name="CHART_VIEW_BILLET" UserDataComponentName="CHART_VIEW_BILLETTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="FurnaceControl.dbo.BILLET" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT 
@@ -167,26 +166,6 @@ WHERE A.BILLET_STATUS = 2 ORDER BY b.ORDER_OF_BILLET DESC</CommandText>
               <Mapping SourceColumn="PREDICT_DISCHARGE_BILLET_TEMPERATURE" DataSetColumn="PREDICT_DISCHARGE_BILLET_TEMPERATURE" />
               <Mapping SourceColumn="ZONE_AVERAGE_TEMPERATURE" DataSetColumn="ZONE_AVERAGE_TEMPERATURE" />
               <Mapping SourceColumn="ORDER_OF_BILLET" DataSetColumn="ORDER_OF_BILLET" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="USERTableAdapter" GeneratorDataComponentClassName="USERTableAdapter" Name="USER" UserDataComponentName="USERTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString1 (Settings)" DbObjectName="FurnaceControl.dbo.[USER]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  [USER].ID, [USER].PW, [USER].LEVEL
-FROM     [USER] CROSS JOIN
-               GRADE</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="ID" DataSetColumn="ID" />
-              <Mapping SourceColumn="PW" DataSetColumn="PW" />
-              <Mapping SourceColumn="LEVEL" DataSetColumn="LEVEL" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -654,14 +633,12 @@ SELECT SETNO, AIM_TEMP, Z1_TOPMAX, Z1_TOPMIN, Z1_BOTMAX, Z1_BOTMIN, Z2_TOPMAX, Z
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SYSTEM_EVENT_JOINTableAdapter" GeneratorDataComponentClassName="SYSTEM_EVENT_JOINTableAdapter" Name="SYSTEM_EVENT_JOIN" UserDataComponentName="SYSTEM_EVENT_JOINTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  SYSTEM_EVENT_LOG.TIMESTAMP, SYSTEM_EVENT_LOG.CODENO, SYSTEM_EVENT_LOG.LOCATION, SYSTEM_EVENT_LOG.MESSAGE, SYSTEM_EVENT_LOG.VALUE_1, 
-               SYSTEM_EVENT_LOG.VALUE_2, SYSTEM_EVENT_CODE.EVENT AS CODE_INFO
-FROM     SYSTEM_EVENT_LOG 
-INNER JOIN SYSTEM_EVENT_CODE 
-ON SYSTEM_EVENT_CODE.CODENO = SYSTEM_EVENT_LOG.CODENO
+                    <CommandText>SELECT  SYSTEM_EVENT_LOG.TIMESTAMP, SYSTEM_EVENT_CODE.EVENT AS CODE_INFO, SYSTEM_EVENT_LOG.LOCATION, SYSTEM_EVENT_LOG.MESSAGE
+FROM     SYSTEM_EVENT_LOG INNER JOIN
+               SYSTEM_EVENT_CODE ON SYSTEM_EVENT_CODE.CODENO = SYSTEM_EVENT_LOG.CODENO
 ORDER BY SYSTEM_EVENT_LOG.TIMESTAMP DESC</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -670,11 +647,8 @@ ORDER BY SYSTEM_EVENT_LOG.TIMESTAMP DESC</CommandText>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="TIMESTAMP" DataSetColumn="TIMESTAMP" />
-              <Mapping SourceColumn="CODENO" DataSetColumn="CODENO" />
               <Mapping SourceColumn="LOCATION" DataSetColumn="LOCATION" />
               <Mapping SourceColumn="MESSAGE" DataSetColumn="MESSAGE" />
-              <Mapping SourceColumn="VALUE_1" DataSetColumn="VALUE_1" />
-              <Mapping SourceColumn="VALUE_2" DataSetColumn="VALUE_2" />
               <Mapping SourceColumn="CODE_INFO" DataSetColumn="CODE_INFO" />
             </Mappings>
             <Sources />
@@ -805,6 +779,52 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DANGJIN_DATATableAdapter" GeneratorDataComponentClassName="DANGJIN_DATATableAdapter" Name="DANGJIN_DATA" UserDataComponentName="DANGJIN_DATATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="FurnaceControl.dbo.DANGJIN_DATA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [DANGJIN_DATA] ([EXP_ORDER], [CREATE_DATE], [ZONE_TEMP], [BILLET_TEMP]) VALUES (@EXP_ORDER, @CREATE_DATE, @ZONE_TEMP, @BILLET_TEMP)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EXP_ORDER" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EXP_ORDER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@CREATE_DATE" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="CREATE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ZONE_TEMP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ZONE_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BILLET_TEMP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BILLET_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT  EXP_ORDER, CREATE_DATE, ZONE_TEMP, BILLET_TEMP
+FROM     DANGJIN_DATA
+ORDER BY CREATE_DATE DESC, EXP_ORDER</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EXP_ORDER" DataSetColumn="EXP_ORDER" />
+              <Mapping SourceColumn="CREATE_DATE" DataSetColumn="CREATE_DATE" />
+              <Mapping SourceColumn="ZONE_TEMP" DataSetColumn="ZONE_TEMP" />
+              <Mapping SourceColumn="BILLET_TEMP" DataSetColumn="BILLET_TEMP" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="FurnaceControlConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [DANGJIN_DATA] ([EXP_ORDER], [CREATE_DATE], [ZONE_TEMP], [BILLET_TEMP]) VALUES (@EXP_ORDER, @CREATE_DATE, @ZONE_TEMP, @BILLET_TEMP)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="EXP_ORDER" ColumnName="EXP_ORDER" DataSourceName="FurnaceControl.dbo.DANGJIN_DATA" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EXP_ORDER" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EXP_ORDER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="CREATE_DATE" ColumnName="CREATE_DATE" DataSourceName="FurnaceControl.dbo.DANGJIN_DATA" DataTypeServer="datetime2" DbType="AnsiString" Direction="Input" ParameterName="@CREATE_DATE" Precision="0" ProviderType="DateTime2" Scale="0" Size="8" SourceColumn="CREATE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ZONE_TEMP" ColumnName="ZONE_TEMP" DataSourceName="FurnaceControl.dbo.DANGJIN_DATA" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@ZONE_TEMP" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="ZONE_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BILLET_TEMP" ColumnName="BILLET_TEMP" DataSourceName="FurnaceControl.dbo.DANGJIN_DATA" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@BILLET_TEMP" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="BILLET_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -813,7 +833,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
   <xs:element name="FurnaceControlDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FurnaceControlDataSet" msprop:Generator_UserDSName="FurnaceControlDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="GRADE" msprop:Generator_TableClassName="GRADEDataTable" msprop:Generator_TableVarName="tableGRADE" msprop:Generator_TablePropName="GRADE" msprop:Generator_RowDeletingName="GRADERowDeleting" msprop:Generator_RowChangingName="GRADERowChanging" msprop:Generator_RowEvHandlerName="GRADERowChangeEventHandler" msprop:Generator_RowDeletedName="GRADERowDeleted" msprop:Generator_UserTableName="GRADE" msprop:Generator_RowChangedName="GRADERowChanged" msprop:Generator_RowEvArgName="GRADERowChangeEvent" msprop:Generator_RowClassName="GRADERow">
+        <xs:element name="GRADE" msprop:Generator_TableClassName="GRADEDataTable" msprop:Generator_TableVarName="tableGRADE" msprop:Generator_RowChangedName="GRADERowChanged" msprop:Generator_TablePropName="GRADE" msprop:Generator_RowDeletingName="GRADERowDeleting" msprop:Generator_RowChangingName="GRADERowChanging" msprop:Generator_RowEvHandlerName="GRADERowChangeEventHandler" msprop:Generator_RowDeletedName="GRADERowDeleted" msprop:Generator_RowClassName="GRADERow" msprop:Generator_UserTableName="GRADE" msprop:Generator_RowEvArgName="GRADERowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="GRADE" msprop:Generator_ColumnVarNameInTable="columnGRADE" msprop:Generator_ColumnPropNameInRow="GRADE" msprop:Generator_ColumnPropNameInTable="GRADEColumn" msprop:Generator_UserColumnName="GRADE">
@@ -834,7 +854,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="BILLET_JOIN" msprop:Generator_TableClassName="BILLET_JOINDataTable" msprop:Generator_TableVarName="tableBILLET_JOIN" msprop:Generator_RowChangedName="BILLET_JOINRowChanged" msprop:Generator_TablePropName="BILLET_JOIN" msprop:Generator_RowDeletingName="BILLET_JOINRowDeleting" msprop:Generator_RowChangingName="BILLET_JOINRowChanging" msprop:Generator_RowEvHandlerName="BILLET_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="BILLET_JOINRowDeleted" msprop:Generator_RowClassName="BILLET_JOINRow" msprop:Generator_UserTableName="BILLET_JOIN" msprop:Generator_RowEvArgName="BILLET_JOINRowChangeEvent">
+        <xs:element name="BILLET_JOIN" msprop:Generator_TableClassName="BILLET_JOINDataTable" msprop:Generator_TableVarName="tableBILLET_JOIN" msprop:Generator_TablePropName="BILLET_JOIN" msprop:Generator_RowDeletingName="BILLET_JOINRowDeleting" msprop:Generator_RowChangingName="BILLET_JOINRowChanging" msprop:Generator_RowEvHandlerName="BILLET_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="BILLET_JOINRowDeleted" msprop:Generator_UserTableName="BILLET_JOIN" msprop:Generator_RowChangedName="BILLET_JOINRowChanged" msprop:Generator_RowEvArgName="BILLET_JOINRowChangeEvent" msprop:Generator_RowClassName="BILLET_JOINRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="HEAT_ID" msprop:Generator_ColumnVarNameInTable="columnHEAT_ID" msprop:Generator_ColumnPropNameInRow="HEAT_ID" msprop:Generator_ColumnPropNameInTable="HEAT_IDColumn" msprop:Generator_UserColumnName="HEAT_ID" minOccurs="0">
@@ -882,7 +902,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CHART_VIEW_BILLET" msprop:Generator_TableClassName="CHART_VIEW_BILLETDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_BILLET" msprop:Generator_TablePropName="CHART_VIEW_BILLET" msprop:Generator_RowDeletingName="CHART_VIEW_BILLETRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_BILLETRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_BILLETRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_BILLETRowDeleted" msprop:Generator_UserTableName="CHART_VIEW_BILLET" msprop:Generator_RowChangedName="CHART_VIEW_BILLETRowChanged" msprop:Generator_RowEvArgName="CHART_VIEW_BILLETRowChangeEvent" msprop:Generator_RowClassName="CHART_VIEW_BILLETRow">
+        <xs:element name="CHART_VIEW_BILLET" msprop:Generator_TableClassName="CHART_VIEW_BILLETDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_BILLET" msprop:Generator_RowChangedName="CHART_VIEW_BILLETRowChanged" msprop:Generator_TablePropName="CHART_VIEW_BILLET" msprop:Generator_RowDeletingName="CHART_VIEW_BILLETRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_BILLETRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_BILLETRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_BILLETRowDeleted" msprop:Generator_RowClassName="CHART_VIEW_BILLETRow" msprop:Generator_UserTableName="CHART_VIEW_BILLET" msprop:Generator_RowEvArgName="CHART_VIEW_BILLETRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ORDER_NUMBER" msprop:Generator_ColumnVarNameInTable="columnORDER_NUMBER" msprop:Generator_ColumnPropNameInRow="ORDER_NUMBER" msprop:Generator_ColumnPropNameInTable="ORDER_NUMBERColumn" msprop:Generator_UserColumnName="ORDER_NUMBER" minOccurs="0">
@@ -908,7 +928,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
@@ -916,7 +936,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="USER" msprop:Generator_TableClassName="USERDataTable" msprop:Generator_TableVarName="tableUSER" msprop:Generator_RowChangedName="USERRowChanged" msprop:Generator_TablePropName="USER" msprop:Generator_RowDeletingName="USERRowDeleting" msprop:Generator_RowChangingName="USERRowChanging" msprop:Generator_RowEvHandlerName="USERRowChangeEventHandler" msprop:Generator_RowDeletedName="USERRowDeleted" msprop:Generator_RowClassName="USERRow" msprop:Generator_UserTableName="USER" msprop:Generator_RowEvArgName="USERRowChangeEvent">
+        <xs:element name="USER" msprop:Generator_TableClassName="USERDataTable" msprop:Generator_TableVarName="tableUSER" msprop:Generator_TablePropName="USER" msprop:Generator_RowDeletingName="USERRowDeleting" msprop:Generator_RowChangingName="USERRowChanging" msprop:Generator_RowEvHandlerName="USERRowChangeEventHandler" msprop:Generator_RowDeletedName="USERRowDeleted" msprop:Generator_UserTableName="USER" msprop:Generator_RowChangedName="USERRowChanged" msprop:Generator_RowEvArgName="USERRowChangeEvent" msprop:Generator_RowClassName="USERRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
@@ -937,7 +957,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="GRADE_DETAIL" msprop:Generator_TableClassName="GRADE_DETAILDataTable" msprop:Generator_TableVarName="tableGRADE_DETAIL" msprop:Generator_RowChangedName="GRADE_DETAILRowChanged" msprop:Generator_TablePropName="GRADE_DETAIL" msprop:Generator_RowDeletingName="GRADE_DETAILRowDeleting" msprop:Generator_RowChangingName="GRADE_DETAILRowChanging" msprop:Generator_RowEvHandlerName="GRADE_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="GRADE_DETAILRowDeleted" msprop:Generator_RowClassName="GRADE_DETAILRow" msprop:Generator_UserTableName="GRADE_DETAIL" msprop:Generator_RowEvArgName="GRADE_DETAILRowChangeEvent">
+        <xs:element name="GRADE_DETAIL" msprop:Generator_TableClassName="GRADE_DETAILDataTable" msprop:Generator_TableVarName="tableGRADE_DETAIL" msprop:Generator_TablePropName="GRADE_DETAIL" msprop:Generator_RowDeletingName="GRADE_DETAILRowDeleting" msprop:Generator_RowChangingName="GRADE_DETAILRowChanging" msprop:Generator_RowEvHandlerName="GRADE_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="GRADE_DETAILRowDeleted" msprop:Generator_UserTableName="GRADE_DETAIL" msprop:Generator_RowChangedName="GRADE_DETAILRowChanged" msprop:Generator_RowEvArgName="GRADE_DETAILRowChangeEvent" msprop:Generator_RowClassName="GRADE_DETAILRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SETNO" msprop:Generator_ColumnVarNameInTable="columnSETNO" msprop:Generator_ColumnPropNameInRow="SETNO" msprop:Generator_ColumnPropNameInTable="SETNOColumn" msprop:Generator_UserColumnName="SETNO" type="xs:int" />
@@ -985,11 +1005,10 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SYSTEM_EVENT_JOIN" msprop:Generator_TableClassName="SYSTEM_EVENT_JOINDataTable" msprop:Generator_TableVarName="tableSYSTEM_EVENT_JOIN" msprop:Generator_RowChangedName="SYSTEM_EVENT_JOINRowChanged" msprop:Generator_TablePropName="SYSTEM_EVENT_JOIN" msprop:Generator_RowDeletingName="SYSTEM_EVENT_JOINRowDeleting" msprop:Generator_RowChangingName="SYSTEM_EVENT_JOINRowChanging" msprop:Generator_RowEvHandlerName="SYSTEM_EVENT_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="SYSTEM_EVENT_JOINRowDeleted" msprop:Generator_RowClassName="SYSTEM_EVENT_JOINRow" msprop:Generator_UserTableName="SYSTEM_EVENT_JOIN" msprop:Generator_RowEvArgName="SYSTEM_EVENT_JOINRowChangeEvent">
+        <xs:element name="SYSTEM_EVENT_JOIN" msprop:Generator_TableClassName="SYSTEM_EVENT_JOINDataTable" msprop:Generator_TableVarName="tableSYSTEM_EVENT_JOIN" msprop:Generator_TablePropName="SYSTEM_EVENT_JOIN" msprop:Generator_RowDeletingName="SYSTEM_EVENT_JOINRowDeleting" msprop:Generator_RowChangingName="SYSTEM_EVENT_JOINRowChanging" msprop:Generator_RowEvHandlerName="SYSTEM_EVENT_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="SYSTEM_EVENT_JOINRowDeleted" msprop:Generator_UserTableName="SYSTEM_EVENT_JOIN" msprop:Generator_RowChangedName="SYSTEM_EVENT_JOINRowChanged" msprop:Generator_RowEvArgName="SYSTEM_EVENT_JOINRowChangeEvent" msprop:Generator_RowClassName="SYSTEM_EVENT_JOINRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnTIMESTAMP" msprop:Generator_ColumnPropNameInRow="TIMESTAMP" msprop:Generator_ColumnPropNameInTable="TIMESTAMPColumn" msprop:Generator_UserColumnName="TIMESTAMP" type="xs:dateTime" />
-              <xs:element name="CODENO" msprop:Generator_ColumnVarNameInTable="columnCODENO" msprop:Generator_ColumnPropNameInRow="CODENO" msprop:Generator_ColumnPropNameInTable="CODENOColumn" msprop:Generator_UserColumnName="CODENO" type="xs:decimal" />
               <xs:element name="LOCATION" msprop:Generator_ColumnVarNameInTable="columnLOCATION" msprop:Generator_ColumnPropNameInRow="LOCATION" msprop:Generator_ColumnPropNameInTable="LOCATIONColumn" msprop:Generator_UserColumnName="LOCATION" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -998,20 +1017,6 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                 </xs:simpleType>
               </xs:element>
               <xs:element name="MESSAGE" msprop:Generator_ColumnVarNameInTable="columnMESSAGE" msprop:Generator_ColumnPropNameInRow="MESSAGE" msprop:Generator_ColumnPropNameInTable="MESSAGEColumn" msprop:Generator_UserColumnName="MESSAGE" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="40" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="VALUE_1" msprop:Generator_ColumnVarNameInTable="columnVALUE_1" msprop:Generator_ColumnPropNameInRow="VALUE_1" msprop:Generator_ColumnPropNameInTable="VALUE_1Column" msprop:Generator_UserColumnName="VALUE_1" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="40" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="VALUE_2" msprop:Generator_ColumnVarNameInTable="columnVALUE_2" msprop:Generator_ColumnPropNameInRow="VALUE_2" msprop:Generator_ColumnPropNameInTable="VALUE_2Column" msprop:Generator_UserColumnName="VALUE_2" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
@@ -1028,7 +1033,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CHART_VIEW_ZONE_STATUS" msprop:Generator_TableClassName="CHART_VIEW_ZONE_STATUSDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_ZONE_STATUS" msprop:Generator_TablePropName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowDeletingName="CHART_VIEW_ZONE_STATUSRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_ZONE_STATUSRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_ZONE_STATUSRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_ZONE_STATUSRowDeleted" msprop:Generator_UserTableName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowChangedName="CHART_VIEW_ZONE_STATUSRowChanged" msprop:Generator_RowEvArgName="CHART_VIEW_ZONE_STATUSRowChangeEvent" msprop:Generator_RowClassName="CHART_VIEW_ZONE_STATUSRow">
+        <xs:element name="CHART_VIEW_ZONE_STATUS" msprop:Generator_TableClassName="CHART_VIEW_ZONE_STATUSDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_ZONE_STATUS" msprop:Generator_RowChangedName="CHART_VIEW_ZONE_STATUSRowChanged" msprop:Generator_TablePropName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowDeletingName="CHART_VIEW_ZONE_STATUSRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_ZONE_STATUSRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_ZONE_STATUSRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_ZONE_STATUSRowDeleted" msprop:Generator_RowClassName="CHART_VIEW_ZONE_STATUSRow" msprop:Generator_UserTableName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowEvArgName="CHART_VIEW_ZONE_STATUSRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FURNACE_NO" msprop:Generator_ColumnVarNameInTable="columnFURNACE_NO" msprop:Generator_ColumnPropNameInRow="FURNACE_NO" msprop:Generator_ColumnPropNameInTable="FURNACE_NOColumn" msprop:Generator_UserColumnName="FURNACE_NO" type="xs:unsignedByte" />
@@ -1044,6 +1049,28 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
               <xs:element name="MAX_SP_TEMP" msprop:Generator_ColumnVarNameInTable="columnMAX_SP_TEMP" msprop:Generator_ColumnPropNameInRow="MAX_SP_TEMP" msprop:Generator_ColumnPropNameInTable="MAX_SP_TEMPColumn" msprop:Generator_UserColumnName="MAX_SP_TEMP" type="xs:short" minOccurs="0" />
               <xs:element name="MIN_SP_TEMP" msprop:Generator_ColumnVarNameInTable="columnMIN_SP_TEMP" msprop:Generator_ColumnPropNameInRow="MIN_SP_TEMP" msprop:Generator_ColumnPropNameInTable="MIN_SP_TEMPColumn" msprop:Generator_UserColumnName="MIN_SP_TEMP" type="xs:short" minOccurs="0" />
               <xs:element name="POSITION" msprop:Generator_ColumnVarNameInTable="columnPOSITION" msprop:Generator_ColumnPropNameInRow="POSITION" msprop:Generator_ColumnPropNameInTable="POSITIONColumn" msprop:Generator_UserColumnName="POSITION" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DANGJIN_DATA" msprop:Generator_TableClassName="DANGJIN_DATADataTable" msprop:Generator_TableVarName="tableDANGJIN_DATA" msprop:Generator_RowChangedName="DANGJIN_DATARowChanged" msprop:Generator_TablePropName="DANGJIN_DATA" msprop:Generator_RowDeletingName="DANGJIN_DATARowDeleting" msprop:Generator_RowChangingName="DANGJIN_DATARowChanging" msprop:Generator_RowEvHandlerName="DANGJIN_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="DANGJIN_DATARowDeleted" msprop:Generator_RowClassName="DANGJIN_DATARow" msprop:Generator_UserTableName="DANGJIN_DATA" msprop:Generator_RowEvArgName="DANGJIN_DATARowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXP_ORDER" msprop:Generator_ColumnVarNameInTable="columnEXP_ORDER" msprop:Generator_ColumnPropNameInRow="EXP_ORDER" msprop:Generator_ColumnPropNameInTable="EXP_ORDERColumn" msprop:Generator_UserColumnName="EXP_ORDER" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ZONE_TEMP" msprop:Generator_ColumnVarNameInTable="columnZONE_TEMP" msprop:Generator_ColumnPropNameInRow="ZONE_TEMP" msprop:Generator_ColumnPropNameInTable="ZONE_TEMPColumn" msprop:Generator_UserColumnName="ZONE_TEMP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BILLET_TEMP" msprop:Generator_ColumnVarNameInTable="columnBILLET_TEMP" msprop:Generator_ColumnPropNameInRow="BILLET_TEMP" msprop:Generator_ColumnPropNameInTable="BILLET_TEMPColumn" msprop:Generator_UserColumnName="BILLET_TEMP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

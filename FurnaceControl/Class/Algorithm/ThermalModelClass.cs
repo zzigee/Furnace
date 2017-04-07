@@ -7,102 +7,80 @@ namespace FurnaceControl
     {
         private readonly MainClass m_MainClass;
 
-        int Nb = 48;
-        int Nfm = 8;
-        double con1 = 0.00000015;
-        double con2 = 100;
-        double con3 = 0.0001;
-        double Tb_init;
-        double[] Tb = new double[100];
-        double[] Tf = new double[100];
-        double[] Tfm = new double[100];
+        private double dTotalCalTime = 0.0;
 
-        
         public ThermalModelClass(MainClass mc, int timer_interval)
         {
             this.m_MainClass = mc;
             this.Start(timer_interval, "ThermalModelClassTimer");
         }
-
-        /**
-         * 주기적으로 실행하는 함수 
-         **/
-        public override void Run()
+        
+        /*********************************************************************************************
+         *********************************************************************************************
+         * 열모델 계산 코드 
+         *********************************************************************************************
+         *********************************************************************************************/
+        public void calThermalModel()
         {
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
-            CalTemp();
+            this.m_MainClass.m_MainForm.Set_txtDanjin_Current_Date(DateTime.Now.ToString());
+            TimeSpan result = DateTime.Now - this.m_MainClass.m_Define_Class.dateDataLoggingStartTime;
+            this.m_MainClass.m_MainForm.Set_txtDanjin_Operation_Time("[" + this.m_MainClass.m_Define_Class.nDataLoggingIndex + "]" + result.ToString(@"h\:mm\:ss"));
 
+            if (this.m_MainClass.m_Define_Class.nDataLoggingIndex > this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE)
+            {
+                this.m_MainClass.m_MainForm.ShowMessageBox("당진 테스트베드 측정 데이터 갯수가 최대 갯수를 초과하였습니다. \n\r측정을 중지합니다.");
+                this.m_MainClass.m_MainForm.btnDataLogging.BackColor = System.Drawing.Color.LightGray;
+                this.m_MainClass.m_Define_Class.isDataLogging = false;
+            }
+
+            Random rnd = new Random();
+
+            int nPreditBilletTemp;
+            int nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];     // 현재 TC 온도 
+
+
+
+            /** 
+             * 이 값 구해주세요. 
+             */
+
+
+
+            nPreditBilletTemp = rnd.Next(1600);     
+
+
+
+            /**
+             */
+
+
+
+
+            this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex,
+                DateTime.Now.ToString(),
+                nZoneTemprature.ToString(),
+                nPreditBilletTemp.ToString());
+
+            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature = nPreditBilletTemp;
+            this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nZone_Average_Temperature = nZoneTemprature;
         }
 
-        public void CalTemp()
+
+
+        public override void Run()
         {
-            for (int k = 0; k < 100; k++)
-            {
-//                Tb[k] = Tf[k] = Tfm[k] = 0;
-                Tb[k] = Tf[k] = 0; //테스트용
-            }
-            Tfm[0] = 100;
-            Tfm[1] = 500;
-            Tfm[2] = 800;
-            Tfm[3] = 1200;
-            Tfm[4] = 1300;
-            Tfm[5] = 1350;
-            Tfm[6] = 1450;
-            Tfm[7] = 1400;
+            //this.m_MainClass.m_SysLogClass.SystemLog(this, "ThermalModelClassTimer");
 
-            for (int k=0; k < Nfm; k++)
+            /*
+            Start Data Logging 이 활성화 된 경우 실행 
+            실행 주기는 열모델 연산 Delta 시간과 동일하게 DB_Timer 에 설정하면 됨. 
+            */
+            if (this.m_MainClass.m_Define_Class.isDataLogging)
             {
-//               Tfm[k] = ThemocoupleTemp[]; //level2로 부터 Tfm[]에 들어갈 배열 값을 전달 받아야함.
+                calThermalModel();
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex++;    // 
             }
-
-            int q = 0;
-            for (int i = 0; i < Nfm; i++)
-            {
-                if (i < 3)
-                {
-                    if (i == 0)
-                    {
-                        for (int j = 0; j < 6; j++)
-                        {
-                            Tf[q] = j * (Tfm[1] - Tfm[0]) / 6 + Tfm[0];
-                            q += 1;
-                        }
-                    }
-                    if (i == 1)
-                    {
-                        for (int j = 0; j < 6; j++)
-                        {
-                            Tf[q] = j * (Tfm[2] - Tfm[1]) / 6 + Tfm[1];
-                            q += 1;
-                        }
-                    }
-                    if (i == 2)
-                    {
-                        for (int j = 0; j < 6; j++)
-                        {
-                            Tf[q] = j * (Tfm[3] - Tfm[2]) / 6 + Tfm[2];
-                            q += 1;
-                        }
-                    }
-                }
-                else
-                {
-                    for(int j=0; j<6; j++){
-                        Tf[q] = Tfm[i];
-                        q += 1;
-                    }
-                }
-            }
-            Tb_init = 0.5 * Tfm[0];
-            Tb[0] = Tb_init;
-
-            for (int k = 0; k < Nb; k++)
-            {
-                Tb[k + 1] = Tb[k] + con1 * (con2 * (Tf[k] - Tb[k]) + con3 * (Math.Pow(Tf[k], 4) - Math.Pow(Tb[k], 4)));
-            }
-            //Tb 배열의 값을 level2로 내보내야 함
-
-//                Console.WriteLine(">"+Tb[5]);
         }
     }
 }

@@ -21,12 +21,7 @@ namespace FurnaceControl
          **/
         public override void Run()
         {
-            this.m_MainClass.m_SysLogClass.SystemLog(this, "TrackingClassTimer");
-        }
-
-        private void updateChartInformation()
-        {
-            //this.m_MainClass.m_SysLogClass.SystemLog(this, Convert.ToString(this.m_MainClass.m_SQLClass.updateChartStruct()));
+            //this.m_MainClass.m_SysLogClass.SystemLog(this, "TrackingClassTimer");
         }
     }
 }
