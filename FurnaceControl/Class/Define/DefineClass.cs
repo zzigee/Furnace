@@ -29,7 +29,7 @@ namespace FurnaceControl
          * 차후 프로그램 배포시 자유롭게 수정이 가능하도록 공업로 최대 영역 수를 외부 파일 참조로 변경 필요  
          **/
         public readonly int MAX_ZONE_IN_FURNACE = 10;         // 가열 존의 갯수 
-        public readonly int MAX_BILLET_IN_FURNACE = 600;   // 로내 최대 빌렛 갯수 (10시간)
+        public readonly int MAX_BILLET_IN_FURNACE = 600;     // 로내 최대 빌렛 갯수 (10시간)
 
         public int nBillet_Count_On_FUrnace;
 
