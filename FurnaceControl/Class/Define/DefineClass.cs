@@ -21,18 +21,19 @@ namespace FurnaceControl
         public bool isDataLogging = false;                  // 실시간 데이터 DB 저장 여부 
         public int nDataLoggingIndex;                       // 실시간 데이터 배열 인덱스 
         public DateTime dateDataLoggingStartTime;           // 실시간 데이터 저장 시작 시간  
-        public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.ONE_SEC;
-
+        //public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.ONE_SEC;
+        public int nDangjinThermalCalPeriod = 100;
 
         /*
          * [Check - 2016.02.22] -> [Result - ] 
          * 차후 프로그램 배포시 자유롭게 수정이 가능하도록 공업로 최대 영역 수를 외부 파일 참조로 변경 필요  
          **/
         public readonly int MAX_ZONE_IN_FURNACE = 12;           // 가열 존의 갯수 
-        public readonly int MAX_BILLET_IN_FURNACE = 600000;        // 로내 최대 빌렛 갯수 (10시간)
+        public readonly int MAX_BILLET_IN_FURNACE = 600;        // 로내 최대 빌렛 갯수 (10시간)
 
         public int nBillet_Count_On_FUrnace;
 
+        public bool isDebugMode;
 
 
         /**

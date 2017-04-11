@@ -565,14 +565,14 @@ namespace FurnaceControl
             //this.radChartView.Update();
             //this.radChartView1.Update();
 
-            SteplineSeries series_zone_temp = new SteplineSeries();
+            LineSeries series_zone_temp = new LineSeries();
             LineSeries series_billet_temp_304 = new LineSeries();
             LineSeries series_billet_temp_400 = new LineSeries();
 
 
             radChartView1.Series.Clear();
 
-            for (int i = 0; i < this.m_MainClass.m_Define_Class.nDataLoggingIndex; i++)
+            for (int i = 0; i < this.m_MainClass.m_Define_Class.nDataLoggingIndex; i = i + 10)
             {
                 series_zone_temp.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nZone_Average_Temperature, i));
                 series_billet_temp_304.DataPoints.Add(new CategoricalDataPoint(this.m_MainClass.stBILLET_INFOMATION[i].nBillet_Predict_Current_Billet_Temperature_304, i));

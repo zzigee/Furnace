@@ -64,7 +64,7 @@ namespace FurnaceControl
              * Initialize Variable
              ******************************************************************************/
             this.isLoginUser = false;
-            
+            this.m_Define_Class.isDebugMode = false;           
 
 
             /*****************************************************************************
