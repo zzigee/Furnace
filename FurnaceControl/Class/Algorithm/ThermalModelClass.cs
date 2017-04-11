@@ -13,7 +13,6 @@ namespace FurnaceControl
         {
             this.m_MainClass = mc;
             this.Start(timer_interval, "ThermalModelClassTimer");
-
         }
 
         private float[] InitInterpolationParameters(float [,] data)
@@ -110,34 +109,34 @@ namespace FurnaceControl
             }
 
             // 파라메타 보간 
-            //for (int k = 0; k < num_cp - 1; k++)
-            //{
-            //    for (int j = 0; j < num_cp - 1; j++)
-            //    {
-            //        if ((fPreBilletTemp >= cp_sus304[j, 0]) && (fPreBilletTemp <= cp_sus304[j + 1, 0]))
-            //        {
-            //            cp_s = cp_sus304[j, 1] + (cp_sus304[j + 1, 1] - cp_sus304[j, 1]) / (cp_sus304[j + 1, 0] - cp_sus304[j, 0]) * (fPreBilletTemp - cp_sus304[j, 0]);
-            //        }
-            //    }
-            //    for (int i = 0; i < num_h - 1; i++)
-            //    {
-            //        if ((fPreBilletTemp >= h_sus304[i, 0]) && (fPreBilletTemp <= h_sus304[i + 1, 0]))
-            //        {
-            //            h_s = h_sus304[i, 1] + (h_sus304[i + 1, 1] - h_sus304[i, 1]) / (h_sus304[i + 1, 0] - h_sus304[i, 0]) * (fPreBilletTemp - h_sus304[i, 0]);
-            //        }
-            //    }
-            //    for (int j = 0; j < num_f - 1; j++)
-            //    {
-            //        if ((fPreBilletTemp >= f_sus304[j, 0]) && (fPreBilletTemp <= f_sus304[j + 1, 0]))
-            //        {
-            //            f_s = f_sus304[j, 1] + (f_sus304[j + 1, 1] - f_sus304[j, 1]) / (f_sus304[j + 1, 0] - f_sus304[j, 0]) * (fPreBilletTemp - f_sus304[j, 0]);
-            //        }
-            //    }
-            //}
+            for (int k = 0; k < num_cp - 1; k++)
+            {
+                for (int j = 0; j < num_cp - 1; j++)
+                {
+                    if ((fPreBilletTemp >= cp_sus304[j, 0]) && (fPreBilletTemp <= cp_sus304[j + 1, 0]))
+                    {
+                        cp_s = cp_sus304[j, 1] + (cp_sus304[j + 1, 1] - cp_sus304[j, 1]) / (cp_sus304[j + 1, 0] - cp_sus304[j, 0]) * (fPreBilletTemp - cp_sus304[j, 0]);
+                    }
+                }
+                for (int i = 0; i < num_h - 1; i++)
+                {
+                    if ((fPreBilletTemp >= h_sus304[i, 0]) && (fPreBilletTemp <= h_sus304[i + 1, 0]))
+                    {
+                        h_s = h_sus304[i, 1] + (h_sus304[i + 1, 1] - h_sus304[i, 1]) / (h_sus304[i + 1, 0] - h_sus304[i, 0]) * (fPreBilletTemp - h_sus304[i, 0]);
+                    }
+                }
+                for (int j = 0; j < num_f - 1; j++)
+                {
+                    if ((fPreBilletTemp >= f_sus304[j, 0]) && (fPreBilletTemp <= f_sus304[j + 1, 0]))
+                    {
+                        f_s = f_sus304[j, 1] + (f_sus304[j + 1, 1] - f_sus304[j, 1]) / (f_sus304[j + 1, 0] - f_sus304[j, 0]) * (fPreBilletTemp - f_sus304[j, 0]);
+                    }
+                }
+            }
 
-            cp_s = cp_sus304_Interpolation[(int)fPreBilletTemp];
-            h_s = h_sus304_Interpolation[(int)fPreBilletTemp];
-            f_s = f_sus304_Interpolation[(int)fPreBilletTemp];
+            //cp_s = cp_sus304_Interpolation[(int)fPreBilletTemp];
+            //h_s = h_sus304_Interpolation[(int)fPreBilletTemp];
+            //f_s = f_sus304_Interpolation[(int)fPreBilletTemp];
             
             double ffZone = (Math.Pow(fZoneTemprature + 273, 4.0));   
             double ffBillet = (Math.Pow((fPreBilletTemp + 273), 4.0));
@@ -163,10 +162,10 @@ namespace FurnaceControl
             //    nPreditBilletTemp.ToString());
 
 
-            //System.Console.WriteLine("cp_s : " + cp_s + " : " + getLagrange_new(cp_sus304, num_cp, fPreBilletTemp));
-            //System.Console.WriteLine("h_s : " + h_s + " : " + getLagrange_new(h_sus304, num_h, fPreBilletTemp));
-            //System.Console.WriteLine("f_s : " + f_s + " : " + getLagrange_new(f_sus304, num_f, fPreBilletTemp));
-            //System.Console.WriteLine("fPreditBilletTemp : " + fPreBilletTemp);
+            System.Console.WriteLine("cp_s : " + cp_s + " : " + cp_sus304_Interpolation[(int)fPreBilletTemp]);
+            System.Console.WriteLine("h_s : " + h_s + " : " + h_sus304_Interpolation[(int)fPreBilletTemp]);
+            System.Console.WriteLine("f_s : " + f_s + " : " + f_sus304_Interpolation[(int)fPreBilletTemp]);
+            System.Console.WriteLine("fPreditBilletTemp : " + fPreBilletTemp);
         }
 
 
