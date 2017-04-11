@@ -112,7 +112,7 @@ namespace FurnaceControl
                 // 이전 계산된 빌렛 온도 
                 fPreBilletTemp = this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex - 1].nBillet_Predict_Current_Billet_Temperature; //sus304??
             }
-
+             
             // 파라메타 보간 
             for (int k = 0; k < num_cp - 1; k++)
             {
