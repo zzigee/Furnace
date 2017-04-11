@@ -64,15 +64,17 @@ namespace FurnaceControl
              * Initialize Variable
              ******************************************************************************/
             this.isLoginUser = false;
-            
+            this.m_Define_Class.isDebugMode = false;           
 
 
             /*****************************************************************************
              * Initialize Struct 
              ******************************************************************************/
             this.stBILLET_INFOMATION = new DefineClass.ST_BILLET_INFOMATION[this.m_Define_Class.MAX_BILLET_IN_FURNACE];
+
             this.stFURNACE_REALTIME_INFORMATION = new DefineClass.ST_FURNACE_REALTIME_INFORMATION();
-            this.stFURNACE_REALTIME_INFORMATION.nZone_Temperature = new int[this.m_Define_Class.MAX_ZONE_IN_FURNACE];
+            this.stFURNACE_REALTIME_INFORMATION.fZone_Temperature = new float[this.m_Define_Class.MAX_ZONE_IN_FURNACE];
+            this.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature = new float[this.m_Define_Class.MAX_ZONE_IN_FURNACE];
 
             this.m_L1LinkClass = new L1LinkClass(this, (int)DefineClass.TIMER_INTERVAL.TWO_SEC);
             this.m_L3LinkClass = new L3LinkClass(this, (int)DefineClass.TIMER_INTERVAL.TWO_SEC);

@@ -51,7 +51,10 @@ namespace FurnaceControl
 
         public void DebugLog(Object obj, string msg)
         {
-            Console.WriteLine(string.Format("[{0}] DebugLog Message[{1}]: [ {2} ]", UtilsClass.getCurrentTime(), obj.ToString(), msg));
+            if (this.m_MainClass.m_Define_Class.isDebugMode)
+            {
+                Console.WriteLine(string.Format("[{0}] DebugLog Message[{1}]: [ {2} ]", UtilsClass.getCurrentTime(), obj.ToString(), msg));
+            }
         }
     }
 }
