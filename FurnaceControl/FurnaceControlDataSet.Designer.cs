@@ -36,7 +36,7 @@ namespace FurnaceControl {
         
         private CHART_VIEW_ZONE_STATUSDataTable tableCHART_VIEW_ZONE_STATUS;
         
-        private DANGJIN_DATA1DataTable tableDANGJIN_DATA1;
+        private DANGJIN_DATADataTable tableDANGJIN_DATA;
         
         private DataTable1DataTable tableDataTable1;
         
@@ -88,8 +88,8 @@ namespace FurnaceControl {
                 if ((ds.Tables["CHART_VIEW_ZONE_STATUS"] != null)) {
                     base.Tables.Add(new CHART_VIEW_ZONE_STATUSDataTable(ds.Tables["CHART_VIEW_ZONE_STATUS"]));
                 }
-                if ((ds.Tables["DANGJIN_DATA1"] != null)) {
-                    base.Tables.Add(new DANGJIN_DATA1DataTable(ds.Tables["DANGJIN_DATA1"]));
+                if ((ds.Tables["DANGJIN_DATA"] != null)) {
+                    base.Tables.Add(new DANGJIN_DATADataTable(ds.Tables["DANGJIN_DATA"]));
                 }
                 if ((ds.Tables["DataTable1"] != null)) {
                     base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
@@ -179,9 +179,9 @@ namespace FurnaceControl {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DANGJIN_DATA1DataTable DANGJIN_DATA1 {
+        public DANGJIN_DATADataTable DANGJIN_DATA {
             get {
-                return this.tableDANGJIN_DATA1;
+                return this.tableDANGJIN_DATA;
             }
         }
         
@@ -290,8 +290,8 @@ namespace FurnaceControl {
                 if ((ds.Tables["CHART_VIEW_ZONE_STATUS"] != null)) {
                     base.Tables.Add(new CHART_VIEW_ZONE_STATUSDataTable(ds.Tables["CHART_VIEW_ZONE_STATUS"]));
                 }
-                if ((ds.Tables["DANGJIN_DATA1"] != null)) {
-                    base.Tables.Add(new DANGJIN_DATA1DataTable(ds.Tables["DANGJIN_DATA1"]));
+                if ((ds.Tables["DANGJIN_DATA"] != null)) {
+                    base.Tables.Add(new DANGJIN_DATADataTable(ds.Tables["DANGJIN_DATA"]));
                 }
                 if ((ds.Tables["DataTable1"] != null)) {
                     base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
@@ -368,10 +368,10 @@ namespace FurnaceControl {
                     this.tableCHART_VIEW_ZONE_STATUS.InitVars();
                 }
             }
-            this.tableDANGJIN_DATA1 = ((DANGJIN_DATA1DataTable)(base.Tables["DANGJIN_DATA1"]));
+            this.tableDANGJIN_DATA = ((DANGJIN_DATADataTable)(base.Tables["DANGJIN_DATA"]));
             if ((initTable == true)) {
-                if ((this.tableDANGJIN_DATA1 != null)) {
-                    this.tableDANGJIN_DATA1.InitVars();
+                if ((this.tableDANGJIN_DATA != null)) {
+                    this.tableDANGJIN_DATA.InitVars();
                 }
             }
             this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
@@ -408,8 +408,8 @@ namespace FurnaceControl {
             base.Tables.Add(this.tableSYSTEM_EVENT_JOIN);
             this.tableCHART_VIEW_ZONE_STATUS = new CHART_VIEW_ZONE_STATUSDataTable();
             base.Tables.Add(this.tableCHART_VIEW_ZONE_STATUS);
-            this.tableDANGJIN_DATA1 = new DANGJIN_DATA1DataTable();
-            base.Tables.Add(this.tableDANGJIN_DATA1);
+            this.tableDANGJIN_DATA = new DANGJIN_DATADataTable();
+            base.Tables.Add(this.tableDANGJIN_DATA);
             this.tableDataTable1 = new DataTable1DataTable();
             base.Tables.Add(this.tableDataTable1);
             this.tableUSER = new USERDataTable();
@@ -454,7 +454,7 @@ namespace FurnaceControl {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeDANGJIN_DATA1() {
+        private bool ShouldSerializeDANGJIN_DATA() {
             return false;
         }
         
@@ -544,7 +544,7 @@ namespace FurnaceControl {
         public delegate void CHART_VIEW_ZONE_STATUSRowChangeEventHandler(object sender, CHART_VIEW_ZONE_STATUSRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void DANGJIN_DATA1RowChangeEventHandler(object sender, DANGJIN_DATA1RowChangeEvent e);
+        public delegate void DANGJIN_DATARowChangeEventHandler(object sender, DANGJIN_DATARowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
@@ -3307,7 +3307,7 @@ namespace FurnaceControl {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DANGJIN_DATA1DataTable : global::System.Data.TypedTableBase<DANGJIN_DATA1Row> {
+        public partial class DANGJIN_DATADataTable : global::System.Data.TypedTableBase<DANGJIN_DATARow> {
             
             private global::System.Data.DataColumn columnEXP_ORDER;
             
@@ -3339,12 +3339,14 @@ namespace FurnaceControl {
             
             private global::System.Data.DataColumn columnZONE_TEMP_12;
             
-            private global::System.Data.DataColumn columnBILLET_TEMP;
+            private global::System.Data.DataColumn columnBILLET_TEMP_304;
+            
+            private global::System.Data.DataColumn columnBILLET_TEMP_400;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DANGJIN_DATA1DataTable() {
-                this.TableName = "DANGJIN_DATA1";
+            public DANGJIN_DATADataTable() {
+                this.TableName = "DANGJIN_DATA";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3352,7 +3354,7 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal DANGJIN_DATA1DataTable(global::System.Data.DataTable table) {
+            internal DANGJIN_DATADataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3369,7 +3371,7 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected DANGJIN_DATA1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DANGJIN_DATADataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -3496,9 +3498,17 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn BILLET_TEMPColumn {
+            public global::System.Data.DataColumn BILLET_TEMP_304Column {
                 get {
-                    return this.columnBILLET_TEMP;
+                    return this.columnBILLET_TEMP_304;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BILLET_TEMP_400Column {
+                get {
+                    return this.columnBILLET_TEMP_400;
                 }
             }
             
@@ -3513,33 +3523,33 @@ namespace FurnaceControl {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DANGJIN_DATA1Row this[int index] {
+            public DANGJIN_DATARow this[int index] {
                 get {
-                    return ((DANGJIN_DATA1Row)(this.Rows[index]));
+                    return ((DANGJIN_DATARow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DANGJIN_DATA1RowChangeEventHandler DANGJIN_DATA1RowChanging;
+            public event DANGJIN_DATARowChangeEventHandler DANGJIN_DATARowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DANGJIN_DATA1RowChangeEventHandler DANGJIN_DATA1RowChanged;
+            public event DANGJIN_DATARowChangeEventHandler DANGJIN_DATARowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DANGJIN_DATA1RowChangeEventHandler DANGJIN_DATA1RowDeleting;
+            public event DANGJIN_DATARowChangeEventHandler DANGJIN_DATARowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DANGJIN_DATA1RowChangeEventHandler DANGJIN_DATA1RowDeleted;
+            public event DANGJIN_DATARowChangeEventHandler DANGJIN_DATARowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddDANGJIN_DATA1Row(DANGJIN_DATA1Row row) {
+            public void AddDANGJIN_DATARow(DANGJIN_DATARow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DANGJIN_DATA1Row AddDANGJIN_DATA1Row(
+            public DANGJIN_DATARow AddDANGJIN_DATARow(
                         int EXP_ORDER, 
                         System.DateTime CREATE_DATE, 
                         double ZONE_TEMP_AVG, 
@@ -3555,8 +3565,9 @@ namespace FurnaceControl {
                         double ZONE_TEMP_10, 
                         double ZONE_TEMP_11, 
                         double ZONE_TEMP_12, 
-                        string BILLET_TEMP) {
-                DANGJIN_DATA1Row rowDANGJIN_DATA1Row = ((DANGJIN_DATA1Row)(this.NewRow()));
+                        double BILLET_TEMP_304, 
+                        double BILLET_TEMP_400) {
+                DANGJIN_DATARow rowDANGJIN_DATARow = ((DANGJIN_DATARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         EXP_ORDER,
                         CREATE_DATE,
@@ -3573,16 +3584,17 @@ namespace FurnaceControl {
                         ZONE_TEMP_10,
                         ZONE_TEMP_11,
                         ZONE_TEMP_12,
-                        BILLET_TEMP};
-                rowDANGJIN_DATA1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDANGJIN_DATA1Row);
-                return rowDANGJIN_DATA1Row;
+                        BILLET_TEMP_304,
+                        BILLET_TEMP_400};
+                rowDANGJIN_DATARow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDANGJIN_DATARow);
+                return rowDANGJIN_DATARow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DANGJIN_DATA1DataTable cln = ((DANGJIN_DATA1DataTable)(base.Clone()));
+                DANGJIN_DATADataTable cln = ((DANGJIN_DATADataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -3590,7 +3602,7 @@ namespace FurnaceControl {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DANGJIN_DATA1DataTable();
+                return new DANGJIN_DATADataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3611,7 +3623,8 @@ namespace FurnaceControl {
                 this.columnZONE_TEMP_10 = base.Columns["ZONE_TEMP_10"];
                 this.columnZONE_TEMP_11 = base.Columns["ZONE_TEMP_11"];
                 this.columnZONE_TEMP_12 = base.Columns["ZONE_TEMP_12"];
-                this.columnBILLET_TEMP = base.Columns["BILLET_TEMP"];
+                this.columnBILLET_TEMP_304 = base.Columns["BILLET_TEMP_304"];
+                this.columnBILLET_TEMP_400 = base.Columns["BILLET_TEMP_400"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3647,35 +3660,36 @@ namespace FurnaceControl {
                 base.Columns.Add(this.columnZONE_TEMP_11);
                 this.columnZONE_TEMP_12 = new global::System.Data.DataColumn("ZONE_TEMP_12", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnZONE_TEMP_12);
-                this.columnBILLET_TEMP = new global::System.Data.DataColumn("BILLET_TEMP", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBILLET_TEMP);
-                this.columnBILLET_TEMP.MaxLength = 10;
+                this.columnBILLET_TEMP_304 = new global::System.Data.DataColumn("BILLET_TEMP_304", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBILLET_TEMP_304);
+                this.columnBILLET_TEMP_400 = new global::System.Data.DataColumn("BILLET_TEMP_400", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBILLET_TEMP_400);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DANGJIN_DATA1Row NewDANGJIN_DATA1Row() {
-                return ((DANGJIN_DATA1Row)(this.NewRow()));
+            public DANGJIN_DATARow NewDANGJIN_DATARow() {
+                return ((DANGJIN_DATARow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DANGJIN_DATA1Row(builder);
+                return new DANGJIN_DATARow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DANGJIN_DATA1Row);
+                return typeof(DANGJIN_DATARow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DANGJIN_DATA1RowChanged != null)) {
-                    this.DANGJIN_DATA1RowChanged(this, new DANGJIN_DATA1RowChangeEvent(((DANGJIN_DATA1Row)(e.Row)), e.Action));
+                if ((this.DANGJIN_DATARowChanged != null)) {
+                    this.DANGJIN_DATARowChanged(this, new DANGJIN_DATARowChangeEvent(((DANGJIN_DATARow)(e.Row)), e.Action));
                 }
             }
             
@@ -3683,8 +3697,8 @@ namespace FurnaceControl {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DANGJIN_DATA1RowChanging != null)) {
-                    this.DANGJIN_DATA1RowChanging(this, new DANGJIN_DATA1RowChangeEvent(((DANGJIN_DATA1Row)(e.Row)), e.Action));
+                if ((this.DANGJIN_DATARowChanging != null)) {
+                    this.DANGJIN_DATARowChanging(this, new DANGJIN_DATARowChangeEvent(((DANGJIN_DATARow)(e.Row)), e.Action));
                 }
             }
             
@@ -3692,8 +3706,8 @@ namespace FurnaceControl {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DANGJIN_DATA1RowDeleted != null)) {
-                    this.DANGJIN_DATA1RowDeleted(this, new DANGJIN_DATA1RowChangeEvent(((DANGJIN_DATA1Row)(e.Row)), e.Action));
+                if ((this.DANGJIN_DATARowDeleted != null)) {
+                    this.DANGJIN_DATARowDeleted(this, new DANGJIN_DATARowChangeEvent(((DANGJIN_DATARow)(e.Row)), e.Action));
                 }
             }
             
@@ -3701,14 +3715,14 @@ namespace FurnaceControl {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DANGJIN_DATA1RowDeleting != null)) {
-                    this.DANGJIN_DATA1RowDeleting(this, new DANGJIN_DATA1RowChangeEvent(((DANGJIN_DATA1Row)(e.Row)), e.Action));
+                if ((this.DANGJIN_DATARowDeleting != null)) {
+                    this.DANGJIN_DATARowDeleting(this, new DANGJIN_DATARowChangeEvent(((DANGJIN_DATARow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveDANGJIN_DATA1Row(DANGJIN_DATA1Row row) {
+            public void RemoveDANGJIN_DATARow(DANGJIN_DATARow row) {
                 this.Rows.Remove(row);
             }
             
@@ -3735,7 +3749,7 @@ namespace FurnaceControl {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DANGJIN_DATA1DataTable";
+                attribute2.FixedValue = "DANGJIN_DATADataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -6746,15 +6760,15 @@ namespace FurnaceControl {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DANGJIN_DATA1Row : global::System.Data.DataRow {
+        public partial class DANGJIN_DATARow : global::System.Data.DataRow {
             
-            private DANGJIN_DATA1DataTable tableDANGJIN_DATA1;
+            private DANGJIN_DATADataTable tableDANGJIN_DATA;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal DANGJIN_DATA1Row(global::System.Data.DataRowBuilder rb) : 
+            internal DANGJIN_DATARow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDANGJIN_DATA1 = ((DANGJIN_DATA1DataTable)(this.Table));
+                this.tableDANGJIN_DATA = ((DANGJIN_DATADataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6762,14 +6776,14 @@ namespace FurnaceControl {
             public int EXP_ORDER {
                 get {
                     try {
-                        return ((int)(this[this.tableDANGJIN_DATA1.EXP_ORDERColumn]));
+                        return ((int)(this[this.tableDANGJIN_DATA.EXP_ORDERColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'EXP_ORDER\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'EXP_ORDER\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.EXP_ORDERColumn] = value;
+                    this[this.tableDANGJIN_DATA.EXP_ORDERColumn] = value;
                 }
             }
             
@@ -6778,14 +6792,14 @@ namespace FurnaceControl {
             public System.DateTime CREATE_DATE {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableDANGJIN_DATA1.CREATE_DATEColumn]));
+                        return ((global::System.DateTime)(this[this.tableDANGJIN_DATA.CREATE_DATEColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'CREATE_DATE\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'CREATE_DATE\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.CREATE_DATEColumn] = value;
+                    this[this.tableDANGJIN_DATA.CREATE_DATEColumn] = value;
                 }
             }
             
@@ -6794,14 +6808,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_AVG {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_AVGColumn]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_AVGColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_AVG\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_AVG\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_AVGColumn] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_AVGColumn] = value;
                 }
             }
             
@@ -6810,14 +6824,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_1 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_1Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_1\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_1\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_1Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_1Column] = value;
                 }
             }
             
@@ -6826,14 +6840,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_2 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_2Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_2Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_2\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_2\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_2Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_2Column] = value;
                 }
             }
             
@@ -6842,14 +6856,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_3 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_3Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_3Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_3\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_3\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_3Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_3Column] = value;
                 }
             }
             
@@ -6858,14 +6872,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_4 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_4Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_4Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_4\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_4\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_4Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_4Column] = value;
                 }
             }
             
@@ -6874,14 +6888,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_5 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_5Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_5Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_5\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_5\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_5Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_5Column] = value;
                 }
             }
             
@@ -6890,14 +6904,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_6 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_6Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_6Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_6\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_6\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_6Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_6Column] = value;
                 }
             }
             
@@ -6906,14 +6920,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_7 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_7Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_7Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_7\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_7\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_7Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_7Column] = value;
                 }
             }
             
@@ -6922,14 +6936,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_8 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_8Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_8Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_8\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_8\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_8Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_8Column] = value;
                 }
             }
             
@@ -6938,14 +6952,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_9 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_9Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_9Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_9\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_9\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_9Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_9Column] = value;
                 }
             }
             
@@ -6954,14 +6968,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_10 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_10Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_10Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_10\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_10\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_10Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_10Column] = value;
                 }
             }
             
@@ -6970,14 +6984,14 @@ namespace FurnaceControl {
             public double ZONE_TEMP_11 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_11Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_11Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_11\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_11\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_11Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_11Column] = value;
                 }
             }
             
@@ -6986,223 +7000,251 @@ namespace FurnaceControl {
             public double ZONE_TEMP_12 {
                 get {
                     try {
-                        return ((double)(this[this.tableDANGJIN_DATA1.ZONE_TEMP_12Column]));
+                        return ((double)(this[this.tableDANGJIN_DATA.ZONE_TEMP_12Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'ZONE_TEMP_12\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'ZONE_TEMP_12\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.ZONE_TEMP_12Column] = value;
+                    this[this.tableDANGJIN_DATA.ZONE_TEMP_12Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string BILLET_TEMP {
+            public double BILLET_TEMP_304 {
                 get {
                     try {
-                        return ((string)(this[this.tableDANGJIN_DATA1.BILLET_TEMPColumn]));
+                        return ((double)(this[this.tableDANGJIN_DATA.BILLET_TEMP_304Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA1\' 테이블의 \'BILLET_TEMP\' 열의 값이 DBNull입니다.", e);
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'BILLET_TEMP_304\' 열의 값이 DBNull입니다.", e);
                     }
                 }
                 set {
-                    this[this.tableDANGJIN_DATA1.BILLET_TEMPColumn] = value;
+                    this[this.tableDANGJIN_DATA.BILLET_TEMP_304Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double BILLET_TEMP_400 {
+                get {
+                    try {
+                        return ((double)(this[this.tableDANGJIN_DATA.BILLET_TEMP_400Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'DANGJIN_DATA\' 테이블의 \'BILLET_TEMP_400\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANGJIN_DATA.BILLET_TEMP_400Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsEXP_ORDERNull() {
-                return this.IsNull(this.tableDANGJIN_DATA1.EXP_ORDERColumn);
+                return this.IsNull(this.tableDANGJIN_DATA.EXP_ORDERColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetEXP_ORDERNull() {
-                this[this.tableDANGJIN_DATA1.EXP_ORDERColumn] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.EXP_ORDERColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCREATE_DATENull() {
-                return this.IsNull(this.tableDANGJIN_DATA1.CREATE_DATEColumn);
+                return this.IsNull(this.tableDANGJIN_DATA.CREATE_DATEColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCREATE_DATENull() {
-                this[this.tableDANGJIN_DATA1.CREATE_DATEColumn] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.CREATE_DATEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_AVGNull() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_AVGColumn);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_AVGColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_AVGNull() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_AVGColumn] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_AVGColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_1Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_1Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_1Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_1Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_2Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_2Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_2Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_2Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_2Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_2Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_3Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_3Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_3Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_3Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_3Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_3Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_4Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_4Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_4Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_4Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_4Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_4Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_5Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_5Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_5Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_5Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_5Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_5Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_6Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_6Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_6Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_6Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_6Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_6Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_7Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_7Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_7Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_7Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_7Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_7Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_8Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_8Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_8Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_8Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_8Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_8Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_9Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_9Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_9Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_9Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_9Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_9Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_10Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_10Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_10Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_10Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_10Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_10Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_11Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_11Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_11Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_11Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_11Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_11Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsZONE_TEMP_12Null() {
-                return this.IsNull(this.tableDANGJIN_DATA1.ZONE_TEMP_12Column);
+                return this.IsNull(this.tableDANGJIN_DATA.ZONE_TEMP_12Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetZONE_TEMP_12Null() {
-                this[this.tableDANGJIN_DATA1.ZONE_TEMP_12Column] = global::System.Convert.DBNull;
+                this[this.tableDANGJIN_DATA.ZONE_TEMP_12Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsBILLET_TEMPNull() {
-                return this.IsNull(this.tableDANGJIN_DATA1.BILLET_TEMPColumn);
+            public bool IsBILLET_TEMP_304Null() {
+                return this.IsNull(this.tableDANGJIN_DATA.BILLET_TEMP_304Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetBILLET_TEMPNull() {
-                this[this.tableDANGJIN_DATA1.BILLET_TEMPColumn] = global::System.Convert.DBNull;
+            public void SetBILLET_TEMP_304Null() {
+                this[this.tableDANGJIN_DATA.BILLET_TEMP_304Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBILLET_TEMP_400Null() {
+                return this.IsNull(this.tableDANGJIN_DATA.BILLET_TEMP_400Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBILLET_TEMP_400Null() {
+                this[this.tableDANGJIN_DATA.BILLET_TEMP_400Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -7567,22 +7609,22 @@ namespace FurnaceControl {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class DANGJIN_DATA1RowChangeEvent : global::System.EventArgs {
+        public class DANGJIN_DATARowChangeEvent : global::System.EventArgs {
             
-            private DANGJIN_DATA1Row eventRow;
+            private DANGJIN_DATARow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DANGJIN_DATA1RowChangeEvent(DANGJIN_DATA1Row row, global::System.Data.DataRowAction action) {
+            public DANGJIN_DATARowChangeEvent(DANGJIN_DATARow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DANGJIN_DATA1Row Row {
+            public DANGJIN_DATARow Row {
                 get {
                     return this.eventRow;
                 }
@@ -12347,7 +12389,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class DANGJIN_DATA1TableAdapter : global::System.ComponentModel.Component {
+    public partial class DANGJIN_DATATableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -12361,7 +12403,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DANGJIN_DATA1TableAdapter() {
+        public DANGJIN_DATATableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -12458,7 +12500,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DANGJIN_DATA1";
+            tableMapping.DataSetTable = "DANGJIN_DATA";
             tableMapping.ColumnMappings.Add("EXP_ORDER", "EXP_ORDER");
             tableMapping.ColumnMappings.Add("CREATE_DATE", "CREATE_DATE");
             tableMapping.ColumnMappings.Add("ZONE_TEMP_AVG", "ZONE_TEMP_AVG");
@@ -12474,11 +12516,12 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             tableMapping.ColumnMappings.Add("ZONE_TEMP_10", "ZONE_TEMP_10");
             tableMapping.ColumnMappings.Add("ZONE_TEMP_11", "ZONE_TEMP_11");
             tableMapping.ColumnMappings.Add("ZONE_TEMP_12", "ZONE_TEMP_12");
-            tableMapping.ColumnMappings.Add("BILLET_TEMP", "BILLET_TEMP");
+            tableMapping.ColumnMappings.Add("BILLET_TEMP_304", "BILLET_TEMP_304");
+            tableMapping.ColumnMappings.Add("BILLET_TEMP_400", "BILLET_TEMP_400");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [DANGJIN_DATA] ([EXP_ORDER], [CREATE_DATE], [ZONE_TEMP_AVG], [ZONE_TEMP_1], [ZONE_TEMP_2], [ZONE_TEMP_3], [ZONE_TEMP_4], [ZONE_TEMP_5], [ZONE_TEMP_6], [ZONE_TEMP_7], [ZONE_TEMP_8], [ZONE_TEMP_9], [ZONE_TEMP_10], [ZONE_TEMP_11], [ZONE_TEMP_12], [BILLET_TEMP]) VALUES (@EXP_ORDER, @CREATE_DATE, @ZONE_TEMP_AVG, @ZONE_TEMP_1, @ZONE_TEMP_2, @ZONE_TEMP_3, @ZONE_TEMP_4, @ZONE_TEMP_5, @ZONE_TEMP_6, @ZONE_TEMP_7, @ZONE_TEMP_8, @ZONE_TEMP_9, @ZONE_TEMP_10, @ZONE_TEMP_11, @ZONE_TEMP_12, @BILLET_TEMP)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [DANGJIN_DATA] ([EXP_ORDER], [CREATE_DATE], [ZONE_TEMP_AVG], [ZONE_TEMP_1], [ZONE_TEMP_2], [ZONE_TEMP_3], [ZONE_TEMP_4], [ZONE_TEMP_5], [ZONE_TEMP_6], [ZONE_TEMP_7], [ZONE_TEMP_8], [ZONE_TEMP_9], [ZONE_TEMP_10], [ZONE_TEMP_11], [ZONE_TEMP_12], [BILLET_TEMP_304], [BILLET_TEMP_400]) VALUES (@EXP_ORDER, @CREATE_DATE, @ZONE_TEMP_AVG, @ZONE_TEMP_1, @ZONE_TEMP_2, @ZONE_TEMP_3, @ZONE_TEMP_4, @ZONE_TEMP_5, @ZONE_TEMP_6, @ZONE_TEMP_7, @ZONE_TEMP_8, @ZONE_TEMP_9, @ZONE_TEMP_10, @ZONE_TEMP_11, @ZONE_TEMP_12, @BILLET_TEMP_304, @BILLET_TEMP_400)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EXP_ORDER", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EXP_ORDER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CREATE_DATE", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CREATE_DATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -12495,7 +12538,8 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ZONE_TEMP_10", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ZONE_TEMP_10", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ZONE_TEMP_11", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ZONE_TEMP_11", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ZONE_TEMP_12", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ZONE_TEMP_12", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BILLET_TEMP", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BILLET_TEMP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BILLET_TEMP_304", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BILLET_TEMP_304", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BILLET_TEMP_400", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BILLET_TEMP_400", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12515,7 +12559,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"INSERT INTO [DANGJIN_DATA] ([EXP_ORDER], [CREATE_DATE], [ZONE_TEMP_AVG], [ZONE_TEMP_1], [ZONE_TEMP_2], [ZONE_TEMP_3], [ZONE_TEMP_4], [ZONE_TEMP_5], [ZONE_TEMP_6], [ZONE_TEMP_7], [ZONE_TEMP_8], [ZONE_TEMP_9], [ZONE_TEMP_10], [ZONE_TEMP_11], [ZONE_TEMP_12], [BILLET_TEMP]) VALUES (@EXP_ORDER, @CREATE_DATE, @ZONE_TEMP_AVG, @ZONE_TEMP_1, @ZONE_TEMP_2, @ZONE_TEMP_3, @ZONE_TEMP_4, @ZONE_TEMP_5, @ZONE_TEMP_6, @ZONE_TEMP_7, @ZONE_TEMP_8, @ZONE_TEMP_9, @ZONE_TEMP_10, @ZONE_TEMP_11, @ZONE_TEMP_12, @BILLET_TEMP)";
+            this._commandCollection[1].CommandText = @"INSERT INTO [DANGJIN_DATA] ([EXP_ORDER], [CREATE_DATE], [ZONE_TEMP_AVG], [ZONE_TEMP_1], [ZONE_TEMP_2], [ZONE_TEMP_3], [ZONE_TEMP_4], [ZONE_TEMP_5], [ZONE_TEMP_6], [ZONE_TEMP_7], [ZONE_TEMP_8], [ZONE_TEMP_9], [ZONE_TEMP_10], [ZONE_TEMP_11], [ZONE_TEMP_12], [BILLET_TEMP_304], [BILLET_TEMP_400]) VALUES (@EXP_ORDER, @CREATE_DATE, @ZONE_TEMP_AVG, @ZONE_TEMP_1, @ZONE_TEMP_2, @ZONE_TEMP_3, @ZONE_TEMP_4, @ZONE_TEMP_5, @ZONE_TEMP_6, @ZONE_TEMP_7, @ZONE_TEMP_8, @ZONE_TEMP_9, @ZONE_TEMP_10, @ZONE_TEMP_11, @ZONE_TEMP_12, @BILLET_TEMP_304, @BILLET_TEMP_400)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EXP_ORDER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "EXP_ORDER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CREATE_DATE", global::System.Data.SqlDbType.DateTime2, 8, global::System.Data.ParameterDirection.Input, 0, 0, "CREATE_DATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -12532,14 +12576,15 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ZONE_TEMP_10", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ZONE_TEMP_10", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ZONE_TEMP_11", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ZONE_TEMP_11", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ZONE_TEMP_12", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ZONE_TEMP_12", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BILLET_TEMP", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "BILLET_TEMP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BILLET_TEMP_304", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "BILLET_TEMP_304", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BILLET_TEMP_400", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "BILLET_TEMP_400", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FurnaceControlDataSet.DANGJIN_DATA1DataTable dataTable) {
+        public virtual int Fill(FurnaceControlDataSet.DANGJIN_DATADataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12552,9 +12597,9 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FurnaceControlDataSet.DANGJIN_DATA1DataTable GetData() {
+        public virtual FurnaceControlDataSet.DANGJIN_DATADataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            FurnaceControlDataSet.DANGJIN_DATA1DataTable dataTable = new FurnaceControlDataSet.DANGJIN_DATA1DataTable();
+            FurnaceControlDataSet.DANGJIN_DATADataTable dataTable = new FurnaceControlDataSet.DANGJIN_DATADataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12562,7 +12607,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(FurnaceControlDataSet.DANGJIN_DATA1DataTable dataTable) {
+        public virtual int Update(FurnaceControlDataSet.DANGJIN_DATADataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -12570,7 +12615,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(FurnaceControlDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "DANGJIN_DATA1");
+            return this.Adapter.Update(dataSet, "DANGJIN_DATA");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12608,7 +12653,8 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                     global::System.Nullable<double> ZONE_TEMP_10, 
                     global::System.Nullable<double> ZONE_TEMP_11, 
                     global::System.Nullable<double> ZONE_TEMP_12, 
-                    string BILLET_TEMP) {
+                    global::System.Nullable<double> BILLET_TEMP_304, 
+                    global::System.Nullable<double> BILLET_TEMP_400) {
             if ((EXP_ORDER.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(EXP_ORDER.Value));
             }
@@ -12699,11 +12745,17 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             else {
                 this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
-            if ((BILLET_TEMP == null)) {
-                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            if ((BILLET_TEMP_304.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((double)(BILLET_TEMP_304.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(BILLET_TEMP));
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((BILLET_TEMP_400.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((double)(BILLET_TEMP_400.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12741,7 +12793,8 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                     global::System.Nullable<double> ZONE_TEMP_10, 
                     global::System.Nullable<double> ZONE_TEMP_11, 
                     global::System.Nullable<double> ZONE_TEMP_12, 
-                    string BILLET_TEMP) {
+                    global::System.Nullable<double> BILLET_TEMP_304, 
+                    global::System.Nullable<double> BILLET_TEMP_400) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
             if ((EXP_ORDER.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(EXP_ORDER.Value));
@@ -12833,11 +12886,17 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
             else {
                 command.Parameters[14].Value = global::System.DBNull.Value;
             }
-            if ((BILLET_TEMP == null)) {
-                command.Parameters[15].Value = global::System.DBNull.Value;
+            if ((BILLET_TEMP_304.HasValue == true)) {
+                command.Parameters[15].Value = ((double)(BILLET_TEMP_304.Value));
             }
             else {
-                command.Parameters[15].Value = ((string)(BILLET_TEMP));
+                command.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((BILLET_TEMP_400.HasValue == true)) {
+                command.Parameters[16].Value = ((double)(BILLET_TEMP_400.Value));
+            }
+            else {
+                command.Parameters[16].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12875,7 +12934,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         
         private CHART_VIEW_ZONE_STATUSTableAdapter _cHART_VIEW_ZONE_STATUSTableAdapter;
         
-        private DANGJIN_DATA1TableAdapter _dANGJIN_DATA1TableAdapter;
+        private DANGJIN_DATATableAdapter _dANGJIN_DATATableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -12939,12 +12998,12 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public DANGJIN_DATA1TableAdapter DANGJIN_DATA1TableAdapter {
+        public DANGJIN_DATATableAdapter DANGJIN_DATATableAdapter {
             get {
-                return this._dANGJIN_DATA1TableAdapter;
+                return this._dANGJIN_DATATableAdapter;
             }
             set {
-                this._dANGJIN_DATA1TableAdapter = value;
+                this._dANGJIN_DATATableAdapter = value;
             }
         }
         
@@ -12979,9 +13038,9 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                             && (this._cHART_VIEW_ZONE_STATUSTableAdapter.Connection != null))) {
                     return this._cHART_VIEW_ZONE_STATUSTableAdapter.Connection;
                 }
-                if (((this._dANGJIN_DATA1TableAdapter != null) 
-                            && (this._dANGJIN_DATA1TableAdapter.Connection != null))) {
-                    return this._dANGJIN_DATA1TableAdapter.Connection;
+                if (((this._dANGJIN_DATATableAdapter != null) 
+                            && (this._dANGJIN_DATATableAdapter.Connection != null))) {
+                    return this._dANGJIN_DATATableAdapter.Connection;
                 }
                 return null;
             }
@@ -13005,7 +13064,7 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                 if ((this._cHART_VIEW_ZONE_STATUSTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._dANGJIN_DATA1TableAdapter != null)) {
+                if ((this._dANGJIN_DATATableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -13046,12 +13105,12 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dANGJIN_DATA1TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.DANGJIN_DATA1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dANGJIN_DATATableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.DANGJIN_DATA.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dANGJIN_DATA1TableAdapter.Update(updatedRows));
+                    result = (result + this._dANGJIN_DATATableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -13089,11 +13148,11 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dANGJIN_DATA1TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.DANGJIN_DATA1.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dANGJIN_DATATableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.DANGJIN_DATA.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dANGJIN_DATA1TableAdapter.Update(addedRows));
+                    result = (result + this._dANGJIN_DATATableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -13107,11 +13166,11 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(FurnaceControlDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._dANGJIN_DATA1TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.DANGJIN_DATA1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dANGJIN_DATATableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.DANGJIN_DATA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dANGJIN_DATA1TableAdapter.Update(deletedRows));
+                    result = (result + this._dANGJIN_DATATableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -13190,8 +13249,8 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                         && (this.MatchTableAdapterConnection(this._cHART_VIEW_ZONE_STATUSTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager에서 관리하는 모든 TableAdapter에는 동일한 연결 문자열을 사용해야 합니다.");
             }
-            if (((this._dANGJIN_DATA1TableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._dANGJIN_DATA1TableAdapter.Connection) == false))) {
+            if (((this._dANGJIN_DATATableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._dANGJIN_DATATableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager에서 관리하는 모든 TableAdapter에는 동일한 연결 문자열을 사용해야 합니다.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
@@ -13252,13 +13311,13 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                         adaptersWithAcceptChangesDuringUpdate.Add(this._cHART_VIEW_ZONE_STATUSTableAdapter.Adapter);
                     }
                 }
-                if ((this._dANGJIN_DATA1TableAdapter != null)) {
-                    revertConnections.Add(this._dANGJIN_DATA1TableAdapter, this._dANGJIN_DATA1TableAdapter.Connection);
-                    this._dANGJIN_DATA1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._dANGJIN_DATA1TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._dANGJIN_DATA1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._dANGJIN_DATA1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._dANGJIN_DATA1TableAdapter.Adapter);
+                if ((this._dANGJIN_DATATableAdapter != null)) {
+                    revertConnections.Add(this._dANGJIN_DATATableAdapter, this._dANGJIN_DATATableAdapter.Connection);
+                    this._dANGJIN_DATATableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._dANGJIN_DATATableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._dANGJIN_DATATableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._dANGJIN_DATATableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._dANGJIN_DATATableAdapter.Adapter);
                     }
                 }
                 // 
@@ -13331,9 +13390,9 @@ SELECT FURNACE_NO, ZONE_NO, UP_TEMP, DOWN_TEMP, AVG_TEMP, L1_SP_TEMP, L2_SP_TEMP
                     this._cHART_VIEW_ZONE_STATUSTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._cHART_VIEW_ZONE_STATUSTableAdapter]));
                     this._cHART_VIEW_ZONE_STATUSTableAdapter.Transaction = null;
                 }
-                if ((this._dANGJIN_DATA1TableAdapter != null)) {
-                    this._dANGJIN_DATA1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dANGJIN_DATA1TableAdapter]));
-                    this._dANGJIN_DATA1TableAdapter.Transaction = null;
+                if ((this._dANGJIN_DATATableAdapter != null)) {
+                    this._dANGJIN_DATATableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dANGJIN_DATATableAdapter]));
+                    this._dANGJIN_DATATableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

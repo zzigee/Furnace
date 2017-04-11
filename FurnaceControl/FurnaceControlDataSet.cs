@@ -2,6 +2,10 @@
 {
     public partial class FurnaceControlDataSet
     {
+        partial class DANGJIN_DATA1DataTable
+        {
+        }
+    
         partial class GRADEDataTable
         {
         }

@@ -54,10 +54,33 @@ namespace FurnaceControl
             iResFunc = m_opcMgr.opcReadGroupTags("OPC", nTagCnt, ref objReadVals, ref nQualities);
 
             this.m_MainClass.stFURNACE_REALTIME_INFORMATION.strCurrentDate = DateTime.Now.ToString();
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0] = int.Parse(objReadVals[0].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[1] = int.Parse(objReadVals[1].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[2] = int.Parse(objReadVals[2].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[3] = int.Parse(objReadVals[3].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0] = int.Parse(objReadVals[0].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1] = int.Parse(objReadVals[1].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2] = int.Parse(objReadVals[2].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3] = int.Parse(objReadVals[3].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4] = int.Parse(objReadVals[4].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5] = int.Parse(objReadVals[5].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6] = int.Parse(objReadVals[6].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7] = int.Parse(objReadVals[7].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8] = int.Parse(objReadVals[8].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9] = int.Parse(objReadVals[9].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10] = int.Parse(objReadVals[10].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11] = int.Parse(objReadVals[11].ToString());
+
+            float fZoneTempratureAvg = 0.0f;
+
+            for (int i = 0; i < 12; i++)
+            {
+                fZoneTempratureAvg += int.Parse(objReadVals[0].ToString());
+            }
+
+            fZoneTempratureAvg = fZoneTempratureAvg / 12.0f;
+
+            // 평균온도 계산 후 저장 
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0] = fZoneTempratureAvg;    
+
+
+
 
 
             ///////////////////////////////////////////////////////////////////////

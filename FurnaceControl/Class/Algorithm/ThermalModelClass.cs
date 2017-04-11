@@ -81,18 +81,16 @@ namespace FurnaceControl
          *********************************************************************************************/
         public void calThermalModel_sus304()
         {
-
-
             int idx = this.m_MainClass.m_Define_Class.nDataLoggingIndex;        // 현재 측정 인덱스 (최대치는 MAX_BILLET_IN_FURNACE  참조) 
 
             //********************************************************************************************
             // 시뮬레이션 모드에서만 사용 
             //********************************************************************************************
-            //float nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];     // 현재 TC 온도 
+            //float fZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0];     // 현재 TC 온도 
             float fZoneTemprature = fn[idx, 1];     // 현재 TC 온도 
 
-            double fCalBilletTemp;               //예측 소재 온도
-            float fPreBilletTemp;               // 이전 빌렛 온도 
+            double fCalBilletTemp;                  //예측 소재 온도
+            float fPreBilletTemp;                   // 이전 빌렛 온도 
 
             int num_cp = 10;
             int num_h = 25;
@@ -128,32 +126,6 @@ namespace FurnaceControl
                 fPreBilletTemp = this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex - 1].nBillet_Predict_Current_Billet_Temperature_304;
             }
 
-            // 파라메타 보간 
-            //for (int k = 0; k < num_cp - 1; k++)
-            //{
-            //    for (int j = 0; j < num_cp - 1; j++)
-            //    {
-            //        if ((fPreBilletTemp >= cp_sus304[j, 0]) && (fPreBilletTemp <= cp_sus304[j + 1, 0]))
-            //        {
-            //            cp_s = cp_sus304[j, 1] + (cp_sus304[j + 1, 1] - cp_sus304[j, 1]) / (cp_sus304[j + 1, 0] - cp_sus304[j, 0]) * (fPreBilletTemp - cp_sus304[j, 0]);
-            //        }
-            //    }
-            //    for (int i = 0; i < num_h - 1; i++)
-            //    {
-            //        if ((fPreBilletTemp >= h_sus304[i, 0]) && (fPreBilletTemp <= h_sus304[i + 1, 0]))
-            //        {
-            //            h_s = h_sus304[i, 1] + (h_sus304[i + 1, 1] - h_sus304[i, 1]) / (h_sus304[i + 1, 0] - h_sus304[i, 0]) * (fPreBilletTemp - h_sus304[i, 0]);
-            //        }
-            //    }
-            //    for (int j = 0; j < num_f - 1; j++)
-            //    {
-            //        if ((fPreBilletTemp >= f_sus304[j, 0]) && (fPreBilletTemp <= f_sus304[j + 1, 0]))
-            //        {
-            //            f_s = f_sus304[j, 1] + (f_sus304[j + 1, 1] - f_sus304[j, 1]) / (f_sus304[j + 1, 0] - f_sus304[j, 0]) * (fPreBilletTemp - f_sus304[j, 0]);
-            //        }
-            //    }
-            //}
-
             cp_s = cp_sus304_Interpolation[(int)fPreBilletTemp];
             h_s = h_sus304_Interpolation[(int)fPreBilletTemp];
             f_s = f_sus304_Interpolation[(int)fPreBilletTemp];
@@ -162,7 +134,6 @@ namespace FurnaceControl
             double ffBillet = (Math.Pow((fPreBilletTemp + 273), 4.0));
 
             // 열모델 지배 방정식                                           
-            //.nBillet_Predict_Current_Billet_Temperature_304인데 위의 fPrebilletTemp는 nBillet_Predict_Current_Billet_Temperature 대입
             fCalBilletTemp = (fPreBilletTemp + 273) +
                 (h_s * dt) *
                 ((fZoneTemprature + 273) - (fPreBilletTemp + 273)) /
@@ -174,30 +145,6 @@ namespace FurnaceControl
 
             this.m_MainClass.stBILLET_INFOMATION[idx].nZone_Average_Temperature = fZoneTemprature;
             this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature_304 = (float)fCalBilletTemp;
-
-            this.m_MainClass.m_MainForm.dANGJIN_DATA1TableAdapter.InsertQuery(
-                this.m_MainClass.m_Define_Class.nDataLoggingIndex,
-                DateTime.Now.ToString(),
-                fZoneTemprature,
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[1],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[2],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[3],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[4],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[5],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[6],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[7],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[8],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[9],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[10],
-                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[11],
-                fCalBilletTemp.ToString());
-
-
-            //System.Console.WriteLine("cp_s : " + cp_s + " : " + cp_sus304_Interpolation[(int)fPreBilletTemp]);
-            //System.Console.WriteLine("h_s : " + h_s + " : " + h_sus304_Interpolation[(int)fPreBilletTemp]);
-            //System.Console.WriteLine("f_s : " + f_s + " : " + f_sus304_Interpolation[(int)fPreBilletTemp]);
-            //System.Console.WriteLine("fPreditBilletTemp : " + fPreBilletTemp);
         }
 
 
@@ -208,11 +155,11 @@ namespace FurnaceControl
             //********************************************************************************************
             // 시뮬레이션 모드에서만 사용 
             //********************************************************************************************
-            //float nZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.nZone_Temperature[0];     // 현재 TC 온도 
+            //float fZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0];     // 현재 TC 온도 
             float fZoneTemprature = fn[idx, 1];     // 현재 TC 온도 
 
-            double fCalBilletTemp;               //예측 소재 온도
-            float fPreBilletTemp;               // 이전 빌렛 온도 
+            double fCalBilletTemp;                  //예측 소재 온도
+            float fPreBilletTemp;                   // 이전 빌렛 온도 
 
             int num_cp = 23;
             int num_h = 25;
@@ -223,7 +170,6 @@ namespace FurnaceControl
             float dt; // unit sec 
             float dens, thick;
             float sigma, eps;
-            float temp_wp_init;
             float cp_s, h_s, f_s;
 
             //상수 값 대입, 이후 DB에서 읽어올 내용
@@ -248,32 +194,6 @@ namespace FurnaceControl
                 fPreBilletTemp = this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex - 1].nBillet_Predict_Current_Billet_Temperature_400;
             }
 
-            // 파라메타 보간 
-            //for (int k = 0; k < num_cp - 1; k++)
-            //{
-            //    for (int j = 0; j < num_cp - 1; j++)
-            //    {
-            //        if ((fPreBilletTemp >= cp_ss400[j, 0]) && (fPreBilletTemp <= cp_ss400[j + 1, 0]))
-            //        {
-            //            cp_s = cp_ss400[j, 1] + (cp_ss400[j + 1, 1] - cp_ss400[j, 1]) / (cp_ss400[j + 1, 0] - cp_ss400[j, 0]) * (fPreBilletTemp - cp_ss400[j, 0]);
-            //        }
-            //    }
-            //    for (int i = 0; i < num_h - 1; i++)
-            //    {
-            //        if ((fPreBilletTemp >= h_ss400[i, 0]) && (fPreBilletTemp <= h_ss400[i + 1, 0]))
-            //        {
-            //            h_s = h_ss400[i, 1] + (h_ss400[i + 1, 1] - h_ss400[i, 1]) / (h_ss400[i + 1, 0] - h_ss400[i, 0]) * (fPreBilletTemp - h_ss400[i, 0]);
-            //        }
-            //    }
-            //    for (int j = 0; j < num_f - 1; j++)
-            //    {
-            //        if ((fPreBilletTemp >= f_ss400[j, 0]) && (fPreBilletTemp <= f_ss400[j + 1, 0]))
-            //        {
-            //            f_s = f_ss400[j, 1] + (f_ss400[j + 1, 1] - f_ss400[j, 1]) / (f_ss400[j + 1, 0] - f_ss400[j, 0]) * (fPreBilletTemp - f_ss400[j, 0]);
-            //        }
-            //    }
-            //}
-
             cp_s = cp_ss400_Interpolation[(int)fPreBilletTemp];
             h_s = h_ss400_Interpolation[(int)fPreBilletTemp];
             f_s = f_ss400_Interpolation[(int)fPreBilletTemp];
@@ -282,7 +202,6 @@ namespace FurnaceControl
             double ffBillet = (Math.Pow((fPreBilletTemp + 273), 4.0)); // 
 
             // 열모델 지배 방정식                                           
-            //.nBillet_Predict_Current_Billet_Temperature_304인데 위의 fPrebilletTemp는 nBillet_Predict_Current_Billet_Temperature 대입
             fCalBilletTemp = (fPreBilletTemp + 273) +
                 (h_s * dt) *
                 ((fZoneTemprature + 273) - (fPreBilletTemp + 273)) /
@@ -294,11 +213,6 @@ namespace FurnaceControl
             this.m_MainClass.stBILLET_INFOMATION[idx].nZone_Average_Temperature = fZoneTemprature;
             this.m_MainClass.stBILLET_INFOMATION[idx].nBillet_Predict_Current_Billet_Temperature_400 = (float)fCalBilletTemp;
 
-            //this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(    
-            //    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
-            //    DateTime.Now.ToString(),
-            //    nZoneTemprature.ToString(),
-            //    nPreditBilletTemp.ToString());
         }
 
         public override void Run()
@@ -311,9 +225,40 @@ namespace FurnaceControl
             */
             if (this.m_MainClass.m_Define_Class.isDataLogging)
             {
+
+                /**
+                 * 열모델 기반 소재온도 계산  
+                 */
                 calThermalModel_sus304();
                 calThermalModel_ss400();
 
+
+
+                /**
+                 * DB 저장 
+                 */
+                this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(
+                    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
+                    DateTime.Now.ToString(),
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10],
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11],
+                    this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature_304,
+                    this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature_400);
+                
+                /**
+                 * 데이터 수집 인덱스 증가 
+                 */
                 this.m_MainClass.m_Define_Class.nDataLoggingIndex++;    // 열모델 배열 증가
 
                 this.m_MainClass.m_MainForm.Set_txtDanjin_Current_Date(DateTime.Now.ToString());
@@ -321,6 +266,10 @@ namespace FurnaceControl
                 TimeSpan result = DateTime.Now - this.m_MainClass.m_Define_Class.dateDataLoggingStartTime;
                 this.m_MainClass.m_MainForm.Set_txtDanjin_Operation_Time("[" + this.m_MainClass.m_Define_Class.nDataLoggingIndex + "]" + result.ToString(@"h\:mm\:ss"));
 
+                
+                /**
+                 * 테스트 종료 확인 
+                 */
                 if (this.m_MainClass.m_Define_Class.nDataLoggingIndex >= this.m_MainClass.m_Define_Class.MAX_BILLET_IN_FURNACE)
                 {
                     this.m_MainClass.m_MainForm.ShowMessageBox("당진 테스트베드 측정 데이터 갯수가 최대 갯수를 초과하였습니다. \n\r측정을 중지합니다.");

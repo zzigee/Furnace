@@ -62,7 +62,7 @@ namespace FurnaceControl
         {
             public string strCurrentDate;           // 작성시간
             public float[] fZone_Avg_Temperature;   // 존 평균 온도 
-            public float[] nZone_Temperature;         // 존의 온도
+            public float[] fZone_Temperature;         // 존의 온도
             public float[] nZone_Start_Position;      // 존의 위치(시작)
             public float[] nZone_End_Position;        // 존의 위치(종료)
         }
