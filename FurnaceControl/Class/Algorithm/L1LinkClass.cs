@@ -135,8 +135,6 @@ namespace FurnaceControl
             //iResFunc = m_opcMgr.opcRegSvrEx("C:\\UsrAppConf.xml", "OPCsoft.opcSvrTS.1", "", "", 5);
             iResFunc = m_opcMgr.opcRegSvrEx("C:\\UsrAppConf.xml", strProdID, strServerAddress, "", 5);
 
-            System.Console.WriteLine("OPC Server Connection Start ProdID: " + strProdID + "IP: " + strServerAddress);
-
             if (iResFunc == 1)
             {
                 Console.WriteLine("OpcRegSvrEx() Success!");

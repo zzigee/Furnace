@@ -38,18 +38,18 @@
             Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn2 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition13 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition14 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition15 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition16 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition17 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition18 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition20 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition19 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition21 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition20 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition23 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition22 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition24 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition23 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition13 = new Telerik.WinControls.UI.TableViewDefinition();
             this.MainTap = new Telerik.WinControls.UI.RadPageView();
             this.Page1 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGroupBox25 = new Telerik.WinControls.UI.RadGroupBox();
@@ -543,7 +543,7 @@
             this.MainTap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainTap.Location = new System.Drawing.Point(0, 0);
             this.MainTap.Name = "MainTap";
-            this.MainTap.SelectedPage = this.Page5;
+            this.MainTap.SelectedPage = this.Page1;
             this.MainTap.Size = new System.Drawing.Size(1016, 738);
             this.MainTap.TabIndex = 0;
             this.MainTap.Text = "radPageView1";
@@ -896,7 +896,7 @@
             this.radGridView5.MasterTemplate.EnableGrouping = false;
             this.radGridView5.MasterTemplate.EnableSorting = false;
             this.radGridView5.MasterTemplate.ShowRowHeaderColumn = false;
-            this.radGridView5.MasterTemplate.ViewDefinition = tableViewDefinition14;
+            this.radGridView5.MasterTemplate.ViewDefinition = tableViewDefinition13;
             this.radGridView5.Name = "radGridView5";
             this.radGridView5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView5.ReadOnly = true;
@@ -933,7 +933,7 @@
             this.radGridView7.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             this.radGridView7.MasterTemplate.EnableGrouping = false;
             this.radGridView7.MasterTemplate.EnableSorting = false;
-            this.radGridView7.MasterTemplate.ViewDefinition = tableViewDefinition15;
+            this.radGridView7.MasterTemplate.ViewDefinition = tableViewDefinition14;
             this.radGridView7.Name = "radGridView7";
             this.radGridView7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView7.ReadOnly = true;
@@ -1420,7 +1420,7 @@
             // 
             // 
             this.radGridView3.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            this.radGridView3.MasterTemplate.ViewDefinition = tableViewDefinition16;
+            this.radGridView3.MasterTemplate.ViewDefinition = tableViewDefinition15;
             this.radGridView3.Name = "radGridView3";
             this.radGridView3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radGridView3.Size = new System.Drawing.Size(989, 517);
@@ -1465,7 +1465,7 @@
             this.radGridView2.MasterTemplate.AllowColumnReorder = false;
             this.radGridView2.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             this.radGridView2.MasterTemplate.EnableGrouping = false;
-            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition17;
+            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition16;
             this.radGridView2.Name = "radGridView2";
             this.radGridView2.ReadOnly = true;
             this.radGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2707,7 +2707,7 @@
             this.gridView_GradeDetail.MasterTemplate.AllowRowResize = false;
             this.gridView_GradeDetail.MasterTemplate.AllowSearchRow = true;
             this.gridView_GradeDetail.MasterTemplate.EnableGrouping = false;
-            this.gridView_GradeDetail.MasterTemplate.ViewDefinition = tableViewDefinition18;
+            this.gridView_GradeDetail.MasterTemplate.ViewDefinition = tableViewDefinition17;
             this.gridView_GradeDetail.Name = "gridView_GradeDetail";
             this.gridView_GradeDetail.ReadOnly = true;
             this.gridView_GradeDetail.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2755,7 +2755,7 @@
             this.gridView_Grade.MasterTemplate.EnableSorting = false;
             this.gridView_Grade.MasterTemplate.PageSize = 10;
             this.gridView_Grade.MasterTemplate.ShowHeaderCellButtons = true;
-            this.gridView_Grade.MasterTemplate.ViewDefinition = tableViewDefinition19;
+            this.gridView_Grade.MasterTemplate.ViewDefinition = tableViewDefinition18;
             this.gridView_Grade.Name = "gridView_Grade";
             this.gridView_Grade.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.gridView_Grade.ReadOnly = true;
@@ -3008,7 +3008,7 @@
             // 
             // 
             // 
-            this.radGridView10.MasterTemplate.ViewDefinition = tableViewDefinition21;
+            this.radGridView10.MasterTemplate.ViewDefinition = tableViewDefinition20;
             this.radGridView10.Name = "radGridView10";
             this.radGridView10.Size = new System.Drawing.Size(597, 324);
             this.radGridView10.TabIndex = 0;
@@ -3022,7 +3022,7 @@
             // 
             // 
             // 
-            this.radGridView12.MasterTemplate.ViewDefinition = tableViewDefinition20;
+            this.radGridView12.MasterTemplate.ViewDefinition = tableViewDefinition19;
             this.radGridView12.Name = "radGridView12";
             this.radGridView12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView12.Size = new System.Drawing.Size(597, 324);
@@ -3049,7 +3049,7 @@
             // 
             // 
             // 
-            this.radGridView8.MasterTemplate.ViewDefinition = tableViewDefinition22;
+            this.radGridView8.MasterTemplate.ViewDefinition = tableViewDefinition21;
             this.radGridView8.Name = "radGridView8";
             this.radGridView8.Size = new System.Drawing.Size(378, 664);
             this.radGridView8.TabIndex = 2;
@@ -3076,7 +3076,7 @@
             // 
             // 
             // 
-            this.radGridView9.MasterTemplate.ViewDefinition = tableViewDefinition24;
+            this.radGridView9.MasterTemplate.ViewDefinition = tableViewDefinition23;
             this.radGridView9.Name = "radGridView9";
             this.radGridView9.Size = new System.Drawing.Size(597, 314);
             this.radGridView9.TabIndex = 1;
@@ -3090,7 +3090,7 @@
             // 
             // 
             // 
-            this.radGridView11.MasterTemplate.ViewDefinition = tableViewDefinition23;
+            this.radGridView11.MasterTemplate.ViewDefinition = tableViewDefinition22;
             this.radGridView11.Name = "radGridView11";
             this.radGridView11.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView11.Size = new System.Drawing.Size(597, 314);
@@ -3132,7 +3132,7 @@
             this.radGridView6.MasterTemplate.AllowColumnReorder = false;
             this.radGridView6.MasterTemplate.EnableAlternatingRowColor = true;
             this.radGridView6.MasterTemplate.EnablePaging = true;
-            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition13;
+            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition24;
             this.radGridView6.Name = "radGridView6";
             this.radGridView6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView6.ReadOnly = true;
@@ -3197,7 +3197,7 @@
             this.txtOPCServerAddress.Name = "txtOPCServerAddress";
             this.txtOPCServerAddress.Size = new System.Drawing.Size(100, 20);
             this.txtOPCServerAddress.TabIndex = 1;
-            this.txtOPCServerAddress.Text = "127.0.0.1";
+            this.txtOPCServerAddress.Text = "192.168.0.6";
             // 
             // btnOPC_Connect
             // 
