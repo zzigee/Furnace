@@ -237,24 +237,7 @@ namespace FurnaceControl
                 /**
                  * DB 저장 
                  */
-                this.m_MainClass.m_MainForm.dANGJIN_DATATableAdapter.InsertQuery(
-                    this.m_MainClass.m_Define_Class.nDataLoggingIndex,
-                    DateTime.Now.ToString(),
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10],
-                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11],
-                    this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature_304,
-                    this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature_400);
+                this.m_MainClass.m_MainForm.InsertQuery();
                 
                 /**
                  * 데이터 수집 인덱스 증가 
