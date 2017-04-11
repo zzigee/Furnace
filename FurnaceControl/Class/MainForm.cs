@@ -140,6 +140,7 @@ namespace FurnaceControl
                 case "Main":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Main Tap Changed");
                     this.nCurrentPage = (int)Page.Main;
+                    this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
                     //this.BilletJoinTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
                     break;
 
@@ -148,6 +149,7 @@ namespace FurnaceControl
                 case "Schedule":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Schedule Tap Changed");
                     this.nCurrentPage = (int)Page.Schedule;
+                    this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
                     //this.BilletJoinTableAdapter.FillBy_PreFurnaceBillet(this.furnaceControlDataSet.BILLET_JOIN);
                     break;
 
@@ -499,6 +501,8 @@ namespace FurnaceControl
         {
             if (this.nCurrentPage == (int)Page.Main)
             {
+                //this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
+
                 //this.m_MainClass.m_SQLClass.updateBilletStruct();        // Update Data
 
 
