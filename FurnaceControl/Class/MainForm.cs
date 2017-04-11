@@ -586,14 +586,41 @@ namespace FurnaceControl
             radChartView1.Series.Add(series_billet_temp_400);
         }
 
+        public void InsertQuery()
+        {
+            this.m_MainClass.m_MainForm.dangjiN_DATA_INSERTTableAdapter1.InsertQuery(
+                this.m_MainClass.m_Define_Class.nDataLoggingIndex,
+                DateTime.Now.ToString(),
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10],
+                this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11],
+                this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature_304,
+                this.m_MainClass.stBILLET_INFOMATION[this.m_MainClass.m_Define_Class.nDataLoggingIndex].nBillet_Predict_Current_Billet_Temperature_400);
+        }
+
         private void Timer_Update_GUI(object sender, EventArgs e)
         {
             if (this.nCurrentPage == (int)Page.Main)
             {
                 RefreshChartViewer();
+
+                this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
+
             }
             else if (this.nCurrentPage == (int)Page.Schedule)
             {
+                this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
+
                 // this.BilletJoinTableAdapter.FillBy_PreFurnaceBillet(this.furnaceControlDataSet.BILLET_JOIN);
             }
             else if (this.nCurrentPage == (int)Page.Furnace)
