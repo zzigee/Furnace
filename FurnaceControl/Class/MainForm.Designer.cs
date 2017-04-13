@@ -29,68 +29,80 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.CartesianArea cartesianArea1 = new Telerik.WinControls.UI.CartesianArea();
-            Telerik.WinControls.UI.CategoricalAxis categoricalAxis1 = new Telerik.WinControls.UI.CategoricalAxis();
-            Telerik.WinControls.UI.LinearAxis linearAxis1 = new Telerik.WinControls.UI.LinearAxis();
-            Telerik.WinControls.UI.LineSeries lineSeries1 = new Telerik.WinControls.UI.LineSeries();
-            Telerik.WinControls.UI.SteplineSeries steplineSeries1 = new Telerik.WinControls.UI.SteplineSeries();
-            Telerik.WinControls.UI.LineSeries lineSeries2 = new Telerik.WinControls.UI.LineSeries();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn9 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn10 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn11 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn12 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn13 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn14 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn15 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn16 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn17 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn2 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn18 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn19 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn20 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn21 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn22 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn23 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn24 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn25 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn26 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn27 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn28 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn29 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn30 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn31 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn32 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition8 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition11 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition12 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn3 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.CartesianArea cartesianArea2 = new Telerik.WinControls.UI.CartesianArea();
+            Telerik.WinControls.UI.CategoricalAxis categoricalAxis2 = new Telerik.WinControls.UI.CategoricalAxis();
+            Telerik.WinControls.UI.LinearAxis linearAxis2 = new Telerik.WinControls.UI.LinearAxis();
+            Telerik.WinControls.UI.LineSeries lineSeries3 = new Telerik.WinControls.UI.LineSeries();
+            Telerik.WinControls.UI.SteplineSeries steplineSeries2 = new Telerik.WinControls.UI.SteplineSeries();
+            Telerik.WinControls.UI.LineSeries lineSeries4 = new Telerik.WinControls.UI.LineSeries();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn33 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn4 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn34 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn35 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn36 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn37 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn38 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn39 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn40 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn41 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn42 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn43 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn44 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn45 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn46 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn47 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn48 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition13 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn49 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn5 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn50 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn51 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn52 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn53 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn54 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn55 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn56 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn57 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn58 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn59 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn60 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn61 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn62 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn63 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn64 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition14 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition15 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition16 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition17 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition19 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition18 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition20 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition22 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition21 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition23 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn6 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition24 = new Telerik.WinControls.UI.TableViewDefinition();
             this.MainTap = new Telerik.WinControls.UI.RadPageView();
             this.Page1 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.radGroupBox25 = new Telerik.WinControls.UI.RadGroupBox();
             this.txtDanjin_Current_Date = new Telerik.WinControls.UI.RadTextBox();
             this.txtDanjin_Delta_Time = new Telerik.WinControls.UI.RadTextBox();
@@ -102,6 +114,7 @@
             this.btnDataLogging = new Telerik.WinControls.UI.RadButton();
             this.radLabel39 = new Telerik.WinControls.UI.RadLabel();
             this.radChartView1 = new Telerik.WinControls.UI.RadChartView();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.radGroupBox17 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel68 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel64 = new Telerik.WinControls.UI.RadLabel();
@@ -119,7 +132,6 @@
             this.radGridView5 = new Telerik.WinControls.UI.RadGridView();
             this.dANGJINDATABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.furnaceControlDataSet = new FurnaceControl.FurnaceControlDataSet();
-            this.radGridView7 = new Telerik.WinControls.UI.RadGridView();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radGroupBox24 = new Telerik.WinControls.UI.RadGroupBox();
             this.btnStart_L2_Mode = new Telerik.WinControls.UI.RadButton();
@@ -324,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).BeginInit();
             this.MainTap.SuspendLayout();
             this.Page1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox25)).BeginInit();
             this.radGroupBox25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDanjin_Current_Date)).BeginInit();
@@ -336,6 +349,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDataLogging)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).BeginInit();
+            this.radChartView1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox17)).BeginInit();
             this.radGroupBox17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel68)).BeginInit();
@@ -356,8 +370,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridView5.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dANGJINDATABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView7.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox24)).BeginInit();
@@ -610,11 +622,11 @@
             // 
             // Page1
             // 
+            this.Page1.Controls.Add(this.groupBox1);
             this.Page1.Controls.Add(this.radGroupBox25);
             this.Page1.Controls.Add(this.radChartView1);
             this.Page1.Controls.Add(this.radGroupBox17);
             this.Page1.Controls.Add(this.radGroupBox12);
-            this.Page1.Controls.Add(this.radGridView7);
             this.Page1.Controls.Add(this.radPanel1);
             this.Page1.Description = null;
             this.Page1.ItemSize = new System.Drawing.SizeF(142F, 28F);
@@ -625,6 +637,111 @@
             this.Page1.Text = "Main";
             this.Page1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.Page1.Title = "Main";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(4, 430);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(985, 54);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "TC";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(902, 21);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(70, 21);
+            this.textBox12.TabIndex = 11;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(821, 21);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(70, 21);
+            this.textBox11.TabIndex = 10;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(740, 21);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(70, 21);
+            this.textBox10.TabIndex = 9;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(659, 21);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(70, 21);
+            this.textBox9.TabIndex = 6;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(497, 21);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(70, 21);
+            this.textBox7.TabIndex = 8;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(578, 21);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(70, 21);
+            this.textBox8.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(254, 21);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(70, 21);
+            this.textBox4.TabIndex = 5;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(335, 21);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(70, 21);
+            this.textBox5.TabIndex = 4;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(416, 21);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(70, 21);
+            this.textBox6.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(173, 21);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(70, 21);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(92, 21);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(70, 21);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(11, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(70, 21);
+            this.textBox1.TabIndex = 0;
             // 
             // radGroupBox25
             // 
@@ -717,44 +834,52 @@
             // 
             // radChartView1
             // 
-            cartesianArea1.GridDesign.AlternatingVerticalColor = false;
-            cartesianArea1.GridDesign.DrawVerticalFills = false;
-            cartesianArea1.GridDesign.DrawVerticalStripes = false;
-            cartesianArea1.ShowGrid = true;
-            this.radChartView1.AreaDesign = cartesianArea1;
-            categoricalAxis1.IsPrimary = true;
-            categoricalAxis1.LabelRotationAngle = 300D;
-            categoricalAxis1.ShowLabels = false;
-            categoricalAxis1.Title = "Time (Min)";
-            linearAxis1.AxisType = Telerik.Charting.AxisType.Second;
-            linearAxis1.IsPrimary = true;
-            linearAxis1.LabelRotationAngle = 300D;
-            linearAxis1.TickOrigin = null;
-            linearAxis1.Title = "Temperature (C)";
+            cartesianArea2.GridDesign.AlternatingVerticalColor = false;
+            cartesianArea2.GridDesign.DrawVerticalFills = false;
+            cartesianArea2.GridDesign.DrawVerticalStripes = false;
+            cartesianArea2.ShowGrid = true;
+            this.radChartView1.AreaDesign = cartesianArea2;
+            categoricalAxis2.IsPrimary = true;
+            categoricalAxis2.LabelRotationAngle = 300D;
+            categoricalAxis2.ShowLabels = false;
+            categoricalAxis2.Title = "Time (Min)";
+            linearAxis2.AxisType = Telerik.Charting.AxisType.Second;
+            linearAxis2.IsPrimary = true;
+            linearAxis2.LabelRotationAngle = 300D;
+            linearAxis2.TickOrigin = null;
+            linearAxis2.Title = "Temperature (C)";
             this.radChartView1.Axes.AddRange(new Telerik.WinControls.UI.Axis[] {
-            categoricalAxis1,
-            linearAxis1});
+            categoricalAxis2,
+            linearAxis2});
+            this.radChartView1.Controls.Add(this.textBox13);
             this.radChartView1.Location = new System.Drawing.Point(0, 0);
             this.radChartView1.Name = "radChartView1";
-            lineSeries1.HorizontalAxis = categoricalAxis1;
-            lineSeries1.LabelAngle = 90D;
-            lineSeries1.LabelDistanceToPoint = 15D;
-            lineSeries1.VerticalAxis = linearAxis1;
-            steplineSeries1.HorizontalAxis = categoricalAxis1;
-            steplineSeries1.LabelAngle = 90D;
-            steplineSeries1.LabelDistanceToPoint = 15D;
-            steplineSeries1.VerticalAxis = linearAxis1;
-            lineSeries2.HorizontalAxis = categoricalAxis1;
-            lineSeries2.VerticalAxis = linearAxis1;
+            lineSeries3.HorizontalAxis = categoricalAxis2;
+            lineSeries3.LabelAngle = 90D;
+            lineSeries3.LabelDistanceToPoint = 15D;
+            lineSeries3.VerticalAxis = linearAxis2;
+            steplineSeries2.HorizontalAxis = categoricalAxis2;
+            steplineSeries2.LabelAngle = 90D;
+            steplineSeries2.LabelDistanceToPoint = 15D;
+            steplineSeries2.VerticalAxis = linearAxis2;
+            lineSeries4.HorizontalAxis = categoricalAxis2;
+            lineSeries4.VerticalAxis = linearAxis2;
             this.radChartView1.Series.AddRange(new Telerik.WinControls.UI.ChartSeries[] {
-            lineSeries1,
-            steplineSeries1,
-            lineSeries2});
-            this.radChartView1.Size = new System.Drawing.Size(992, 361);
+            lineSeries3,
+            steplineSeries2,
+            lineSeries4});
+            this.radChartView1.Size = new System.Drawing.Size(992, 424);
             this.radChartView1.TabIndex = 7;
             this.radChartView1.Text = "radChartView1";
             this.radChartView1.ThemeName = "Windows7";
             this.radChartView1.Click += new System.EventHandler(this.radChartView1_Click);
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(96, 374);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(70, 21);
+            this.textBox13.TabIndex = 12;
             // 
             // radGroupBox17
             // 
@@ -916,144 +1041,144 @@
             this.radGridView5.MasterTemplate.AllowColumnReorder = false;
             this.radGridView5.MasterTemplate.AllowDragToGroup = false;
             this.radGridView5.MasterTemplate.AllowRowResize = false;
-            gridViewDecimalColumn1.DataType = typeof(int);
-            gridViewDecimalColumn1.EnableExpressionEditor = false;
-            gridViewDecimalColumn1.FieldName = "EXP_ORDER";
-            gridViewDecimalColumn1.HeaderText = "EXP_ORDER";
-            gridViewDecimalColumn1.IsAutoGenerated = true;
-            gridViewDecimalColumn1.Name = "EXP_ORDER";
-            gridViewDateTimeColumn1.EnableExpressionEditor = false;
-            gridViewDateTimeColumn1.FieldName = "CREATE_DATE";
-            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            gridViewDateTimeColumn1.HeaderText = "CREATE_DATE";
-            gridViewDateTimeColumn1.IsAutoGenerated = true;
-            gridViewDateTimeColumn1.IsVisible = false;
-            gridViewDateTimeColumn1.Name = "CREATE_DATE";
-            gridViewDecimalColumn2.DataType = typeof(double);
-            gridViewDecimalColumn2.EnableExpressionEditor = false;
-            gridViewDecimalColumn2.FieldName = "ZONE_TEMP_AVG";
-            gridViewDecimalColumn2.HeaderText = "ZONE_TEMP_AVG";
-            gridViewDecimalColumn2.IsAutoGenerated = true;
-            gridViewDecimalColumn2.Name = "ZONE_TEMP_AVG";
-            gridViewDecimalColumn3.DataType = typeof(double);
-            gridViewDecimalColumn3.EnableExpressionEditor = false;
-            gridViewDecimalColumn3.FieldName = "ZONE_TEMP_1";
-            gridViewDecimalColumn3.HeaderText = "ZONE_TEMP_1";
-            gridViewDecimalColumn3.IsAutoGenerated = true;
-            gridViewDecimalColumn3.IsVisible = false;
-            gridViewDecimalColumn3.Name = "ZONE_TEMP_1";
-            gridViewDecimalColumn4.DataType = typeof(double);
-            gridViewDecimalColumn4.EnableExpressionEditor = false;
-            gridViewDecimalColumn4.FieldName = "ZONE_TEMP_2";
-            gridViewDecimalColumn4.HeaderText = "ZONE_TEMP_2";
-            gridViewDecimalColumn4.IsAutoGenerated = true;
-            gridViewDecimalColumn4.IsVisible = false;
-            gridViewDecimalColumn4.Name = "ZONE_TEMP_2";
-            gridViewDecimalColumn5.DataType = typeof(double);
-            gridViewDecimalColumn5.EnableExpressionEditor = false;
-            gridViewDecimalColumn5.FieldName = "ZONE_TEMP_3";
-            gridViewDecimalColumn5.HeaderText = "ZONE_TEMP_3";
-            gridViewDecimalColumn5.IsAutoGenerated = true;
-            gridViewDecimalColumn5.IsVisible = false;
-            gridViewDecimalColumn5.Name = "ZONE_TEMP_3";
-            gridViewDecimalColumn6.DataType = typeof(double);
-            gridViewDecimalColumn6.EnableExpressionEditor = false;
-            gridViewDecimalColumn6.FieldName = "ZONE_TEMP_4";
-            gridViewDecimalColumn6.HeaderText = "ZONE_TEMP_4";
-            gridViewDecimalColumn6.IsAutoGenerated = true;
-            gridViewDecimalColumn6.IsVisible = false;
-            gridViewDecimalColumn6.Name = "ZONE_TEMP_4";
-            gridViewDecimalColumn7.DataType = typeof(double);
-            gridViewDecimalColumn7.EnableExpressionEditor = false;
-            gridViewDecimalColumn7.FieldName = "ZONE_TEMP_5";
-            gridViewDecimalColumn7.HeaderText = "ZONE_TEMP_5";
-            gridViewDecimalColumn7.IsAutoGenerated = true;
-            gridViewDecimalColumn7.IsVisible = false;
-            gridViewDecimalColumn7.Name = "ZONE_TEMP_5";
-            gridViewDecimalColumn8.DataType = typeof(double);
-            gridViewDecimalColumn8.EnableExpressionEditor = false;
-            gridViewDecimalColumn8.FieldName = "ZONE_TEMP_6";
-            gridViewDecimalColumn8.HeaderText = "ZONE_TEMP_6";
-            gridViewDecimalColumn8.IsAutoGenerated = true;
-            gridViewDecimalColumn8.IsVisible = false;
-            gridViewDecimalColumn8.Name = "ZONE_TEMP_6";
-            gridViewDecimalColumn9.DataType = typeof(double);
-            gridViewDecimalColumn9.EnableExpressionEditor = false;
-            gridViewDecimalColumn9.FieldName = "ZONE_TEMP_7";
-            gridViewDecimalColumn9.HeaderText = "ZONE_TEMP_7";
-            gridViewDecimalColumn9.IsAutoGenerated = true;
-            gridViewDecimalColumn9.IsVisible = false;
-            gridViewDecimalColumn9.Name = "ZONE_TEMP_7";
-            gridViewDecimalColumn10.DataType = typeof(double);
-            gridViewDecimalColumn10.EnableExpressionEditor = false;
-            gridViewDecimalColumn10.FieldName = "ZONE_TEMP_8";
-            gridViewDecimalColumn10.HeaderText = "ZONE_TEMP_8";
-            gridViewDecimalColumn10.IsAutoGenerated = true;
-            gridViewDecimalColumn10.IsVisible = false;
-            gridViewDecimalColumn10.Name = "ZONE_TEMP_8";
-            gridViewDecimalColumn11.DataType = typeof(double);
-            gridViewDecimalColumn11.EnableExpressionEditor = false;
-            gridViewDecimalColumn11.FieldName = "ZONE_TEMP_9";
-            gridViewDecimalColumn11.HeaderText = "ZONE_TEMP_9";
-            gridViewDecimalColumn11.IsAutoGenerated = true;
-            gridViewDecimalColumn11.IsVisible = false;
-            gridViewDecimalColumn11.Name = "ZONE_TEMP_9";
-            gridViewDecimalColumn12.DataType = typeof(double);
-            gridViewDecimalColumn12.EnableExpressionEditor = false;
-            gridViewDecimalColumn12.FieldName = "ZONE_TEMP_10";
-            gridViewDecimalColumn12.HeaderText = "ZONE_TEMP_10";
-            gridViewDecimalColumn12.IsAutoGenerated = true;
-            gridViewDecimalColumn12.IsVisible = false;
-            gridViewDecimalColumn12.Name = "ZONE_TEMP_10";
-            gridViewDecimalColumn13.DataType = typeof(double);
-            gridViewDecimalColumn13.EnableExpressionEditor = false;
-            gridViewDecimalColumn13.FieldName = "ZONE_TEMP_11";
-            gridViewDecimalColumn13.HeaderText = "ZONE_TEMP_11";
-            gridViewDecimalColumn13.IsAutoGenerated = true;
-            gridViewDecimalColumn13.IsVisible = false;
-            gridViewDecimalColumn13.Name = "ZONE_TEMP_11";
-            gridViewDecimalColumn14.DataType = typeof(double);
-            gridViewDecimalColumn14.EnableExpressionEditor = false;
-            gridViewDecimalColumn14.FieldName = "ZONE_TEMP_12";
-            gridViewDecimalColumn14.HeaderText = "ZONE_TEMP_12";
-            gridViewDecimalColumn14.IsAutoGenerated = true;
-            gridViewDecimalColumn14.IsVisible = false;
-            gridViewDecimalColumn14.Name = "ZONE_TEMP_12";
-            gridViewDecimalColumn15.DataType = typeof(double);
-            gridViewDecimalColumn15.EnableExpressionEditor = false;
-            gridViewDecimalColumn15.FieldName = "BILLET_TEMP_304";
-            gridViewDecimalColumn15.HeaderText = "BILLET_TEMP_304";
-            gridViewDecimalColumn15.IsAutoGenerated = true;
-            gridViewDecimalColumn15.Name = "BILLET_TEMP_304";
-            gridViewDecimalColumn16.DataType = typeof(double);
-            gridViewDecimalColumn16.EnableExpressionEditor = false;
-            gridViewDecimalColumn16.FieldName = "BILLET_TEMP_400";
-            gridViewDecimalColumn16.HeaderText = "BILLET_TEMP_400";
-            gridViewDecimalColumn16.IsAutoGenerated = true;
-            gridViewDecimalColumn16.Name = "BILLET_TEMP_400";
+            gridViewDecimalColumn33.DataType = typeof(int);
+            gridViewDecimalColumn33.EnableExpressionEditor = false;
+            gridViewDecimalColumn33.FieldName = "EXP_ORDER";
+            gridViewDecimalColumn33.HeaderText = "EXP_ORDER";
+            gridViewDecimalColumn33.IsAutoGenerated = true;
+            gridViewDecimalColumn33.Name = "EXP_ORDER";
+            gridViewDateTimeColumn4.EnableExpressionEditor = false;
+            gridViewDateTimeColumn4.FieldName = "CREATE_DATE";
+            gridViewDateTimeColumn4.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            gridViewDateTimeColumn4.HeaderText = "CREATE_DATE";
+            gridViewDateTimeColumn4.IsAutoGenerated = true;
+            gridViewDateTimeColumn4.IsVisible = false;
+            gridViewDateTimeColumn4.Name = "CREATE_DATE";
+            gridViewDecimalColumn34.DataType = typeof(double);
+            gridViewDecimalColumn34.EnableExpressionEditor = false;
+            gridViewDecimalColumn34.FieldName = "ZONE_TEMP_AVG";
+            gridViewDecimalColumn34.HeaderText = "ZONE_TEMP_AVG";
+            gridViewDecimalColumn34.IsAutoGenerated = true;
+            gridViewDecimalColumn34.Name = "ZONE_TEMP_AVG";
+            gridViewDecimalColumn35.DataType = typeof(double);
+            gridViewDecimalColumn35.EnableExpressionEditor = false;
+            gridViewDecimalColumn35.FieldName = "ZONE_TEMP_1";
+            gridViewDecimalColumn35.HeaderText = "ZONE_TEMP_1";
+            gridViewDecimalColumn35.IsAutoGenerated = true;
+            gridViewDecimalColumn35.IsVisible = false;
+            gridViewDecimalColumn35.Name = "ZONE_TEMP_1";
+            gridViewDecimalColumn36.DataType = typeof(double);
+            gridViewDecimalColumn36.EnableExpressionEditor = false;
+            gridViewDecimalColumn36.FieldName = "ZONE_TEMP_2";
+            gridViewDecimalColumn36.HeaderText = "ZONE_TEMP_2";
+            gridViewDecimalColumn36.IsAutoGenerated = true;
+            gridViewDecimalColumn36.IsVisible = false;
+            gridViewDecimalColumn36.Name = "ZONE_TEMP_2";
+            gridViewDecimalColumn37.DataType = typeof(double);
+            gridViewDecimalColumn37.EnableExpressionEditor = false;
+            gridViewDecimalColumn37.FieldName = "ZONE_TEMP_3";
+            gridViewDecimalColumn37.HeaderText = "ZONE_TEMP_3";
+            gridViewDecimalColumn37.IsAutoGenerated = true;
+            gridViewDecimalColumn37.IsVisible = false;
+            gridViewDecimalColumn37.Name = "ZONE_TEMP_3";
+            gridViewDecimalColumn38.DataType = typeof(double);
+            gridViewDecimalColumn38.EnableExpressionEditor = false;
+            gridViewDecimalColumn38.FieldName = "ZONE_TEMP_4";
+            gridViewDecimalColumn38.HeaderText = "ZONE_TEMP_4";
+            gridViewDecimalColumn38.IsAutoGenerated = true;
+            gridViewDecimalColumn38.IsVisible = false;
+            gridViewDecimalColumn38.Name = "ZONE_TEMP_4";
+            gridViewDecimalColumn39.DataType = typeof(double);
+            gridViewDecimalColumn39.EnableExpressionEditor = false;
+            gridViewDecimalColumn39.FieldName = "ZONE_TEMP_5";
+            gridViewDecimalColumn39.HeaderText = "ZONE_TEMP_5";
+            gridViewDecimalColumn39.IsAutoGenerated = true;
+            gridViewDecimalColumn39.IsVisible = false;
+            gridViewDecimalColumn39.Name = "ZONE_TEMP_5";
+            gridViewDecimalColumn40.DataType = typeof(double);
+            gridViewDecimalColumn40.EnableExpressionEditor = false;
+            gridViewDecimalColumn40.FieldName = "ZONE_TEMP_6";
+            gridViewDecimalColumn40.HeaderText = "ZONE_TEMP_6";
+            gridViewDecimalColumn40.IsAutoGenerated = true;
+            gridViewDecimalColumn40.IsVisible = false;
+            gridViewDecimalColumn40.Name = "ZONE_TEMP_6";
+            gridViewDecimalColumn41.DataType = typeof(double);
+            gridViewDecimalColumn41.EnableExpressionEditor = false;
+            gridViewDecimalColumn41.FieldName = "ZONE_TEMP_7";
+            gridViewDecimalColumn41.HeaderText = "ZONE_TEMP_7";
+            gridViewDecimalColumn41.IsAutoGenerated = true;
+            gridViewDecimalColumn41.IsVisible = false;
+            gridViewDecimalColumn41.Name = "ZONE_TEMP_7";
+            gridViewDecimalColumn42.DataType = typeof(double);
+            gridViewDecimalColumn42.EnableExpressionEditor = false;
+            gridViewDecimalColumn42.FieldName = "ZONE_TEMP_8";
+            gridViewDecimalColumn42.HeaderText = "ZONE_TEMP_8";
+            gridViewDecimalColumn42.IsAutoGenerated = true;
+            gridViewDecimalColumn42.IsVisible = false;
+            gridViewDecimalColumn42.Name = "ZONE_TEMP_8";
+            gridViewDecimalColumn43.DataType = typeof(double);
+            gridViewDecimalColumn43.EnableExpressionEditor = false;
+            gridViewDecimalColumn43.FieldName = "ZONE_TEMP_9";
+            gridViewDecimalColumn43.HeaderText = "ZONE_TEMP_9";
+            gridViewDecimalColumn43.IsAutoGenerated = true;
+            gridViewDecimalColumn43.IsVisible = false;
+            gridViewDecimalColumn43.Name = "ZONE_TEMP_9";
+            gridViewDecimalColumn44.DataType = typeof(double);
+            gridViewDecimalColumn44.EnableExpressionEditor = false;
+            gridViewDecimalColumn44.FieldName = "ZONE_TEMP_10";
+            gridViewDecimalColumn44.HeaderText = "ZONE_TEMP_10";
+            gridViewDecimalColumn44.IsAutoGenerated = true;
+            gridViewDecimalColumn44.IsVisible = false;
+            gridViewDecimalColumn44.Name = "ZONE_TEMP_10";
+            gridViewDecimalColumn45.DataType = typeof(double);
+            gridViewDecimalColumn45.EnableExpressionEditor = false;
+            gridViewDecimalColumn45.FieldName = "ZONE_TEMP_11";
+            gridViewDecimalColumn45.HeaderText = "ZONE_TEMP_11";
+            gridViewDecimalColumn45.IsAutoGenerated = true;
+            gridViewDecimalColumn45.IsVisible = false;
+            gridViewDecimalColumn45.Name = "ZONE_TEMP_11";
+            gridViewDecimalColumn46.DataType = typeof(double);
+            gridViewDecimalColumn46.EnableExpressionEditor = false;
+            gridViewDecimalColumn46.FieldName = "ZONE_TEMP_12";
+            gridViewDecimalColumn46.HeaderText = "ZONE_TEMP_12";
+            gridViewDecimalColumn46.IsAutoGenerated = true;
+            gridViewDecimalColumn46.IsVisible = false;
+            gridViewDecimalColumn46.Name = "ZONE_TEMP_12";
+            gridViewDecimalColumn47.DataType = typeof(double);
+            gridViewDecimalColumn47.EnableExpressionEditor = false;
+            gridViewDecimalColumn47.FieldName = "BILLET_TEMP_304";
+            gridViewDecimalColumn47.HeaderText = "BILLET_TEMP_304";
+            gridViewDecimalColumn47.IsAutoGenerated = true;
+            gridViewDecimalColumn47.Name = "BILLET_TEMP_304";
+            gridViewDecimalColumn48.DataType = typeof(double);
+            gridViewDecimalColumn48.EnableExpressionEditor = false;
+            gridViewDecimalColumn48.FieldName = "BILLET_TEMP_400";
+            gridViewDecimalColumn48.HeaderText = "BILLET_TEMP_400";
+            gridViewDecimalColumn48.IsAutoGenerated = true;
+            gridViewDecimalColumn48.Name = "BILLET_TEMP_400";
             this.radGridView5.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn1,
-            gridViewDateTimeColumn1,
-            gridViewDecimalColumn2,
-            gridViewDecimalColumn3,
-            gridViewDecimalColumn4,
-            gridViewDecimalColumn5,
-            gridViewDecimalColumn6,
-            gridViewDecimalColumn7,
-            gridViewDecimalColumn8,
-            gridViewDecimalColumn9,
-            gridViewDecimalColumn10,
-            gridViewDecimalColumn11,
-            gridViewDecimalColumn12,
-            gridViewDecimalColumn13,
-            gridViewDecimalColumn14,
-            gridViewDecimalColumn15,
-            gridViewDecimalColumn16});
+            gridViewDecimalColumn33,
+            gridViewDateTimeColumn4,
+            gridViewDecimalColumn34,
+            gridViewDecimalColumn35,
+            gridViewDecimalColumn36,
+            gridViewDecimalColumn37,
+            gridViewDecimalColumn38,
+            gridViewDecimalColumn39,
+            gridViewDecimalColumn40,
+            gridViewDecimalColumn41,
+            gridViewDecimalColumn42,
+            gridViewDecimalColumn43,
+            gridViewDecimalColumn44,
+            gridViewDecimalColumn45,
+            gridViewDecimalColumn46,
+            gridViewDecimalColumn47,
+            gridViewDecimalColumn48});
             this.radGridView5.MasterTemplate.DataSource = this.dANGJINDATABindingSource;
             this.radGridView5.MasterTemplate.EnableGrouping = false;
             this.radGridView5.MasterTemplate.EnableSorting = false;
             this.radGridView5.MasterTemplate.ShowRowHeaderColumn = false;
-            this.radGridView5.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.radGridView5.MasterTemplate.ViewDefinition = tableViewDefinition13;
             this.radGridView5.Name = "radGridView5";
             this.radGridView5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView5.ReadOnly = true;
@@ -1073,33 +1198,6 @@
             // 
             this.furnaceControlDataSet.DataSetName = "FurnaceControlDataSet";
             this.furnaceControlDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // radGridView7
-            // 
-            this.radGridView7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
-            this.radGridView7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radGridView7.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.radGridView7.ForeColor = System.Drawing.Color.Black;
-            this.radGridView7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radGridView7.Location = new System.Drawing.Point(0, 367);
-            // 
-            // 
-            // 
-            this.radGridView7.MasterTemplate.AllowAddNewRow = false;
-            this.radGridView7.MasterTemplate.AllowColumnReorder = false;
-            this.radGridView7.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            this.radGridView7.MasterTemplate.EnableGrouping = false;
-            this.radGridView7.MasterTemplate.EnableSorting = false;
-            this.radGridView7.MasterTemplate.ViewDefinition = tableViewDefinition2;
-            this.radGridView7.Name = "radGridView7";
-            this.radGridView7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.radGridView7.ReadOnly = true;
-            this.radGridView7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radGridView7.ShowGroupPanel = false;
-            this.radGridView7.Size = new System.Drawing.Size(995, 112);
-            this.radGridView7.TabIndex = 1;
-            this.radGridView7.Text = "radGridView7";
-            this.radGridView7.ThemeName = "ControlDefault";
             // 
             // radPanel1
             // 
@@ -1361,9 +1459,9 @@
             this.Page2.Controls.Add(this.radGridView3);
             this.Page2.Controls.Add(this.radGroupBox21);
             this.Page2.ItemSize = new System.Drawing.SizeF(163F, 28F);
-            this.Page2.Location = new System.Drawing.Point(10, 37);
+            this.Page2.Location = new System.Drawing.Point(10, 41);
             this.Page2.Name = "Page2";
-            this.Page2.Size = new System.Drawing.Size(995, 690);
+            this.Page2.Size = new System.Drawing.Size(995, 686);
             this.Page2.Text = "Schedule";
             this.Page2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1454,7 +1552,7 @@
             this.radMaskedEditBox9.Mask = "999999";
             this.radMaskedEditBox9.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox9.Name = "radMaskedEditBox9";
-            this.radMaskedEditBox9.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox9.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox9.TabIndex = 1;
             this.radMaskedEditBox9.TabStop = false;
             this.radMaskedEditBox9.Text = "______";
@@ -1467,7 +1565,7 @@
             this.radMaskedEditBox8.Mask = "999999";
             this.radMaskedEditBox8.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox8.Name = "radMaskedEditBox8";
-            this.radMaskedEditBox8.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox8.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox8.TabIndex = 1;
             this.radMaskedEditBox8.TabStop = false;
             this.radMaskedEditBox8.Text = "______";
@@ -1480,7 +1578,7 @@
             this.radMaskedEditBox7.Mask = "999999";
             this.radMaskedEditBox7.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox7.Name = "radMaskedEditBox7";
-            this.radMaskedEditBox7.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox7.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox7.TabIndex = 1;
             this.radMaskedEditBox7.TabStop = false;
             this.radMaskedEditBox7.Text = "______";
@@ -1493,7 +1591,7 @@
             this.radMaskedEditBox6.Mask = "999999";
             this.radMaskedEditBox6.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox6.Name = "radMaskedEditBox6";
-            this.radMaskedEditBox6.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox6.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox6.TabIndex = 1;
             this.radMaskedEditBox6.TabStop = false;
             this.radMaskedEditBox6.Text = "______";
@@ -1506,7 +1604,7 @@
             this.radMaskedEditBox5.Mask = "999999";
             this.radMaskedEditBox5.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox5.Name = "radMaskedEditBox5";
-            this.radMaskedEditBox5.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox5.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox5.TabIndex = 1;
             this.radMaskedEditBox5.TabStop = false;
             this.radMaskedEditBox5.Text = "______";
@@ -1519,7 +1617,7 @@
             this.radMaskedEditBox4.Mask = "CCCCC";
             this.radMaskedEditBox4.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox4.Name = "radMaskedEditBox4";
-            this.radMaskedEditBox4.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox4.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox4.TabIndex = 1;
             this.radMaskedEditBox4.TabStop = false;
             this.radMaskedEditBox4.Text = "_____";
@@ -1532,7 +1630,7 @@
             this.radMaskedEditBox3.Mask = "aaaaaaaaa";
             this.radMaskedEditBox3.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox3.Name = "radMaskedEditBox3";
-            this.radMaskedEditBox3.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox3.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox3.TabIndex = 1;
             this.radMaskedEditBox3.TabStop = false;
             this.radMaskedEditBox3.Text = "_________";
@@ -1545,7 +1643,7 @@
             this.radMaskedEditBox2.Mask = "999";
             this.radMaskedEditBox2.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox2.Name = "radMaskedEditBox2";
-            this.radMaskedEditBox2.Size = new System.Drawing.Size(49, 20);
+            this.radMaskedEditBox2.Size = new System.Drawing.Size(49, 24);
             this.radMaskedEditBox2.TabIndex = 1;
             this.radMaskedEditBox2.TabStop = false;
             this.radMaskedEditBox2.Text = "___";
@@ -1558,7 +1656,7 @@
             this.radMaskedEditBox1.Mask = "999999";
             this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.radMaskedEditBox1.Name = "radMaskedEditBox1";
-            this.radMaskedEditBox1.Size = new System.Drawing.Size(82, 20);
+            this.radMaskedEditBox1.Size = new System.Drawing.Size(82, 24);
             this.radMaskedEditBox1.TabIndex = 1;
             this.radMaskedEditBox1.TabStop = false;
             this.radMaskedEditBox1.Text = "______";
@@ -1577,127 +1675,127 @@
             // 
             // 
             this.radGridView3.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn17.DataType = typeof(int);
-            gridViewDecimalColumn17.FieldName = "EXP_ORDER";
-            gridViewDecimalColumn17.HeaderText = "EXP_ORDER";
-            gridViewDecimalColumn17.IsAutoGenerated = true;
-            gridViewDecimalColumn17.Name = "EXP_ORDER";
-            gridViewDecimalColumn17.Width = 57;
-            gridViewDateTimeColumn2.FieldName = "CREATE_DATE";
-            gridViewDateTimeColumn2.HeaderText = "CREATE_DATE";
-            gridViewDateTimeColumn2.IsAutoGenerated = true;
-            gridViewDateTimeColumn2.Name = "CREATE_DATE";
-            gridViewDateTimeColumn2.Width = 57;
-            gridViewDecimalColumn18.DataType = typeof(double);
-            gridViewDecimalColumn18.FieldName = "ZONE_TEMP_AVG";
-            gridViewDecimalColumn18.HeaderText = "ZONE_TEMP_AVG";
-            gridViewDecimalColumn18.IsAutoGenerated = true;
-            gridViewDecimalColumn18.Name = "ZONE_TEMP_AVG";
-            gridViewDecimalColumn18.Width = 57;
-            gridViewDecimalColumn19.DataType = typeof(double);
-            gridViewDecimalColumn19.FieldName = "ZONE_TEMP_1";
-            gridViewDecimalColumn19.HeaderText = "ZONE_TEMP_1";
-            gridViewDecimalColumn19.IsAutoGenerated = true;
-            gridViewDecimalColumn19.Name = "ZONE_TEMP_1";
-            gridViewDecimalColumn19.Width = 57;
-            gridViewDecimalColumn20.DataType = typeof(double);
-            gridViewDecimalColumn20.FieldName = "ZONE_TEMP_2";
-            gridViewDecimalColumn20.HeaderText = "ZONE_TEMP_2";
-            gridViewDecimalColumn20.IsAutoGenerated = true;
-            gridViewDecimalColumn20.Name = "ZONE_TEMP_2";
-            gridViewDecimalColumn20.Width = 57;
-            gridViewDecimalColumn21.DataType = typeof(double);
-            gridViewDecimalColumn21.FieldName = "ZONE_TEMP_3";
-            gridViewDecimalColumn21.HeaderText = "ZONE_TEMP_3";
-            gridViewDecimalColumn21.IsAutoGenerated = true;
-            gridViewDecimalColumn21.Name = "ZONE_TEMP_3";
-            gridViewDecimalColumn21.Width = 57;
-            gridViewDecimalColumn22.DataType = typeof(double);
-            gridViewDecimalColumn22.FieldName = "ZONE_TEMP_4";
-            gridViewDecimalColumn22.HeaderText = "ZONE_TEMP_4";
-            gridViewDecimalColumn22.IsAutoGenerated = true;
-            gridViewDecimalColumn22.Name = "ZONE_TEMP_4";
-            gridViewDecimalColumn22.Width = 57;
-            gridViewDecimalColumn23.DataType = typeof(double);
-            gridViewDecimalColumn23.FieldName = "ZONE_TEMP_5";
-            gridViewDecimalColumn23.HeaderText = "ZONE_TEMP_5";
-            gridViewDecimalColumn23.IsAutoGenerated = true;
-            gridViewDecimalColumn23.Name = "ZONE_TEMP_5";
-            gridViewDecimalColumn23.Width = 57;
-            gridViewDecimalColumn24.DataType = typeof(double);
-            gridViewDecimalColumn24.FieldName = "ZONE_TEMP_6";
-            gridViewDecimalColumn24.HeaderText = "ZONE_TEMP_6";
-            gridViewDecimalColumn24.IsAutoGenerated = true;
-            gridViewDecimalColumn24.Name = "ZONE_TEMP_6";
-            gridViewDecimalColumn24.Width = 57;
-            gridViewDecimalColumn25.DataType = typeof(double);
-            gridViewDecimalColumn25.FieldName = "ZONE_TEMP_7";
-            gridViewDecimalColumn25.HeaderText = "ZONE_TEMP_7";
-            gridViewDecimalColumn25.IsAutoGenerated = true;
-            gridViewDecimalColumn25.Name = "ZONE_TEMP_7";
-            gridViewDecimalColumn25.Width = 57;
-            gridViewDecimalColumn26.DataType = typeof(double);
-            gridViewDecimalColumn26.FieldName = "ZONE_TEMP_8";
-            gridViewDecimalColumn26.HeaderText = "ZONE_TEMP_8";
-            gridViewDecimalColumn26.IsAutoGenerated = true;
-            gridViewDecimalColumn26.Name = "ZONE_TEMP_8";
-            gridViewDecimalColumn26.Width = 57;
-            gridViewDecimalColumn27.DataType = typeof(double);
-            gridViewDecimalColumn27.FieldName = "ZONE_TEMP_9";
-            gridViewDecimalColumn27.HeaderText = "ZONE_TEMP_9";
-            gridViewDecimalColumn27.IsAutoGenerated = true;
-            gridViewDecimalColumn27.Name = "ZONE_TEMP_9";
-            gridViewDecimalColumn27.Width = 57;
-            gridViewDecimalColumn28.DataType = typeof(double);
-            gridViewDecimalColumn28.FieldName = "ZONE_TEMP_10";
-            gridViewDecimalColumn28.HeaderText = "ZONE_TEMP_10";
-            gridViewDecimalColumn28.IsAutoGenerated = true;
-            gridViewDecimalColumn28.Name = "ZONE_TEMP_10";
-            gridViewDecimalColumn28.Width = 57;
-            gridViewDecimalColumn29.DataType = typeof(double);
-            gridViewDecimalColumn29.FieldName = "ZONE_TEMP_11";
-            gridViewDecimalColumn29.HeaderText = "ZONE_TEMP_11";
-            gridViewDecimalColumn29.IsAutoGenerated = true;
-            gridViewDecimalColumn29.Name = "ZONE_TEMP_11";
-            gridViewDecimalColumn29.Width = 57;
-            gridViewDecimalColumn30.DataType = typeof(double);
-            gridViewDecimalColumn30.FieldName = "ZONE_TEMP_12";
-            gridViewDecimalColumn30.HeaderText = "ZONE_TEMP_12";
-            gridViewDecimalColumn30.IsAutoGenerated = true;
-            gridViewDecimalColumn30.Name = "ZONE_TEMP_12";
-            gridViewDecimalColumn30.Width = 57;
-            gridViewDecimalColumn31.DataType = typeof(double);
-            gridViewDecimalColumn31.FieldName = "BILLET_TEMP_304";
-            gridViewDecimalColumn31.HeaderText = "BILLET_TEMP_304";
-            gridViewDecimalColumn31.IsAutoGenerated = true;
-            gridViewDecimalColumn31.Name = "BILLET_TEMP_304";
-            gridViewDecimalColumn31.Width = 57;
-            gridViewDecimalColumn32.DataType = typeof(double);
-            gridViewDecimalColumn32.FieldName = "BILLET_TEMP_400";
-            gridViewDecimalColumn32.HeaderText = "BILLET_TEMP_400";
-            gridViewDecimalColumn32.IsAutoGenerated = true;
-            gridViewDecimalColumn32.Name = "BILLET_TEMP_400";
-            gridViewDecimalColumn32.Width = 55;
+            gridViewDecimalColumn49.DataType = typeof(int);
+            gridViewDecimalColumn49.FieldName = "EXP_ORDER";
+            gridViewDecimalColumn49.HeaderText = "EXP_ORDER";
+            gridViewDecimalColumn49.IsAutoGenerated = true;
+            gridViewDecimalColumn49.Name = "EXP_ORDER";
+            gridViewDecimalColumn49.Width = 58;
+            gridViewDateTimeColumn5.FieldName = "CREATE_DATE";
+            gridViewDateTimeColumn5.HeaderText = "CREATE_DATE";
+            gridViewDateTimeColumn5.IsAutoGenerated = true;
+            gridViewDateTimeColumn5.Name = "CREATE_DATE";
+            gridViewDateTimeColumn5.Width = 58;
+            gridViewDecimalColumn50.DataType = typeof(double);
+            gridViewDecimalColumn50.FieldName = "ZONE_TEMP_AVG";
+            gridViewDecimalColumn50.HeaderText = "ZONE_TEMP_AVG";
+            gridViewDecimalColumn50.IsAutoGenerated = true;
+            gridViewDecimalColumn50.Name = "ZONE_TEMP_AVG";
+            gridViewDecimalColumn50.Width = 58;
+            gridViewDecimalColumn51.DataType = typeof(double);
+            gridViewDecimalColumn51.FieldName = "ZONE_TEMP_1";
+            gridViewDecimalColumn51.HeaderText = "ZONE_TEMP_1";
+            gridViewDecimalColumn51.IsAutoGenerated = true;
+            gridViewDecimalColumn51.Name = "ZONE_TEMP_1";
+            gridViewDecimalColumn51.Width = 58;
+            gridViewDecimalColumn52.DataType = typeof(double);
+            gridViewDecimalColumn52.FieldName = "ZONE_TEMP_2";
+            gridViewDecimalColumn52.HeaderText = "ZONE_TEMP_2";
+            gridViewDecimalColumn52.IsAutoGenerated = true;
+            gridViewDecimalColumn52.Name = "ZONE_TEMP_2";
+            gridViewDecimalColumn52.Width = 58;
+            gridViewDecimalColumn53.DataType = typeof(double);
+            gridViewDecimalColumn53.FieldName = "ZONE_TEMP_3";
+            gridViewDecimalColumn53.HeaderText = "ZONE_TEMP_3";
+            gridViewDecimalColumn53.IsAutoGenerated = true;
+            gridViewDecimalColumn53.Name = "ZONE_TEMP_3";
+            gridViewDecimalColumn53.Width = 58;
+            gridViewDecimalColumn54.DataType = typeof(double);
+            gridViewDecimalColumn54.FieldName = "ZONE_TEMP_4";
+            gridViewDecimalColumn54.HeaderText = "ZONE_TEMP_4";
+            gridViewDecimalColumn54.IsAutoGenerated = true;
+            gridViewDecimalColumn54.Name = "ZONE_TEMP_4";
+            gridViewDecimalColumn54.Width = 58;
+            gridViewDecimalColumn55.DataType = typeof(double);
+            gridViewDecimalColumn55.FieldName = "ZONE_TEMP_5";
+            gridViewDecimalColumn55.HeaderText = "ZONE_TEMP_5";
+            gridViewDecimalColumn55.IsAutoGenerated = true;
+            gridViewDecimalColumn55.Name = "ZONE_TEMP_5";
+            gridViewDecimalColumn55.Width = 58;
+            gridViewDecimalColumn56.DataType = typeof(double);
+            gridViewDecimalColumn56.FieldName = "ZONE_TEMP_6";
+            gridViewDecimalColumn56.HeaderText = "ZONE_TEMP_6";
+            gridViewDecimalColumn56.IsAutoGenerated = true;
+            gridViewDecimalColumn56.Name = "ZONE_TEMP_6";
+            gridViewDecimalColumn56.Width = 58;
+            gridViewDecimalColumn57.DataType = typeof(double);
+            gridViewDecimalColumn57.FieldName = "ZONE_TEMP_7";
+            gridViewDecimalColumn57.HeaderText = "ZONE_TEMP_7";
+            gridViewDecimalColumn57.IsAutoGenerated = true;
+            gridViewDecimalColumn57.Name = "ZONE_TEMP_7";
+            gridViewDecimalColumn57.Width = 58;
+            gridViewDecimalColumn58.DataType = typeof(double);
+            gridViewDecimalColumn58.FieldName = "ZONE_TEMP_8";
+            gridViewDecimalColumn58.HeaderText = "ZONE_TEMP_8";
+            gridViewDecimalColumn58.IsAutoGenerated = true;
+            gridViewDecimalColumn58.Name = "ZONE_TEMP_8";
+            gridViewDecimalColumn58.Width = 58;
+            gridViewDecimalColumn59.DataType = typeof(double);
+            gridViewDecimalColumn59.FieldName = "ZONE_TEMP_9";
+            gridViewDecimalColumn59.HeaderText = "ZONE_TEMP_9";
+            gridViewDecimalColumn59.IsAutoGenerated = true;
+            gridViewDecimalColumn59.Name = "ZONE_TEMP_9";
+            gridViewDecimalColumn59.Width = 58;
+            gridViewDecimalColumn60.DataType = typeof(double);
+            gridViewDecimalColumn60.FieldName = "ZONE_TEMP_10";
+            gridViewDecimalColumn60.HeaderText = "ZONE_TEMP_10";
+            gridViewDecimalColumn60.IsAutoGenerated = true;
+            gridViewDecimalColumn60.Name = "ZONE_TEMP_10";
+            gridViewDecimalColumn60.Width = 58;
+            gridViewDecimalColumn61.DataType = typeof(double);
+            gridViewDecimalColumn61.FieldName = "ZONE_TEMP_11";
+            gridViewDecimalColumn61.HeaderText = "ZONE_TEMP_11";
+            gridViewDecimalColumn61.IsAutoGenerated = true;
+            gridViewDecimalColumn61.Name = "ZONE_TEMP_11";
+            gridViewDecimalColumn61.Width = 58;
+            gridViewDecimalColumn62.DataType = typeof(double);
+            gridViewDecimalColumn62.FieldName = "ZONE_TEMP_12";
+            gridViewDecimalColumn62.HeaderText = "ZONE_TEMP_12";
+            gridViewDecimalColumn62.IsAutoGenerated = true;
+            gridViewDecimalColumn62.Name = "ZONE_TEMP_12";
+            gridViewDecimalColumn62.Width = 58;
+            gridViewDecimalColumn63.DataType = typeof(double);
+            gridViewDecimalColumn63.FieldName = "BILLET_TEMP_304";
+            gridViewDecimalColumn63.HeaderText = "BILLET_TEMP_304";
+            gridViewDecimalColumn63.IsAutoGenerated = true;
+            gridViewDecimalColumn63.Name = "BILLET_TEMP_304";
+            gridViewDecimalColumn63.Width = 58;
+            gridViewDecimalColumn64.DataType = typeof(double);
+            gridViewDecimalColumn64.FieldName = "BILLET_TEMP_400";
+            gridViewDecimalColumn64.HeaderText = "BILLET_TEMP_400";
+            gridViewDecimalColumn64.IsAutoGenerated = true;
+            gridViewDecimalColumn64.Name = "BILLET_TEMP_400";
+            gridViewDecimalColumn64.Width = 56;
             this.radGridView3.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn17,
-            gridViewDateTimeColumn2,
-            gridViewDecimalColumn18,
-            gridViewDecimalColumn19,
-            gridViewDecimalColumn20,
-            gridViewDecimalColumn21,
-            gridViewDecimalColumn22,
-            gridViewDecimalColumn23,
-            gridViewDecimalColumn24,
-            gridViewDecimalColumn25,
-            gridViewDecimalColumn26,
-            gridViewDecimalColumn27,
-            gridViewDecimalColumn28,
-            gridViewDecimalColumn29,
-            gridViewDecimalColumn30,
-            gridViewDecimalColumn31,
-            gridViewDecimalColumn32});
+            gridViewDecimalColumn49,
+            gridViewDateTimeColumn5,
+            gridViewDecimalColumn50,
+            gridViewDecimalColumn51,
+            gridViewDecimalColumn52,
+            gridViewDecimalColumn53,
+            gridViewDecimalColumn54,
+            gridViewDecimalColumn55,
+            gridViewDecimalColumn56,
+            gridViewDecimalColumn57,
+            gridViewDecimalColumn58,
+            gridViewDecimalColumn59,
+            gridViewDecimalColumn60,
+            gridViewDecimalColumn61,
+            gridViewDecimalColumn62,
+            gridViewDecimalColumn63,
+            gridViewDecimalColumn64});
             this.radGridView3.MasterTemplate.DataSource = this.dANGJINDATABindingSource;
-            this.radGridView3.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.radGridView3.MasterTemplate.ViewDefinition = tableViewDefinition14;
             this.radGridView3.Name = "radGridView3";
             this.radGridView3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radGridView3.Size = new System.Drawing.Size(989, 517);
@@ -1720,9 +1818,9 @@
             // 
             this.Page6.Controls.Add(this.radGridView2);
             this.Page6.ItemSize = new System.Drawing.SizeF(156F, 28F);
-            this.Page6.Location = new System.Drawing.Point(10, 37);
+            this.Page6.Location = new System.Drawing.Point(10, 41);
             this.Page6.Name = "Page6";
-            this.Page6.Size = new System.Drawing.Size(995, 690);
+            this.Page6.Size = new System.Drawing.Size(995, 686);
             this.Page6.Text = "Furnace";
             this.Page6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1742,12 +1840,12 @@
             this.radGridView2.MasterTemplate.AllowColumnReorder = false;
             this.radGridView2.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             this.radGridView2.MasterTemplate.EnableGrouping = false;
-            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition4;
+            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition15;
             this.radGridView2.Name = "radGridView2";
             this.radGridView2.ReadOnly = true;
             this.radGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radGridView2.ShowGroupPanel = false;
-            this.radGridView2.Size = new System.Drawing.Size(995, 690);
+            this.radGridView2.Size = new System.Drawing.Size(995, 686);
             this.radGridView2.TabIndex = 0;
             this.radGridView2.Text = "radGridView2";
             this.radGridView2.ThemeName = "Office2007Black";
@@ -1758,9 +1856,9 @@
             this.Page4.Controls.Add(this.radGroupBox1);
             this.Page4.Controls.Add(this.radGroupBox2);
             this.Page4.ItemSize = new System.Drawing.SizeF(166F, 28F);
-            this.Page4.Location = new System.Drawing.Point(10, 37);
+            this.Page4.Location = new System.Drawing.Point(10, 41);
             this.Page4.Name = "Page4";
-            this.Page4.Size = new System.Drawing.Size(995, 690);
+            this.Page4.Size = new System.Drawing.Size(995, 686);
             this.Page4.Text = "Grade Set";
             this.Page4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1803,7 +1901,7 @@
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radGroupBox16);
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radLabel40);
             this.radScrollablePanel3.PanelContainer.Controls.Add(this.radLabel41);
-            this.radScrollablePanel3.PanelContainer.Size = new System.Drawing.Size(972, 81);
+            this.radScrollablePanel3.PanelContainer.Size = new System.Drawing.Size(972, 87);
             this.radScrollablePanel3.Size = new System.Drawing.Size(974, 100);
             this.radScrollablePanel3.TabIndex = 2;
             this.radScrollablePanel3.Text = "radScrollablePanel3";
@@ -1815,7 +1913,7 @@
             this.tbAimTemp.Mask = "D4";
             this.tbAimTemp.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbAimTemp.Name = "tbAimTemp";
-            this.tbAimTemp.Size = new System.Drawing.Size(64, 20);
+            this.tbAimTemp.Size = new System.Drawing.Size(64, 15);
             this.tbAimTemp.TabIndex = 42;
             this.tbAimTemp.TabStop = false;
             this.tbAimTemp.Text = "0000";
@@ -1828,7 +1926,7 @@
             this.tbSetNo_GradeDetail.Mask = "D4";
             this.tbSetNo_GradeDetail.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbSetNo_GradeDetail.Name = "tbSetNo_GradeDetail";
-            this.tbSetNo_GradeDetail.Size = new System.Drawing.Size(64, 20);
+            this.tbSetNo_GradeDetail.Size = new System.Drawing.Size(64, 15);
             this.tbSetNo_GradeDetail.TabIndex = 41;
             this.tbSetNo_GradeDetail.TabStop = false;
             this.tbSetNo_GradeDetail.Text = "0000";
@@ -1860,7 +1958,7 @@
             this.tbBOTmin_10.Mask = "D4";
             this.tbBOTmin_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_10.Name = "tbBOTmin_10";
-            this.tbBOTmin_10.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_10.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_10.TabIndex = 50;
             this.tbBOTmin_10.TabStop = false;
             this.tbBOTmin_10.Text = "0000";
@@ -1873,7 +1971,7 @@
             this.tbBOTmax_10.Mask = "D4";
             this.tbBOTmax_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_10.Name = "tbBOTmax_10";
-            this.tbBOTmax_10.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_10.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_10.TabIndex = 49;
             this.tbBOTmax_10.TabStop = false;
             this.tbBOTmax_10.Text = "0000";
@@ -1886,7 +1984,7 @@
             this.tbTOPmin_10.Mask = "D4";
             this.tbTOPmin_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_10.Name = "tbTOPmin_10";
-            this.tbTOPmin_10.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_10.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_10.TabIndex = 48;
             this.tbTOPmin_10.TabStop = false;
             this.tbTOPmin_10.Text = "0000";
@@ -1899,7 +1997,7 @@
             this.tbTOPmax_10.Mask = "D4";
             this.tbTOPmax_10.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_10.Name = "tbTOPmax_10";
-            this.tbTOPmax_10.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_10.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_10.TabIndex = 47;
             this.tbTOPmax_10.TabStop = false;
             this.tbTOPmax_10.Text = "0000";
@@ -1910,7 +2008,7 @@
             // 
             this.radLabel7.Location = new System.Drawing.Point(236, 22);
             this.radLabel7.Name = "radLabel7";
-            this.radLabel7.Size = new System.Drawing.Size(49, 18);
+            this.radLabel7.Size = new System.Drawing.Size(46, 14);
             this.radLabel7.TabIndex = 20;
             this.radLabel7.Text = "BOTMIN";
             this.radLabel7.ThemeName = "Office2007Black";
@@ -1919,7 +2017,7 @@
             // 
             this.radLabel8.Location = new System.Drawing.Point(162, 22);
             this.radLabel8.Name = "radLabel8";
-            this.radLabel8.Size = new System.Drawing.Size(51, 18);
+            this.radLabel8.Size = new System.Drawing.Size(48, 14);
             this.radLabel8.TabIndex = 21;
             this.radLabel8.Text = "BOTMAX";
             this.radLabel8.ThemeName = "Office2007Black";
@@ -1928,7 +2026,7 @@
             // 
             this.radLabel9.Location = new System.Drawing.Point(90, 22);
             this.radLabel9.Name = "radLabel9";
-            this.radLabel9.Size = new System.Drawing.Size(49, 18);
+            this.radLabel9.Size = new System.Drawing.Size(46, 14);
             this.radLabel9.TabIndex = 22;
             this.radLabel9.Text = "TOPMIN";
             this.radLabel9.ThemeName = "Office2007Black";
@@ -1937,7 +2035,7 @@
             // 
             this.radLabel10.Location = new System.Drawing.Point(16, 22);
             this.radLabel10.Name = "radLabel10";
-            this.radLabel10.Size = new System.Drawing.Size(51, 18);
+            this.radLabel10.Size = new System.Drawing.Size(48, 14);
             this.radLabel10.TabIndex = 19;
             this.radLabel10.Text = "TOPMAX";
             this.radLabel10.ThemeName = "Office2007Black";
@@ -1967,7 +2065,7 @@
             this.tbBOTmin_9.Mask = "D4";
             this.tbBOTmin_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_9.Name = "tbBOTmin_9";
-            this.tbBOTmin_9.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_9.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_9.TabIndex = 50;
             this.tbBOTmin_9.TabStop = false;
             this.tbBOTmin_9.Text = "0000";
@@ -1980,7 +2078,7 @@
             this.tbBOTmax_9.Mask = "D4";
             this.tbBOTmax_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_9.Name = "tbBOTmax_9";
-            this.tbBOTmax_9.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_9.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_9.TabIndex = 49;
             this.tbBOTmax_9.TabStop = false;
             this.tbBOTmax_9.Text = "0000";
@@ -1993,7 +2091,7 @@
             this.tbTOPmin_9.Mask = "D4";
             this.tbTOPmin_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_9.Name = "tbTOPmin_9";
-            this.tbTOPmin_9.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_9.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_9.TabIndex = 48;
             this.tbTOPmin_9.TabStop = false;
             this.tbTOPmin_9.Text = "0000";
@@ -2006,7 +2104,7 @@
             this.tbTOPmax_9.Mask = "D4";
             this.tbTOPmax_9.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_9.Name = "tbTOPmax_9";
-            this.tbTOPmax_9.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_9.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_9.TabIndex = 47;
             this.tbTOPmax_9.TabStop = false;
             this.tbTOPmax_9.Text = "0000";
@@ -2017,7 +2115,7 @@
             // 
             this.radLabel11.Location = new System.Drawing.Point(236, 22);
             this.radLabel11.Name = "radLabel11";
-            this.radLabel11.Size = new System.Drawing.Size(49, 18);
+            this.radLabel11.Size = new System.Drawing.Size(46, 14);
             this.radLabel11.TabIndex = 20;
             this.radLabel11.Text = "BOTMIN";
             this.radLabel11.ThemeName = "Office2007Black";
@@ -2026,7 +2124,7 @@
             // 
             this.radLabel12.Location = new System.Drawing.Point(162, 22);
             this.radLabel12.Name = "radLabel12";
-            this.radLabel12.Size = new System.Drawing.Size(51, 18);
+            this.radLabel12.Size = new System.Drawing.Size(48, 14);
             this.radLabel12.TabIndex = 21;
             this.radLabel12.Text = "BOTMAX";
             this.radLabel12.ThemeName = "Office2007Black";
@@ -2035,7 +2133,7 @@
             // 
             this.radLabel13.Location = new System.Drawing.Point(90, 22);
             this.radLabel13.Name = "radLabel13";
-            this.radLabel13.Size = new System.Drawing.Size(49, 18);
+            this.radLabel13.Size = new System.Drawing.Size(46, 14);
             this.radLabel13.TabIndex = 22;
             this.radLabel13.Text = "TOPMIN";
             this.radLabel13.ThemeName = "Office2007Black";
@@ -2044,7 +2142,7 @@
             // 
             this.radLabel14.Location = new System.Drawing.Point(16, 22);
             this.radLabel14.Name = "radLabel14";
-            this.radLabel14.Size = new System.Drawing.Size(51, 18);
+            this.radLabel14.Size = new System.Drawing.Size(48, 14);
             this.radLabel14.TabIndex = 19;
             this.radLabel14.Text = "TOPMAX";
             this.radLabel14.ThemeName = "Office2007Black";
@@ -2074,7 +2172,7 @@
             this.tbBOTmin_7.Mask = "D4";
             this.tbBOTmin_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_7.Name = "tbBOTmin_7";
-            this.tbBOTmin_7.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_7.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_7.TabIndex = 50;
             this.tbBOTmin_7.TabStop = false;
             this.tbBOTmin_7.Text = "0000";
@@ -2087,7 +2185,7 @@
             this.tbBOTmax_7.Mask = "D4";
             this.tbBOTmax_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_7.Name = "tbBOTmax_7";
-            this.tbBOTmax_7.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_7.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_7.TabIndex = 49;
             this.tbBOTmax_7.TabStop = false;
             this.tbBOTmax_7.Text = "0000";
@@ -2100,7 +2198,7 @@
             this.tbTOPmin_7.Mask = "D4";
             this.tbTOPmin_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_7.Name = "tbTOPmin_7";
-            this.tbTOPmin_7.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_7.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_7.TabIndex = 48;
             this.tbTOPmin_7.TabStop = false;
             this.tbTOPmin_7.Text = "0000";
@@ -2113,7 +2211,7 @@
             this.tbTOPmax_7.Mask = "D4";
             this.tbTOPmax_7.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_7.Name = "tbTOPmax_7";
-            this.tbTOPmax_7.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_7.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_7.TabIndex = 47;
             this.tbTOPmax_7.TabStop = false;
             this.tbTOPmax_7.Text = "0000";
@@ -2124,7 +2222,7 @@
             // 
             this.radLabel47.Location = new System.Drawing.Point(236, 22);
             this.radLabel47.Name = "radLabel47";
-            this.radLabel47.Size = new System.Drawing.Size(49, 18);
+            this.radLabel47.Size = new System.Drawing.Size(46, 14);
             this.radLabel47.TabIndex = 20;
             this.radLabel47.Text = "BOTMIN";
             this.radLabel47.ThemeName = "Office2007Black";
@@ -2133,7 +2231,7 @@
             // 
             this.radLabel48.Location = new System.Drawing.Point(162, 22);
             this.radLabel48.Name = "radLabel48";
-            this.radLabel48.Size = new System.Drawing.Size(51, 18);
+            this.radLabel48.Size = new System.Drawing.Size(48, 14);
             this.radLabel48.TabIndex = 21;
             this.radLabel48.Text = "BOTMAX";
             this.radLabel48.ThemeName = "Office2007Black";
@@ -2142,7 +2240,7 @@
             // 
             this.radLabel49.Location = new System.Drawing.Point(90, 22);
             this.radLabel49.Name = "radLabel49";
-            this.radLabel49.Size = new System.Drawing.Size(49, 18);
+            this.radLabel49.Size = new System.Drawing.Size(46, 14);
             this.radLabel49.TabIndex = 22;
             this.radLabel49.Text = "TOPMIN";
             this.radLabel49.ThemeName = "Office2007Black";
@@ -2151,7 +2249,7 @@
             // 
             this.radLabel50.Location = new System.Drawing.Point(16, 22);
             this.radLabel50.Name = "radLabel50";
-            this.radLabel50.Size = new System.Drawing.Size(51, 18);
+            this.radLabel50.Size = new System.Drawing.Size(48, 14);
             this.radLabel50.TabIndex = 19;
             this.radLabel50.Text = "TOPMAX";
             this.radLabel50.ThemeName = "Office2007Black";
@@ -2181,7 +2279,7 @@
             this.tbBOTmin_6.Mask = "D4";
             this.tbBOTmin_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_6.Name = "tbBOTmin_6";
-            this.tbBOTmin_6.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_6.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_6.TabIndex = 50;
             this.tbBOTmin_6.TabStop = false;
             this.tbBOTmin_6.Text = "0000";
@@ -2194,7 +2292,7 @@
             this.tbBOTmax_6.Mask = "D4";
             this.tbBOTmax_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_6.Name = "tbBOTmax_6";
-            this.tbBOTmax_6.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_6.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_6.TabIndex = 49;
             this.tbBOTmax_6.TabStop = false;
             this.tbBOTmax_6.Text = "0000";
@@ -2207,7 +2305,7 @@
             this.tbTOPmin_6.Mask = "D4";
             this.tbTOPmin_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_6.Name = "tbTOPmin_6";
-            this.tbTOPmin_6.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_6.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_6.TabIndex = 48;
             this.tbTOPmin_6.TabStop = false;
             this.tbTOPmin_6.Text = "0000";
@@ -2220,7 +2318,7 @@
             this.tbTOPmax_6.Mask = "D4";
             this.tbTOPmax_6.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_6.Name = "tbTOPmax_6";
-            this.tbTOPmax_6.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_6.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_6.TabIndex = 47;
             this.tbTOPmax_6.TabStop = false;
             this.tbTOPmax_6.Text = "0000";
@@ -2231,7 +2329,7 @@
             // 
             this.radLabel15.Location = new System.Drawing.Point(236, 22);
             this.radLabel15.Name = "radLabel15";
-            this.radLabel15.Size = new System.Drawing.Size(49, 18);
+            this.radLabel15.Size = new System.Drawing.Size(46, 14);
             this.radLabel15.TabIndex = 20;
             this.radLabel15.Text = "BOTMIN";
             this.radLabel15.ThemeName = "Office2007Black";
@@ -2240,7 +2338,7 @@
             // 
             this.radLabel16.Location = new System.Drawing.Point(162, 22);
             this.radLabel16.Name = "radLabel16";
-            this.radLabel16.Size = new System.Drawing.Size(51, 18);
+            this.radLabel16.Size = new System.Drawing.Size(48, 14);
             this.radLabel16.TabIndex = 21;
             this.radLabel16.Text = "BOTMAX";
             this.radLabel16.ThemeName = "Office2007Black";
@@ -2249,7 +2347,7 @@
             // 
             this.radLabel17.Location = new System.Drawing.Point(90, 22);
             this.radLabel17.Name = "radLabel17";
-            this.radLabel17.Size = new System.Drawing.Size(49, 18);
+            this.radLabel17.Size = new System.Drawing.Size(46, 14);
             this.radLabel17.TabIndex = 22;
             this.radLabel17.Text = "TOPMIN";
             this.radLabel17.ThemeName = "Office2007Black";
@@ -2258,7 +2356,7 @@
             // 
             this.radLabel19.Location = new System.Drawing.Point(16, 22);
             this.radLabel19.Name = "radLabel19";
-            this.radLabel19.Size = new System.Drawing.Size(51, 18);
+            this.radLabel19.Size = new System.Drawing.Size(48, 14);
             this.radLabel19.TabIndex = 19;
             this.radLabel19.Text = "TOPMAX";
             this.radLabel19.ThemeName = "Office2007Black";
@@ -2288,7 +2386,7 @@
             this.tbBOTmin_8.Mask = "D4";
             this.tbBOTmin_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_8.Name = "tbBOTmin_8";
-            this.tbBOTmin_8.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_8.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_8.TabIndex = 50;
             this.tbBOTmin_8.TabStop = false;
             this.tbBOTmin_8.Text = "0000";
@@ -2301,7 +2399,7 @@
             this.tbBOTmax_8.Mask = "D4";
             this.tbBOTmax_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_8.Name = "tbBOTmax_8";
-            this.tbBOTmax_8.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_8.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_8.TabIndex = 49;
             this.tbBOTmax_8.TabStop = false;
             this.tbBOTmax_8.Text = "0000";
@@ -2314,7 +2412,7 @@
             this.tbTOPmin_8.Mask = "D4";
             this.tbTOPmin_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_8.Name = "tbTOPmin_8";
-            this.tbTOPmin_8.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_8.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_8.TabIndex = 48;
             this.tbTOPmin_8.TabStop = false;
             this.tbTOPmin_8.Text = "0000";
@@ -2327,7 +2425,7 @@
             this.tbTOPmax_8.Mask = "D4";
             this.tbTOPmax_8.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_8.Name = "tbTOPmax_8";
-            this.tbTOPmax_8.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_8.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_8.TabIndex = 47;
             this.tbTOPmax_8.TabStop = false;
             this.tbTOPmax_8.Text = "0000";
@@ -2338,7 +2436,7 @@
             // 
             this.radLabel20.Location = new System.Drawing.Point(236, 22);
             this.radLabel20.Name = "radLabel20";
-            this.radLabel20.Size = new System.Drawing.Size(49, 18);
+            this.radLabel20.Size = new System.Drawing.Size(46, 14);
             this.radLabel20.TabIndex = 20;
             this.radLabel20.Text = "BOTMIN";
             this.radLabel20.ThemeName = "Office2007Black";
@@ -2347,7 +2445,7 @@
             // 
             this.radLabel21.Location = new System.Drawing.Point(162, 22);
             this.radLabel21.Name = "radLabel21";
-            this.radLabel21.Size = new System.Drawing.Size(51, 18);
+            this.radLabel21.Size = new System.Drawing.Size(48, 14);
             this.radLabel21.TabIndex = 21;
             this.radLabel21.Text = "BOTMAX";
             this.radLabel21.ThemeName = "Office2007Black";
@@ -2356,7 +2454,7 @@
             // 
             this.radLabel22.Location = new System.Drawing.Point(90, 22);
             this.radLabel22.Name = "radLabel22";
-            this.radLabel22.Size = new System.Drawing.Size(49, 18);
+            this.radLabel22.Size = new System.Drawing.Size(46, 14);
             this.radLabel22.TabIndex = 22;
             this.radLabel22.Text = "TOPMIN";
             this.radLabel22.ThemeName = "Office2007Black";
@@ -2365,7 +2463,7 @@
             // 
             this.radLabel42.Location = new System.Drawing.Point(16, 22);
             this.radLabel42.Name = "radLabel42";
-            this.radLabel42.Size = new System.Drawing.Size(51, 18);
+            this.radLabel42.Size = new System.Drawing.Size(48, 14);
             this.radLabel42.TabIndex = 19;
             this.radLabel42.Text = "TOPMAX";
             this.radLabel42.ThemeName = "Office2007Black";
@@ -2395,7 +2493,7 @@
             this.tbBOTmin_5.Mask = "D4";
             this.tbBOTmin_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_5.Name = "tbBOTmin_5";
-            this.tbBOTmin_5.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_5.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_5.TabIndex = 50;
             this.tbBOTmin_5.TabStop = false;
             this.tbBOTmin_5.Text = "0000";
@@ -2408,7 +2506,7 @@
             this.tbBOTmax_5.Mask = "D4";
             this.tbBOTmax_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_5.Name = "tbBOTmax_5";
-            this.tbBOTmax_5.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_5.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_5.TabIndex = 61;
             this.tbBOTmax_5.TabStop = false;
             this.tbBOTmax_5.Text = "0000";
@@ -2421,7 +2519,7 @@
             this.tbTOPmin_5.Mask = "D4";
             this.tbTOPmin_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_5.Name = "tbTOPmin_5";
-            this.tbTOPmin_5.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_5.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_5.TabIndex = 60;
             this.tbTOPmin_5.TabStop = false;
             this.tbTOPmin_5.Text = "0000";
@@ -2434,7 +2532,7 @@
             this.tbTOPmax_5.Mask = "D4";
             this.tbTOPmax_5.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_5.Name = "tbTOPmax_5";
-            this.tbTOPmax_5.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_5.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_5.TabIndex = 59;
             this.tbTOPmax_5.TabStop = false;
             this.tbTOPmax_5.Text = "0000";
@@ -2445,7 +2543,7 @@
             // 
             this.radLabel23.Location = new System.Drawing.Point(236, 22);
             this.radLabel23.Name = "radLabel23";
-            this.radLabel23.Size = new System.Drawing.Size(49, 18);
+            this.radLabel23.Size = new System.Drawing.Size(46, 14);
             this.radLabel23.TabIndex = 20;
             this.radLabel23.Text = "BOTMIN";
             this.radLabel23.ThemeName = "Office2007Black";
@@ -2454,7 +2552,7 @@
             // 
             this.radLabel24.Location = new System.Drawing.Point(162, 22);
             this.radLabel24.Name = "radLabel24";
-            this.radLabel24.Size = new System.Drawing.Size(51, 18);
+            this.radLabel24.Size = new System.Drawing.Size(48, 14);
             this.radLabel24.TabIndex = 21;
             this.radLabel24.Text = "BOTMAX";
             this.radLabel24.ThemeName = "Office2007Black";
@@ -2463,7 +2561,7 @@
             // 
             this.radLabel25.Location = new System.Drawing.Point(90, 22);
             this.radLabel25.Name = "radLabel25";
-            this.radLabel25.Size = new System.Drawing.Size(49, 18);
+            this.radLabel25.Size = new System.Drawing.Size(46, 14);
             this.radLabel25.TabIndex = 22;
             this.radLabel25.Text = "TOPMIN";
             this.radLabel25.ThemeName = "Office2007Black";
@@ -2472,7 +2570,7 @@
             // 
             this.radLabel26.Location = new System.Drawing.Point(16, 22);
             this.radLabel26.Name = "radLabel26";
-            this.radLabel26.Size = new System.Drawing.Size(51, 18);
+            this.radLabel26.Size = new System.Drawing.Size(48, 14);
             this.radLabel26.TabIndex = 19;
             this.radLabel26.Text = "TOPMAX";
             this.radLabel26.ThemeName = "Office2007Black";
@@ -2502,7 +2600,7 @@
             this.tbBOTmin_4.Mask = "D4";
             this.tbBOTmin_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_4.Name = "tbBOTmin_4";
-            this.tbBOTmin_4.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_4.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_4.TabIndex = 58;
             this.tbBOTmin_4.TabStop = false;
             this.tbBOTmin_4.Text = "0000";
@@ -2515,7 +2613,7 @@
             this.tbBOTmax_4.Mask = "D4";
             this.tbBOTmax_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_4.Name = "tbBOTmax_4";
-            this.tbBOTmax_4.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_4.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_4.TabIndex = 57;
             this.tbBOTmax_4.TabStop = false;
             this.tbBOTmax_4.Text = "0000";
@@ -2528,7 +2626,7 @@
             this.tbTOPmin_4.Mask = "D4";
             this.tbTOPmin_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_4.Name = "tbTOPmin_4";
-            this.tbTOPmin_4.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_4.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_4.TabIndex = 56;
             this.tbTOPmin_4.TabStop = false;
             this.tbTOPmin_4.Text = "0000";
@@ -2541,7 +2639,7 @@
             this.tbTOPmax_4.Mask = "D4";
             this.tbTOPmax_4.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_4.Name = "tbTOPmax_4";
-            this.tbTOPmax_4.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_4.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_4.TabIndex = 55;
             this.tbTOPmax_4.TabStop = false;
             this.tbTOPmax_4.Text = "0000";
@@ -2552,7 +2650,7 @@
             // 
             this.radLabel1.Location = new System.Drawing.Point(236, 22);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(49, 18);
+            this.radLabel1.Size = new System.Drawing.Size(46, 14);
             this.radLabel1.TabIndex = 20;
             this.radLabel1.Text = "BOTMIN";
             this.radLabel1.ThemeName = "Office2007Black";
@@ -2561,7 +2659,7 @@
             // 
             this.radLabel4.Location = new System.Drawing.Point(162, 22);
             this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(51, 18);
+            this.radLabel4.Size = new System.Drawing.Size(48, 14);
             this.radLabel4.TabIndex = 21;
             this.radLabel4.Text = "BOTMAX";
             this.radLabel4.ThemeName = "Office2007Black";
@@ -2570,7 +2668,7 @@
             // 
             this.radLabel5.Location = new System.Drawing.Point(90, 22);
             this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(49, 18);
+            this.radLabel5.Size = new System.Drawing.Size(46, 14);
             this.radLabel5.TabIndex = 22;
             this.radLabel5.Text = "TOPMIN";
             this.radLabel5.ThemeName = "Office2007Black";
@@ -2579,7 +2677,7 @@
             // 
             this.radLabel6.Location = new System.Drawing.Point(16, 22);
             this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(51, 18);
+            this.radLabel6.Size = new System.Drawing.Size(48, 14);
             this.radLabel6.TabIndex = 19;
             this.radLabel6.Text = "TOPMAX";
             this.radLabel6.ThemeName = "Office2007Black";
@@ -2609,7 +2707,7 @@
             this.tbBOTmin_3.Mask = "D4";
             this.tbBOTmin_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_3.Name = "tbBOTmin_3";
-            this.tbBOTmin_3.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_3.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_3.TabIndex = 54;
             this.tbBOTmin_3.TabStop = false;
             this.tbBOTmin_3.Text = "0000";
@@ -2622,7 +2720,7 @@
             this.tbBOTmax_3.Mask = "D4";
             this.tbBOTmax_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_3.Name = "tbBOTmax_3";
-            this.tbBOTmax_3.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_3.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_3.TabIndex = 53;
             this.tbBOTmax_3.TabStop = false;
             this.tbBOTmax_3.Text = "0000";
@@ -2635,7 +2733,7 @@
             this.tbTOPmin_3.Mask = "D4";
             this.tbTOPmin_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_3.Name = "tbTOPmin_3";
-            this.tbTOPmin_3.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_3.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_3.TabIndex = 52;
             this.tbTOPmin_3.TabStop = false;
             this.tbTOPmin_3.Text = "0000";
@@ -2648,7 +2746,7 @@
             this.tbTOPmax_3.Mask = "D4";
             this.tbTOPmax_3.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_3.Name = "tbTOPmax_3";
-            this.tbTOPmax_3.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_3.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_3.TabIndex = 51;
             this.tbTOPmax_3.TabStop = false;
             this.tbTOPmax_3.Text = "0000";
@@ -2659,7 +2757,7 @@
             // 
             this.radLabel27.Location = new System.Drawing.Point(236, 22);
             this.radLabel27.Name = "radLabel27";
-            this.radLabel27.Size = new System.Drawing.Size(49, 18);
+            this.radLabel27.Size = new System.Drawing.Size(46, 14);
             this.radLabel27.TabIndex = 20;
             this.radLabel27.Text = "BOTMIN";
             this.radLabel27.ThemeName = "Office2007Black";
@@ -2668,7 +2766,7 @@
             // 
             this.radLabel28.Location = new System.Drawing.Point(162, 22);
             this.radLabel28.Name = "radLabel28";
-            this.radLabel28.Size = new System.Drawing.Size(51, 18);
+            this.radLabel28.Size = new System.Drawing.Size(48, 14);
             this.radLabel28.TabIndex = 21;
             this.radLabel28.Text = "BOTMAX";
             this.radLabel28.ThemeName = "Office2007Black";
@@ -2677,7 +2775,7 @@
             // 
             this.radLabel29.Location = new System.Drawing.Point(90, 22);
             this.radLabel29.Name = "radLabel29";
-            this.radLabel29.Size = new System.Drawing.Size(49, 18);
+            this.radLabel29.Size = new System.Drawing.Size(46, 14);
             this.radLabel29.TabIndex = 22;
             this.radLabel29.Text = "TOPMIN";
             this.radLabel29.ThemeName = "Office2007Black";
@@ -2686,7 +2784,7 @@
             // 
             this.radLabel30.Location = new System.Drawing.Point(16, 22);
             this.radLabel30.Name = "radLabel30";
-            this.radLabel30.Size = new System.Drawing.Size(51, 18);
+            this.radLabel30.Size = new System.Drawing.Size(48, 14);
             this.radLabel30.TabIndex = 19;
             this.radLabel30.Text = "TOPMAX";
             this.radLabel30.ThemeName = "Office2007Black";
@@ -2716,7 +2814,7 @@
             this.tbBOTmin_2.Mask = "D4";
             this.tbBOTmin_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_2.Name = "tbBOTmin_2";
-            this.tbBOTmin_2.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_2.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_2.TabIndex = 50;
             this.tbBOTmin_2.TabStop = false;
             this.tbBOTmin_2.Text = "0000";
@@ -2729,7 +2827,7 @@
             this.tbBOTmax_2.Mask = "D4";
             this.tbBOTmax_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_2.Name = "tbBOTmax_2";
-            this.tbBOTmax_2.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_2.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_2.TabIndex = 49;
             this.tbBOTmax_2.TabStop = false;
             this.tbBOTmax_2.Text = "0000";
@@ -2742,7 +2840,7 @@
             this.tbTOPmin_2.Mask = "D4";
             this.tbTOPmin_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_2.Name = "tbTOPmin_2";
-            this.tbTOPmin_2.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_2.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_2.TabIndex = 48;
             this.tbTOPmin_2.TabStop = false;
             this.tbTOPmin_2.Text = "0000";
@@ -2755,7 +2853,7 @@
             this.tbTOPmax_2.Mask = "D4";
             this.tbTOPmax_2.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_2.Name = "tbTOPmax_2";
-            this.tbTOPmax_2.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_2.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_2.TabIndex = 47;
             this.tbTOPmax_2.TabStop = false;
             this.tbTOPmax_2.Text = "0000";
@@ -2766,7 +2864,7 @@
             // 
             this.radLabel31.Location = new System.Drawing.Point(236, 22);
             this.radLabel31.Name = "radLabel31";
-            this.radLabel31.Size = new System.Drawing.Size(49, 18);
+            this.radLabel31.Size = new System.Drawing.Size(46, 14);
             this.radLabel31.TabIndex = 20;
             this.radLabel31.Text = "BOTMIN";
             this.radLabel31.ThemeName = "Office2007Black";
@@ -2775,7 +2873,7 @@
             // 
             this.radLabel32.Location = new System.Drawing.Point(162, 22);
             this.radLabel32.Name = "radLabel32";
-            this.radLabel32.Size = new System.Drawing.Size(51, 18);
+            this.radLabel32.Size = new System.Drawing.Size(48, 14);
             this.radLabel32.TabIndex = 21;
             this.radLabel32.Text = "BOTMAX";
             this.radLabel32.ThemeName = "Office2007Black";
@@ -2784,7 +2882,7 @@
             // 
             this.radLabel33.Location = new System.Drawing.Point(90, 22);
             this.radLabel33.Name = "radLabel33";
-            this.radLabel33.Size = new System.Drawing.Size(49, 18);
+            this.radLabel33.Size = new System.Drawing.Size(46, 14);
             this.radLabel33.TabIndex = 22;
             this.radLabel33.Text = "TOPMIN";
             this.radLabel33.ThemeName = "Office2007Black";
@@ -2793,7 +2891,7 @@
             // 
             this.radLabel34.Location = new System.Drawing.Point(16, 22);
             this.radLabel34.Name = "radLabel34";
-            this.radLabel34.Size = new System.Drawing.Size(51, 18);
+            this.radLabel34.Size = new System.Drawing.Size(48, 14);
             this.radLabel34.TabIndex = 19;
             this.radLabel34.Text = "TOPMAX";
             this.radLabel34.ThemeName = "Office2007Black";
@@ -2823,7 +2921,7 @@
             this.tbBOTmin_1.Mask = "D4";
             this.tbBOTmin_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmin_1.Name = "tbBOTmin_1";
-            this.tbBOTmin_1.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmin_1.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmin_1.TabIndex = 46;
             this.tbBOTmin_1.TabStop = false;
             this.tbBOTmin_1.Text = "0000";
@@ -2836,7 +2934,7 @@
             this.tbBOTmax_1.Mask = "D4";
             this.tbBOTmax_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbBOTmax_1.Name = "tbBOTmax_1";
-            this.tbBOTmax_1.Size = new System.Drawing.Size(64, 20);
+            this.tbBOTmax_1.Size = new System.Drawing.Size(64, 15);
             this.tbBOTmax_1.TabIndex = 45;
             this.tbBOTmax_1.TabStop = false;
             this.tbBOTmax_1.Text = "0000";
@@ -2849,7 +2947,7 @@
             this.tbTOPmin_1.Mask = "D4";
             this.tbTOPmin_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmin_1.Name = "tbTOPmin_1";
-            this.tbTOPmin_1.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmin_1.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmin_1.TabIndex = 44;
             this.tbTOPmin_1.TabStop = false;
             this.tbTOPmin_1.Text = "0000";
@@ -2862,7 +2960,7 @@
             this.tbTOPmax_1.Mask = "D4";
             this.tbTOPmax_1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbTOPmax_1.Name = "tbTOPmax_1";
-            this.tbTOPmax_1.Size = new System.Drawing.Size(64, 20);
+            this.tbTOPmax_1.Size = new System.Drawing.Size(64, 15);
             this.tbTOPmax_1.TabIndex = 43;
             this.tbTOPmax_1.TabStop = false;
             this.tbTOPmax_1.Text = "0000";
@@ -2873,7 +2971,7 @@
             // 
             this.radLabel35.Location = new System.Drawing.Point(236, 22);
             this.radLabel35.Name = "radLabel35";
-            this.radLabel35.Size = new System.Drawing.Size(49, 18);
+            this.radLabel35.Size = new System.Drawing.Size(46, 14);
             this.radLabel35.TabIndex = 20;
             this.radLabel35.Text = "BOTMIN";
             this.radLabel35.ThemeName = "Office2007Black";
@@ -2882,7 +2980,7 @@
             // 
             this.radLabel36.Location = new System.Drawing.Point(162, 22);
             this.radLabel36.Name = "radLabel36";
-            this.radLabel36.Size = new System.Drawing.Size(51, 18);
+            this.radLabel36.Size = new System.Drawing.Size(48, 14);
             this.radLabel36.TabIndex = 21;
             this.radLabel36.Text = "BOTMAX";
             this.radLabel36.ThemeName = "Office2007Black";
@@ -2891,7 +2989,7 @@
             // 
             this.radLabel37.Location = new System.Drawing.Point(90, 22);
             this.radLabel37.Name = "radLabel37";
-            this.radLabel37.Size = new System.Drawing.Size(49, 18);
+            this.radLabel37.Size = new System.Drawing.Size(46, 14);
             this.radLabel37.TabIndex = 22;
             this.radLabel37.Text = "TOPMIN";
             this.radLabel37.ThemeName = "Office2007Black";
@@ -2900,7 +2998,7 @@
             // 
             this.radLabel38.Location = new System.Drawing.Point(16, 22);
             this.radLabel38.Name = "radLabel38";
-            this.radLabel38.Size = new System.Drawing.Size(51, 18);
+            this.radLabel38.Size = new System.Drawing.Size(48, 14);
             this.radLabel38.TabIndex = 19;
             this.radLabel38.Text = "TOPMAX";
             this.radLabel38.ThemeName = "Office2007Black";
@@ -2909,7 +3007,7 @@
             // 
             this.radLabel40.Location = new System.Drawing.Point(77, 26);
             this.radLabel40.Name = "radLabel40";
-            this.radLabel40.Size = new System.Drawing.Size(55, 18);
+            this.radLabel40.Size = new System.Drawing.Size(52, 14);
             this.radLabel40.TabIndex = 30;
             this.radLabel40.Text = "AIMTEMP";
             this.radLabel40.ThemeName = "Office2007Black";
@@ -2918,7 +3016,7 @@
             // 
             this.radLabel41.Location = new System.Drawing.Point(16, 26);
             this.radLabel41.Name = "radLabel41";
-            this.radLabel41.Size = new System.Drawing.Size(41, 18);
+            this.radLabel41.Size = new System.Drawing.Size(38, 14);
             this.radLabel41.TabIndex = 29;
             this.radLabel41.Text = "SETNO";
             this.radLabel41.ThemeName = "Office2007Black";
@@ -2984,7 +3082,7 @@
             this.gridView_GradeDetail.MasterTemplate.AllowRowResize = false;
             this.gridView_GradeDetail.MasterTemplate.AllowSearchRow = true;
             this.gridView_GradeDetail.MasterTemplate.EnableGrouping = false;
-            this.gridView_GradeDetail.MasterTemplate.ViewDefinition = tableViewDefinition5;
+            this.gridView_GradeDetail.MasterTemplate.ViewDefinition = tableViewDefinition16;
             this.gridView_GradeDetail.Name = "gridView_GradeDetail";
             this.gridView_GradeDetail.ReadOnly = true;
             this.gridView_GradeDetail.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -3032,7 +3130,7 @@
             this.gridView_Grade.MasterTemplate.EnableSorting = false;
             this.gridView_Grade.MasterTemplate.PageSize = 10;
             this.gridView_Grade.MasterTemplate.ShowHeaderCellButtons = true;
-            this.gridView_Grade.MasterTemplate.ViewDefinition = tableViewDefinition6;
+            this.gridView_Grade.MasterTemplate.ViewDefinition = tableViewDefinition17;
             this.gridView_Grade.Name = "gridView_Grade";
             this.gridView_Grade.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.gridView_Grade.ReadOnly = true;
@@ -3072,7 +3170,7 @@
             this.tbSetNo.Mask = "D4";
             this.tbSetNo.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbSetNo.Name = "tbSetNo";
-            this.tbSetNo.Size = new System.Drawing.Size(106, 20);
+            this.tbSetNo.Size = new System.Drawing.Size(106, 24);
             this.tbSetNo.TabIndex = 17;
             this.tbSetNo.TabStop = false;
             this.tbSetNo.Text = "0000";
@@ -3085,7 +3183,7 @@
             this.tbGrade.Mask = "AAAAAA";
             this.tbGrade.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.tbGrade.Name = "tbGrade";
-            this.tbGrade.Size = new System.Drawing.Size(98, 20);
+            this.tbGrade.Size = new System.Drawing.Size(98, 24);
             this.tbGrade.TabIndex = 16;
             this.tbGrade.TabStop = false;
             this.tbGrade.Text = "______";
@@ -3096,7 +3194,7 @@
             // 
             this.radLabel18.Location = new System.Drawing.Point(10, 9);
             this.radLabel18.Name = "radLabel18";
-            this.radLabel18.Size = new System.Drawing.Size(42, 18);
+            this.radLabel18.Size = new System.Drawing.Size(52, 22);
             this.radLabel18.TabIndex = 15;
             this.radLabel18.Text = "GRADE";
             this.radLabel18.ThemeName = "Office2007Black";
@@ -3149,7 +3247,7 @@
             // 
             this.radLabel2.Location = new System.Drawing.Point(180, 8);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(41, 18);
+            this.radLabel2.Size = new System.Drawing.Size(50, 22);
             this.radLabel2.TabIndex = 11;
             this.radLabel2.Text = "SETNO";
             this.radLabel2.ThemeName = "Office2007Black";
@@ -3158,7 +3256,7 @@
             // 
             this.radLabel3.Location = new System.Drawing.Point(354, 8);
             this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(41, 18);
+            this.radLabel3.Size = new System.Drawing.Size(51, 22);
             this.radLabel3.TabIndex = 12;
             this.radLabel3.Text = "DETAIL";
             this.radLabel3.ThemeName = "Office2007Black";
@@ -3167,7 +3265,7 @@
             // 
             this.tbDetatil.Location = new System.Drawing.Point(401, 7);
             this.tbDetatil.Name = "tbDetatil";
-            this.tbDetatil.Size = new System.Drawing.Size(289, 20);
+            this.tbDetatil.Size = new System.Drawing.Size(289, 24);
             this.tbDetatil.TabIndex = 9;
             this.tbDetatil.ThemeName = "Office2007Black";
             // 
@@ -3196,7 +3294,7 @@
             this.txPWD.Mask = "g";
             this.txPWD.Name = "txPWD";
             this.txPWD.PasswordChar = '*';
-            this.txPWD.Size = new System.Drawing.Size(255, 20);
+            this.txPWD.Size = new System.Drawing.Size(255, 24);
             this.txPWD.TabIndex = 5;
             this.txPWD.TabStop = false;
             this.txPWD.Text = "furnace";
@@ -3208,7 +3306,7 @@
             this.txID.Location = new System.Drawing.Point(7, 97);
             this.txID.Mask = "g";
             this.txID.Name = "txID";
-            this.txID.Size = new System.Drawing.Size(255, 20);
+            this.txID.Size = new System.Drawing.Size(255, 24);
             this.txID.TabIndex = 4;
             this.txID.TabStop = false;
             this.txID.Text = "furnace";
@@ -3219,7 +3317,7 @@
             // 
             this.radLabel45.Location = new System.Drawing.Point(7, 78);
             this.radLabel45.Name = "radLabel45";
-            this.radLabel45.Size = new System.Drawing.Size(145, 18);
+            this.radLabel45.Size = new System.Drawing.Size(181, 22);
             this.radLabel45.TabIndex = 3;
             this.radLabel45.Text = "Enter User ID Before Editing";
             this.radLabel45.ThemeName = "Office2007Black";
@@ -3229,7 +3327,7 @@
             this.radLabel44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radLabel44.Location = new System.Drawing.Point(7, 32);
             this.radLabel44.Name = "radLabel44";
-            this.radLabel44.Size = new System.Drawing.Size(225, 25);
+            this.radLabel44.Size = new System.Drawing.Size(280, 31);
             this.radLabel44.TabIndex = 3;
             this.radLabel44.Text = "Level 2 Grade Management ";
             this.radLabel44.ThemeName = "Office2007Black";
@@ -3238,7 +3336,7 @@
             // 
             this.radLabel43.Location = new System.Drawing.Point(7, 128);
             this.radLabel43.Name = "radLabel43";
-            this.radLabel43.Size = new System.Drawing.Size(155, 18);
+            this.radLabel43.Size = new System.Drawing.Size(193, 22);
             this.radLabel43.TabIndex = 2;
             this.radLabel43.Text = "Enter Passwork Before Editing";
             this.radLabel43.ThemeName = "Office2007Black";
@@ -3259,9 +3357,9 @@
             this.Page3.Controls.Add(this.radGroupBox19);
             this.Page3.Controls.Add(this.radGroupBox18);
             this.Page3.ItemSize = new System.Drawing.SizeF(155F, 28F);
-            this.Page3.Location = new System.Drawing.Point(10, 37);
+            this.Page3.Location = new System.Drawing.Point(10, 41);
             this.Page3.Name = "Page3";
-            this.Page3.Size = new System.Drawing.Size(995, 690);
+            this.Page3.Size = new System.Drawing.Size(995, 686);
             this.Page3.Text = "L2 Data";
             this.Page3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3285,7 +3383,7 @@
             // 
             // 
             // 
-            this.radGridView10.MasterTemplate.ViewDefinition = tableViewDefinition8;
+            this.radGridView10.MasterTemplate.ViewDefinition = tableViewDefinition19;
             this.radGridView10.Name = "radGridView10";
             this.radGridView10.Size = new System.Drawing.Size(597, 324);
             this.radGridView10.TabIndex = 0;
@@ -3299,7 +3397,7 @@
             // 
             // 
             // 
-            this.radGridView12.MasterTemplate.ViewDefinition = tableViewDefinition7;
+            this.radGridView12.MasterTemplate.ViewDefinition = tableViewDefinition18;
             this.radGridView12.Name = "radGridView12";
             this.radGridView12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView12.Size = new System.Drawing.Size(597, 324);
@@ -3326,7 +3424,7 @@
             // 
             // 
             // 
-            this.radGridView8.MasterTemplate.ViewDefinition = tableViewDefinition9;
+            this.radGridView8.MasterTemplate.ViewDefinition = tableViewDefinition20;
             this.radGridView8.Name = "radGridView8";
             this.radGridView8.Size = new System.Drawing.Size(378, 664);
             this.radGridView8.TabIndex = 2;
@@ -3353,7 +3451,7 @@
             // 
             // 
             // 
-            this.radGridView9.MasterTemplate.ViewDefinition = tableViewDefinition11;
+            this.radGridView9.MasterTemplate.ViewDefinition = tableViewDefinition22;
             this.radGridView9.Name = "radGridView9";
             this.radGridView9.Size = new System.Drawing.Size(597, 314);
             this.radGridView9.TabIndex = 1;
@@ -3367,7 +3465,7 @@
             // 
             // 
             // 
-            this.radGridView11.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.radGridView11.MasterTemplate.ViewDefinition = tableViewDefinition21;
             this.radGridView11.Name = "radGridView11";
             this.radGridView11.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView11.Size = new System.Drawing.Size(597, 314);
@@ -3420,22 +3518,22 @@
             // 
             this.radGridView13.MasterTemplate.AllowAddNewRow = false;
             this.radGridView13.MasterTemplate.AllowColumnReorder = false;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.HeaderText = "No";
-            gridViewTextBoxColumn1.Name = "No";
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.HeaderText = "Tag Name";
-            gridViewTextBoxColumn2.Name = "TagName";
-            gridViewTextBoxColumn2.Width = 115;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.HeaderText = "Data";
-            gridViewTextBoxColumn3.Name = "Data";
-            gridViewTextBoxColumn3.Width = 93;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
+            gridViewTextBoxColumn7.HeaderText = "No";
+            gridViewTextBoxColumn7.Name = "No";
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.HeaderText = "Tag Name";
+            gridViewTextBoxColumn8.Name = "TagName";
+            gridViewTextBoxColumn8.Width = 115;
+            gridViewTextBoxColumn9.EnableExpressionEditor = false;
+            gridViewTextBoxColumn9.HeaderText = "Data";
+            gridViewTextBoxColumn9.Name = "Data";
+            gridViewTextBoxColumn9.Width = 93;
             this.radGridView13.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3});
-            this.radGridView13.MasterTemplate.ViewDefinition = tableViewDefinition12;
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9});
+            this.radGridView13.MasterTemplate.ViewDefinition = tableViewDefinition23;
             this.radGridView13.Name = "radGridView13";
             this.radGridView13.ReadOnly = true;
             this.radGridView13.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -3472,31 +3570,31 @@
             // 
             this.radGridView6.MasterTemplate.AllowAddNewRow = false;
             this.radGridView6.MasterTemplate.AllowColumnReorder = false;
-            gridViewDateTimeColumn3.FieldName = "TIMESTAMP";
-            gridViewDateTimeColumn3.HeaderText = "TIMESTAMP";
-            gridViewDateTimeColumn3.IsAutoGenerated = true;
-            gridViewDateTimeColumn3.Name = "TIMESTAMP";
-            gridViewTextBoxColumn4.FieldName = "LOCATION";
-            gridViewTextBoxColumn4.HeaderText = "LOCATION";
-            gridViewTextBoxColumn4.IsAutoGenerated = true;
-            gridViewTextBoxColumn4.Name = "LOCATION";
-            gridViewTextBoxColumn5.FieldName = "MESSAGE";
-            gridViewTextBoxColumn5.HeaderText = "MESSAGE";
-            gridViewTextBoxColumn5.IsAutoGenerated = true;
-            gridViewTextBoxColumn5.Name = "MESSAGE";
-            gridViewTextBoxColumn6.FieldName = "CODE_INFO";
-            gridViewTextBoxColumn6.HeaderText = "CODE_INFO";
-            gridViewTextBoxColumn6.IsAutoGenerated = true;
-            gridViewTextBoxColumn6.Name = "CODE_INFO";
+            gridViewDateTimeColumn6.FieldName = "TIMESTAMP";
+            gridViewDateTimeColumn6.HeaderText = "TIMESTAMP";
+            gridViewDateTimeColumn6.IsAutoGenerated = true;
+            gridViewDateTimeColumn6.Name = "TIMESTAMP";
+            gridViewTextBoxColumn10.FieldName = "LOCATION";
+            gridViewTextBoxColumn10.HeaderText = "LOCATION";
+            gridViewTextBoxColumn10.IsAutoGenerated = true;
+            gridViewTextBoxColumn10.Name = "LOCATION";
+            gridViewTextBoxColumn11.FieldName = "MESSAGE";
+            gridViewTextBoxColumn11.HeaderText = "MESSAGE";
+            gridViewTextBoxColumn11.IsAutoGenerated = true;
+            gridViewTextBoxColumn11.Name = "MESSAGE";
+            gridViewTextBoxColumn12.FieldName = "CODE_INFO";
+            gridViewTextBoxColumn12.HeaderText = "CODE_INFO";
+            gridViewTextBoxColumn12.IsAutoGenerated = true;
+            gridViewTextBoxColumn12.Name = "CODE_INFO";
             this.radGridView6.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDateTimeColumn3,
-            gridViewTextBoxColumn4,
-            gridViewTextBoxColumn5,
-            gridViewTextBoxColumn6});
+            gridViewDateTimeColumn6,
+            gridViewTextBoxColumn10,
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12});
             this.radGridView6.MasterTemplate.DataSource = this.sYSTEMEVENTJOINBindingSource;
             this.radGridView6.MasterTemplate.EnableAlternatingRowColor = true;
             this.radGridView6.MasterTemplate.EnablePaging = true;
-            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition13;
+            this.radGridView6.MasterTemplate.ViewDefinition = tableViewDefinition24;
             this.radGridView6.Name = "radGridView6";
             this.radGridView6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.radGridView6.ReadOnly = true;
@@ -3568,7 +3666,7 @@
             this.txtOPCServerAddress.Name = "txtOPCServerAddress";
             this.txtOPCServerAddress.Size = new System.Drawing.Size(100, 20);
             this.txtOPCServerAddress.TabIndex = 1;
-            this.txtOPCServerAddress.Text = "127.0.0.1";
+            this.txtOPCServerAddress.Text = "192.168.1.190";
             // 
             // btnOPC_Connect
             // 
@@ -3635,6 +3733,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainTap)).EndInit();
             this.MainTap.ResumeLayout(false);
             this.Page1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox25)).EndInit();
             this.radGroupBox25.ResumeLayout(false);
             this.radGroupBox25.PerformLayout();
@@ -3648,6 +3748,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDataLogging)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).EndInit();
+            this.radChartView1.ResumeLayout(false);
+            this.radChartView1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox17)).EndInit();
             this.radGroupBox17.ResumeLayout(false);
             this.radGroupBox17.PerformLayout();
@@ -3669,8 +3771,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dANGJINDATABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnaceControlDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView7.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox24)).EndInit();
@@ -4006,7 +4106,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel45;
         private Telerik.WinControls.UI.RadGridView radGridView2;
         private Telerik.WinControls.UI.RadGridView radGridView3;
-        private Telerik.WinControls.UI.RadGridView radGridView7;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox12;
         private Telerik.WinControls.UI.RadGridView radGridView5;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox17;
@@ -4155,5 +4254,19 @@
         private System.Windows.Forms.BindingSource dANGJINDATABindingSource;
         public FurnaceControlDataSetTableAdapters.DANGJIN_DATATableAdapter dANGJIN_DATATableAdapter;
         private FurnaceControlDataSetTableAdapters.DANGJIN_DATA_INSERTTableAdapter dangjiN_DATA_INSERTTableAdapter1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.TextBox textBox9;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox12;
+        public System.Windows.Forms.TextBox textBox11;
+        public System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.TextBox textBox13;
     }
 }

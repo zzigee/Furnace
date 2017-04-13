@@ -44,6 +44,32 @@ namespace FurnaceControl
 
         delegate void SetTextCallback(string text);
 
+
+        public void Set_txtDanjin_TC_TEMP(string text)
+        {
+            if (this.txtDanjin_Current_Date.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(Set_txtDanjin_TC_TEMP);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {                this.textBox1.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0].ToString();
+                this.textBox2.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1].ToString();
+                this.textBox3.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2].ToString();
+                this.textBox4.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3].ToString();
+                this.textBox5.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4].ToString();
+                this.textBox6.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5].ToString();
+                this.textBox7.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6].ToString();
+                this.textBox8.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7].ToString();
+                this.textBox9.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8].ToString();
+                this.textBox10.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9].ToString();
+                this.textBox11.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10].ToString();
+                this.textBox12.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11].ToString();
+                this.textBox13.Text = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0].ToString();
+
+            }
+        }
+
         public void Set_txtDanjin_Current_Date(string text)
         {
             if (this.txtDanjin_Current_Date.InvokeRequired)
@@ -109,6 +135,13 @@ namespace FurnaceControl
 
 
 
+        public void setTCDisplay()
+        {
+
+        }
+
+
+
 
         /************************************************************************
          * Creator  
@@ -140,6 +173,7 @@ namespace FurnaceControl
                 case "Main":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Main Tap Changed");
                     this.nCurrentPage = (int)Page.Main;
+                    this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
                     //this.BilletJoinTableAdapter.Fill(this.furnaceControlDataSet.BILLET_JOIN);
                     break;
 
@@ -148,6 +182,7 @@ namespace FurnaceControl
                 case "Schedule":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Schedule Tap Changed");
                     this.nCurrentPage = (int)Page.Schedule;
+                    this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
                     //this.BilletJoinTableAdapter.FillBy_PreFurnaceBillet(this.furnaceControlDataSet.BILLET_JOIN);
                     break;
 
@@ -499,6 +534,8 @@ namespace FurnaceControl
         {
             if (this.nCurrentPage == (int)Page.Main)
             {
+                //this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
+
                 //this.m_MainClass.m_SQLClass.updateBilletStruct();        // Update Data
 
 

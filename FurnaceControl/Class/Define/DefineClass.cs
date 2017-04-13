@@ -18,11 +18,12 @@ namespace FurnaceControl
         /*
          * 당진 테슽용 
          */
+        public bool isOpcCon = false;
         public bool isDataLogging = false;                  // 실시간 데이터 DB 저장 여부 
         public int nDataLoggingIndex;                       // 실시간 데이터 배열 인덱스 
         public DateTime dateDataLoggingStartTime;           // 실시간 데이터 저장 시작 시간  
-        //public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.ONE_SEC;
-        public int nDangjinThermalCalPeriod = 100;
+        //public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.ONE_MIN;
+        public int nDangjinThermalCalPeriod = 10;
 
         /*
          * [Check - 2016.02.22] -> [Result - ] 
