@@ -31,7 +31,10 @@ namespace FurnaceControl
             //this.m_MainClass.m_SysLogClass.SystemLog(this, "L1LinkClassTimer");
 
             getOPCStatus();
-            getDataFromOPC();
+            if (this.m_MainClass.m_Define_Class.isOpcCon)
+            {
+                getDataFromOPC();
+            }
         }
         
 
@@ -45,39 +48,128 @@ namespace FurnaceControl
             if (this.m_opcMgr == null) return;
 
             int iResFunc = 0;
-            int nTagCnt = 4;
+            int nTagCnt = 12;
             object[] objReadVals = new object[nTagCnt];
             int[] nQualities = new int[nTagCnt];
 
             ///////////////////////////////////////////////////////////////////////
             // 공업로 정보 갱신 (stFURNACE_REALTIME_INFORMATION)
             iResFunc = m_opcMgr.opcReadGroupTags("OPC", nTagCnt, ref objReadVals, ref nQualities);
+                   
 
+            /**
+             *  버너  버너   버너 
+
+             */
             this.m_MainClass.stFURNACE_REALTIME_INFORMATION.strCurrentDate = DateTime.Now.ToString();
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0] = int.Parse(objReadVals[0].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1] = int.Parse(objReadVals[1].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2] = int.Parse(objReadVals[2].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3] = int.Parse(objReadVals[3].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4] = int.Parse(objReadVals[4].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5] = int.Parse(objReadVals[5].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6] = int.Parse(objReadVals[6].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7] = int.Parse(objReadVals[7].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8] = int.Parse(objReadVals[8].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9] = int.Parse(objReadVals[9].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10] = int.Parse(objReadVals[10].ToString());
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11] = int.Parse(objReadVals[11].ToString());
+
+
+            if (iResFunc != 1)
+            {
+                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Error 발생");
+                return;
+            }
+
+            for(int i=0 ; i<12 ; i++)
+            {
+                if (int.Parse(nQualities[i].ToString()) == 0 || int.Parse(nQualities[i].ToString()) == 192)
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[i] = float.Parse(objReadVals[i].ToString());
+                else
+                    this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[i] = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[i];
+            }
+
+                /*
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[0] = float.Parse(objReadVals[0].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[1] = float.Parse(objReadVals[1].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[2] = float.Parse(objReadVals[2].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[3] = float.Parse(objReadVals[3].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[4] = float.Parse(objReadVals[4].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[5] = float.Parse(objReadVals[5].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[6] = float.Parse(objReadVals[6].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[7] = float.Parse(objReadVals[7].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[8] = float.Parse(objReadVals[8].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[9] = float.Parse(objReadVals[9].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[10] = float.Parse(objReadVals[10].ToString());
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Temperature[11] = float.Parse(objReadVals[11].ToString());
+                */
 
             float fZoneTempratureAvg = 0.0f;
 
-            for (int i = 0; i < 12; i++)
+            float fMaxTemp = float.Parse(objReadVals[0].ToString());
+            float fMinTemp = float.Parse(objReadVals[0].ToString());
+            int nMaxIndex = 0;
+            int nMinIndex = 0;
+            int nMaxIndex_ext = 0;
+            int nMinIndex_ext = 0;
+
+            for (int i = 0; i < 12;  i++)
             {
-                fZoneTempratureAvg += int.Parse(objReadVals[0].ToString());
+                if(fMaxTemp < float.Parse(objReadVals[i].ToString()))
+                {
+                    fMaxTemp = float.Parse(objReadVals[i].ToString());
+                    nMaxIndex = i;
+                }
             }
 
-            fZoneTempratureAvg = fZoneTempratureAvg / 12.0f;
+            for (int i = 0; i < 12; i++)
+            {
+                if (fMinTemp > float.Parse(objReadVals[i].ToString()))
+                {
+                    fMinTemp = float.Parse(objReadVals[i].ToString());
+                    nMinIndex = i;
+                }
+            }
+
+            float fMaxTemp_ext = 0.0f;
+            float fMinTemp_ext = 0.0f;
+
+            if(nMaxIndex == 0)  fMaxTemp_ext = float.Parse(objReadVals[1].ToString());
+            else fMaxTemp_ext = float.Parse(objReadVals[0].ToString());
+
+            if (nMinIndex == 0) fMinTemp_ext = float.Parse(objReadVals[1].ToString());
+            else fMinTemp_ext = float.Parse(objReadVals[0].ToString());
+
+            for (int i = 0; i < 12; i++)
+            {
+                if (nMaxIndex != i)
+                {
+                    if (fMaxTemp_ext < float.Parse(objReadVals[i].ToString()))
+                    {
+                        fMaxTemp_ext = float.Parse(objReadVals[i].ToString());
+                        nMaxIndex_ext = i;
+                    }
+                }
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+                if (nMinIndex != i)
+                {
+                    if (fMinTemp_ext > float.Parse(objReadVals[i].ToString()))
+                    {
+                        fMinTemp_ext = float.Parse(objReadVals[i].ToString());
+                        nMinIndex_ext = i;
+                    }
+                }
+            }
+
+
+            for (int i = 0; i < 12; i++)
+            {
+                if (nMinIndex != i && nMaxIndex != i && nMaxIndex_ext != i && nMinIndex_ext != i)
+                {
+                    fZoneTempratureAvg += float.Parse(objReadVals[i].ToString());
+                }
+            }
+
+            fZoneTempratureAvg = fZoneTempratureAvg / 8.0f;
 
             // 평균온도 계산 후 저장 
-            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0] = fZoneTempratureAvg;    
+            this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0] = fZoneTempratureAvg;
+
+
+            this.m_MainClass.m_MainForm.Set_txtDanjin_TC_TEMP("");
+
 
 
 
@@ -161,10 +253,12 @@ namespace FurnaceControl
 
             if (iResFunc == 1)
             {
+                this.m_MainClass.m_Define_Class.isOpcCon = true;
                 Console.WriteLine("OpcRegSvrEx() Success!");
             }
             else
             {
+                this.m_MainClass.m_Define_Class.isOpcCon = false;
                 Console.WriteLine("OpcRegSvrEx() Failed! Error Code:" + iResFunc);
             }
         }
