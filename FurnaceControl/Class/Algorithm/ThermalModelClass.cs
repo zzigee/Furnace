@@ -25,7 +25,6 @@ namespace FurnaceControl
             h_ss400_Interpolation = InitInterpolationParameters(h_ss400);
             f_ss400_Interpolation = InitInterpolationParameters(f_ss400);
 
-
             cp_sus304_Interpolation = InitInterpolationParameters(cp_sus304);
             h_sus304_Interpolation = InitInterpolationParameters(h_sus304);
             f_sus304_Interpolation = InitInterpolationParameters(f_sus304);
@@ -237,7 +236,7 @@ namespace FurnaceControl
                 /**
                  * DB 저장 
                  */
-                //this.m_MainClass.m_MainForm.InsertQuery();
+                this.m_MainClass.m_MainForm.InsertQuery();
                 
                 /**
                  * 데이터 수집 인덱스 증가 
