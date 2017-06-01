@@ -86,8 +86,8 @@ namespace FurnaceControl
             //********************************************************************************************
             // 시뮬레이션 모드에서만 사용 
             //********************************************************************************************
-            //float fZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0];     // 현재 TC 온도 
-            float fZoneTemprature = fn[idx, 1];     // 현재 TC 온도 
+            float fZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0];     // 현재 TC 온도 
+            //float fZoneTemprature = fn[idx, 1];     // 현재 TC 온도 
 
             double fCalBilletTemp;                  //예측 소재 온도
             float fPreBilletTemp;                   // 이전 빌렛 온도 
@@ -155,8 +155,8 @@ namespace FurnaceControl
             //********************************************************************************************
             // 시뮬레이션 모드에서만 사용 
             //********************************************************************************************
-            //float fZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0];     // 현재 TC 온도 
-            float fZoneTemprature = fn[idx, 1];     // 현재 TC 온도 
+            float fZoneTemprature = this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0];     // 현재 TC 온도 
+            //float fZoneTemprature = fn[idx, 1];     // 현재 TC 온도 
 
             double fCalBilletTemp;                  //예측 소재 온도
             float fPreBilletTemp;                   // 이전 빌렛 온도 

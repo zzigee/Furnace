@@ -17,8 +17,10 @@ namespace FurnaceControl
         {
             this.m_MainClass = mc;
             this.Start(timer_interval, "L1LinkClassTimer");
-
+            
             //InitializeOPC("OPCsoft.opcSvrTS.1", "");
+            InitializeOPC("Kepware.KEPServerEX.V6", "192.168.0.26");
+            
         }
 
         /******************************************************************************
@@ -31,6 +33,7 @@ namespace FurnaceControl
             //this.m_MainClass.m_SysLogClass.SystemLog(this, "L1LinkClassTimer");
 
             getOPCStatus();
+
             if (this.m_MainClass.m_Define_Class.isOpcCon)
             {
                 getDataFromOPC();
@@ -55,8 +58,8 @@ namespace FurnaceControl
             ///////////////////////////////////////////////////////////////////////
             // 공업로 정보 갱신 (stFURNACE_REALTIME_INFORMATION)
             iResFunc = m_opcMgr.opcReadGroupTags("OPC", nTagCnt, ref objReadVals, ref nQualities);
-                   
 
+            //Console.WriteLine(UtilsClass.getCurrentTimeMS() + " :: " + iResFunc);
             /**
              *  버너  버너   버너 
 
@@ -66,7 +69,7 @@ namespace FurnaceControl
 
             if (iResFunc != 1)
             {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Error 발생");
+                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC 데이터 수신 Error 발생");
                 return;
             }
 
@@ -167,6 +170,7 @@ namespace FurnaceControl
             // 평균온도 계산 후 저장 
             this.m_MainClass.stFURNACE_REALTIME_INFORMATION.fZone_Avg_Temperature[0] = fZoneTempratureAvg;
 
+            //Console.WriteLine(fZoneTempratureAvg);
 
             this.m_MainClass.m_MainForm.Set_txtDanjin_TC_TEMP("");
 
@@ -191,51 +195,69 @@ namespace FurnaceControl
 
         }
 
+        int nErrorCnt;
 
         private void getOPCStatus()
         {
             int code = 0;
-            if(this.m_opcMgr != null)   code = this.m_opcMgr.opcGetSvrStatus();            
+            if(this.m_opcMgr != null)   code = this.m_opcMgr.opcGetSvrStatus();
 
-            if(code == 1)       // 정상 상태 
+            if (code == 1)       // 정상 상태 
             {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.LOG, this, "OPC 정상 동작 중");
+                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.LOG, this, "[OPC Status] OPC 정상 동작 중");
+
+                nErrorCnt = 0;
+
+                m_MainClass.isOPCCon = true;
             }
-            else if(code == 2)  // 비정상 종료 
+            else
             {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC 비정상 종료");
-            }
-            else if(code == 3) // OPC Server 가 서비스 초기화 중 
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Server 서비스 초기화 중");
-            }
-            else if (code == 4) // OPC Server Busy 상태 
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Server Busy 상태");
-            }
-            else if (code == 5) // 테스트모드 동장 중 
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC 테스트 모드 동작 중");
-            }
-            else if (code == 6 || code == 14)    // Disconnect 상태 
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Server Disconnect 상태");
-            }
-            else if (code <= -11 && code >= -50)    // Errors about functio noperation  
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Errors about function operation");
-            }
-            else if (code == -91)    // Ping 에러
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Ping 에러");
-            }
-            else if (code == -92)    // 원격서버와의 연동 에러 
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC 서버와 연동 에러");
-            }
-            else if (code <= -93)    // Exception Error 
-            {
-                this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "OPC Exception Error");
+                nErrorCnt++;
+
+                m_MainClass.isOPCCon = false;
+
+                if(nErrorCnt > 10)
+                {
+                    Console.WriteLine("OPC 서버 재접속 시도");
+                    InitializeOPC("Kepware.KEPServerEX.V6", "192.168.0.26");
+                    nErrorCnt = 0;
+                }
+                else if (code == 2)  // 비정상 종료 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC 비정상 종료");
+                }
+                else if (code == 3) // OPC Server 가 서비스 초기화 중 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC Server 서비스 초기화 중");
+                }
+                else if (code == 4) // OPC Server Busy 상태 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC Server Busy 상태");
+                }
+                else if (code == 5) // 테스트모드 동장 중 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC 테스트 모드 동작 중");
+                }
+                else if (code == 6 || code == 14)    // Disconnect 상태 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC Server Disconnect 상태");
+                }
+                else if (code <= -11 && code >= -50)    // Errors about functio noperation  
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC Errors about function operation");
+                }
+                else if (code == -91)    // Ping 에러
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC Ping 에러");
+                }
+                else if (code == -92)    // 원격서버와의 연동 에러 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC 서버와 연동 에러");
+                }
+                else if (code <= -93)    // Exception Error 
+                {
+                    this.m_MainClass.m_SysLogClass.SystemLog((int)DefineClass.LOG_CODE.ERROR, this, "[OPC Status] OPC Exception Error");
+                }
             }
         }
 

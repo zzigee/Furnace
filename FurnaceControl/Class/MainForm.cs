@@ -647,6 +647,10 @@ namespace FurnaceControl
 
         private void Timer_Update_GUI(object sender, EventArgs e)
         {
+
+            if (m_MainClass.isOPCCon) btnStart_L2_Mode.BackColor = Color.Lime;
+            else btnStart_L2_Mode.BackColor = Color.Red;
+
             if (this.nCurrentPage == (int)Page.Main)
             {
                 RefreshChartViewer();

@@ -30,6 +30,7 @@ namespace FurnaceControl
          ******************************************************************************/
         public bool isLoginUser;            // 관리자 접속 확인 DefineClass
 
+        public bool isOPCCon;               // OPC 연결 상태 (False/True)
 
 
         /*****************************************************************************
