@@ -329,6 +329,12 @@ namespace FurnaceControl
             //iResFunc = opcMgr.opcGetTagList(ref oTagName, ref oTagDataType, "OPCsoft.opcSvrTS.1", "", "1");
             iResFunc = opcMgr.opcGetTagList(ref oTagName, ref oTagDataType, strProdID, strServerAddress, "1");
 
+            if (iResFunc < 1)
+            {
+                Console.WriteLine("[Error} getOpcGetTagList");
+                return;
+            }
+
             //this.m_MainClass.m_MainForm.tbOPC_Group.Text = objReadVals[0].ToString();
             //this.m_MainClass.m_MainForm.txtOPCReadData_2.Text = objReadVals[1].ToString();
 
