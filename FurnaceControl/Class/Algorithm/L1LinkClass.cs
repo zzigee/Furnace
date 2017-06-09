@@ -17,9 +17,10 @@ namespace FurnaceControl
         {
             this.m_MainClass = mc;
             this.Start(timer_interval, "L1LinkClassTimer");
-            
+
             //InitializeOPC("OPCsoft.opcSvrTS.1", "");
-            InitializeOPC("Kepware.KEPServerEX.V6", "192.168.0.26");
+            //InitializeOPC("Kepware.KEPServerEX.V6", "192.168.0.26");
+            InitializeOPC("Kepware.KEPServerEX.V6", "192.168.1.190");
             
         }
 
@@ -219,7 +220,8 @@ namespace FurnaceControl
                 if(nErrorCnt > 10)
                 {
                     Console.WriteLine("OPC 서버 재접속 시도");
-                    InitializeOPC("Kepware.KEPServerEX.V6", "192.168.0.26");
+                    //InitializeOPC("Kepware.KEPServerEX.V6", "192.168.0.26");
+                    InitializeOPC("Kepware.KEPServerEX.V6", "192.168.1.190");
                     nErrorCnt = 0;
                 }
                 else if (code == 2)  // 비정상 종료 

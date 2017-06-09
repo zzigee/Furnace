@@ -23,7 +23,7 @@ namespace FurnaceControl
         public int nDataLoggingIndex;                       // 실시간 데이터 배열 인덱스 
         public DateTime dateDataLoggingStartTime;           // 실시간 데이터 저장 시작 시간  
         public int nDangjinThermalCalPeriod = (int)DefineClass.TIMER_INTERVAL.ONE_MIN;
-        //public int nDangjinThermalCalPeriod = 100;
+        //public int nDangjinThermalCalPeriod = 500;
 
         /*
          * [Check - 2016.02.22] -> [Result - ] 

@@ -117,7 +117,9 @@ namespace FurnaceControl
             if (this.m_MainClass.m_Define_Class.nDataLoggingIndex == 0)
             {
                 // 임의로 정의한 초기 빌렛 온도 
-                fPreBilletTemp = 0.0f;
+                //fPreBilletTemp = 0.0f;
+                fPreBilletTemp = 20.0f;    // 당진 테스트용 
+
             }
             else
             {
@@ -185,7 +187,8 @@ namespace FurnaceControl
             if (this.m_MainClass.m_Define_Class.nDataLoggingIndex == 0)
             {
                 // 임의로 정의한 초기 빌렛 온도
-                fPreBilletTemp = 0.0f;
+                //fPreBilletTemp = 0.0f;
+                fPreBilletTemp = 20.0f;    // 당진 테스트용 
             }
             else
             {
