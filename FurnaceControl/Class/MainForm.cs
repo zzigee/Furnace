@@ -115,6 +115,8 @@ namespace FurnaceControl
          ************************************************************************/
         private void RadForm1_Load(object sender, EventArgs e)
         {
+            // TODO: 이 코드는 데이터를 'furnaceControlDataSet.GRADE_DETAIL' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
+            this.gRADE_DETAILTableAdapter1.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
             // TODO: 이 코드는 데이터를 'furnaceControlDataSet.DANGJIN_DATA' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
             this.dANGJIN_DATATableAdapter.Fill(this.furnaceControlDataSet.DANGJIN_DATA);
             // TODO: 이 코드는 데이터를 'furnaceControlDataSet.SYSTEM_EVENT_JOIN' 테이블에 로드합니다. 필요한 경우 이 코드를 이동하거나 제거할 수 있습니다.
@@ -199,8 +201,8 @@ namespace FurnaceControl
                 case "Grade Set":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Grade Set Tap Changed");
                     this.nCurrentPage = (int)Page.Grade_Set;
-                    //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
-                    //this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
+                    this.gradeTableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                    this.gRADE_DETAILTableAdapter1.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
                     break;
 
 
@@ -215,7 +217,7 @@ namespace FurnaceControl
                 case "Program Log":
                     this.m_MainClass.m_SysLogClass.DebugLog(this, "Program Log Tap Changed");
                     this.nCurrentPage = (int)Page.Program_Log;
-                    //this.systeM_EVENT_JOINTableAdapter.Fill(this.furnaceControlDataSet.SYSTEM_EVENT_JOIN);
+                    this.sYSTEM_EVENT_JOINTableAdapter.Fill(this.furnaceControlDataSet.SYSTEM_EVENT_JOIN);
                     break;
 
 
@@ -274,9 +276,9 @@ namespace FurnaceControl
         {
             try
             {
-                //this.gradE_TableAdapter.Insert(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text);
-                //this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                this.gradeTableAdapter.Insert(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text);
+                this.ShowMessageBox("정상적으로 처리 되었습니다.");
+                this.gradeTableAdapter.Fill(this.furnaceControlDataSet.GRADE);
             }
             catch (Exception ex)
             {
@@ -291,9 +293,9 @@ namespace FurnaceControl
         {
             try
             {
-                //this.gradE_TableAdapter.UpdateQuery(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text, this.tbGrade.Text);
-                //this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                this.gradeTableAdapter.UpdateQuery(this.tbGrade.Text, int.Parse(this.tbSetNo.Text), this.tbDetatil.Text, this.tbGrade.Text);
+                this.ShowMessageBox("정상적으로 처리 되었습니다.");
+                this.gradeTableAdapter.Fill(this.furnaceControlDataSet.GRADE);
             }
             catch (Exception ex)
             {
@@ -311,9 +313,9 @@ namespace FurnaceControl
             {
                 try
                 {
-                    //this.gradE_TableAdapter.DeleteQuery(this.tbGrade.Text);
-                    //this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                    //this.gradE_TableAdapter.Fill(this.furnaceControlDataSet.GRADE);
+                    this.gradeTableAdapter.DeleteQuery(this.tbGrade.Text);
+                    this.ShowMessageBox("정상적으로 처리 되었습니다.");
+                    this.gradeTableAdapter.Fill(this.furnaceControlDataSet.GRADE);
 
                 }
                 catch (Exception ex)
@@ -339,10 +341,10 @@ namespace FurnaceControl
         {
             try
             {
-                this.gradE_DETAILTableAdapter.InsertQuery(int.Parse(this.tbSetNo_GradeDetail.Text), int.Parse(this.tbAimTemp.Text), int.Parse(this.tbTOPmax_1.Text), int.Parse(this.tbTOPmin_1.Text), int.Parse(this.tbBOTmax_1.Text), int.Parse(this.tbBOTmin_1.Text), int.Parse(this.tbTOPmax_2.Text), int.Parse(this.tbTOPmin_2.Text), int.Parse(this.tbBOTmax_2.Text), int.Parse(this.tbBOTmin_2.Text), int.Parse(this.tbTOPmax_3.Text), int.Parse(this.tbTOPmin_3.Text), int.Parse(this.tbBOTmax_3.Text), int.Parse(this.tbBOTmin_3.Text), int.Parse(this.tbTOPmax_4.Text), int.Parse(this.tbTOPmin_4.Text), int.Parse(this.tbBOTmax_4.Text), int.Parse(this.tbBOTmin_4.Text), int.Parse(this.tbTOPmax_5.Text), int.Parse(this.tbTOPmin_5.Text), int.Parse(this.tbBOTmax_5.Text), int.Parse(this.tbBOTmin_5.Text), int.Parse(this.tbTOPmax_6.Text), int.Parse(this.tbTOPmin_6.Text), int.Parse(this.tbBOTmax_6.Text), int.Parse(this.tbBOTmin_6.Text), int.Parse(this.tbTOPmax_7.Text), int.Parse(this.tbTOPmin_7.Text), int.Parse(this.tbBOTmax_7.Text), int.Parse(this.tbBOTmin_7.Text), int.Parse(this.tbTOPmax_8.Text), int.Parse(this.tbTOPmin_8.Text), int.Parse(this.tbBOTmax_8.Text), int.Parse(this.tbBOTmin_8.Text), int.Parse(this.tbTOPmax_9.Text), int.Parse(this.tbTOPmin_9.Text), int.Parse(this.tbBOTmax_9.Text), int.Parse(this.tbBOTmin_9.Text), int.Parse(this.tbTOPmax_10.Text), int.Parse(this.tbTOPmin_10.Text), int.Parse(this.tbBOTmax_10.Text), int.Parse(this.tbBOTmin_10.Text));
+                this.gRADE_DETAILTableAdapter1.InsertQuery(int.Parse(this.tbSetNo_GradeDetail.Text), int.Parse(this.tbAimTemp.Text), int.Parse(this.tbTOPmax_1.Text), int.Parse(this.tbTOPmin_1.Text), int.Parse(this.tbBOTmax_1.Text), int.Parse(this.tbBOTmin_1.Text), int.Parse(this.tbTOPmax_2.Text), int.Parse(this.tbTOPmin_2.Text), int.Parse(this.tbBOTmax_2.Text), int.Parse(this.tbBOTmin_2.Text), int.Parse(this.tbTOPmax_3.Text), int.Parse(this.tbTOPmin_3.Text), int.Parse(this.tbBOTmax_3.Text), int.Parse(this.tbBOTmin_3.Text), int.Parse(this.tbTOPmax_4.Text), int.Parse(this.tbTOPmin_4.Text), int.Parse(this.tbBOTmax_4.Text), int.Parse(this.tbBOTmin_4.Text), int.Parse(this.tbTOPmax_5.Text), int.Parse(this.tbTOPmin_5.Text), int.Parse(this.tbBOTmax_5.Text), int.Parse(this.tbBOTmin_5.Text), int.Parse(this.tbTOPmax_6.Text), int.Parse(this.tbTOPmin_6.Text), int.Parse(this.tbBOTmax_6.Text), int.Parse(this.tbBOTmin_6.Text), int.Parse(this.tbTOPmax_7.Text), int.Parse(this.tbTOPmin_7.Text), int.Parse(this.tbBOTmax_7.Text), int.Parse(this.tbBOTmin_7.Text), int.Parse(this.tbTOPmax_8.Text), int.Parse(this.tbTOPmin_8.Text), int.Parse(this.tbBOTmax_8.Text), int.Parse(this.tbBOTmin_8.Text), int.Parse(this.tbTOPmax_9.Text), int.Parse(this.tbTOPmin_9.Text), int.Parse(this.tbBOTmax_9.Text), int.Parse(this.tbBOTmin_9.Text), int.Parse(this.tbTOPmax_10.Text), int.Parse(this.tbTOPmin_10.Text), int.Parse(this.tbBOTmax_10.Text), int.Parse(this.tbBOTmin_10.Text));
 
                 this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
+                this.gRADE_DETAILTableAdapter1.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
             }
             catch (Exception ex)
             {
@@ -357,10 +359,10 @@ namespace FurnaceControl
         {
             try
             {
-                this.gradE_DETAILTableAdapter.UpdateQuery(int.Parse(this.tbSetNo_GradeDetail.Text), int.Parse(this.tbAimTemp.Text), int.Parse(this.tbTOPmax_1.Text), int.Parse(this.tbTOPmin_1.Text), int.Parse(this.tbBOTmax_1.Text), int.Parse(this.tbBOTmin_1.Text), int.Parse(this.tbTOPmax_2.Text), int.Parse(this.tbTOPmin_2.Text), int.Parse(this.tbBOTmax_2.Text), int.Parse(this.tbBOTmin_2.Text), int.Parse(this.tbTOPmax_3.Text), int.Parse(this.tbTOPmin_3.Text), int.Parse(this.tbBOTmax_3.Text), int.Parse(this.tbBOTmin_3.Text), int.Parse(this.tbTOPmax_4.Text), int.Parse(this.tbTOPmin_4.Text), int.Parse(this.tbBOTmax_4.Text), int.Parse(this.tbBOTmin_4.Text), int.Parse(this.tbTOPmax_5.Text), int.Parse(this.tbTOPmin_5.Text), int.Parse(this.tbBOTmax_5.Text), int.Parse(this.tbBOTmin_5.Text), int.Parse(this.tbTOPmax_6.Text), int.Parse(this.tbTOPmin_6.Text), int.Parse(this.tbBOTmax_6.Text), int.Parse(this.tbBOTmin_6.Text), int.Parse(this.tbTOPmax_7.Text), int.Parse(this.tbTOPmin_7.Text), int.Parse(this.tbBOTmax_7.Text), int.Parse(this.tbBOTmin_7.Text), int.Parse(this.tbTOPmax_8.Text), int.Parse(this.tbTOPmin_8.Text), int.Parse(this.tbBOTmax_8.Text), int.Parse(this.tbBOTmin_8.Text), int.Parse(this.tbTOPmax_9.Text), int.Parse(this.tbTOPmin_9.Text), int.Parse(this.tbBOTmax_9.Text), int.Parse(this.tbBOTmin_9.Text), int.Parse(this.tbTOPmax_10.Text), int.Parse(this.tbTOPmin_10.Text), int.Parse(this.tbBOTmax_10.Text), int.Parse(this.tbBOTmin_10.Text), int.Parse(this.tbSetNo_GradeDetail.Text));
+                this.gRADE_DETAILTableAdapter1.UpdateQuery(int.Parse(this.tbSetNo_GradeDetail.Text), int.Parse(this.tbAimTemp.Text), int.Parse(this.tbTOPmax_1.Text), int.Parse(this.tbTOPmin_1.Text), int.Parse(this.tbBOTmax_1.Text), int.Parse(this.tbBOTmin_1.Text), int.Parse(this.tbTOPmax_2.Text), int.Parse(this.tbTOPmin_2.Text), int.Parse(this.tbBOTmax_2.Text), int.Parse(this.tbBOTmin_2.Text), int.Parse(this.tbTOPmax_3.Text), int.Parse(this.tbTOPmin_3.Text), int.Parse(this.tbBOTmax_3.Text), int.Parse(this.tbBOTmin_3.Text), int.Parse(this.tbTOPmax_4.Text), int.Parse(this.tbTOPmin_4.Text), int.Parse(this.tbBOTmax_4.Text), int.Parse(this.tbBOTmin_4.Text), int.Parse(this.tbTOPmax_5.Text), int.Parse(this.tbTOPmin_5.Text), int.Parse(this.tbBOTmax_5.Text), int.Parse(this.tbBOTmin_5.Text), int.Parse(this.tbTOPmax_6.Text), int.Parse(this.tbTOPmin_6.Text), int.Parse(this.tbBOTmax_6.Text), int.Parse(this.tbBOTmin_6.Text), int.Parse(this.tbTOPmax_7.Text), int.Parse(this.tbTOPmin_7.Text), int.Parse(this.tbBOTmax_7.Text), int.Parse(this.tbBOTmin_7.Text), int.Parse(this.tbTOPmax_8.Text), int.Parse(this.tbTOPmin_8.Text), int.Parse(this.tbBOTmax_8.Text), int.Parse(this.tbBOTmin_8.Text), int.Parse(this.tbTOPmax_9.Text), int.Parse(this.tbTOPmin_9.Text), int.Parse(this.tbBOTmax_9.Text), int.Parse(this.tbBOTmin_9.Text), int.Parse(this.tbTOPmax_10.Text), int.Parse(this.tbTOPmin_10.Text), int.Parse(this.tbBOTmax_10.Text), int.Parse(this.tbBOTmin_10.Text), int.Parse(this.tbSetNo_GradeDetail.Text));
 
                 this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
+                this.gRADE_DETAILTableAdapter1.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
             }
             catch (Exception ex)
             {
@@ -377,9 +379,9 @@ namespace FurnaceControl
             {
                 try
                 {
-                    this.gradE_DETAILTableAdapter.DeleteQuery(int.Parse(this.tbSetNo_GradeDetail.Text));
+                    this.gRADE_DETAILTableAdapter1.DeleteQuery(int.Parse(this.tbSetNo_GradeDetail.Text));
                     this.ShowMessageBox("정상적으로 처리 되었습니다.");
-                    this.gradE_DETAILTableAdapter.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
+                    this.gRADE_DETAILTableAdapter1.Fill(this.furnaceControlDataSet.GRADE_DETAIL);
                 }
                 catch (Exception ex)
                 {

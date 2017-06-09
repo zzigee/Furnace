@@ -930,7 +930,7 @@ FROM     DANGJIN_DATA</CommandText>
   <xs:element name="FurnaceControlDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FurnaceControlDataSet" msprop:Generator_UserDSName="FurnaceControlDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="GRADE" msprop:Generator_TableClassName="GRADEDataTable" msprop:Generator_TableVarName="tableGRADE" msprop:Generator_RowChangedName="GRADERowChanged" msprop:Generator_TablePropName="GRADE" msprop:Generator_RowDeletingName="GRADERowDeleting" msprop:Generator_RowChangingName="GRADERowChanging" msprop:Generator_RowEvHandlerName="GRADERowChangeEventHandler" msprop:Generator_RowDeletedName="GRADERowDeleted" msprop:Generator_RowClassName="GRADERow" msprop:Generator_UserTableName="GRADE" msprop:Generator_RowEvArgName="GRADERowChangeEvent">
+        <xs:element name="GRADE" msprop:Generator_TableClassName="GRADEDataTable" msprop:Generator_TableVarName="tableGRADE" msprop:Generator_TablePropName="GRADE" msprop:Generator_RowDeletingName="GRADERowDeleting" msprop:Generator_RowChangingName="GRADERowChanging" msprop:Generator_RowEvHandlerName="GRADERowChangeEventHandler" msprop:Generator_RowDeletedName="GRADERowDeleted" msprop:Generator_UserTableName="GRADE" msprop:Generator_RowChangedName="GRADERowChanged" msprop:Generator_RowEvArgName="GRADERowChangeEvent" msprop:Generator_RowClassName="GRADERow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="GRADE" msprop:Generator_ColumnVarNameInTable="columnGRADE" msprop:Generator_ColumnPropNameInRow="GRADE" msprop:Generator_ColumnPropNameInTable="GRADEColumn" msprop:Generator_UserColumnName="GRADE">
@@ -951,7 +951,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="BILLET_JOIN" msprop:Generator_TableClassName="BILLET_JOINDataTable" msprop:Generator_TableVarName="tableBILLET_JOIN" msprop:Generator_TablePropName="BILLET_JOIN" msprop:Generator_RowDeletingName="BILLET_JOINRowDeleting" msprop:Generator_RowChangingName="BILLET_JOINRowChanging" msprop:Generator_RowEvHandlerName="BILLET_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="BILLET_JOINRowDeleted" msprop:Generator_UserTableName="BILLET_JOIN" msprop:Generator_RowChangedName="BILLET_JOINRowChanged" msprop:Generator_RowEvArgName="BILLET_JOINRowChangeEvent" msprop:Generator_RowClassName="BILLET_JOINRow">
+        <xs:element name="BILLET_JOIN" msprop:Generator_TableClassName="BILLET_JOINDataTable" msprop:Generator_TableVarName="tableBILLET_JOIN" msprop:Generator_RowChangedName="BILLET_JOINRowChanged" msprop:Generator_TablePropName="BILLET_JOIN" msprop:Generator_RowDeletingName="BILLET_JOINRowDeleting" msprop:Generator_RowChangingName="BILLET_JOINRowChanging" msprop:Generator_RowEvHandlerName="BILLET_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="BILLET_JOINRowDeleted" msprop:Generator_RowClassName="BILLET_JOINRow" msprop:Generator_UserTableName="BILLET_JOIN" msprop:Generator_RowEvArgName="BILLET_JOINRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="HEAT_ID" msprop:Generator_ColumnVarNameInTable="columnHEAT_ID" msprop:Generator_ColumnPropNameInRow="HEAT_ID" msprop:Generator_ColumnPropNameInTable="HEAT_IDColumn" msprop:Generator_UserColumnName="HEAT_ID" minOccurs="0">
@@ -999,7 +999,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CHART_VIEW_BILLET" msprop:Generator_TableClassName="CHART_VIEW_BILLETDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_BILLET" msprop:Generator_RowChangedName="CHART_VIEW_BILLETRowChanged" msprop:Generator_TablePropName="CHART_VIEW_BILLET" msprop:Generator_RowDeletingName="CHART_VIEW_BILLETRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_BILLETRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_BILLETRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_BILLETRowDeleted" msprop:Generator_RowClassName="CHART_VIEW_BILLETRow" msprop:Generator_UserTableName="CHART_VIEW_BILLET" msprop:Generator_RowEvArgName="CHART_VIEW_BILLETRowChangeEvent">
+        <xs:element name="CHART_VIEW_BILLET" msprop:Generator_TableClassName="CHART_VIEW_BILLETDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_BILLET" msprop:Generator_TablePropName="CHART_VIEW_BILLET" msprop:Generator_RowDeletingName="CHART_VIEW_BILLETRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_BILLETRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_BILLETRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_BILLETRowDeleted" msprop:Generator_UserTableName="CHART_VIEW_BILLET" msprop:Generator_RowChangedName="CHART_VIEW_BILLETRowChanged" msprop:Generator_RowEvArgName="CHART_VIEW_BILLETRowChangeEvent" msprop:Generator_RowClassName="CHART_VIEW_BILLETRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ORDER_NUMBER" msprop:Generator_ColumnVarNameInTable="columnORDER_NUMBER" msprop:Generator_ColumnPropNameInRow="ORDER_NUMBER" msprop:Generator_ColumnPropNameInTable="ORDER_NUMBERColumn" msprop:Generator_UserColumnName="ORDER_NUMBER" minOccurs="0">
@@ -1025,7 +1025,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
@@ -1033,7 +1033,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="USER" msprop:Generator_TableClassName="USERDataTable" msprop:Generator_TableVarName="tableUSER" msprop:Generator_TablePropName="USER" msprop:Generator_RowDeletingName="USERRowDeleting" msprop:Generator_RowChangingName="USERRowChanging" msprop:Generator_RowEvHandlerName="USERRowChangeEventHandler" msprop:Generator_RowDeletedName="USERRowDeleted" msprop:Generator_UserTableName="USER" msprop:Generator_RowChangedName="USERRowChanged" msprop:Generator_RowEvArgName="USERRowChangeEvent" msprop:Generator_RowClassName="USERRow">
+        <xs:element name="USER" msprop:Generator_TableClassName="USERDataTable" msprop:Generator_TableVarName="tableUSER" msprop:Generator_RowChangedName="USERRowChanged" msprop:Generator_TablePropName="USER" msprop:Generator_RowDeletingName="USERRowDeleting" msprop:Generator_RowChangingName="USERRowChanging" msprop:Generator_RowEvHandlerName="USERRowChangeEventHandler" msprop:Generator_RowDeletedName="USERRowDeleted" msprop:Generator_RowClassName="USERRow" msprop:Generator_UserTableName="USER" msprop:Generator_RowEvArgName="USERRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
@@ -1054,7 +1054,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="GRADE_DETAIL" msprop:Generator_TableClassName="GRADE_DETAILDataTable" msprop:Generator_TableVarName="tableGRADE_DETAIL" msprop:Generator_TablePropName="GRADE_DETAIL" msprop:Generator_RowDeletingName="GRADE_DETAILRowDeleting" msprop:Generator_RowChangingName="GRADE_DETAILRowChanging" msprop:Generator_RowEvHandlerName="GRADE_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="GRADE_DETAILRowDeleted" msprop:Generator_UserTableName="GRADE_DETAIL" msprop:Generator_RowChangedName="GRADE_DETAILRowChanged" msprop:Generator_RowEvArgName="GRADE_DETAILRowChangeEvent" msprop:Generator_RowClassName="GRADE_DETAILRow">
+        <xs:element name="GRADE_DETAIL" msprop:Generator_TableClassName="GRADE_DETAILDataTable" msprop:Generator_TableVarName="tableGRADE_DETAIL" msprop:Generator_RowChangedName="GRADE_DETAILRowChanged" msprop:Generator_TablePropName="GRADE_DETAIL" msprop:Generator_RowDeletingName="GRADE_DETAILRowDeleting" msprop:Generator_RowChangingName="GRADE_DETAILRowChanging" msprop:Generator_RowEvHandlerName="GRADE_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="GRADE_DETAILRowDeleted" msprop:Generator_RowClassName="GRADE_DETAILRow" msprop:Generator_UserTableName="GRADE_DETAIL" msprop:Generator_RowEvArgName="GRADE_DETAILRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SETNO" msprop:Generator_ColumnVarNameInTable="columnSETNO" msprop:Generator_ColumnPropNameInRow="SETNO" msprop:Generator_ColumnPropNameInTable="SETNOColumn" msprop:Generator_UserColumnName="SETNO" type="xs:int" />
@@ -1102,7 +1102,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SYSTEM_EVENT_JOIN" msprop:Generator_TableClassName="SYSTEM_EVENT_JOINDataTable" msprop:Generator_TableVarName="tableSYSTEM_EVENT_JOIN" msprop:Generator_TablePropName="SYSTEM_EVENT_JOIN" msprop:Generator_RowDeletingName="SYSTEM_EVENT_JOINRowDeleting" msprop:Generator_RowChangingName="SYSTEM_EVENT_JOINRowChanging" msprop:Generator_RowEvHandlerName="SYSTEM_EVENT_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="SYSTEM_EVENT_JOINRowDeleted" msprop:Generator_UserTableName="SYSTEM_EVENT_JOIN" msprop:Generator_RowChangedName="SYSTEM_EVENT_JOINRowChanged" msprop:Generator_RowEvArgName="SYSTEM_EVENT_JOINRowChangeEvent" msprop:Generator_RowClassName="SYSTEM_EVENT_JOINRow">
+        <xs:element name="SYSTEM_EVENT_JOIN" msprop:Generator_TableClassName="SYSTEM_EVENT_JOINDataTable" msprop:Generator_TableVarName="tableSYSTEM_EVENT_JOIN" msprop:Generator_RowChangedName="SYSTEM_EVENT_JOINRowChanged" msprop:Generator_TablePropName="SYSTEM_EVENT_JOIN" msprop:Generator_RowDeletingName="SYSTEM_EVENT_JOINRowDeleting" msprop:Generator_RowChangingName="SYSTEM_EVENT_JOINRowChanging" msprop:Generator_RowEvHandlerName="SYSTEM_EVENT_JOINRowChangeEventHandler" msprop:Generator_RowDeletedName="SYSTEM_EVENT_JOINRowDeleted" msprop:Generator_RowClassName="SYSTEM_EVENT_JOINRow" msprop:Generator_UserTableName="SYSTEM_EVENT_JOIN" msprop:Generator_RowEvArgName="SYSTEM_EVENT_JOINRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnTIMESTAMP" msprop:Generator_ColumnPropNameInRow="TIMESTAMP" msprop:Generator_ColumnPropNameInTable="TIMESTAMPColumn" msprop:Generator_UserColumnName="TIMESTAMP" type="xs:dateTime" />
@@ -1130,7 +1130,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CHART_VIEW_ZONE_STATUS" msprop:Generator_TableClassName="CHART_VIEW_ZONE_STATUSDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_ZONE_STATUS" msprop:Generator_RowChangedName="CHART_VIEW_ZONE_STATUSRowChanged" msprop:Generator_TablePropName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowDeletingName="CHART_VIEW_ZONE_STATUSRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_ZONE_STATUSRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_ZONE_STATUSRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_ZONE_STATUSRowDeleted" msprop:Generator_RowClassName="CHART_VIEW_ZONE_STATUSRow" msprop:Generator_UserTableName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowEvArgName="CHART_VIEW_ZONE_STATUSRowChangeEvent">
+        <xs:element name="CHART_VIEW_ZONE_STATUS" msprop:Generator_TableClassName="CHART_VIEW_ZONE_STATUSDataTable" msprop:Generator_TableVarName="tableCHART_VIEW_ZONE_STATUS" msprop:Generator_TablePropName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowDeletingName="CHART_VIEW_ZONE_STATUSRowDeleting" msprop:Generator_RowChangingName="CHART_VIEW_ZONE_STATUSRowChanging" msprop:Generator_RowEvHandlerName="CHART_VIEW_ZONE_STATUSRowChangeEventHandler" msprop:Generator_RowDeletedName="CHART_VIEW_ZONE_STATUSRowDeleted" msprop:Generator_UserTableName="CHART_VIEW_ZONE_STATUS" msprop:Generator_RowChangedName="CHART_VIEW_ZONE_STATUSRowChanged" msprop:Generator_RowEvArgName="CHART_VIEW_ZONE_STATUSRowChangeEvent" msprop:Generator_RowClassName="CHART_VIEW_ZONE_STATUSRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FURNACE_NO" msprop:Generator_ColumnVarNameInTable="columnFURNACE_NO" msprop:Generator_ColumnPropNameInRow="FURNACE_NO" msprop:Generator_ColumnPropNameInTable="FURNACE_NOColumn" msprop:Generator_UserColumnName="FURNACE_NO" type="xs:unsignedByte" />
@@ -1149,7 +1149,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DANGJIN_DATA" msprop:Generator_TableClassName="DANGJIN_DATADataTable" msprop:Generator_TableVarName="tableDANGJIN_DATA" msprop:Generator_RowChangedName="DANGJIN_DATARowChanged" msprop:Generator_TablePropName="DANGJIN_DATA" msprop:Generator_RowDeletingName="DANGJIN_DATARowDeleting" msprop:Generator_RowChangingName="DANGJIN_DATARowChanging" msprop:Generator_RowEvHandlerName="DANGJIN_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="DANGJIN_DATARowDeleted" msprop:Generator_RowClassName="DANGJIN_DATARow" msprop:Generator_UserTableName="DANGJIN_DATA" msprop:Generator_RowEvArgName="DANGJIN_DATARowChangeEvent">
+        <xs:element name="DANGJIN_DATA" msprop:Generator_TableClassName="DANGJIN_DATADataTable" msprop:Generator_TableVarName="tableDANGJIN_DATA" msprop:Generator_TablePropName="DANGJIN_DATA" msprop:Generator_RowDeletingName="DANGJIN_DATARowDeleting" msprop:Generator_RowChangingName="DANGJIN_DATARowChanging" msprop:Generator_RowEvHandlerName="DANGJIN_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="DANGJIN_DATARowDeleted" msprop:Generator_UserTableName="DANGJIN_DATA" msprop:Generator_RowChangedName="DANGJIN_DATARowChanged" msprop:Generator_RowEvArgName="DANGJIN_DATARowChangeEvent" msprop:Generator_RowClassName="DANGJIN_DATARow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EXP_ORDER" msprop:Generator_ColumnVarNameInTable="columnEXP_ORDER" msprop:Generator_ColumnPropNameInRow="EXP_ORDER" msprop:Generator_ColumnPropNameInTable="EXP_ORDERColumn" msprop:Generator_UserColumnName="EXP_ORDER" type="xs:int" minOccurs="0" />
@@ -1172,7 +1172,7 @@ FROM     DANGJIN_DATA</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DANGJIN_DATA_INSERT" msprop:Generator_TableClassName="DANGJIN_DATA_INSERTDataTable" msprop:Generator_TableVarName="tableDANGJIN_DATA_INSERT" msprop:Generator_TablePropName="DANGJIN_DATA_INSERT" msprop:Generator_RowDeletingName="DANGJIN_DATA_INSERTRowDeleting" msprop:Generator_RowChangingName="DANGJIN_DATA_INSERTRowChanging" msprop:Generator_RowEvHandlerName="DANGJIN_DATA_INSERTRowChangeEventHandler" msprop:Generator_RowDeletedName="DANGJIN_DATA_INSERTRowDeleted" msprop:Generator_UserTableName="DANGJIN_DATA_INSERT" msprop:Generator_RowChangedName="DANGJIN_DATA_INSERTRowChanged" msprop:Generator_RowEvArgName="DANGJIN_DATA_INSERTRowChangeEvent" msprop:Generator_RowClassName="DANGJIN_DATA_INSERTRow">
+        <xs:element name="DANGJIN_DATA_INSERT" msprop:Generator_TableClassName="DANGJIN_DATA_INSERTDataTable" msprop:Generator_TableVarName="tableDANGJIN_DATA_INSERT" msprop:Generator_RowChangedName="DANGJIN_DATA_INSERTRowChanged" msprop:Generator_TablePropName="DANGJIN_DATA_INSERT" msprop:Generator_RowDeletingName="DANGJIN_DATA_INSERTRowDeleting" msprop:Generator_RowChangingName="DANGJIN_DATA_INSERTRowChanging" msprop:Generator_RowEvHandlerName="DANGJIN_DATA_INSERTRowChangeEventHandler" msprop:Generator_RowDeletedName="DANGJIN_DATA_INSERTRowDeleted" msprop:Generator_RowClassName="DANGJIN_DATA_INSERTRow" msprop:Generator_UserTableName="DANGJIN_DATA_INSERT" msprop:Generator_RowEvArgName="DANGJIN_DATA_INSERTRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EXP_ORDER" msprop:Generator_ColumnVarNameInTable="columnEXP_ORDER" msprop:Generator_ColumnPropNameInRow="EXP_ORDER" msprop:Generator_ColumnPropNameInTable="EXP_ORDERColumn" msprop:Generator_UserColumnName="EXP_ORDER" type="xs:int" minOccurs="0" />
